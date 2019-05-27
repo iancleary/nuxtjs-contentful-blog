@@ -1,0 +1,17 @@
+body { padding-top: 40px; }
+
+.link
+{
+   color:grey;
+}
+
+link:hover, link:focus {
+   text-decoration: none
+}
+
+.anchor{
+  display: block;
+  height: 80px; /*same height as header*/
+  margin-top: -80px; /*same height as header*/
+  visibility: hidden;
+}
