@@ -22,3 +22,9 @@ link:hover, link:focus {
   margin-top: -80px; /*same height as header*/
   visibility: hidden;
 }
+
+section:before {
+   height: 54px;
+   content: "";
+   display:block;
+}
