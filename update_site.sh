@@ -36,7 +36,8 @@ fi
 echo -n "Enter the branch to use and press [ENTER]; none for master: "
 read branch
 
-if [ $branch = ""]; then
+if [ $branch == ""]
+then
     branch="master"
 fi
 
@@ -67,6 +68,8 @@ echo ""
 echo "-----------------------------------"
 echo "-----------------------------------"
 echo "Running: python3 $PYTHON_FILE_FULLPATH"
+export PYTHON_WORKING_FOLDER="$TMP_LOCATION/" 
+printenv PYTHON_WORKING_FOLDER
 python3 $PYTHON_FILE_FULLPATH
 
 echo ""
