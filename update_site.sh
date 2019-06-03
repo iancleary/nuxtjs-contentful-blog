@@ -57,10 +57,16 @@ pip3 install -r "$TMP_LOCATION/requirements.txt"
 # - run script using boto3 and credentials in .env file to update s3
 # - update CloudFront to force invalidation?
 # - celebrate!
+echo ""
+echo "-----------------------------------"
+echo "-----------------------------------"
 pip3 list
 
 # echo 
-
+echo ""
+echo "-----------------------------------"
+echo "-----------------------------------"
+echo "Running: python3 $PYTHON_FILE_FULLPATH"
 python3 $PYTHON_FILE_FULLPATH
 
 echo ""
