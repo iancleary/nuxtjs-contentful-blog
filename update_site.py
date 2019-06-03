@@ -10,6 +10,11 @@
 
 import os
 import boto3
+import boto3.s3
+
+import os.path
+import sys
+import glob
 
 print("Hello from script")
 
@@ -18,7 +23,7 @@ print(APP_DIR)
 
 
 import boto3
-import boto3.s3
+
 
 import os.path
 import sys
@@ -39,17 +44,31 @@ MAX_SIZE = 20 * 1000 * 1000
 #size of parts when uploading in parts
 PART_SIZE = 6 * 1000 * 1000
 
-conn = boto3.connect_s3(AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY_SECRET)
+s3 = boto3.resource('s3')
+bucket = s3.Bucket('name')
 
-# bucket = conn.create_bucket(bucket_name,
-#        location=boto3.s3.connection.Location.DEFAULT)
+print("HELLOOOO")
 
-bucket = conn.get_bucket(bucket_name) # already exists, so get it
+tmpFileNames =  glob.glob(APP_DIR+"*.js", recursive=True)
+print(tmpFileNames)
+
+file_structure = [
+    ('js', 'js'),
+    ('css', 'css'),
+    ('.', 'js'),
+    ('js', 'js'), 'css', 'html', 'png', 'svg']
 
 uploadFileNames = []
-for (sourceDir, dirname, filename) in os.walk(sourceDir):
-    uploadFileNames.extend(filename)
-    break
+for file_type in file_types:
+    file_path = APP_DIR+"*.{file_type}".format(file_type=file_type)
+    for file in glob.glob(file_path, recursive=True):
+        if "venv" not in file:
+            uploadFileNames.extend(file)
+
+
+print(uploadFileNames)
+
+exit()
 
 def percent_cb(complete, total):
     sys.stdout.write('.')
