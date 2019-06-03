@@ -18,7 +18,7 @@ print(APP_DIR)
 
 
 import boto3
-import botos3.s3
+import boto3.s3
 
 import os.path
 import sys
