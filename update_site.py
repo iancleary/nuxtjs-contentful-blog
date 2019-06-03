@@ -17,8 +17,8 @@ APP_DIR = os.environ["PYTHON_WORKING_FOLDER"]
 print(APP_DIR)
 
 
-import boto
-import boto.s3
+import boto3
+import botos3.s3
 
 import os.path
 import sys
@@ -39,10 +39,10 @@ MAX_SIZE = 20 * 1000 * 1000
 #size of parts when uploading in parts
 PART_SIZE = 6 * 1000 * 1000
 
-conn = boto.connect_s3(AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY_SECRET)
+conn = boto3.connect_s3(AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY_SECRET)
 
 # bucket = conn.create_bucket(bucket_name,
-#        location=boto.s3.connection.Location.DEFAULT)
+#        location=boto3.s3.connection.Location.DEFAULT)
 
 bucket = conn.get_bucket(bucket_name) # already exists, so get it
 
@@ -76,7 +76,7 @@ for filename in uploadFileNames:
 
     else:
         print("singlepart upload")
-        k = boto.s3.key.Key(bucket)
+        k = boto3.s3.key.Key(bucket)
         k.key = destpath
         k.set_contents_from_filename(sourcepath,
                 cb=percent_cb, num_cb=10)
