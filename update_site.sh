@@ -59,4 +59,13 @@ pip3 install -r "$TMP_LOCATION/requirements.txt"
 # - celebrate!
 pip3 list
 
-python3 $TMP_LOCATION/update_site.py
+# echo 
+
+python3 $PYTHON_FILE_FULLPATH
+
+echo ""
+echo "-----------------------------------"
+echo "-----------------------------------"
+echo "All done. Celebrate you magical wizard!"
+echo "-----------------------------------"
+echo "-----------------------------------"
