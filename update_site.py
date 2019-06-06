@@ -99,3 +99,20 @@ for filename in uploadFileNames:
         k.key = destpath
         k.set_contents_from_filename(sourcepath,
                 cb=percent_cb, num_cb=10)
+
+
+
+
+# yaniv-g (https://github.com/boto/boto3/issues/358#issuecomment-346093506)
+def upload_directory(src_dir, bucket_name, dst_dir):
+    if not os.path.isdir(src_dir):
+        raise ValueError('src_dir %r not found.' % src_dir)
+    all_files = []
+
+    for root, dirs, files in os.walk(src_dir):
+        all_files += [os.path.join(root, f) for f in files]
+    s3_resource = boto3.resource('s3')
+
+    for filename in all_files:
+        s3_resource.Object(bucket_name, os.path.join(dst_dir, os.path.relpath(filename, src_dir)))\
+            .put(Body=open(filename, 'rb'))
