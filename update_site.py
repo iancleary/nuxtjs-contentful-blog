@@ -10,23 +10,16 @@
 
 import os
 import boto3
-import boto3.s3
-
-import os.path
-import sys
-import glob
 
 print("Hello from script")
 
 APP_DIR = os.environ["PYTHON_WORKING_FOLDER"]
 print(APP_DIR)
 
+# Set these to change what to upload
+DIR_UPLOAD_LIST = ["css", "ico", "img", "js"]
+FILE_LIST = ["index.html", "error.html", "LICENSE"]
 
-import boto3
-
-
-import os.path
-import sys
 
 # Fill these in - you get them when you sign up for S3
 AWS_ACCESS_KEY_ID = os.environ["IANCLEARY_ME_AWS_ACCESS_KEY_ID"]
@@ -67,14 +60,12 @@ def upload_directory(src_dir:str, bucket_name:str, dst_dir:str="", logging=True)
 src_dir = os.path.join(APP_DIR)
 # print(src_dir)
 
-dir_upload_list = ["css", "ico", "img", "js"]
-file_list = ["index.html", "error.html", "LICENSE"]
 
-for directory in dir_upload_list:
+for directory in DIR_UPLOAD_LIST:
     src_dir = os.path.join(APP_DIR, directory)
     upload_directory(src_dir=src_dir, bucket_name=bucket_name, dst_dir=directory)
 
-for filename in file_list:
+for filename in FILE_LIST:
     print(filename)
     print(os.path.join(APP_DIR, filename))
     # APP_DIR is local directory
