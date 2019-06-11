@@ -55,7 +55,7 @@ def upload_directory(src_dir:str, bucket_name:str, dst_dir:str="", logging=True)
         all_files += [os.path.join(root, f) for f in files]
 
     if logging:
-        print("-------Uploading {num_files} files".format(num_files=len(all_files)))
+        print("-------Uploading {num_files} files-------".format(num_files=len(all_files)))
 
     for filename in all_files:
         if logging:
@@ -76,7 +76,6 @@ for directory in dir_upload_list:
 
 for filename in file_list:
     print(filename)
-
     print(os.path.join(APP_DIR, filename))
     # APP_DIR is local directory
     s3_resource.Object(bucket_name, filename)\
