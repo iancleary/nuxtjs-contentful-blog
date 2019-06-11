@@ -78,5 +78,5 @@ for filename in file_list:
     print(filename)
     # APP_DIR is local directory
     s3_resource.Object(bucket_name, os.path.join("", os.path.relpath(filename, APP_DIR)))\
-        .put(Body=open(filename, 'rb'))
+        .put(Body=open(os.path.join(APP_DIR, filename), 'rb'))
 
