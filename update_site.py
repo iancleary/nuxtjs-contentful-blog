@@ -34,85 +34,49 @@ AWS_ACCESS_KEY_SECRET = os.environ["IANCLEARY_ME_AWS_ACCESS_KEY_SECRET"]
 # Fill in info on data to upload
 # destination bucket name
 bucket_name = os.environ["IANCLEARY_ME_BUCKET"]
-# source directory
-sourceDir = APP_DIR
-# destination directory name (on s3)
-destDir = ''
-
-#max size in bytes before uploading in parts. between 1 and 5 GB recommended
-MAX_SIZE = 20 * 1000 * 1000
-#size of parts when uploading in parts
-PART_SIZE = 6 * 1000 * 1000
-
-s3 = boto3.resource('s3')
-bucket = s3.Bucket('name')
-
-print("HELLOOOO")
-
-tmpFileNames =  glob.glob(APP_DIR+"*.js", recursive=True)
-print(tmpFileNames)
-
-file_structure = [
-    ('js', 'js'),
-    ('css', 'css'),
-    ('.', 'js'),
-    ('js', 'js'), 'css', 'html', 'png', 'svg']
-
-uploadFileNames = []
-for file_type in file_types:
-    file_path = APP_DIR+"*.{file_type}".format(file_type=file_type)
-    for file in glob.glob(file_path, recursive=True):
-        if "venv" not in file:
-            uploadFileNames.extend(file)
-
-
-print(uploadFileNames)
-
-exit()
-
-def percent_cb(complete, total):
-    sys.stdout.write('.')
-    sys.stdout.flush()
-
-for filename in uploadFileNames:
-    sourcepath = os.path.join(sourceDir + filename)
-    destpath = os.path.join(destDir, filename)
-    print('Uploading %s to Amazon S3 bucket %s' % \
-           (sourcepath, bucket_name))
-
-    filesize = os.path.getsize(sourcepath)
-    if filesize > MAX_SIZE:
-        print("multipart upload")
-        mp = bucket.initiate_multipart_upload(destpath)
-        fp = open(sourcepath,'rb')
-        fp_num = 0
-        while (fp.tell() < filesize):
-            fp_num += 1
-            print("uploading part %i" %fp_num)
-            mp.upload_part_from_file(fp, fp_num, cb=percent_cb, num_cb=10, size=PART_SIZE)
-
-        mp.complete_upload()
-
-    else:
-        print("singlepart upload")
-        k = boto3.s3.key.Key(bucket)
-        k.key = destpath
-        k.set_contents_from_filename(sourcepath,
-                cb=percent_cb, num_cb=10)
-
-
-
 
 # yaniv-g (https://github.com/boto/boto3/issues/358#issuecomment-346093506)
-def upload_directory(src_dir, bucket_name, dst_dir):
+
+s3_resource = boto3.resource('s3',
+                    aws_access_key_id=AWS_ACCESS_KEY_ID,
+                    aws_secret_access_key=AWS_ACCESS_KEY_SECRET)
+
+def upload_directory(src_dir:str, bucket_name:str, dst_dir:str="", logging=True):
+    """
+    src_dir: no trailing slash
+    bucket_name:
+    dest_dir: "" is root folder
+    """
     if not os.path.isdir(src_dir):
         raise ValueError('src_dir %r not found.' % src_dir)
     all_files = []
 
     for root, dirs, files in os.walk(src_dir):
         all_files += [os.path.join(root, f) for f in files]
-    s3_resource = boto3.resource('s3')
+
+    if logging:
+        print("-------Uploading {num_files} files".format(num_files=len(all_files)))
 
     for filename in all_files:
+        if logging:
+            print(filename)
         s3_resource.Object(bucket_name, os.path.join(dst_dir, os.path.relpath(filename, src_dir)))\
             .put(Body=open(filename, 'rb'))
+
+
+src_dir = os.path.join(APP_DIR)
+# print(src_dir)
+
+dir_upload_list = ["css", "ico", "img", "js"]
+file_list = ["index.html", "error.html", "LICENSE"]
+
+for directory in dir_upload_list:
+    src_dir = os.path.join(APP_DIR, directory)
+    upload_directory(src_dir=src_dir, bucket_name=bucket_name, dst_dir=directory)
+
+for filename in file_list:
+    print(filename)
+    # APP_DIR is local directory
+    s3_resource.Object(bucket_name, os.path.join("", os.path.relpath(filename, APP_DIR)))\
+        .put(Body=open(filename, 'rb'))
+
