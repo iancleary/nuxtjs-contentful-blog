@@ -1,0 +1,5 @@
+- name: upload website to S3
+  hosts: localhost
+  remote_user: root
+  roles:
+    - { role: deploy-website-s3, tags: [ 'deploy-website-s3' ] }
