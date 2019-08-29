@@ -1,5 +1,17 @@
 ---
 # tasks file for deploy-website-s3
 
-- name: upload website to S3
-  command: "aws s3 cp {{ website_root_dir }}/ s3://{{ bucket_name }}/ --recursive"
+- name: upload website img, css, ico, js folders to S3
+  command: "aws s3 cp {{ website_root_dir }}/{{ item }}/ s3://{{ bucket_name }}/{{ item }}/ --recursive"
+  with_items:
+    - img
+    - css
+    - ico
+    - js 
+
+- name: upload html files to S3
+  command: "aws s3 cp {{ website_root_dir }}/{{ item }} s3://{{ bucket_name }}/"
+  with_items:
+    - index.html
+    - error.html
+    
