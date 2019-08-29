@@ -191,7 +191,6 @@
             visualizations.</p>
     </div>
 
-
     <div class="mx-6 bg-white p-4 my-8 rounded-lg shadow-xl pt-4 lg:items-center lg:h-auto">
         My education <small><span class="text-muted">with the help of parents,
                 teachers, and friends</span></small></h2>
@@ -204,7 +203,7 @@
             study, I took classes in System Engineering, Design of Experiments, VLSI, and a course on
             pico-satellite design.</p>
     </div>
-
+    
     <!-- FOOTER -->
     <footer class="bg-indigo-300 p-4 mb-8 mx-6 rounded-lg shadow-xl lg:items-center">
         <div class="block lg:flex">
@@ -222,8 +221,20 @@
                 hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">Back to Top</a>
             </div>
         </div>
-
+       
     </footer>
+
+    <!-- <div class="mx-6 bg-black p-4 my-8 rounded-lg shadow-xl pt-4 lg:items-center lg:h-auto">
+        Have a comment <small><span class="text-muted">let me know</span></small></h2>
+        <script src="https://utteranc.es/client.js"
+            repo="iancleary/iancleary.me"
+            issue-term="pathname"
+            theme="photon-dark"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </div> -->
+    
 
     <!-- D3js for manupulating documents based upon data -->
     <script src="js/d3.min.js"></script>
@@ -263,22 +274,6 @@
 				forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.
 			`
         }, {
-            cat: 'tooling', name: 'Jenkins CI', value: 10,
-            icon: 'img/jenkins.png',
-            desc: `
-				Jenkins is an open source automation server. Jenkins helps to automate the non-human part of
-				the whole software development process, with now common things like continuous integration,
-				but by further empowering teams to implement the technical part of a Continuous Delivery.
-			`
-        }, {
-            cat: 'tooling', name: 'Sublime Text 3', value: 50,
-            icon: 'img/sublimetext.png',
-            desc: `
-				Sublime Text 3 is a powerful and cross-platform source code editor. It is well-known for
-				introducing the concept of multi-cursor and lots of text editing command. Besides, its
-				plugin ecosystem is very rich which allows enhancing productivity to the fullest.
-			`
-        }, {
             cat: 'tooling', name: 'Visual Studio Code', value: 100,
             icon: 'img/vscode.png',
             desc: `
@@ -308,20 +303,10 @@
             
 			`
         }, {
-            cat: 'backend', name: 'MongoDB', value: 70,
+            cat: 'backend', name: 'MongoDB', value: 30,
             icon: 'img/mongodb.png',
             desc: `
-				The de-facto Database solution for JavaScript and Node.js applications. It is a light weight,
-				high performance NoSQL database and can be used for small and large websites.
-			`
-        }, {
-            cat: 'backend', name: 'NodeJS', value: 30,
-            icon: 'img/nodejs.svg',
-            desc: `
-				Node.js is a cross-platform JavaScript runtime environment.
-				Node.js allows creation of high performance and high concurrency websites with smaller footprint compared to
-				other server-side solution. Node.js ecosystem is growing very fast and is trusted by a lot of big companies who
-				are adopting it to enhance current products as well as for new ones.
+				It is a light weight, high performance NoSQL database and can be used for small and large websites.
 			`
         }, {
             cat: 'platform', name: 'Docker Platform', value: 80,
@@ -368,20 +353,14 @@
 				The languages of the Web Front End. I'm learning more and more about creating and communicating with visual effects and design.
 			`
         }, {
-            cat: 'language', name: 'JavaScript', value: 50,
+            cat: 'language', name: 'JavaScript', value: 30,
             icon: 'img/javascript.png',
             desc: `
 				JavaScript is the heart of modern Web front end development and essential element of any Single Page
                 Applications. I am fairly new to Javascript, but am looking forward to learning more about it. 
                 I'm particulary interested in D3.js, Plotly.js, and Vue.js
 			`
-        }, /* {
-            cat: 'workflow', name: 'ESLint', value: 20,
-            icon: 'img/eslint.svg',
-            desc: `
-				The tool to check and validate JavaScript code when we develop and prevent potential issues with code.
-			`
-        }, */
+        },
         {
             cat: 'workflow', name: 'Gitflow Workflow', value: 70,
             icon: 'img/gitflow.png',
@@ -669,6 +648,7 @@
                 .attr('r', d => d.r * 1.005);  //if >1, overlays the edges; if <1, spaces out circle
         }
     </script>
+    
 </body>
 
 </html>
