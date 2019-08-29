@@ -1,5 +1,5 @@
 ---
 # tasks file for deploy-website-s3
 
-- name: upload blog to S3
+- name: upload website to S3
   command: "aws s3 cp {{ website_root_dir }}/ s3://{{ bucket_name }}/ --recursive"
