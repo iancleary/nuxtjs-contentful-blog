@@ -7,7 +7,6 @@
 
 
 <script>
-import Vue from "vue";
 import InfoCard from "./InfoCard.vue";
 
 export default {
