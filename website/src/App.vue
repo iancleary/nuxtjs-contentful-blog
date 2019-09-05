@@ -2,6 +2,8 @@
   <div id="app" class="bg-gray-700">
     <nav-bar :sections="sections" :name="name" :source_code_url="source_code_url"></nav-bar>
     <span class="anchor" id="tech"></span>
+    <!-- <tech-card :data=loadData></tech-card> -->
+    <tech-card></tech-card>
     <info-list :info_blocks="info_blocks"></info-list>
     <span class="anchor" id="contact"></span>
     <link-list :link_cards="link_cards"></link-list>
@@ -31,6 +33,7 @@ import NavBar from "@/components/NavBar.vue";
 import InfoList from "@/components/InfoList.vue";
 import LinkList from "@/components/LinkList.vue"
 import FooterCard from "@/components/FooterCard.vue";
+import TechCard from "@/components/TechCard.vue"
 
 export default {
   name: "app",
@@ -38,7 +41,8 @@ export default {
     NavBar,
     InfoList,
     LinkList,
-    FooterCard
+    FooterCard,
+    TechCard
   },
   data() {
     return {
@@ -84,14 +88,6 @@ export default {
         },
         {
           id: 3,
-          opener: "By day",
-          preposition: "with the help of cappucinos",
-          point:
-            "I am RF/Microwave Engineer working on \
-                        electronics bound for outer space."
-        },
-        {
-          id: 4,
           opener: "My education",
           preposition: "with the help of classmates, friends, and parents",
           point:
@@ -128,7 +124,8 @@ export default {
           message: "Say hello and let's talk about helping eachother!",
           color: "bg-green-200"
         },
-      ]
+      ],
+      
     };
   }
 };
