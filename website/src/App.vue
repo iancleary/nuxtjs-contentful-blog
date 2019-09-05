@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gray-700">
+  <div id="app">
     <nav-bar :sections="sections" :name="name" :source_code_url="source_code_url"></nav-bar>
     <span class="anchor" id="tech"></span>
     <!-- <tech-card :data=loadData></tech-card> -->
