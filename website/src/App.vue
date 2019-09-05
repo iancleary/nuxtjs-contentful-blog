@@ -3,7 +3,7 @@
     <nav-bar :sections="sections" :name="name" :source_code_url="source_code_url"></nav-bar>
     <span class="anchor" id="tech"></span>
     <!-- <tech-card :data=loadData></tech-card> -->
-    <tech-card></tech-card>
+    <!-- <tech-card></tech-card> -->
     <info-list :info_blocks="info_blocks"></info-list>
     <span class="anchor" id="contact"></span>
     <link-list :link_cards="link_cards"></link-list>
