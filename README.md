@@ -1,8 +1,7 @@
-# iancleary.me
+# Personal website code built with no trackers, no cookies.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a026dcc6-920b-4f08-b6ff-535e61f4190a/deploy-status)](https://app.netlify.com/sites/heuristic-mccarthy-2e808b/deploys)
 
-Personal website code built with no trackers, no cookies.
-
-I built this website with Tailwind CSS, D3.js, and vue.js
+I built this website with Tailwind CSS, vue.js, and Netlify
 
 ## Project setup
 
