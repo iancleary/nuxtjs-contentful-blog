@@ -140,7 +140,7 @@ export default {
           id: 3,
           url: "https://www.linkedin.com/in/ian-c-6566b22a/",
           icon: "fab fa-linkedin",
-          message: "Say hello and let's talk about helping eachother!",
+          message: "Say hello and let's talk about helping each other!",
           color: "bg-green-200"
         },
       ],
