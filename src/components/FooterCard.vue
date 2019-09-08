@@ -5,7 +5,7 @@
   <footer class="bg-indigo-300 p-4 mb-8 mx-6 rounded-lg shadow-xl lg:items-center">
     <div class="block lg:flex">
       <div class="text-sm lg:flex-grow">
-        <div class="md:block mt-2 lg:inline-block text-gray mr-4">&copy; 2019 Ian Cleary</div>
+        <div class="md:block mt-2 lg:inline-block text-gray mr-4">&copy; {{ current_year }} {{ name }}</div>
         <div
           class="md:block mt-2 lg:inline-block text-gray mr-4"
         >Be kind &middot; Be safe &middot; Stay hydrated</div>
@@ -22,6 +22,8 @@
 
 <script>
 export default {
-  name: "FooterCard"
+  name: "FooterCard",
+  props: ['name', 'current_year']
 };
+
 </script>
