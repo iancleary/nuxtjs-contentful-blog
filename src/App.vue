@@ -33,7 +33,7 @@ import NavBar from "@/components/NavBar.vue";
 import InfoList from "@/components/InfoList.vue";
 import LinkList from "@/components/LinkList.vue"
 import FooterCard from "@/components/FooterCard.vue";
-import TechCard from "@/components/TechCard.vue"
+// import TechCard from "@/components/TechCard.vue"
 
 export default {
   name: "app",
@@ -42,12 +42,12 @@ export default {
     InfoList,
     LinkList,
     FooterCard,
-    TechCard
+    // TechCard
   },
   data() {
     return {
       name: "Ian Cleary",
-      source_code_url: "https://github.com/iancleary/iancleary.me",
+      source_code_url: "https://github.com/iancleary/personal-website",
       sections: [
         {
           id:1,
