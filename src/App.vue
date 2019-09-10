@@ -4,7 +4,6 @@
     <!-- <span class="anchor" id="tech"></span> -->
     <!-- <tech-card :data=loadData></tech-card> -->
     <!-- <tech-card></tech-card> -->
-    <span class="anchor" id="about"></span>
     <!-- route outlet -->
     <!-- component matched by the route will render here -->
     <router-view></router-view>
@@ -24,7 +23,6 @@
         and hiking.
       </p>
     </div>-->
-    <span class="anchor" id="contact"></span>
     <link-list :link_cards="source_cards"></link-list>
     <link-list :link_cards="link_cards"></link-list>
     <footer-card :current_year="current_year" :name="name"></footer-card>
