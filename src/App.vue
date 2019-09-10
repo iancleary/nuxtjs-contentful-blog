@@ -59,7 +59,7 @@ var link_cards = [
           id: 3,
           url: "https://www.linkedin.com/in/ian-c-6566b22a/",
           icon: "fab fa-linkedin",
-          message: "Say hello and let's talk about helping each other!",
+          message: "Linkedin: Get in touch!",
           color: "bg-green-200"
         }
       ]
