@@ -3,11 +3,13 @@
     <div class="cursor-pointer max-w-sm mx-auto flow p-6 hover:bg-gray-500 rounded-lg shadow-xl" :class="link.color">
       <a style="text-decoration : none" :href="link.url" target="_blank">
         <div class="link">
-          <p>
+          <div class="relative">
+            <i class="absolute top-0 right-0 fas fa-external-link-alt"></i></div>
+            <p>
             <i :class="link.icon"></i>
           </p>
           <p class="italic text-base text-black-600 leading-normal">{{ link.message }}</p>
-        </div>
+        </div>  
       </a>
     </div>
   </div>

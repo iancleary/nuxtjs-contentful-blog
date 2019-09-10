@@ -23,8 +23,9 @@
         and hiking.
       </p>
     </div>-->
-    <link-list :link_cards="source_cards"></link-list>
-    <link-list :link_cards="link_cards"></link-list>
+    <!-- <link-list :link_cards="source_cards"></link-list>
+    <link-list :link_cards="link_cards"></link-list> -->
+    <link-list :link_cards="all_cards"></link-list>
     <footer-card :current_year="current_year" :name="name"></footer-card>
   </div>
 </template>
@@ -36,6 +37,36 @@ import FooterCard from "@/components/FooterCard.vue";
 // import TechCard from "@/components/TechCard.vue"
 
 var current_year = new Date().getFullYear();
+
+var source_cards = [
+        {
+          id: 1,
+          url: "https://github.com/iancleary",
+          icon: "fab fa-github",
+          message: "Code: From Ian, with love.",
+          color: "bg-red-200"
+        },
+        {
+          id: 2,
+          url: "https://hub.docker.com/u/iancleary",
+          icon: "fab fa-docker",
+          message: "Docker: It will work on your system!",
+          color: "bg-indigo-200"
+        }
+      ]
+var link_cards = [
+        {
+          id: 3,
+          url: "https://www.linkedin.com/in/ian-c-6566b22a/",
+          icon: "fab fa-linkedin",
+          message: "Say hello and let's talk about helping each other!",
+          color: "bg-green-200"
+        }
+      ]
+
+var all_cards = []
+all_cards = all_cards.concat(source_cards)
+all_cards = all_cards.concat(link_cards)
 
 export default {
   name: "app",
@@ -71,31 +102,9 @@ export default {
           name: "Contact"
         }
       ],
-      source_cards: [
-        {
-          id: 1,
-          url: "https://github.com/iancleary",
-          icon: "fab fa-github",
-          message: "Code: From Ian, with love.",
-          color: "bg-red-200"
-        },
-        {
-          id: 2,
-          url: "https://hub.docker.com/u/iancleary",
-          icon: "fab fa-docker",
-          message: "Docker: It will work on your system!",
-          color: "bg-indigo-200"
-        }
-      ],
-      link_cards: [
-        {
-          id: 3,
-          url: "https://www.linkedin.com/in/ian-c-6566b22a/",
-          icon: "fab fa-linkedin",
-          message: "Say hello and let's talk about helping each other!",
-          color: "bg-green-200"
-        }
-      ]
+      source_cards: source_cards,
+      link_cards: link_cards,
+      all_cards: all_cards
     };
   }
 };
