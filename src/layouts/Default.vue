@@ -30,6 +30,9 @@
             <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600">Contact</a>
             <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
           </li>
+          <!-- <li class="mr-8 mb-6 lg:mb-0">
+            <g-link to="/tags" class="text-copy-primary hover:text-gray-600">Tags</g-link>
+          </li> -->
           <li>
             <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
           </li>
@@ -43,7 +46,7 @@
     <footer class="bg-green-700 text-white">
       <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
         <div class="mb-8 lg:mb-0">
-          <div>Copyright 2019. All rights reserved.</div>
+          <div>Copyright {{ current_year }}. All rights reserved.</div>
           <div>
             <a href="rss.xml" class="text-white hover:text-gray-400 font-normal">RSS Feed</a> |
             <a href="sitemap.xml" class="text-white hover:text-gray-400 font-normal">Sitemap</a>
@@ -100,6 +103,8 @@ query {
 <script>
 import ThemeSwitcher from '../components/ThemeSwitcher'
 
+var current_year = new Date().getFullYear();
+
 export default {
   components: {
     ThemeSwitcher
@@ -111,6 +116,7 @@ export default {
     return {
       isOpen: false,
       theme: '',
+      current_year: current_year,
     }
   },
   methods: {
