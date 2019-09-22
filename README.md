@@ -39,4 +39,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Attributions
 
-### See [Authors.md](AUTHORS.md) for total list
+### See [Authors.md](AUTHORS.md)
