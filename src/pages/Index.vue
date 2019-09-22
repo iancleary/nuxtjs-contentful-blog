@@ -1,16 +1,16 @@
 <template>
   <Layout>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
-    />
+    /> -->
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
         <div class="leading-tight">Ian Cleary</div>
 
-        <div class="text-green-700 leading-tight">Welcome to my personal website.</div>
+        <div class="text-green-700 leading-tight">Hello and welcome to my personal website.</div>
       </div>
       <div class="mt-8 md:mt-0">
         <g-image src="../../static/unDraw/developer.svg" alt="hero" class="mx-auto sm:mx-0" />
@@ -219,7 +219,7 @@
               target="_blank"
             >GitHub</a>, build with me using
             <a href="https://hub.docker.com/u/iancleary" target="_blank">Docker</a>, or
-            discuss professional leveraging my skills on  
+            discuss professionally leveraging my skills on  
             <a
               href="https://www.linkedin.com/in/ian-c-6566b22a/"
               target="_blank"
