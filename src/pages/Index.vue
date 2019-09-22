@@ -50,28 +50,60 @@
 
         <ul class="text-lg sm:text-xl">
           <li class="checkmark mb-6">
-            <div>Project One</div>
+            <div>Personal Jupyter Notebook with CI/CD to Docker Hub</div>
             <div
               class="text-lg text-gray-600"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
+            >I've been using Jupyter notebooks and Docker more and more these days. 
+            The maintenance model of these images was significantly improved after 
+            settin up a Travis-CI testing and deployment pipeline.
+            Check out my  
+            <a href="https://github.com/iancleary/personal-notebook" target="_blank">personal Jupyter notebook</a>
+            setup! The docker image is <a href="https://hub.docker.com/r/iancleary/personal-notebook" target="_blank">iancleary/personal-notebook</a>
+            </div>
           </li>
           <li class="checkmark mb-6">
-            <div>Project Two</div>
+            <div>Gnome Shell Extensions for Docker and NordVPN</div>
             <div
               class="text-lg text-gray-600"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
+            >
+            My preferred computer setup is custom PC I built dual booting Pop!_OS (an 
+            Ubuntu-based Linux distribution featuring a custom GNOME desktop) 
+            and Windows (for select gaming just doesn't work on Linux...yet!).
+            I'm an advocate for not having Gnome shell extensions if you can 
+            configure your desktop without them.  
+            For my convenience, I've built 
+            <a href="https://github.com/iancleary/gnome-extension" target="_blank">
+            Gnome shell extensions for Docker and NordVPN</a>
+            using <a href="https://github.com/p-e-w/argos" target="_blank">argos</a>. 
+            Argos is similar to <a href="https://github.com/matryer/bitbar" target="_blank">BitBar</a>
+            for those familiar with that application for MacOS.
+            </div>
           </li>
           <li class="checkmark mb-6">
-            <div>Project Three</div>
+            <div>Responder Base Classes Python Package</div>
             <div
               class="text-lg text-gray-600"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
-          </li>
-          <li class="checkmark mb-6">
-            <div>Project Four</div>
-            <div
-              class="text-lg text-gray-600"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
+            >
+            As I've began using developing with Python more regulary since 2015, 
+            I've become more interested in Python Web Frameworks. My first experience was with 
+            <a href="https://flask.palletsprojects.com/" target="_blank">
+            Flask</a> and it is a great framwork.  
+            After being exposed to web services, 
+            I investigated <a href="https://github.com/taoufik07/responder" target="_blank">
+            Responder</a> and really enjoyed the combination of concepts from Flask, Falcon, and Requests.
+            After challenging myself to contribute to the community, I got 
+            <a href="https://github.com/taoufik07/responder/pull/306" target="_blank">
+            my first pull request merged</a> for implementing the 
+            <a href="https://github.com/OAI/OpenAPI-Specification/" target="_blank">
+            OpenAPI Specification's</a> Info object to improve Responder's optional 
+            information servers can provide to users. I've continued work on 
+            a python package,
+            <a href="https://github.com/iancleary/responder-base-classes" target="_blank">
+            responder_base_classes</a> that expands upon their class based view concept and 
+            is avaliable on on 
+            <a href="https://pypi.org/project/responder-base-classes/" target="_blank">
+            pypi</a>.
+            </div>
           </li>
         </ul>
       </div>
