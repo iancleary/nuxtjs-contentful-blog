@@ -55,7 +55,7 @@
               class="text-lg text-gray-600"
             >I've been using Jupyter notebooks and Docker more and more these days. 
             The maintenance model of these images was significantly improved after 
-            settin up a Travis-CI testing and deployment pipeline.
+            settin up a Travis CI testing and deployment pipeline.
             Check out my  
             <a href="https://github.com/iancleary/personal-notebook" target="_blank">personal Jupyter notebook</a>
             setup! The docker image is <a href="https://hub.docker.com/r/iancleary/personal-notebook" target="_blank">iancleary/personal-notebook</a>
@@ -102,7 +102,7 @@
             responder_base_classes</a> that expands upon their class based view concept and 
             is avaliable on on 
             <a href="https://pypi.org/project/responder-base-classes/" target="_blank">
-            pypi</a>.
+            pypi</a>. I've implemented test cases using Travis CI.
             </div>
           </li>
         </ul>
