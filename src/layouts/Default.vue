@@ -16,9 +16,6 @@
           :class="isOpen ? 'block': 'hidden'"
         >
           <li class="mr-8 mb-6 lg:mb-0">
-            <search-input />
-          </li>
-          <li class="mr-8 mb-6 lg:mb-0">
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
@@ -101,16 +98,14 @@ query {
 </static-query>
 
 <script>
-import SearchInput from '../components/SearchInput'
 import ThemeSwitcher from '../components/ThemeSwitcher'
 
 export default {
   components: {
-    SearchInput,
     ThemeSwitcher
   },
   mounted() {
-    this.theme = localStorage.getItem('theme') || 'theme-light'
+    this.theme = localStorage.getItem('theme') || 'theme-dark'
   },
   data() {
     return {

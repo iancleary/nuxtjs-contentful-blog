@@ -14,9 +14,13 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: 'Gridsome Portfolio Starter',
-  siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1.0',
-  siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
+  siteName: 'Ian Cleary\'s Portfolio',
+  siteDescription: 'My personal website powered by Gridsome powered by Tailwind CSS v1.0',
+  siteUrl: 'https://iancleary.me',
+  templates: {
+    Post: '/blog/:title',
+    Tag: '/tag/:id'
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -42,14 +46,14 @@ module.exports = {
       options: {
         contentTypeName: 'Post',
         feedOptions: {
-          title: 'Gridsome Portfolio Starter Blog',
-          feed_url: 'https://gridsome-portfolio-starter.netlify.com/rss.xml',
-          site_url: 'https://gridsome-portfolio-starter.netlify.com/'
+          title: 'Ian Cleary\'s Personal Portfolio and Blog',
+          feed_url: 'https://iancleary.me/rss.xml',
+          site_url: 'https://iancleary.me/'
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.summary,
-          url: 'https://gridsome-portfolio-starter.netlify.com' + node.path,
+          url: 'https://iancleary.me' + node.path,
           author: 'Ian Cleary',
           date: node.date
         }),
