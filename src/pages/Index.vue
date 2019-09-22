@@ -336,50 +336,50 @@
 </template>
 
 <script>
-import LinkList from "@/components/LinkList.vue";
+// import LinkList from "@/components/LinkList.vue";
 
-var source_cards = [
-  {
-    id: 1,
-    url: "https://github.com/iancleary",
-    icon: "fab fa-github",
-    message: "Code: From Ian, with love."
-    // color: "bg-red-200"
-  },
-  {
-    id: 2,
-    url: "https://hub.docker.com/u/iancleary",
-    icon: "fab fa-docker",
-    message: "Docker: It will work on your system!"
-    // color: "bg-indigo-200"
-  }
-];
-var link_cards = [
-  {
-    id: 3,
-    url: "https://www.linkedin.com/in/ian-c-6566b22a/",
-    icon: "fab fa-linkedin",
-    message: "Linkedin: Get in touch!"
-    // color: "bg-green-200"
-  }
-];
+// var source_cards = [
+//   {
+//     id: 1,
+//     url: "https://github.com/iancleary",
+//     icon: "fab fa-github",
+//     message: "Code: From Ian, with love."
+//     // color: "bg-red-200"
+//   },
+//   {
+//     id: 2,
+//     url: "https://hub.docker.com/u/iancleary",
+//     icon: "fab fa-docker",
+//     message: "Docker: It will work on your system!"
+//     // color: "bg-indigo-200"
+//   }
+// ];
+// var link_cards = [
+//   {
+//     id: 3,
+//     url: "https://www.linkedin.com/in/ian-c-6566b22a/",
+//     icon: "fab fa-linkedin",
+//     message: "Linkedin: Get in touch!"
+//     // color: "bg-green-200"
+//   }
+// ];
 
-var all_cards = [];
-all_cards = all_cards.concat(source_cards);
-all_cards = all_cards.concat(link_cards);
+// var all_cards = [];
+// all_cards = all_cards.concat(source_cards);
+// all_cards = all_cards.concat(link_cards);
 
 export default {
   metaInfo: {
     title: "Home"
   },
-  components: {
-    LinkList
-  },
-  data() {
-    return {
-      all_cards: all_cards
-    };
-  }
+  // components: {
+  //   LinkList
+  // },
+  // data() {
+  //   return {
+  //     all_cards: all_cards
+  //   };
+  // }
 };
 </script>
 
