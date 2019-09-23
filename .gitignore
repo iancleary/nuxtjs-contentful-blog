@@ -128,3 +128,7 @@ yarn-error.log*
 # unknown
 .DS_Store
 
+# tmp files
+src/.temp/*.*
+
+
