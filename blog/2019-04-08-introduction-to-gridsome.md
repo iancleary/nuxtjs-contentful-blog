@@ -1,6 +1,6 @@
 ---
-title: Introduction to Gridsome
-path: /introduction-to-gridsome
+title: Gridsome Portfolio Starter by Andre Madarang
+path: /gridsome-portfolio-starter
 date: 2019-04-09
 summary: Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
 tags: ['frontend', 'coding', 'vue']
@@ -63,6 +63,4 @@ Using npm:
 2. Use `gridsome build` to generate static files in a `/dist` folder
 
 
-- [How it works](/docs/how-it-works)
-- [How Pages work](/docs/pages)
-- [How to deploy](/docs/deployment)
+- [This Starter Template](https://gridsome.org/starters/gridsome-portfolio-starter/)

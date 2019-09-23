@@ -17,30 +17,30 @@ module.exports = {
   siteName: 'Ian Cleary\'s Portfolio',
   siteDescription: 'My personal website powered by Gridsome powered by Tailwind CSS v1.0',
   siteUrl: 'https://iancleary.me',
-  templates: {
-    Post: '/blog/:title',
-    Tag: '/tag/:id'
-  },
+  // templates: {
+  //   Post: '/blog/:title',
+  //   Tag: '/tag/:id'
+  // },
   plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'blog/**/*.md',
-        typeName: 'Post',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            route: 'tag/:id',
-            create: true
-          }
-        },
-        remark: {
-          plugins: [
-            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
-          ]
-        }
-      }
-    },
+    // {
+    //   use: '@gridsome/source-filesystem',
+    //   options: {
+    //     path: 'blog/**/*.md',
+    //     typeName: 'Post',
+    //     refs: {
+    //       tags: {
+    //         typeName: 'Tag',
+    //         route: 'tag/:id',
+    //         create: true
+    //       }
+    //     },
+    //     remark: {
+    //       plugins: [
+    //         [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+    //       ]
+    //     }
+    //   }
+    // },
     {
       use: 'gridsome-plugin-rss',
       options: {

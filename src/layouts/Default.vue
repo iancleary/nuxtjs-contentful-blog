@@ -33,9 +33,9 @@
           <!-- <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/tags" class="text-copy-primary hover:text-gray-600">Tags</g-link>
           </li> -->
-          <li>
+          <!-- <li>
             <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
