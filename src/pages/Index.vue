@@ -105,6 +105,31 @@
             pypi</a>. I've implemented test cases using Travis CI.
             </div>
           </li>
+          <li class="checkmark mb-6">
+            <div>Automation and AWS</div>
+            <div
+              class="text-lg text-gray-600"
+            >
+            Prior to switching to Netlify for the deployment of this site, I was 
+            using an Amazon Web Service's S3 bucket to host this site. With my
+            experience with python I first graviated towards the boto3 package.  
+            Since taking
+            <a href="https://www.udemy.com/course/automate-your-infrastructure-using-ansible-and-iac/" target="_blank">
+            DevOps: Automate your infrastructure using Ansible and IaC</a>, 
+            I have learned to embrace the right tool for the problem.
+            Ansible is a much simpler and more maintanable solution. 
+            I am now comfortable with Ansible playbooks and plan to continue to 
+            use them in my projects, when appropriate. Here is the  
+            <a href="https://github.com/iancleary/ansible-s3-static-website" target="_blank">
+            Ansible playbook used to deploy my site</a> to an S3 bucket. Feel free to use it as a template.
+            I also am in the process of learning how to use continuous deployment with Amazon EC2 instances.
+            You can find my notes on 
+            <a href="https://github.com/iancleary/travis-ci-aws-notes" target="_blank">
+            connecting AWS CodeDeploy and Travis CI</a> using a Flask project.  
+            This example is a proof of concept and I plan to use this workflow 
+            more in the future.
+            </div>
+          </li>
         </ul>
       </div>
       <!-- end projects -->
