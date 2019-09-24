@@ -8,9 +8,7 @@
     /> -->
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="leading-tight">Ian Cleary</div>
-
-        <div class="text-green-700 leading-tight">Hello and welcome to my personal website.</div>
+        <div class="text-green-700 leading-tight">Ian Cleary</div>
       </div>
       <div class="mt-8 md:mt-0">
         <g-image src="../../static/unDraw/developer.svg" alt="hero" class="mx-auto sm:mx-0" />
@@ -40,8 +38,8 @@
       <div
         class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
       >
-        <h2 class="font-bold mb-6" id="projects">Here are some projects I've worked:</h2>
-
+        <h2 class="font-bold mb-6" id="projects">Here are some projects I've worked on:</h2>
+        <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px">
             <use xlink:href="#dots-triangle" />
@@ -53,12 +51,12 @@
             <div>Personal Jupyter Notebook with CI/CD to Docker Hub</div>
             <div
               class="text-lg text-gray-600"
-            >I've been using Jupyter notebooks and Docker more and more these days. 
-            The maintenance model of these images was significantly improved after 
-            settin up a Travis CI testing and deployment pipeline.
+            >I've been using Jupyter notebooks and Docker more and more recently. 
+            I significantly improved the maintenance model of my personal image by setting 
+            up an automated testing and deployment pipeline using Travis CI.
             Check out my  
             <a href="https://github.com/iancleary/personal-notebook" target="_blank">personal Jupyter notebook</a>
-            setup! The docker image is <a href="https://hub.docker.com/r/iancleary/personal-notebook" target="_blank">iancleary/personal-notebook</a>
+            repository! The Docker image is <a href="https://hub.docker.com/r/iancleary/personal-notebook" target="_blank">iancleary/personal-notebook</a>.
             </div>
           </li>
           <li class="checkmark mb-6">
@@ -66,14 +64,14 @@
             <div
               class="text-lg text-gray-600"
             >
-            My preferred computer setup is custom PC I built dual booting Pop!_OS (an 
+            My preferred computer setup is a custom PC that I built. I dual boot Pop!_OS (an 
             Ubuntu-based Linux distribution featuring a custom GNOME desktop) 
-            and Windows (for select gaming just doesn't work on Linux...yet!).
-            I'm an advocate for not having Gnome shell extensions if you can 
+            and Windows (for select gaming just doesn't work on Linux - yet!).
+            I'm an advocate for not having GNOME shell extensions if you can 
             configure your desktop without them.  
             For my convenience, I've built 
             <a href="https://github.com/iancleary/gnome-extension" target="_blank">
-            Gnome shell extensions for Docker and NordVPN</a>
+            GNOME shell extensions for Docker and NordVPN</a>
             using <a href="https://github.com/p-e-w/argos" target="_blank">argos</a>. 
             Argos is similar to <a href="https://github.com/matryer/bitbar" target="_blank">BitBar</a>
             for those familiar with that application for MacOS.
@@ -84,10 +82,10 @@
             <div
               class="text-lg text-gray-600"
             >
-            As I've began using developing with Python more regulary since 2015, 
-            I've become more interested in Python Web Frameworks. My first experience was with 
+            I've been using Python regularly since 2015, around the time when I became interested in web frameworks.
+            My first encounter was with 
             <a href="https://flask.palletsprojects.com/" target="_blank">
-            Flask</a> and it is a great framwork.  
+            Flask</a>, and I was hooked.  
             After being exposed to web services, 
             I investigated <a href="https://github.com/taoufik07/responder" target="_blank">
             Responder</a> and really enjoyed the combination of concepts from Flask, Falcon, and Requests.
@@ -97,9 +95,9 @@
             <a href="https://github.com/OAI/OpenAPI-Specification/" target="_blank">
             OpenAPI Specification's</a> Info object to improve Responder's optional 
             information servers can provide to users. I've continued work on 
-            a python package,
+            a Python package,
             <a href="https://github.com/iancleary/responder-base-classes" target="_blank">
-            responder_base_classes</a> that expands upon their class based view concept and 
+            responder_base_classes</a>, that expands upon their class based view concept and 
             is avaliable on on 
             <a href="https://pypi.org/project/responder-base-classes/" target="_blank">
             pypi</a>. I've implemented test cases using Travis CI.
@@ -110,23 +108,23 @@
             <div
               class="text-lg text-gray-600"
             >
-            Prior to switching to Netlify for the deployment of this site, I was 
-            using an Amazon Web Service's S3 bucket to host this site. With my
-            experience with python I first graviated towards the boto3 package.  
+            Prior to switching to Netlify for the deployments, this site was hosted
+            using an Amazon Web Service's S3 bucket. Given my
+            experience with python, I first graviated towards the boto3 package.  
             Since taking
             <a href="https://www.udemy.com/course/automate-your-infrastructure-using-ansible-and-iac/" target="_blank">
             DevOps: Automate your infrastructure using Ansible and IaC</a>, 
             I have learned to embrace the right tool for the problem.
-            Ansible is a much simpler and more maintanable solution. 
+            Ansible is a much simpler and more tenable solution. 
             I am now comfortable with Ansible playbooks and plan to continue to 
             use them in my projects, when appropriate. Here is the  
             <a href="https://github.com/iancleary/ansible-s3-static-website" target="_blank">
-            Ansible playbook used to deploy my site</a> to an S3 bucket. Feel free to use it as a template.
-            I also am in the process of learning how to use continuous deployment with Amazon EC2 instances.
+            Ansible playbook previously used to deploy my site</a> -- feel free to use it as a template.
+            I also am in the process of learning how to leverage continuous deployment onto Amazon EC2 instances.
             You can find my notes on 
             <a href="https://github.com/iancleary/travis-ci-aws-notes" target="_blank">
             connecting AWS CodeDeploy and Travis CI</a> using a Flask project.  
-            This example is a proof of concept and I plan to use this workflow 
+            This example is a proof of concept, and I'm excited to use this workflow 
             more in the future.
             </div>
           </li>
@@ -155,7 +153,7 @@
           </div>
           <div
             class="flex-1 text-lg sm:text-xl ml-6"
-          >I graduated from the University of Michigan's College of Engineering cum laude (B.S.E. Electrical Engineering, class of 2013). I moved to Phoenix, AZ to start my career with Viasat as an RF/Microwave Engineer.</div>
+          >I graduated from the University of Michigan's College of Engineering cum laude (B.S.E. Electrical Engineering, class of 2013).</div>
         </div>
         <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
           <div>
@@ -163,12 +161,9 @@
           </div>
           <div
             class="flex-1 text-lg sm:text-xl ml-6"
-          >While working full-time, I got my M.S.E. in Electrical Engineering in the spring of 2017, with a focus on wireless communication systems. However, within my course of study, I took classes in System Engineering, Design of Experiments, VLSI, and a course on pico-satellite design.</div>
+          >While working full-time as an RF/Microwave Engineer at Viasat, I earned my M.S.E. in Electrical Engineering in the spring of 2017, with a focus on wireless communication systems. 
+          </div>
         </div>
-
-        <!-- <div class="responsive-container">
-          <iframe class="responsive-iframe w-full h-full top-0 left-0 border-0" src="https://vimeo.com/6919536" style="border:0;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>-->
       </div>
       <!-- end get-to-know me -->
     </div>
@@ -183,10 +178,6 @@
               <use xlink:href="#dots-triangle" />
             </svg>
           </div>
-
-          <p class="mb-12">
-            Feel free to drop me a line
-          </p>
 
           <div class="text-lg sm:text-lg mb-16">
             <form
@@ -393,50 +384,11 @@
 </template>
 
 <script>
-// import LinkList from "@/components/LinkList.vue";
-
-// var source_cards = [
-//   {
-//     id: 1,
-//     url: "https://github.com/iancleary",
-//     icon: "fab fa-github",
-//     message: "Code: From Ian, with love."
-//     // color: "bg-red-200"
-//   },
-//   {
-//     id: 2,
-//     url: "https://hub.docker.com/u/iancleary",
-//     icon: "fab fa-docker",
-//     message: "Docker: It will work on your system!"
-//     // color: "bg-indigo-200"
-//   }
-// ];
-// var link_cards = [
-//   {
-//     id: 3,
-//     url: "https://www.linkedin.com/in/ian-c-6566b22a/",
-//     icon: "fab fa-linkedin",
-//     message: "Linkedin: Get in touch!"
-//     // color: "bg-green-200"
-//   }
-// ];
-
-// var all_cards = [];
-// all_cards = all_cards.concat(source_cards);
-// all_cards = all_cards.concat(link_cards);
 
 export default {
   metaInfo: {
     title: "Home"
-  },
-  // components: {
-  //   LinkList
-  // },
-  // data() {
-  //   return {
-  //     all_cards: all_cards
-  //   };
-  // }
+  }
 };
 </script>
 
