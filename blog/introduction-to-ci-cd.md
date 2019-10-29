@@ -1,66 +1,105 @@
 ---
-title: Gridsome Portfolio Starter by Andre Madarang
-path: /gridsome-portfolio-starter
-date: 2019-04-09
-summary: Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
-tags: ['frontend', 'coding', 'vue']
+title: An introduction to CI/CD with Travis CI and Python
+date: 2019-10-28
+summary: Umm - excuse me, if you have a minute, would you please build, test, and (if it all goes well) deploy my code for me - thanks!  Oh, and if you don't mind, would you please email me the status of it right when you finish. No questions asked, the first time I ask you - thanks! You can now proclaim to the world that you've read my snarky opener about how I've come to appreciate CI/CD tooling, and you can learn why you should give it a try!
+tags: ['travis-ci', 'python'] #, 'docker', 'aws', 'ansible']
 ---
 
 ![background](./images/background.jpg)
 
-> Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
+I first learned about Travis-CI through venturing out into GitHub to checkout several open source projects. I've seen how they have continuous integration workflows set up test their code on overy commit, branch, and pull request.
+> That seemed so convenient so I went off to try it myself.  I've documented what I've learned below to help get you started!  It's a community for everyone.
 
-### Why Gridsome?
+### Why Travis-CI?
 
-- **Local development with hot-reloading** - See code changes in real-time.
-- **Data source plugins** - Use it for any popular Headless CMSs, APIs or Markdown-files.
-- **File-based page routing** - Quickly create and manage routes with files.
-- **Centralized data managment** - Pull data into a local, unified GraphQL data layer.
-- **Vue.js for frontend** - A lightweight and approachable front-end framework.
-- **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
-- **Static files generation** - Deploy securely to any CDN or static web host.
+- **Python Community on GitHub** - support for all python3 verions.
+- **Choose your testing framework** - Use it with any popular testing framework.
+- **Free for open source projects** - Zero cost for new open source users.
 
-[Learn more about how Gridsome works](/docs/how-it-works)
+### Why not Circle-CI, Gitlab-CI, or GitHub actions?
 
-```js
-<template>
-  <Layout>
-    <div class="container-inner mx-auto my-16">
-      <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
-      <div class="text-xl text-gray-600 mb-8">{{ $page.post.date }}</div>
-      <div class="markdown-body" v-html="$page.post.content" />
-    </div>
-  </Layout>
-</template>
-```
+- **Circle CI** - seems to have a little saner syntax and finer configuration.
+- **Gitlab** - open source where the others are closed source
+- **GitHub Actions** - newer and native to GitHub (if you host your code there)
 
+Really though, I used Travis-CI first and am using it since I am familiar with it. I haven't done a detailed comparison of the tools and it fits the needs of simpler python CI/CD projects. You are free to use what you prefer, feel is right, or would like to start with. There isn't a wrong option on your path to learning more about these tools and process. Where you start doesn't have to be where you are in the future.
+
+> Start small and build up what you learn. Knowledge compounds and you'll marvel at where your at soon.
 
 ### Prerequisites
-You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [Vue Single File components](https://vuejs.org/v2/guide/single-file-components.html) & [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn both.
 
-Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prerequisites)
+You should have basic knowledge about Github, Python, pytest, and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/).  Knowledge of Pipenv (Pipfiles) and pytest is a plus, but not required.  CI/CD tools are a great way to learn both.  We will set up a Travis-CI account as well.
 
 ![background](./images/background.jpg)
 
-### 1. Install Gridsome CLI tool
+**Lets start with the YAML configuration file!**
 
-Using yarn:
-`yarn global add @gridsome/cli`
+```yaml
+# .travis.yml
 
-Using npm:
-`npm install --global @gridsome/cli`
+dist: xenial
 
-### 2. Create a Gridsome project
+language: python
 
-1. `gridsome create my-gridsome-site` to create a new project </li>
-2. `cd my-gridsome-site` to open folder
-3. `gridsome develop` to start local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+cache: pip
+
+python:
+    - "3.6"
+    - "3.7"
+    - "3.8"
+    - "nightly"
+
+matrix:
+    allow_failures:
+        - python: "nightly"
+
+install:
+    - pip install pipenv --upgrade-strategy=only-if-needed
+    - pipenv install --dev
+
+script:
+    - bash scripts/test.sh
+
+after_script:
+    - bash <(curl -s https://codecov.io/bash)
+```
+
+## What is going on here
+
+Explain in more detail
+
+
+### 1. Install a project template
+
+Using python's cookiecutter package for a template:
+
+```bash
+
+pip install --user cookiecutter
+# make sure your path finds --user installs
+
+## add `export PATH="$HOME/.local/bin:$PATH"` 
+## to your ~/.bashrc, ~/.zshrc file on linux
+```
+
+### 2. Create a Python project
+
+```bash
+cookiecutter https://github.com/iancleary/pypackage
+# For the sake of brevity, repos on GitHub can just use the 'gh' prefix`
+cookiecutter gh:iancleary/pypackage
+````
 
 ### 3. Next steps
 
-1. Create `.vue` components in the `/pages` directory to create page routes.
-2. Use `gridsome build` to generate static files in a `/dist` folder
+I will finish the rest of this I promise 😬
 
+### 4. Happy coding 🎉🙌
 
-- [This Starter Template](https://gridsome.org/starters/gridsome-portfolio-starter/)
+----
+
+#### What else can you automate (things to add to this article in some level of detail)
+
+- Pypi publishing
+- Docker image builds
+- Amazon EC2 instance deployments
