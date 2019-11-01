@@ -5,27 +5,31 @@ summary: Umm - excuse me, if you have a minute, would you please build, test, an
 tags: ['travis-ci', 'python'] #, 'docker', 'aws', 'ansible']
 ---
 
-## Automate the boring stuff with Continuous Integration (CI)
+## Automate the boring stuff with Continuous Integration (CI), Continuous Deployment (CD)
 
 I first learned about Travis-CI through venturing out into GitHub to checkout several open source projects. I've seen how they have continuous integration workflows set up test their code on overy commit, branch, and pull request.
 > That seemed so convenient so I went off to try it myself.  I've documented what I've learned below to help get you started!  It's a community for everyone.
+>
+> 🌎🌈🌍🚀🌏
 
 ## Choosing a continuous integration service
 
 ### What to consider when working developing a Python3 application or package
 
-- **Python Community on GitHub** - support for all python3 verions.
-- **Choose your testing framework** - Use it with any popular testing framework.
-- **Free for open source projects** - Zero cost for new open source users.
+- **Python Community on GitHub** - support for all python3 🐍 versions.
+- **Choose your testing framework** - Use it with any popular testing framework: pytest, unittest, etc.
+- **Free for open source projects** - Zero cost for new open source users with reasonable build 🛠constraints. If you go closed source, you’re going to needs to fork over some 💵.
 
 ### Common providers
 
-- **Travis-CI** - seems to have a little saner syntax and finer configuration.
-- **Circle CI** - seems to have a little saner syntax and finer configuration.
-- **Gitlab** - open source where the others are closed source
-- **GitHub Actions** - newer and native to GitHub (if you host your code there)
+- **Travis-CI** - my first and has served me well
+- **Circle CI** - seems to have a little saner syntax and finer configuration relative to Travis-CI
+- **Gitlab** - leans open source where the others are closed source
+- **GitHub Actions** - newer, native to GitHub, and offers Linux, Windows, and MacOS builds.
 
-My learning started with Travis-CI and am using it since I am familiar with it. I haven't done a detailed comparison of the tools and it fits the needs of simpler python CI/CD projects. You are free to use what you prefer, feel is right, or would like to start with. This article is not a comparison, but rather an introduction into the what the process looks like with one CI service.
+My learning started with Travis-CI and am using it since I am familiar with it. I haven't done a detailed comparison of the tools and it fits the needs of simpler python CI/CD projects. I want to look into GitHub actions, now that it’s coming out of Beta. 
+
+You are free to use what you prefer, feel is right, or would like to start with. This article is not a comparison, but rather an introduction into the what the process looks like with one CI service.
 
 > Start small and build up what you learn. You will make progress, run into challenges, figure some out. Remember to sleep!!!!
 ![coding-feelings](./images/coding-feelings.jpg)
@@ -35,7 +39,7 @@ It's an exhilirating, rewarding, and sometimes stressful day to day. 😬
 
 There isn't a wrong option on your path to learning more about these tools and process. Where you start doesn't have to be where you are in the future. My recommendation is that you pick one, don't over think it, and get it up and working!
 
-Knowledge compounds and you'll marvel at where you're at soon. 🗺️🚀💻
+Knowledge compounds and you'll marvel at where you're at soon. 🗺️ 🚀 💻
 
 ## Prerequisites
 
@@ -100,25 +104,31 @@ This specifies the  base operating system used for the rest of workflow.
 
 ```yaml
 language: python
+```
 
+**language** is the programming language used. This tutorial uses python, but it very well could be `cpp`, `go`, `rust`, etc.
+
+```yaml
 cache: pip
+```
 
+**cache** allows for python package versions to be stored between runs, to speed up sequential builds.  Cache can apply to more than just python packages.
+
+```yaml
 python:
     - "3.6"
     - "3.7"
     - "3.8"
     - "nightly"
+```
 
+**python**, given the above language specification, is a key for a sequence of python versions to perform builds against. Generally most CI tools use the latest bug release version for each minor version.  The build logs will tell you the specific versions.
+
+```yaml
 matrix:
     allow_failures:
         - python: "nightly"
 ```
-
-**language** is the programming language used. This tutorial uses python, but it very well could be `cpp`, `go`, `rust`, etc.
-
-**cache** allows for python package versions to be stored between runs, to speed up sequential builds.  Cache can apply to more than just python packages.
-
-**python**, given the above language specification, is a key for a sequence of python versions to perform builds against. Generally most CI tools use the latest bug release version for each minor version.  The build logs will tell you the specific versions.
 
 **matrix** allows for modifications in the above build sequence.  In this case, the allow failures key is specifies a reference to the **python** sequence above, and has the value of `"nightly"`, meaning that that version is allowed to fail.  Think of it as early detection and future python development.  *Note: there are also development versions of each python version, such as `"3.8-dev"`.  These are used when python version are in release candidate or beta stages.
 
@@ -181,11 +191,11 @@ A newer alternative is `poetry` (https://poetry.eustace.io/).  `poetry` aims to 
 
 -----
 
-## Now lets help you get your CI setup
+## Now lets help you get your CI/CD setup
 
-## 1. Install a project template
+## 1. Get setup to install my python package project template
 
-Using python's cookiecutter package for a template:
+We will use python's cookiecutter package.
 
 ```bash
 
@@ -200,7 +210,7 @@ pip install --user cookiecutter
 
 ```bash
 cookiecutter https://github.com/iancleary/pypackage
-# For the sake of brevity, repos on GitHub can just use the 'gh' prefix`
+# For the sake of brevity, repos on GitHub can just use the 'gh' prefix
 cookiecutter gh:iancleary/pypackage
 ````
 
@@ -208,7 +218,7 @@ cookiecutter gh:iancleary/pypackage
 
 Use `cd new-directory` to change into the new directory you just created (replace `new-directory`)
 
-Run `pipenv` to display it\'s options. Take a look at what\s offered.
+Run `pipenv` to display it\'s options. Take a look at what’s offered.
 
 Next, run `pipenv install --dev` to install the production and development dependecies specified in the `Pipfile`.
 
@@ -218,7 +228,7 @@ Run `pipenv shell` to load the virtual environment.
 
 > I recommend you open up VS code or your text editor of choice to view the folder structure
 
-Execute `./scripts/tests.sh` from within the directory\'s Pipenv.
+Execute `./scripts/tests.sh` from within the directory's Pipenv.
 
 This command executes a bash script that does several things:
 
@@ -229,15 +239,17 @@ This command executes a bash script that does several things:
 
 These are all things that should be relegated to scripts to allow you to free your mind from simple formatting and other draining tasks.  Let it do that work for you!
 
-### 4. Push the directory to a remove git repo
+### 4. Push the directory to a remote git repo
 
 ### 5. Connect Travis-CI to the repo
 
 ### 6. Make a change to the repo
 
-Watch the CI process start and complete!
+Watch the CI process start and complete! 😎 It’s very cool to watch the process. The key to remember is the repeatability of the test suite. 
 
-### 7. Happy coding with CI pipelines you magnificent person🎉🙌
+Your setup should give you and others confidence that  the code will work under those conditions. If it’s an open source repo, there is no taking your word for it. The logs are right there!
+
+### 7. Happy coding with CI/CD pipelines 🎉🙌
 
 -----
 
