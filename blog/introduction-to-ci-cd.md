@@ -9,12 +9,11 @@ tags: ['travis-ci', 'python'] #, 'docker', 'aws', 'ansible']
 
 I first learned about Travis-CI through venturing out into GitHub to checkout several open source projects. I've seen how they have continuous integration workflows set up test their code on overy commit, branch, and pull request.
 > That seemed so convenient so I went off to try it myself.  I've documented what I've learned below to help get you started!  It's a community for everyone.
->
 > 🌎🌈🌍🚀🌏
 
 ## Choosing a continuous integration service
 
-### What to consider when working developing a Python3 application or package
+### What to consider when creating a Python3 CI/CD pipeline
 
 - **Python Community on GitHub** - support for all python3 🐍 versions.
 - **Choose your testing framework** - Use it with any popular testing framework: pytest, unittest, etc.
@@ -195,20 +194,44 @@ A newer alternative is `poetry` (https://poetry.eustace.io/).  `poetry` aims to 
 
 ## 1. Get setup to install my python package project template
 
-We will use python's cookiecutter package.
+Ensure you have a compatible python 🐍 environment on your computer.
 
 ```bash
 
-pip install --user cookiecutter
+python3 --version
+python3 -m pip --version
+python3 -m pytest --version
+```
+
+
+If you are missing any of the above, you can add the packages to your main python install. 
+
+> Recommended reading on Python[main install vs. altinstall](). 
+> *If you only have or want one python3 version on your machine, there is no harm to run the following commands. There are nuances between Ubuntu versions (16.04 vs. 18.04 vs. latest) on which python3 version is the default install.*
+
+```bash
+
+sudo apt-get update
+sudo apt-get install python3-pip
+sudo apt-get install python3-pytest
+```
+
+Now that we have confirmed your base python setup, let’s go ahead and ensure the pipenv and cookiecutter python packages are installed.
+
+```bash
+
+python3 -m pip install --user pipenv
+python3 -m pip install --user cookiecutter
+```
+
+### 2. Create a Python project and setup the Pipenv virtual environment
+
+```bash
 # make sure your path finds --user installs
 
 ## add `export PATH="$HOME/.local/bin:$PATH"` 
 ## to your ~/.bashrc, ~/.zshrc file on linux
-```
 
-### 2. Create a Python project and setup the virtual environment
-
-```bash
 cookiecutter https://github.com/iancleary/pypackage
 # For the sake of brevity, repos on GitHub can just use the 'gh' prefix
 cookiecutter gh:iancleary/pypackage
@@ -218,7 +241,7 @@ cookiecutter gh:iancleary/pypackage
 
 Use `cd new-directory` to change into the new directory you just created (replace `new-directory`)
 
-Run `pipenv` to display it\'s options. Take a look at what’s offered.
+Run `pipenv` to display it's options. Take a look at what’s offered.
 
 Next, run `pipenv install --dev` to install the production and development dependecies specified in the `Pipfile`.
 
