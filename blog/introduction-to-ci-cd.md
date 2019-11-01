@@ -8,8 +8,12 @@ tags: ['travis-ci', 'python'] #, 'docker', 'aws', 'ansible']
 ## Automate the boring stuff with Continuous Integration (CI), Continuous Deployment (CD)
 
 I first learned about Travis-CI through venturing out into GitHub to checkout several open source projects. I've seen how they have continuous integration workflows set up test their code on overy commit, branch, and pull request.
-> That seemed so convenient so I went off to try it myself.  I've documented what I've learned below to help get you started!  It's a community for everyone.
-> 🌎🌈🌍🚀🌏
+
+> That seemed so convenient so I went off to try it myself.
+> 
+> It's a global community for everyone. 🌎🌈🌍🚀🌏
+> 
+> I've documented what I've learned below to help get you started!
 
 ## Choosing a continuous integration service
 
@@ -46,7 +50,7 @@ You should have basic knowledge about Github, Python, testing frameworks, and ho
 
 -----
 
-## YAML
+## YAML Basics
 
 Most CI services interact with your repositories using a YAML configuration file.
 
@@ -56,8 +60,11 @@ Most CI services interact with your repositories using a YAML configuration file
 >
 > *Note: Ansible uses the YAML format, and is is another useful tool. A more detailed guide is an encouraged topic for another time.*
 
-Here is a full example `.travis.yml` file from one of my projects. W
-e will break down each section.
+-----
+
+## Travis-CI YAML Example
+
+Here is a full example `.travis.yml` file from one of my projects. We will break down each section.
 
 ```yaml
 # .travis.yml
@@ -192,7 +199,7 @@ A newer alternative is `poetry` (https://poetry.eustace.io/).  `poetry` aims to 
 
 ## Now lets help you get your CI/CD setup
 
-## 1. Get setup to install my python package project template
+### 1. Get setup to install my python package project template
 
 Ensure you have a compatible python 🐍 environment on your computer.
 
@@ -276,14 +283,14 @@ Your setup should give you and others confidence that  the code will work under 
 
 -----
 
-#### Where to go from here?
+## Where to go from here?
 
 - Set up an account and start offloading and automating your testing
 
 > You will not want to go back to your life before it!  
 It is a real quality improvement!
 
-#### What else can you automate (things to add to this article in some level of detail)
+### What else can you automate (things to add to this article in some level of detail)
 
 - Pypi publishing
 - Docker image builds
@@ -291,6 +298,8 @@ It is a real quality improvement!
 
 *This could just be links to more information or my demo repositories.
 
-### References
+-----
+
+## References
 
 - I learned a lot from https://github.com/tiangolo/fastapi and credit them as authors within my cookicutter pypackage [AUTHORS.md](https://github.com/iancleary/pypackage/blob/master/%7B%7Bcookiecutter.package_name%7D%7D/AUTHORS.md).  This is not only nice to do, but is required by many open source licenses.
