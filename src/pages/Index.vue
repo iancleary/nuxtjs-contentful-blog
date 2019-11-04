@@ -5,10 +5,10 @@
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
-    /> -->
+    />-->
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="text-green-700 leading-tight">Ian Cleary</div>
+        <div class="font-bold leading-tight">Ian Cleary</div>
       </div>
       <div class="mt-8 md:mt-0">
         <g-image src="../../static/unDraw/developer.svg" alt="hero" class="mx-auto sm:mx-0" />
@@ -38,7 +38,7 @@
       <div
         class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
       >
-        <h2 class="font-bold mb-6" id="projects">Here are some projects I've worked on:</h2>
+        <h2 class="font-bold mb-6" id="projects">Here are some of my projects:</h2>
         <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px">
@@ -48,84 +48,88 @@
 
         <ul class="text-lg sm:text-xl">
           <li class="checkmark mb-6">
-            <div>Personal Jupyter Notebook with CI/CD to Docker Hub</div>
-            <div
-              class="text-lg text-gray-600"
-            >I've been using Jupyter notebooks and Docker more and more recently. 
-            I significantly improved the maintenance model of my personal image by setting 
-            up an automated testing and deployment pipeline using Travis CI.
-            Check out my  
-            <a href="https://github.com/iancleary/personal-notebook" target="_blank">personal Jupyter notebook</a>
-            repository! The Docker image is <a href="https://hub.docker.com/r/iancleary/personal-notebook" target="_blank">iancleary/personal-notebook</a>.
+            <div>Continuous Integration / Continuous Deployment</div>
+            <div class="text-lg text-gray-600">
+              My Python and Docker projects have CI/CD pipelines using Travis-CI. <br>
+              Checkout my
+              <g-link
+                to="/blog/an-introduction-to-ci-cd-with-travis-ci-and-python/"
+              >introduction to CI/CD with Travis CI and Python</g-link> blog post!
             </div>
           </li>
           <li class="checkmark mb-6">
             <div>Gnome Shell Extensions for Docker and NordVPN</div>
-            <div
-              class="text-lg text-gray-600"
-            >
-            My preferred computer setup is a custom PC that I built. I dual boot Pop!_OS (an 
-            Ubuntu-based Linux distribution featuring a custom GNOME desktop) 
-            and Windows (for select gaming just doesn't work on Linux - yet!).
-            I'm an advocate for not having GNOME shell extensions if you can 
-            configure your desktop without them.  
-            For my convenience, I've built 
-            <a href="https://github.com/iancleary/gnome-extension" target="_blank">
-            GNOME shell extensions for Docker and NordVPN</a>
-            using <a href="https://github.com/p-e-w/argos" target="_blank">argos</a>. 
-            Argos is similar to <a href="https://github.com/matryer/bitbar" target="_blank">BitBar</a>
-            for those familiar with that application for MacOS.
+            <div class="text-lg text-gray-600">
+              My preferred computer setup is a custom PC that I built. I dual boot Pop!_OS (an
+              Ubuntu-based Linux distribution featuring a custom GNOME desktop)
+              and Windows (for select gaming just doesn't work on Linux - yet!).
+              I'm an advocate for not having GNOME shell extensions if you can
+              configure your desktop without them.
+              For my convenience, I've built
+              <a
+                href="https://github.com/iancleary/gnome-extension"
+                target="_blank"
+              >GNOME shell extensions for Docker and NordVPN</a>
+              using
+              <a href="https://github.com/p-e-w/argos" target="_blank">argos</a>.
+              Argos is similar to
+              <a href="https://github.com/matryer/bitbar" target="_blank">BitBar</a>
+              for those familiar with that application for MacOS.
             </div>
           </li>
           <li class="checkmark mb-6">
             <div>Responder Base Classes Python Package</div>
-            <div
-              class="text-lg text-gray-600"
-            >
-            I've been using Python regularly since 2015, around the time when I became interested in web frameworks.
-            My first encounter was with 
-            <a href="https://flask.palletsprojects.com/" target="_blank">
-            Flask</a>, and I was hooked.  
-            After being exposed to web services, 
-            I investigated <a href="https://github.com/taoufik07/responder" target="_blank">
-            Responder</a> and really enjoyed the combination of concepts from Flask, Falcon, and Requests.
-            After challenging myself to contribute to the community, I got 
-            <a href="https://github.com/taoufik07/responder/pull/306" target="_blank">
-            my first pull request merged</a> for implementing the 
-            <a href="https://github.com/OAI/OpenAPI-Specification/" target="_blank">
-            OpenAPI Specification's</a> Info object to improve Responder's optional 
-            information servers can provide to users. I've continued work on 
-            a Python package,
-            <a href="https://github.com/iancleary/responder-base-classes" target="_blank">
-            responder_base_classes</a>, that expands upon their class based view concept and 
-            is avaliable on on 
-            <a href="https://pypi.org/project/responder-base-classes/" target="_blank">
-            pypi</a>. I've implemented test cases using Travis CI.
+            <div class="text-lg text-gray-600">
+              I've been using Python regularly since 2015, around the time when I became interested in web frameworks.
+              My first encounter was with
+              <a
+                href="https://flask.palletsprojects.com/"
+                target="_blank"
+              >Flask</a>, and I was hooked.
+              After being exposed to web services,
+              I investigated
+              <a href="https://github.com/taoufik07/responder" target="_blank">Responder</a> and really enjoyed the combination of concepts from Flask, Falcon, and Requests.
+              After challenging myself to contribute to the community, I got
+              <a
+                href="https://github.com/taoufik07/responder/pull/306"
+                target="_blank"
+              >my first pull request merged</a> for implementing the
+              <a
+                href="https://github.com/OAI/OpenAPI-Specification/"
+                target="_blank"
+              >OpenAPI Specification's</a> Info object to improve Responder's optional
+              information servers can provide to users. I've continued work on
+              a Python package,
+              <a
+                href="https://github.com/iancleary/responder-base-classes"
+                target="_blank"
+              >responder_base_classes</a>, that expands upon their class based view concept and
+              is avaliable on on
+              <a
+                href="https://pypi.org/project/responder-base-classes/"
+                target="_blank"
+              >pypi</a>. I've implemented test cases using Travis CI.
             </div>
           </li>
           <li class="checkmark mb-6">
             <div>Automation and AWS</div>
-            <div
-              class="text-lg text-gray-600"
-            >
-            Prior to switching to Netlify for the deployments, this site was hosted
-            using an Amazon Web Service's S3 bucket. Given my
-            experience with python, I first graviated towards the boto3 package.  
-            Since taking
-            <a href="https://www.udemy.com/course/automate-your-infrastructure-using-ansible-and-iac/" target="_blank">
-            DevOps: Automate your infrastructure using Ansible and IaC</a>, 
-            I have learned to embrace the right tool for the problem.
-            Ansible is a much simpler and more tenable solution. 
-            I am now comfortable with Ansible playbooks and plan to continue to 
-            use them in my projects, when appropriate. Here is the  
-            <a href="https://github.com/iancleary/ansible-s3-static-website" target="_blank">
-            Ansible playbook previously used to deploy my site</a> -- feel free to use it as a template.
-            I also am in the process of learning how to leverage continuous deployment onto Amazon EC2 instances.
-            You can find my notes on 
-            <a href="https://github.com/iancleary/travis-ci-aws-notes" target="_blank">
-            connecting AWS CodeDeploy and Travis CI</a> using a Flask project.  
-            This example is a proof of concept, and I'm excited to use this workflow 
-            more in the future.
+            <div class="text-lg text-gray-600">
+              Prior to switching to Netlify for the deployments, this site was hosted
+              using an Amazon Web Service's S3 bucket. Given my
+              experience with python, I first graviated towards the boto3 package.
+              Since taking
+              <a
+                href="https://www.udemy.com/course/automate-your-infrastructure-using-ansible-and-iac/"
+                target="_blank"
+              >DevOps: Automate your infrastructure using Ansible and IaC</a>,
+              I have learned to embrace the right tool for the problem.
+              Ansible is a much simpler and more tenable solution.
+              I am now comfortable with Ansible playbooks and plan to continue to
+              use them in my projects, when appropriate. Here is the
+              <a
+                href="https://github.com/iancleary/ansible-s3-static-website"
+                target="_blank"
+              >Ansible playbook previously used to deploy my site</a> -- feel free to use it as a template.
             </div>
           </li>
         </ul>
@@ -161,8 +165,7 @@
           </div>
           <div
             class="flex-1 text-lg sm:text-xl ml-6"
-          >While working full-time as an RF/Microwave Engineer at Viasat, I earned my M.S.E. in Electrical Engineering in the spring of 2017, with a focus on wireless communication systems. 
-          </div>
+          >While working full-time as an RF/Microwave Engineer at Viasat, I earned my M.S.E. in Electrical Engineering in the spring of 2017, with a focus on wireless communication systems.</div>
         </div>
       </div>
       <!-- end get-to-know me -->
@@ -170,79 +173,7 @@
 
     <div class="overflow-x-hidden">
       <div class="contact-me bg-background-secondary pt-16">
-        <div class="container-inner mx-auto text-xl pb-4 relative">
-          <h2 class="font-bold mb-6" id="contact">Contact me:</h2>
-
-          <div class="absolute right-0 top-0" style="transform: translate(100%) rotate(180deg)">
-            <svg width="170px" height="170px">
-              <use xlink:href="#dots-triangle" />
-            </svg>
-          </div>
-
-          <div class="text-lg sm:text-lg mb-16">
-            <form
-              name="contact"
-              method="POST"
-              netlify-honeypot="bot-field"
-              data-netlify="true"
-              class="mb-12"
-            >
-              <div class="flex flex-wrap mb-6 -mx-4">
-                <div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
-                  <label class="block mb-2 text-copy-primary" for="name">Name</label>
-                  <p class="hidden">
-                    <label>
-                      Don’t fill this out if you're human:
-                      <input name="bot-field" />
-                    </label>
-                  </p>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Jon Snow"
-                    class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
-                    required
-                  />
-                </div>
-
-                <div class="w-full px-4 md:w-1/2">
-                  <label class="block text-copy-primary mb-2" for="email">Email Address</label>
-
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="email@example.com"
-                    class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="w-full mb-12">
-                <label class="block text-copy-primary mb-2" for="message">Message</label>
-
-                <textarea
-                  id="message"
-                  rows="5"
-                  name="message"
-                  class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4"
-                  placeholder="Enter your message here."
-                  required
-                ></textarea>
-              </div>
-
-              <div class="flex justify-end w-full">
-                <input
-                  type="submit"
-                  value="Submit"
-                  class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
-                />
-              </div>
-            </form>
-          </div>
-        </div>
+        <contact-me-form></contact-me-form>
       </div>
       <!-- end contact-me -->
     </div>
@@ -267,7 +198,7 @@
               target="_blank"
             >GitHub</a>, build with me using
             <a href="https://hub.docker.com/u/iancleary" target="_blank">Docker</a>, or
-            discuss professionally leveraging my skills on  
+            discuss professionally leveraging my skills on
             <a
               href="https://www.linkedin.com/in/ian-c-6566b22a/"
               target="_blank"
@@ -290,7 +221,7 @@
                 <span>Subscribe</span>
               </button>
             </div>
-          </form> -->
+          </form>-->
         </div>
       </div>
 
@@ -384,10 +315,14 @@
 </template>
 
 <script>
+import ContactMeForm from "../components/ContactMeForm";
 
 export default {
   metaInfo: {
     title: "Home"
+  },
+  components: {
+    ContactMeForm
   }
 };
 </script>

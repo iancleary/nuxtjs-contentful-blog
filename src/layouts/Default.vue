@@ -3,8 +3,8 @@
     <header class="border-t-14 border-green-700">
       <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
         <div>
-          <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
-          <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link>
+          <!-- <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
+          <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link> -->
         </div>
         <div class="block lg:hidden">
           <button @click="toggle" class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600">
@@ -33,9 +33,9 @@
           <!-- <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/tags" class="text-copy-primary hover:text-gray-600">Tags</g-link>
           </li> -->
-          <!-- <li>
+          <li>
             <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
-          </li> -->
+          </li>
         </ul>
       </nav>
     </header>
@@ -47,7 +47,8 @@
       <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
         <div class="mb-8 lg:mb-0">
           <div>Copyright {{ current_year }}. All rights reserved.</div>
-          <div>Powered by Gridsome, Vue.js &amp; Tailwind CSS</div>
+          <div>Powered by Gridsome, Vue.js &amp; Tailwind CSS.</div>
+          <div>Hosted by Netlify.</div>
           <div>
             <a href="rss.xml" class="text-white hover:text-gray-400 font-normal">RSS Feed</a> |
             <a href="sitemap.xml" class="text-white hover:text-gray-400 font-normal">Sitemap</a>
