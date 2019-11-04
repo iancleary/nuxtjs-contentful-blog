@@ -323,9 +323,29 @@ It is such a quality improvement!
 
 ### Some examples of what else can you automate
 
-- Pypi publishing, using the `flit` package
-- Docker image builds, checkout my personal Jupyter notebook stack: https://github.com/iancleary/personal-notebook
-- Amazon EC2 instance deployments. I demonstrated some of the connections in another repo: https://github.com/iancleary/travis-ci-aws-notes
+#### Pypi publishing
+
+I haven't done much in this space yet, but I've seen other projects successfully use the [flit](https://flit.readthedocs.io/en/latest/) python package.
+
+If that is your next step, checkout `flit`.  I know there are some other good tutorials out there to get started inside and outside of a CI/CD pipeline.
+
+#### Jupyter Notebook image deployment with CI/CD to Docker Hub
+
+I've been using Jupyter notebooks and Docker more and more recently. I significantly improved the maintenance model of my personal image by setting up an automated testing and deployment pipeline using Travis CI. Check out my [personal Jupyter notebook](https://github.com/iancleary/personal-notebook) repository!
+
+Checkout the Docker image is [iancleary/personal-notebook](https://hub.docker.com/r/iancleary/personal-notebook).
+
+```bash
+docker pull iancleary/personal-notebook
+```
+
+#### Amazon EC2 instance deployments
+
+I also am in the process of learning how to leverage continuous deployment onto Amazon EC2 instances.
+
+You can find my notes on [connecting AWS CodeDeploy and Travis CI](https://github.com/iancleary/travis-ci-aws-notes) using a Flask project.
+
+This example is a proof of concept, and I'm excited to use this workflow more in the future.
 
 -----
 
