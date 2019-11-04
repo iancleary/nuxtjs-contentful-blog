@@ -10,9 +10,6 @@ tags: ['travis-ci', 'python'] #, 'docker', 'aws', 'ansible']
 I first learned about Travis-CI through venturing out into GitHub to checkout several open source projects. I've seen how they have continuous integration workflows set up test their code on overy commit, branch, and pull request.
 
 > That seemed so convenient so I went off to try it myself.
-> 
-> It's a global community for everyone. 🌎🌈🌍🚀🌏
-> 
 > I've documented what I've learned below to help get you started!
 
 ## Choosing a continuous integration service
@@ -21,7 +18,7 @@ I first learned about Travis-CI through venturing out into GitHub to checkout se
 
 - **Python Community on GitHub** - support for all python3 🐍 versions.
 - **Choose your testing framework** - Use it with any popular testing framework: pytest, unittest, etc.
-- **Free for open source projects** - Zero cost for new open source users with reasonable build 🛠constraints. If you go closed source, you’re going to needs to fork over some 💵.
+- **Open vs. closed source** - I recommend whenever possible to choose an open source option. The below providers generally offer zero cost for new open source projects with reasonable build 🛠 constraints. If you go closed source, you’re going to needs to fork over some 💵.
 
 ### Common providers
 
@@ -30,7 +27,7 @@ I first learned about Travis-CI through venturing out into GitHub to checkout se
 - **Gitlab** - leans open source where the others are closed source
 - **GitHub Actions** - newer, native to GitHub, and offers Linux, Windows, and MacOS builds.
 
-My learning started with Travis-CI and am using it since I am familiar with it. I haven't done a detailed comparison of the tools and it fits the needs of simpler python CI/CD projects. I want to look into GitHub actions, now that it’s coming out of Beta. 
+My learning started with Travis-CI and am using it since I am familiar with it. I haven't done a detailed comparison of the tools and it fits the needs of simpler python CI/CD projects. I want to look into GitHub actions, now that it’s coming out of Beta.
 
 You are free to use what you prefer, feel is right, or would like to start with. This article is not a comparison, but rather an introduction into the what the process looks like with one CI service.
 
@@ -40,7 +37,11 @@ Photo credit: [4geeksacademy.co/feelings-learning-coding/](https://www.4geeksaca
 
 It's an exhilirating, rewarding, and sometimes stressful day to day. 😬
 
-There isn't a wrong option on your path to learning more about these tools and process. Where you start doesn't have to be where you are in the future. My recommendation is that you pick one, don't over think it, and get it up and working!
+There isn't a wrong option on your path to learning more about these tools and process. Where you start doesn't have to be where you are in the future. My recommendation is that you pick one, don't over think it, and get it up and working!  
+
+> Put your work out there and connect with others.  You don't have to create something from scratch. You can help your favorite existing projects set up or improve their CI/CD pipeline.
+> It's better when we build together. 🌎🌈🌍🚀🌏
+
 
 Knowledge compounds and you'll marvel at where you're at soon. 🗺️ 🚀 💻
 
@@ -210,8 +211,7 @@ python3 -m pip --version
 python3 -m pytest --version
 ```
 
-
-If you are missing any of the above, you can add the packages to your main python install. 
+If you are missing any of the above, you can add the packages to your main python install.
 
 > Recommended reading on Python[main install vs. altinstall](). 
 > *If you only have or want one python3 version on your machine, there is no harm to run the following commands. There are nuances between Ubuntu versions (16.04 vs. 18.04 vs. latest) on which python3 version is the default install.*
@@ -271,32 +271,61 @@ These are all things that should be relegated to scripts to allow you to free yo
 
 ### 4. Push the directory to a remote git repo
 
+I recommend you follow the guide on the Github Help page:
+
+- [Adding an existing project to GitHub using the command line](https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
+
 ### 5. Connect Travis-CI to the repo
 
-### 6. Make a change to the repo
+Again, the documentation of both GitHub and Travis-CI are great to follow for this step.
 
-Watch the CI process start and complete! 😎 It’s very cool to watch the process. The key to remember is the repeatability of the test suite. 
+Head over to [Travis-CI](https://travis-ci.org/) and sign in with your GitHub account:
 
-Your setup should give you and others confidence that  the code will work under those conditions. If it’s an open source repo, there is no taking your word for it. The logs are right there!
+- https://help.github.com/en/enterprise/2.16/admin/developer-workflow/continuous-integration-using-travis-ci
+
+Once you login to Travis-CI and Enable GitHub Access, you'll want to configure Travis from your Github Settings page.
+
+![travis-ci-github-configured-applications](./images/travis-ci-github-configured-applications-20191103.png)
+
+![travis-ci-github-authorization](./images/travis-ci-github-authorizating-repo-20191103.png)
+
+### 6. Now we are configured, let's start a build
+
+Make a simple change to the repo, either a commit, or open a new branch to start a build!
+
+Grab your 🍿 and let's watch the CI process start and complete! 😎
+
+![travis-ci-log](./images/travis-ci-pypackage-build-summary-20191103.png)
+
+It’s very cool to watch the process. 
+The key to remember is the repeatability of the test suite.
+
+Once complete, you will have your new project added to the Travis-CI dashboard. The three red boxes below are:
+
+1. The connected repo that is currently selected.
+2. The action that started a build (commit or pull request)
+3. The build matrix visualized, with links to view more details.
+
+![travis-ci-dashboard](./images/travis-ci-pypackage-dashboard-20191103.png)
 
 ### 7. Happy coding with CI/CD pipelines 🎉🙌
+
+Your setup should give you and others confidence that the code will work under those conditions. If it’s an open source repo, there is no taking your word for it. The logs are right there!
+
+> You will not want to go back to your life before it!  
+It is such a quality improvement!
 
 -----
 
 ## Where to go from here?
 
-- Set up an account and start offloading and automating your testing
+- Start offloading and automating your testing, deployments, and other activities.  There is so many opportunites to tie in different hooks or features, this is just the beginning.
 
-> You will not want to go back to your life before it!  
-It is a real quality improvement!
+### Some examples of what else can you automate
 
-### What else can you automate (things to add to this article in some level of detail)
-
-- Pypi publishing
-- Docker image builds
-- Amazon EC2 instance deployments
-
-*This could just be links to more information or my demo repositories.
+- Pypi publishing, using the `flit` package
+- Docker image builds, checkout my personal Jupyter notebook stack: https://github.com/iancleary/personal-notebook
+- Amazon EC2 instance deployments. I demonstrated some of the connections in another repo: https://github.com/iancleary/travis-ci-aws-notes
 
 -----
 
