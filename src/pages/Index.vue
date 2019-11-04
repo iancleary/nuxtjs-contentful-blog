@@ -133,7 +133,7 @@
             </div>
           </li>
         </ul>
-      </div>Check out my blog covers for more!
+      </div>
       <!-- end projects -->
     </div>
 
