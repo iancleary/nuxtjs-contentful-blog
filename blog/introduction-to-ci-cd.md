@@ -7,7 +7,7 @@ tags: ['travis-ci', 'python'] #, 'docker', 'aws', 'ansible']
 
 ## Automate the boring stuff with Continuous Integration (CI), Continuous Deployment (CD)
 
-I first learned about Travis-CI through venturing out into GitHub to checkout several open source projects. I've seen how they have continuous integration workflows set up test their code on overy commit, branch, and pull request.
+I first learned about Travis-CI through venturing out into GitHub to checkout several open source projects. I've seen how they have continuous integration workflows set up test their code on every commit, branch, and pull request.
 
 > That seemed so convenient so I went off to try it myself.
 > I've documented what I've learned below to help get you started!
@@ -18,7 +18,7 @@ I first learned about Travis-CI through venturing out into GitHub to checkout se
 
 - **Python Community on GitHub** - support for all python3 🐍 versions.
 - **Choose your testing framework** - Use it with any popular testing framework: pytest, unittest, etc.
-- **Open vs. closed source** - I recommend whenever possible to choose an open source option. The below providers generally offer zero cost for new open source projects with reasonable build 🛠 constraints. If you go closed source, you’re going to needs to fork over some 💵.
+- **Open vs. closed source** - I recommend whenever possible to choose an open source option. The below providers generally offer zero cost options for new open source projects with reasonable build 🛠 constraints. If you go closed source, you’re going to needs to fork over some 💵.
 
 ### Common providers
 
@@ -29,7 +29,7 @@ I first learned about Travis-CI through venturing out into GitHub to checkout se
 
 My learning started with Travis-CI and am using it since I am familiar with it. I haven't done a detailed comparison of the tools and it fits the needs of simpler python CI/CD projects. I want to look into GitHub actions, now that it’s coming out of Beta.
 
-You are free to use what you prefer, feel is right, or would like to start with. This article is not a comparison, but rather an introduction into the what the process looks like with one CI service.
+You are free to use what you prefer, feel is right, or would like to start with. This article is not a comparison, but rather an introduction into what the process looks like with one CI service.
 
 > Start small and build up what you learn. You will make progress, run into challenges, figure some out. Remember to sleep!!!!
 ![coding-feelings](./images/coding-feelings.jpg)
@@ -213,7 +213,7 @@ python3 -m pytest --version
 
 If you are missing any of the above, you can add the packages to your main python install.
 
-> Recommended reading on Python[main install vs. altinstall](). 
+> Recommended reading on Python [main install vs. altinstall](https://realpython.com/installing-python/#compiling-python-from-source). 
 > *If you only have or want one python3 version on your machine, there is no harm to run the following commands. There are nuances between Ubuntu versions (16.04 vs. 18.04 vs. latest) on which python3 version is the default install.*
 
 ```bash
