@@ -1,6 +1,6 @@
 ---
 title: An introduction to CI/CD with Travis CI and Python
-date: 2019-10-28
+date: 2019-11-03
 summary: Umm - excuse me, if you have a minute, would you please build, test, and (if it all goes well) deploy my code for me - thanks!  Oh, and if you don't mind, would you please email me the status of it right when you finish. No questions asked, the first time I ask you - thanks! You can now proclaim to the world that you've read my snarky opener about how I've come to appreciate CI/CD tooling, and you can learn why you should give it a try!
 tags: ['travis-ci', 'python'] #, 'docker', 'aws', 'ansible']
 ---
