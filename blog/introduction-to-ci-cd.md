@@ -351,4 +351,4 @@ This example is a proof of concept, and I'm excited to use this workflow more in
 
 ## References
 
-- I learned a lot from https://github.com/tiangolo/fastapi and credit them as authors within my cookicutter pypackage [AUTHORS.md](https://github.com/iancleary/pypackage/blob/master/%7B%7Bcookiecutter.package_name%7D%7D/AUTHORS.md).  This is not only nice to do, but is required by many open source licenses.
+- I learned a lot from https://github.com/tiangolo/fastapi and credit them as authors within my cookicutter pypackage [AUTHORS.md](https://github.com/iancleary/pypackage/blob/master/%7B%7Bcookiecutter.repo_name%7D%7D/AUTHORS.md).  This is not only nice to do, but is required by many open source licenses.
