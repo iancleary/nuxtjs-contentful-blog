@@ -12,7 +12,7 @@
         </div>
 
         <div class="text-lg mb-4">
-          {{ post.node.summary }}
+          {{ post.node.description }}
         </div>
 
         <div class="mb-8">
@@ -48,7 +48,7 @@ query Tag ($id: ID!, $page: Int) {
             timeToRead
     	      date (format: "MMMM D, YYYY")
             path
-            summary
+            description
             tags {
               title
             }
