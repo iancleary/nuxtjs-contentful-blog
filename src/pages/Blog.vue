@@ -8,7 +8,7 @@
         </div>
 
         <div class="text-lg mb-4">
-          {{ post.node.summary }}
+          {{ post.node.description }}
         </div>
 
         <div class="mb-8">
@@ -39,7 +39,7 @@ query Posts ($page: Int) {
         id
         title
         date (format: "MMMM D, Y")
-        summary
+        description
         path
       }
     }
