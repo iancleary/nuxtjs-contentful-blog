@@ -112,7 +112,11 @@
           <li class="checkmark mb-6">
             <div>Python Package Quickstart</div>
             <div class="text-lg text-gray-600">
-              Checkout my cookiecutter python package 
+              Checkout my python package template, using
+              <a
+                href="https://github.com/iancleary/pypackage"
+                target="_blank"
+              >cookiecutter gh:iancleary/pypackage</a>.
               <!-- I've been using Python regularly since 2015, around the time when I became interested in web frameworks.
               My first encounter was with
               <a
@@ -148,9 +152,21 @@
             </div>
           </li>
           <li class="checkmark mb-6">
-            <div>Jupyter Notebook</div>
+            <div>Personal Jupyter Notebook Image</div>
             <div class="text-lg text-gray-600">
-              I am familiar the Jupyter interactive computing environment
+              I am familiar the Jupyter interactive computing environment. My
+
+              <a
+                href="https://github.com/iancleary/personal-notebook"
+                target="_blank"
+              >personal-notebook</a> is open source and on DockerHub, via
+
+              <a
+                href="https://hub.docker.com/r/iancleary/personal-notebook"
+                target="_blank"
+              >docker pull iancleary/personal-notebook</a>.
+
+              
               <!-- I've been using Python regularly since 2015, around the time when I became interested in web frameworks.
               My first encounter was with
               <a
