@@ -18,9 +18,9 @@
 
     <div class="container-inner mx-auto">
       <p class="text-lg sm:text-xl">
-        By day, with the help of my coworkers,
+        With the help of my coworkers,
         I am RF/Microwave Engineer working on electronics bound for outer space.
-        By night, with the help of the worldwide community,
+        With the help of the worldwide community,
         I am learning about web frameworks, open source development, and software engineering best practices.
       </p>
 
@@ -36,7 +36,7 @@
 
     <div class="overflow-x-hidden">
       <div
-        class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
+        class="projects container-inner mx-auto text-xl border-t border-gray-500 py-16 relative"
       >
         <h2 class="font-bold mb-6" id="projects">Here are some of my projects:</h2>
         <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
@@ -60,30 +60,35 @@
           <li class="checkmark mb-6">
             <div>Ubuntu Laptop and Desktop Setup</div>
             <div class="text-lg text-gray-600">
-              My configuration documented here:
-              <br />
+              <!-- Link -->
+              <!-- Check out my notes at 
               <a
                 href="https://dev-notes.iancleary.me/local-computer/"
                 target="_blank"
-              >https://dev-notes.iancleary.me/local-computer/</a>.
-              <br />and version controlled to practice infrastructure as code.
-              <br />Several key technologies are
+              >dev-notes.iancleary.me/local-computer</a>. -->
+              <!-- Closing -->
+              <!-- <br /> -->
+              
+              
+              <!-- I currently use  -->
               <!-- Makefiles -->
               <a
                 href="https://en.wikipedia.org/wiki/Makefile"
                 target="_blank"
-              >Makefiles</a> (to organize my installation scripts),
+              >Makefiles</a> organize my installation scripts,
               <!-- Argos -->
               <a
                 href="https://github.com/p-e-w/argos"
                 target="_blank"
-              >argos</a> (to create my
+              >argos</a> creates my
               <a
                 href="https://github.com/iancleary/gnome-extension"
-                target="_blank" >custom GNOME Extensions</a>),
+                target="_blank" >custom GNOME Extensions</a>, and
               <!-- Yet Another Dotfile Manager -->
-              Yet Another Dotfile Manager (<a href="https://yadm.io" target="_blank">yadm</a>) to version control my home directory.
-              <br>
+              Yet Another Dotfile Manager (<a href="https://yadm.io" target="_blank">yadm.io</a>) version controls my home directory.
+              
+              <!-- Infrastructure as code applies to my local setups.  -->
+              
               <!-- <i>Note: Argos is similar to
               <a
                 href="https://github.com/matryer/bitbar"
@@ -94,9 +99,21 @@
             </div>
           </li>
           <li class="checkmark mb-6">
+            <div>Open Source Dev Notes</div>
+            <div class="text-lg text-gray-600">
+              Check out my more detailed notes at 
+              <a
+                href="https://dev-notes.iancleary.me/local-computer/"
+                target="_blank"
+              >dev-notes.iancleary.me/local-computer</a>.
+              Make a pull request and/or use my setup as inspiration!
+            </div>
+          </li>
+          <li class="checkmark mb-6">
             <div>Python Package Quickstart</div>
             <div class="text-lg text-gray-600">
-              I've been using Python regularly since 2015, around the time when I became interested in web frameworks.
+              Checkout my cookiecutter python package 
+              <!-- I've been using Python regularly since 2015, around the time when I became interested in web frameworks.
               My first encounter was with
               <a
                 href="https://flask.palletsprojects.com/"
@@ -127,10 +144,48 @@
               <a
                 href="https://pypi.org/project/responder-base-classes/"
                 target="_blank"
-              >pypi</a>. I've implemented test cases using Travis CI.
+              >pypi</a>. I've implemented test cases using Travis CI. -->
             </div>
           </li>
           <li class="checkmark mb-6">
+            <div>Jupyter Notebook</div>
+            <div class="text-lg text-gray-600">
+              I am familiar the Jupyter interactive computing environment
+              <!-- I've been using Python regularly since 2015, around the time when I became interested in web frameworks.
+              My first encounter was with
+              <a
+                href="https://flask.palletsprojects.com/"
+                target="_blank"
+              >Flask</a>, and I was hooked.
+              After being exposed to web services,
+              I investigated
+              <a
+                href="https://github.com/taoufik07/responder"
+                target="_blank"
+              >Responder</a> and really enjoyed the combination of concepts from Flask, Falcon, and Requests.
+              After challenging myself to contribute to the community, I got
+              <a
+                href="https://github.com/taoufik07/responder/pull/306"
+                target="_blank"
+              >my first pull request merged</a> for implementing the
+              <a
+                href="https://github.com/OAI/OpenAPI-Specification/"
+                target="_blank"
+              >OpenAPI Specification's</a> Info object to improve Responder's optional
+              information servers can provide to users. I've continued work on
+              a Python package,
+              <a
+                href="https://github.com/iancleary/responder-base-classes"
+                target="_blank"
+              >responder_base_classes</a>, that expands upon their class based view concept and
+              is avaliable on on
+              <a
+                href="https://pypi.org/project/responder-base-classes/"
+                target="_blank"
+              >pypi</a>. I've implemented test cases using Travis CI. -->
+            </div>
+          </li>
+          <!-- <li class="checkmark mb-6">
             <div>Automation and AWS</div>
             <div class="text-lg text-gray-600">
               Prior to switching to Netlify for the deployments, this site was hosted
@@ -150,16 +205,25 @@
                 target="_blank"
               >Ansible playbook previously used to deploy my site</a> -- feel free to use it as a template.
             </div>
-          </li>
+          </li> -->
         </ul>
+        <div class="absolute left-0" style="bottom: 50px; transform: translateX(-100%)">
+          <svg width="170px" height="170px">
+            <use xlink:href="#dots-triangle" />
+          </svg>
+        </div>
       </div>
       <!-- end projects -->
     </div>
 
-    <div class="overflow-x-hidden border-gray-200 border-b">
-      <div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
-        <h2 class="font-bold mb-6" id="about">Get to know me:</h2>
-
+    <div class="overflow-x-hidden bg-background-secondary border-gray-200 border-b border-t">
+      <div class="get-to-know-me container-inner mx-auto text-xl py-16 pb-8 relative">
+        <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
+          <svg width="170px" height="170px">
+            <use xlink:href="#dots-triangle" />
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-8 text-center" id="about">Get to know me:</h2>
         <div class="absolute left-0" style="bottom: 50px; transform: translateX(-100%)">
           <svg width="170px" height="170px">
             <use xlink:href="#dots-triangle" />
@@ -191,9 +255,9 @@
     </div>
 
     <div class="overflow-x-hidden">
-      <div class="contact-me bg-background-secondary pt-16">
+      <!-- <div class="contact-me bg-background-secondary pt-16">
         <contact-me-form></contact-me-form>
-      </div>
+      </div> -->
       <!-- end contact-me -->
     </div>
 
