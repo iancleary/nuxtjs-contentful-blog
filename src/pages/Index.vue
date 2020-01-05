@@ -50,35 +50,51 @@
           <li class="checkmark mb-6">
             <div>Continuous Integration / Continuous Deployment</div>
             <div class="text-lg text-gray-600">
-              My Python and Docker projects have CI/CD pipelines using Travis-CI. <br>
-              Checkout my
+              My Python and Docker projects have CI/CD pipelines using Travis-CI.
+              <br />Checkout my
               <g-link
                 to="/blog/an-introduction-to-ci-cd-with-travis-ci-and-python/"
               >introduction to CI/CD with Travis CI and Python</g-link> blog post!
             </div>
           </li>
           <li class="checkmark mb-6">
-            <div>Gnome Shell Extensions for Docker and NordVPN</div>
+            <div>Ubuntu Laptop and Desktop Setup</div>
             <div class="text-lg text-gray-600">
-              My preferred computer setup is a custom PC that I built. I dual boot Pop!_OS (an
-              Ubuntu-based Linux distribution featuring a custom GNOME desktop)
-              and Windows (for select gaming just doesn't work on Linux - yet!).
-              I'm an advocate for not having GNOME shell extensions if you can
-              configure your desktop without them.
-              For my convenience, I've built
+              My configuration documented here:
+              <br />
+              <a
+                href="https://dev-notes.iancleary.me/local-computer/"
+                target="_blank"
+              >https://dev-notes.iancleary.me/local-computer/</a>.
+              <br />and version controlled to practice infrastructure as code.
+              <br />Several key technologies are
+              <!-- Makefiles -->
+              <a
+                href="https://en.wikipedia.org/wiki/Makefile"
+                target="_blank"
+              >Makefiles</a> (to organize my installation scripts),
+              <!-- Argos -->
+              <a
+                href="https://github.com/p-e-w/argos"
+                target="_blank"
+              >argos</a> (to create my
               <a
                 href="https://github.com/iancleary/gnome-extension"
+                target="_blank" >custom GNOME Extensions</a>),
+              <!-- Yet Another Dotfile Manager -->
+              Yet Another Dotfile Manager (<a href="https://yadm.io" target="_blank">yadm</a>) to version control my home directory.
+              <br>
+              <!-- <i>Note: Argos is similar to
+              <a
+                href="https://github.com/matryer/bitbar"
                 target="_blank"
-              >GNOME shell extensions for Docker and NordVPN</a>
-              using
-              <a href="https://github.com/p-e-w/argos" target="_blank">argos</a>.
-              Argos is similar to
-              <a href="https://github.com/matryer/bitbar" target="_blank">BitBar</a>
-              for those familiar with that application for MacOS.
+              >BitBar</a>
+              for those familiar with that application for MacOS. "Argos supports many BitBar plugins without modifications, giving you access to a large library of well-tested scripts in addition to being able to write your own."
+              </i> -->
             </div>
           </li>
           <li class="checkmark mb-6">
-            <div>Responder Base Classes Python Package</div>
+            <div>Python Package Quickstart</div>
             <div class="text-lg text-gray-600">
               I've been using Python regularly since 2015, around the time when I became interested in web frameworks.
               My first encounter was with
@@ -88,7 +104,10 @@
               >Flask</a>, and I was hooked.
               After being exposed to web services,
               I investigated
-              <a href="https://github.com/taoufik07/responder" target="_blank">Responder</a> and really enjoyed the combination of concepts from Flask, Falcon, and Requests.
+              <a
+                href="https://github.com/taoufik07/responder"
+                target="_blank"
+              >Responder</a> and really enjoyed the combination of concepts from Flask, Falcon, and Requests.
               After challenging myself to contribute to the community, I got
               <a
                 href="https://github.com/taoufik07/responder/pull/306"
