@@ -46,7 +46,7 @@
     <footer class="bg-green-700 text-white">
       <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
         <div class="mb-8 lg:mb-0">
-          <div>Copyright {{ current_year }}. All rights reserved.</div>
+          <div>Copyright 2019-{{ current_year }}. All rights reserved.</div>
           <div>Powered by Gridsome, Vue.js &amp; Tailwind CSS.</div>
           <div>Hosted by Netlify.</div>
           <div>
