@@ -6,7 +6,7 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />-->
-    <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
+    <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16 px-16">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
         <div class="font-bold leading-tight">Ian Cleary</div>
       </div>
@@ -61,15 +61,13 @@
             <div>Ubuntu Laptop and Desktop Setup</div>
             <div class="text-lg text-gray-600">
               <!-- Link -->
-              <!-- Check out my notes at 
+              <!-- Check out my notes at
               <a
                 href="https://dev-notes.iancleary.me/local-computer/"
                 target="_blank"
               >dev-notes.iancleary.me/local-computer</a>. -->
               <!-- Closing -->
               <!-- <br /> -->
-              
-              
               <!-- I currently use  -->
               <!-- Makefiles -->
               <a
@@ -86,9 +84,9 @@
                 target="_blank" >custom GNOME Extensions</a>, and
               <!-- Yet Another Dotfile Manager -->
               Yet Another Dotfile Manager (<a href="https://yadm.io" target="_blank">yadm.io</a>) version controls my home directory.
-              
+
               <!-- Infrastructure as code applies to my local setups.  -->
-              
+
               <!-- <i>Note: Argos is similar to
               <a
                 href="https://github.com/matryer/bitbar"
@@ -101,12 +99,12 @@
           <li class="checkmark mb-6">
             <div>Open Source Dev Notes</div>
             <div class="text-lg text-gray-600">
-              Check out my more detailed notes at 
+              Check out my more detailed notes at
               <a
                 href="https://dev-notes.iancleary.me/local-computer/"
                 target="_blank"
               >dev-notes.iancleary.me/local-computer</a>.
-              Make a pull request and/or use my setup as inspiration!
+               Make a pull request and/or use my setup as inspiration!
             </div>
           </li>
           <li class="checkmark mb-6">
@@ -166,7 +164,6 @@
                 target="_blank"
               >docker pull iancleary/personal-notebook</a>.
 
-              
               <!-- I've been using Python regularly since 2015, around the time when I became interested in web frameworks.
               My first encounter was with
               <a
@@ -425,4 +422,3 @@ export default {
   }
 };
 </script>
-
