@@ -1,10 +1,14 @@
 <template>
-  <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen" :class="theme">
-    <header class="border-t-14 border-green-700">
-      <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
+  <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen pt-8" :class="theme">
+    <!-- z-50 makes the navbar clickable over other elements -->
+    <header class="z-50 navbar w-full top-0 border-green-700 border-t-14"
+            :class="{ 'hidden-navbar': !showNavbar }"
+    >
+      <div class="container mx-auto flex flex-wrap justify-between items-center py-8">
         <div>
           <!-- <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
           <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link> -->
+          <theme-switcher :theme="theme" @themeChanged="updateTheme" />
         </div>
         <div class="block lg:hidden">
           <button @click="toggle" class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600">
@@ -15,9 +19,9 @@
           class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
           :class="isOpen ? 'block': 'hidden'"
         >
-          <li class="mr-8 mb-6 lg:mb-0">
+          <!-- <li class="mr-8 mb-6 lg:mb-0">
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
-          </li>
+          </li> -->
           <li class="mr-8 mb-6 lg:mb-0">
             <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600">Projects</a>
             <g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">Projects</g-link>
@@ -37,7 +41,7 @@
             <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
     <div class="flex-grow">
@@ -46,7 +50,7 @@
     <footer class="bg-green-700 text-white">
       <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
         <div class="mb-8 lg:mb-0">
-          <div>Copyright {{ current_year }}. All rights reserved.</div>
+          <div>Copyright 2019-{{ current_year }}. All rights reserved.</div>
           <div>Powered by Gridsome, Vue.js &amp; Tailwind CSS.</div>
           <div>Hosted by Netlify.</div>
           <div>
@@ -94,6 +98,7 @@ query {
 import ThemeSwitcher from '../components/ThemeSwitcher'
 
 var current_year = new Date().getFullYear();
+const OFFSET = 60
 
 export default {
   components: {
@@ -101,20 +106,43 @@ export default {
   },
   mounted() {
     this.theme = localStorage.getItem('theme') || 'theme-dark'
+    this.lastScrollPosition = window.pageYOffset
+    window.addEventListener('scroll', this.onScroll)
+    const viewportMeta = document.createElement('meta')
+    viewportMeta.name = 'viewport'
+    viewportMeta.content = 'width=device-width, initial-scale=1'
+    document.head.appendChild(viewportMeta)
   },
   data() {
     return {
       isOpen: false,
       theme: '',
       current_year: current_year,
+      showNavbar: true,
+      lastScrollPosition: 0,
+      scrollValue: 0
     }
   },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.onScroll)
+  },
+  
   methods: {
     toggle() {
       this.isOpen = !this.isOpen
     },
     updateTheme(theme) {
       this.theme = theme
+    },
+    onScroll () {
+      if (window.pageYOffset < 0) {
+        return
+      }
+      if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
+        return
+      }
+      this.showNavbar = window.pageYOffset < this.lastScrollPosition
+      this.lastScrollPosition = window.pageYOffset
     }
   }
 }

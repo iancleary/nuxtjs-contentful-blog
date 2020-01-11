@@ -114,3 +114,20 @@ nav .active {
   height: 100%;
   border: 0;
 }
+
+.#app {
+  width: 100vw;
+  height: 500vh;
+}
+
+.navbar {
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  transform: translate3d(0, 0, 0);
+  transition: 0.1s all ease-out;
+}
+.hidden-navbar {
+  box-shadow: none;
+  transform: translate3d(0, -100%, 0);
+}
