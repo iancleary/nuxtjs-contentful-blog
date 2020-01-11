@@ -6,9 +6,10 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />-->
+    <br>
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16 px-16">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="font-bold leading-tight">Ian Cleary</div>
+        <div class="sticky font-bold leading-tight">Ian Cleary</div>
       </div>
       <div class="mt-8 md:mt-0">
         <g-image src="../../static/unDraw/developer.svg" alt="hero" class="mx-auto sm:mx-0" />
