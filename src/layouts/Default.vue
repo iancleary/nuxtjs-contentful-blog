@@ -1,10 +1,12 @@
 <template>
   <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen pt-8" :class="theme">
     <!-- z-50 makes the navbar clickable over other elements -->
-    <header class="z-50 navbar w-full top-0 border-green-700 border-t-14"
-            :class="{ 'hidden-navbar': !showNavbar }"
+    <header class="z-50 navbar w-full top-0 border-green-700 opacity-100 border-t-14"
+            :class="{ 'hidden-navbar': !showNavbar, 'bg-background-primary pb-24': showNavbar }"
     >
-      <div class="container mx-auto flex flex-wrap justify-between items-center py-8">
+      <div class="container object-center opacity-100 mx-auto flex flex-wrap justify-between items-center py-8"
+           :class="{ 'bg-background-primary': showNavbar }"
+      >
         <div>
           <!-- <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
           <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link> -->
@@ -16,12 +18,9 @@
           </button>
         </div>
         <ul
-          class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
+          class="uppercase justify-center tracking-wide font-bold w-full block lg:flex lg:flex-initial lg:w-auto mt-8 lg:mt-0"
           :class="isOpen ? 'block': 'hidden'"
         >
-          <!-- <li class="mr-8 mb-6 lg:mb-0">
-            <theme-switcher :theme="theme" @themeChanged="updateTheme" />
-          </li> -->
           <li class="mr-8 mb-6 lg:mb-0">
             <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600">Projects</a>
             <g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">Projects</g-link>
@@ -116,7 +115,7 @@ export default {
   data() {
     return {
       isOpen: false,
-      theme: '',
+      theme: 'theme-dark',
       current_year: current_year,
       showNavbar: true,
       lastScrollPosition: 0,
