@@ -277,7 +277,7 @@
 
     <div class="contact bg-background-tertiary">
       <div class="container-inner mx-auto py-16 pb-8 text-center textl-xl">
-        <h2 class="text-2xl font-bold mb-8">Wherever you are, let's connect:</h2>
+        <h2 class="text-2xl font-bold mb-8" id="contact">Wherever you are, let's connect:</h2>
         <div class="flex flex-col sm:flex-row justify-between items-center py-6">
           <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
             <g-image src="../../static/unDraw/undraw_adventure_4hum.svg" alt="browser" />
