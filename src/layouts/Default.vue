@@ -2,7 +2,7 @@
   <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen pt-8" :class="theme">
     <!-- z-50 makes the navbar clickable over other elements -->
     <header class="z-50 navbar w-full top-0 border-green-700 opacity-100 border-t-14"
-            :class="{ 'hidden-navbar': !showNavbar, 'bg-background-primary pb-24': showNavbar }"
+            :class="{ 'hidden-navbar': !showNavbar, 'bg-background-primary pb-24 shadow-xl rounded': showNavbar }"
     >
       <div class="container object-center opacity-100 mx-auto flex flex-wrap justify-between items-center py-8"
            :class="{ 'bg-background-primary': showNavbar }"
@@ -19,7 +19,7 @@
         </div>
         <ul
           class="uppercase justify-center tracking-wide font-bold w-full block lg:flex lg:flex-initial lg:w-auto mt-8 lg:mt-0"
-          :class="isOpen ? 'block': 'hidden'"
+          :class="{ 'hidden': !showNavbar, 'block shadow-xl': isOpen, 'hidden':!isOpen}"
         >
           <li class="mr-8 mb-6 lg:mb-0">
             <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600">Projects</a>
@@ -139,6 +139,10 @@ export default {
       }
       if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
         return
+      }
+      // If opened immediately, then scrolled, close menu
+      if (this.showNavbar) {
+        this.isOpen = false
       }
       this.showNavbar = window.pageYOffset < this.lastScrollPosition
       this.lastScrollPosition = window.pageYOffset
