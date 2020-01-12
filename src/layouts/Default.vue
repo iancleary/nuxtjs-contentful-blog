@@ -19,7 +19,7 @@
         </div>
         <ul
           class="flex-column uppercase tracking-wide font-bold w-full block lg:flex lg:flex-initial lg:w-auto mt-8 lg:mt-0"
-          :class="{ 'hidden': !showNavbar, 'block': isOpen, 'hidden':!isOpen}"
+          :class="{ 'hidden': showNavbar, 'block': isOpen, 'hidden':!isOpen}"
         >
           <li class="mb-6 lg:mb-0"
               :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
