@@ -12,7 +12,7 @@
         <div class="sticky font-bold leading-tight mt-12">Ian Cleary</div>
       </div>
       <div class="mt-8 md:mt-0">
-        <g-image src="../../static/unDraw/developer.svg" alt="hero" class="mx-auto sm:mx-0" />
+        <g-image src="../../static/unDraw/developer.svg" class="mx-auto sm:mx-0" alt="developer with laptop and git commit log visual" immediate="true" />
       </div>
     </div>
     <!-- end hero -->
@@ -27,10 +27,10 @@
 
       <div class="flex flex-col sm:flex-row justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
-          <g-image src="../../static/unDraw/undraw_web_developer_p3e5.svg" alt="browser" />
+          <g-image src="../../static/unDraw/undraw_web_developer_p3e5.svg" alt="web developer mocking up user interface wireframe"  immediate="true" />
         </div>
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
-          <g-image src="../../static/unDraw/undraw_light_the_fire_gt58.svg" alt="browser" />
+          <g-image src="../../static/unDraw/undraw_light_the_fire_gt58.svg" alt="woman next to illuminated lighthouse"  immediate="true" />
         </div>
       </div>
     </div>
@@ -248,8 +248,9 @@
           <div>
             <g-image
               src="../../static/Michigan.svg"
-              alt="avatar"
+              alt="Michigan Block Letter M"
               class="w-32 h-32 rounded-full mb-8 lg:mb-0"
+              immediate="true"
             />
           </div>
           <div
@@ -258,7 +259,7 @@
         </div>
         <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
           <div>
-            <g-image src="../../static/asu.png" class="w-32 h-32 rounded-full mb-8 lg:mb-0" />
+            <g-image src="../../static/asu.png" class="w-32 h-32 rounded-full mb-8 lg:mb-0" alt="Arizona State University Letters"  immediate="true" />
           </div>
           <div
             class="flex-1 text-lg sm:text-xl ml-6"
@@ -280,10 +281,10 @@
         <h2 class="text-2xl font-bold mb-8" id="contact">Wherever you are, let's connect:</h2>
         <div class="flex flex-col sm:flex-row justify-between items-center py-6">
           <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
-            <g-image src="../../static/unDraw/undraw_adventure_4hum.svg" alt="browser" />
+            <g-image src="../../static/unDraw/undraw_adventure_4hum.svg" alt="man ready to travel the globe" immediate="true" />
           </div>
           <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
-            <g-image src="../../static/unDraw/undraw_connected_world_wuay.svg" alt="browser" />
+            <g-image src="../../static/unDraw/undraw_connected_world_wuay.svg" alt="connected world" immediate="true" />
           </div>
         </div>
         <div class="w-4/5 mx-auto mb-8">
