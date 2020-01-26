@@ -1,43 +1,50 @@
 <template>
   <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen pt-8" :class="theme">
     <!-- z-50 makes the navbar clickable over other elements -->
-    <header class="z-50 navbar w-full top-0 border-green-700 border-t-14"
-            :class="{ 'hidden-navbar': !showNavbar }"
+    <header class="z-50 navbar w-full top-0 border-green-700 opacity-100 border-t-14"
+            :class="{ 'hidden-navbar': !showNavbar, 'bg-background-primary pb-24 shadow-xl rounded': showNavbar }"
     >
-      <div class="container mx-auto flex flex-wrap justify-between items-center py-8">
+      <div class="container object-center opacity-100 mx-auto flex flex-wrap justify-between items-center py-8"
+           :class="{ 'bg-background-primary': showNavbar, 'block shadow-xl': isOpen}"
+      >
         <div>
           <!-- <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
           <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link> -->
           <theme-switcher :theme="theme" @themeChanged="updateTheme" />
         </div>
         <div class="block lg:hidden">
-          <button @click="toggle" class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600">
+          <button @click="toggle" class="px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600">
             <svg class="current-color h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" /></svg>
           </button>
         </div>
         <ul
-          class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
-          :class="isOpen ? 'block': 'hidden'"
+          class="flex-column uppercase tracking-wide font-bold w-full block lg:flex lg:flex-initial lg:w-auto mt-8 lg:mt-0"
+          :class="{ 'hidden': showNavbar, 'block': isOpen, 'hidden':!isOpen}"
         >
-          <!-- <li class="mr-8 mb-6 lg:mb-0">
-            <theme-switcher :theme="theme" @themeChanged="updateTheme" />
-          </li> -->
-          <li class="mr-8 mb-6 lg:mb-0">
+          <li class="mb-6 lg:mb-0"
+              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
+          >
             <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600">Projects</a>
             <g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">Projects</g-link>
           </li>
-          <li class="mr-8 mb-6 lg:mb-0">
+          <li class="mb-6 lg:mb-0"
+              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
+          >
             <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600">About</a>
             <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">About</g-link>
           </li>
-          <li class="mr-8 mb-6 lg:mb-0">
+          <li class="mb-6 lg:mb-0"
+              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
+          >
             <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600">Contact</a>
             <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
           </li>
           <!-- <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/tags" class="text-copy-primary hover:text-gray-600">Tags</g-link>
           </li> -->
-          <li>
+          <li class="mb-6 lg:mb-0"
+              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
+          >
             <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
           </li>
         </ul>
@@ -116,7 +123,7 @@ export default {
   data() {
     return {
       isOpen: false,
-      theme: '',
+      theme: 'theme-dark',
       current_year: current_year,
       showNavbar: true,
       lastScrollPosition: 0,
@@ -140,6 +147,10 @@ export default {
       }
       if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
         return
+      }
+      // If opened immediately, then scrolled, close menu
+      if (this.showNavbar) {
+        this.isOpen = false
       }
       this.showNavbar = window.pageYOffset < this.lastScrollPosition
       this.lastScrollPosition = window.pageYOffset
