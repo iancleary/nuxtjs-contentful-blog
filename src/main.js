@@ -4,6 +4,8 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
+import { VueHammer } from 'vue2-hammer'
+
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -15,6 +17,8 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   Vue.use(VueFuse)
+
+  Vue.use(VueHammer)
 
   head.meta.push({
     name: 'keywords',
