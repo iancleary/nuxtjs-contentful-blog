@@ -1,5 +1,5 @@
 <template>
-  <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen pt-8" :class="theme">
+  <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen pt-16" :class="theme">
     <!-- z-50 makes the navbar clickable over other elements -->
     <header class="z-50 navbar w-full top-0 border-green-700 opacity-100 border-t-14"
             :class="{ 'hidden-navbar': !showNavbar, 'bg-background-primary pb-24 shadow-xl': showNavbar }"
