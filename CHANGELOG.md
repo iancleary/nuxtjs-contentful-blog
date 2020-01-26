@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Added mobile touch events using [vue2-hammer](https://github.com/bsdfzzzy/vue2-hammer) per PR [#34](https://github.com/iancleary/personal-website/pull/34)
+- Added mobile touch events using [vue2-touch-events](https://github.com/jerrybendy/vue-touch-events) per PR [#34](https://github.com/iancleary/personal-website/pull/34)
 - Added alt-text and svg immediate loading per PR [#33](https://github.com/iancleary/personal-website/pull/33)
 - Added navbar automatic hidding on scroll down, showing on scroll up, and opaque responsive on mobile per PR [#30](https://github.com/iancleary/personal-website/pull/30)
 
