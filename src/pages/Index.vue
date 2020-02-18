@@ -102,9 +102,9 @@
             <div class="text-lg text-gray-600">
               Check out my more detailed notes at
               <a
-                href="https://dev-notes.iancleary.me/local-computer/"
+                href="https://wiki.iancleary.me/local-computer/"
                 target="_blank"
-              >dev-notes.iancleary.me/local-computer</a>.
+              >wiki.iancleary.me/local-computer</a>.
                Make a pull request and/or use my setup as inspiration!
             </div>
           </li>
