@@ -21,24 +21,15 @@
           class="flex-column uppercase tracking-wide font-bold w-full block lg:flex lg:flex-initial lg:w-auto mt-8 lg:mt-0"
           :class="{ 'hidden': showNavbar, 'block': isOpen, 'hidden':!isOpen}"
         >
-          <li class="mb-6 lg:mb-0"
-              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
-          >
-            <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600">Projects</a>
-            <g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">Projects</g-link>
-          </li>
-          <li class="mb-6 lg:mb-0"
-              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
-          >
-            <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600">About</a>
-            <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">About</g-link>
-          </li>
-          <li class="mb-6 lg:mb-0"
-              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
-          >
-            <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600">Contact</a>
-            <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
-          </li>
+            <li class="mb-6 lg:mb-0" :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
+                is="scroll-to-link"
+                v-for="section in sections"
+                v-bind:href="section.href"
+                v-bind:text="section.text"
+                v-bind:anchor="section.anchor"
+                v-bind:key="section.id"
+              >
+            </li>
           <!-- <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/tags" class="text-copy-primary hover:text-gray-600">Tags</g-link>
           </li> -->
@@ -103,13 +94,15 @@ query {
 
 <script>
 import ThemeSwitcher from '../components/ThemeSwitcher'
+import ScrollToLink from '../components/ScrollToLink'
 
 var current_year = new Date().getFullYear();
 const OFFSET = 60
 
 export default {
   components: {
-    ThemeSwitcher
+    ThemeSwitcher,
+    ScrollToLink
   },
   mounted() {
     this.theme = localStorage.getItem('theme') || 'theme-dark'
@@ -127,7 +120,27 @@ export default {
       current_year: current_year,
       showNavbar: true,
       lastScrollPosition: 0,
-      scrollValue: 0
+      scrollValue: 0,
+      sections: [
+        {
+          "href": "/#projects",
+          "anchor": "#projects",
+          "text": "Projects",
+          "id": 1
+        },
+        {
+          "href": "/#about",
+          "anchor": "#about",
+          "text": "About",
+          "id": 2
+        },
+        {
+          "href": "/#contact",
+          "anchor": "#contact",
+          "text": "Contact",
+          "id": 3
+        },
+      ]
     }
   },
   beforeDestroy () {
