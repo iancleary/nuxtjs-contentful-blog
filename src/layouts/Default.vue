@@ -21,7 +21,17 @@
           class="flex-column uppercase tracking-wide font-bold w-full block lg:flex lg:flex-initial lg:w-auto mt-8 lg:mt-0"
           :class="{ 'hidden': showNavbar, 'block': isOpen, 'hidden':!isOpen}"
         >
-            <li class="mb-6 lg:mb-0" :class="{'text-center':isOpen, 'flex': isOpen, 'mr-8': (!isOpen)}"
+            <li class="mb-6 lg:mb-0"
+              :class="{'flex':isOpen, 'mr-4': (!isOpen), 'ml-4': showNavbar}"
+               is="navbar-link"
+              v-for="navlink in leftNavLinks"
+                v-bind:href="navlink.href"
+                v-bind:text="navlink.text"
+                v-bind:key="navlink.id"
+          >
+          </li>
+            
+            <li class="mb-6 lg:mb-0" :class="{'flex': isOpen, 'mr-4': (!isOpen), 'ml-4': showNavbar}"
                 is="scroll-to-link"
                 v-for="section in sections"
                 v-bind:href="section.href"
@@ -34,9 +44,9 @@
             <g-link to="/tags" class="text-copy-primary hover:text-gray-600">Tags</g-link>
           </li> -->
           <li class="mb-6 lg:mb-0"
-              :class="{'text-center flex':isOpen, 'mr-8': (!isOpen)}"
+              :class="{'text-center flex':isOpen, 'mr-4': (!isOpen), 'ml-4': showNavbar}"
                is="navbar-link"
-              v-for="navlink in navlinks"
+              v-for="navlink in navLinks"
                 v-bind:href="navlink.href"
                 v-bind:text="navlink.text"
                 v-bind:key="navlink.id"
@@ -129,12 +139,14 @@ export default {
       showNavbar: true,
       lastScrollPosition: 0,
       scrollValue: 0,
-      navlinks: [
+      leftNavLinks: [
         {
           "href": "/",
           "text": "Home",
           "id": 0
-        },
+        }
+      ],
+      navLinks: [
         {
           "href": "/blog",
           "text": "Blog",
