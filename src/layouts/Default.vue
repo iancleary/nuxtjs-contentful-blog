@@ -5,7 +5,7 @@
             :class="{ 'hidden-navbar': !showNavbar, 'bg-background-primary pb-24 shadow-xl': showNavbar }"
     >
       <div class="container object-center opacity-100 mx-auto flex flex-wrap justify-between items-center py-8"
-           :class="{ 'bg-background-primary': showNavbar, 'block shadow-xl': isOpen}"
+           :class="{ 'bg-background-primary': showNavbar, 'block shadow-xl justify-center': isOpen}"
       >
         <div>
           <!-- <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
@@ -21,31 +21,36 @@
           class="flex-column uppercase tracking-wide font-bold w-full block lg:flex lg:flex-initial lg:w-auto mt-8 lg:mt-0"
           :class="{ 'hidden': showNavbar, 'block': isOpen, 'hidden':!isOpen}"
         >
-          <li class="mb-6 lg:mb-0"
-              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
+            <li class="mb-6 lg:mb-0 ml-4"
+              :class="{'flex':isOpen, 'mr-4': (!isOpen)}"
+               is="navbar-link"
+              v-for="navlink in leftNavLinks"
+                v-bind:href="navlink.href"
+                v-bind:text="navlink.text"
+                v-bind:key="navlink.id"
           >
-            <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600">Projects</a>
-            <g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">Projects</g-link>
           </li>
-          <li class="mb-6 lg:mb-0"
-              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
-          >
-            <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600">About</a>
-            <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">About</g-link>
-          </li>
-          <li class="mb-6 lg:mb-0"
-              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
-          >
-            <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600">Contact</a>
-            <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
-          </li>
+            
+            <!-- <li class="lg:visible sm:visible md:visible mb-6 lg:mb-0" :class="{'flex': isOpen, 'mr-4': (!isOpen), 'ml-4': showNavbar}"
+                is="scroll-to-link"
+                v-for="section in sections"
+                v-bind:href="section.href"
+                v-bind:text="section.text"
+                v-bind:anchor="section.anchor"
+                v-bind:key="section.id"
+              >
+            </li> -->
           <!-- <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/tags" class="text-copy-primary hover:text-gray-600">Tags</g-link>
           </li> -->
-          <li class="mb-6 lg:mb-0"
-              :class="{'text-center':isOpen, 'mr-8': (!isOpen)}"
+          <li class="mb-6 lg:mb-0 ml-4"
+              :class="{'text-center flex':isOpen, 'mr-4': (!isOpen)}"
+               is="navbar-link"
+              v-for="navlink in navLinks"
+                v-bind:href="navlink.href"
+                v-bind:text="navlink.text"
+                v-bind:key="navlink.id"
           >
-            <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
           </li>
         </ul>
       </div>
@@ -103,13 +108,19 @@ query {
 
 <script>
 import ThemeSwitcher from '../components/ThemeSwitcher'
+import ScrollToLink from '../components/ScrollToLink'
+import NavbarLink from '../components/NavBarLink'
+
+
 
 var current_year = new Date().getFullYear();
-const OFFSET = 60
+const OFFSET = 5 // 60
 
 export default {
   components: {
-    ThemeSwitcher
+    ThemeSwitcher,
+    ScrollToLink,
+    NavbarLink
   },
   mounted() {
     this.theme = localStorage.getItem('theme') || 'theme-dark'
@@ -127,7 +138,47 @@ export default {
       current_year: current_year,
       showNavbar: true,
       lastScrollPosition: 0,
-      scrollValue: 0
+      scrollValue: 0,
+      leftNavLinks: [
+        {
+          "href": "/",
+          "text": "Home",
+          "id": 0
+        }
+      ],
+      navLinks: [
+        {
+          "href": "/blog",
+          "text": "Blog",
+          "id": 1
+        }
+        // },
+        // {
+        //   "href": "/contact",
+        //   "text": "Contact",
+        //   "id": 2
+        // },
+      ],
+      sections: [
+        {
+          "href": "/#projects",
+          "anchor": "#projects",
+          "text": "Projects",
+          "id": 1
+        },
+        {
+          "href": "/#about",
+          "anchor": "#about",
+          "text": "About",
+          "id": 2
+        },
+        {
+          "href": "/#contact",
+          "anchor": "#contact",
+          "text": "Contact",
+          "id": 3
+        },
+      ]
     }
   },
   beforeDestroy () {
