@@ -21,8 +21,8 @@
           class="flex-column uppercase tracking-wide font-bold w-full block lg:flex lg:flex-initial lg:w-auto mt-8 lg:mt-0"
           :class="{ 'hidden': showNavbar, 'block': isOpen, 'hidden':!isOpen}"
         >
-            <li class="mb-6 lg:mb-0"
-              :class="{'flex':isOpen, 'mr-4': (!isOpen), 'ml-4': showNavbar}"
+            <li class="mb-6 lg:mb-0 ml-4"
+              :class="{'flex':isOpen, 'mr-4': (!isOpen)}"
                is="navbar-link"
               v-for="navlink in leftNavLinks"
                 v-bind:href="navlink.href"
@@ -43,8 +43,8 @@
           <!-- <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/tags" class="text-copy-primary hover:text-gray-600">Tags</g-link>
           </li> -->
-          <li class="mb-6 lg:mb-0"
-              :class="{'text-center flex':isOpen, 'mr-4': (!isOpen), 'ml-4': showNavbar}"
+          <li class="mb-6 lg:mb-0 ml-4"
+              :class="{'text-center flex':isOpen, 'mr-4': (!isOpen)}"
                is="navbar-link"
               v-for="navlink in navLinks"
                 v-bind:href="navlink.href"
