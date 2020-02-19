@@ -31,7 +31,7 @@
           >
           </li>
             
-            <li class="mb-6 lg:mb-0" :class="{'flex': isOpen, 'mr-4': (!isOpen), 'ml-4': showNavbar}"
+            <!-- <li class="lg:visible sm:visible md:visible mb-6 lg:mb-0" :class="{'flex': isOpen, 'mr-4': (!isOpen), 'ml-4': showNavbar}"
                 is="scroll-to-link"
                 v-for="section in sections"
                 v-bind:href="section.href"
@@ -39,7 +39,7 @@
                 v-bind:anchor="section.anchor"
                 v-bind:key="section.id"
               >
-            </li>
+            </li> -->
           <!-- <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/tags" class="text-copy-primary hover:text-gray-600">Tags</g-link>
           </li> -->
@@ -114,7 +114,7 @@ import NavbarLink from '../components/NavBarLink'
 
 
 var current_year = new Date().getFullYear();
-const OFFSET = 60
+const OFFSET = 5 // 60
 
 export default {
   components: {
