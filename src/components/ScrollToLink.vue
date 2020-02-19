@@ -5,7 +5,7 @@
       :v-scroll-to="anchor"
       class="justify-center text-copy-primary hover:text-gray-600"
     >{{text}}</a>
-    <g-link v-else :to="href" class="text-copy-primary hover:text-gray-600">{{ text }}</g-link>
+    <g-link v-else :to="href" class="justify-center text-copy-primary hover:text-gray-600">{{ text }}</g-link>
 </template>
 <script>
 export default {
