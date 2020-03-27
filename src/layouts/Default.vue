@@ -10,7 +10,9 @@
         <div>
           <!-- <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
           <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link> -->
-          <theme-switcher :theme="theme" @themeChanged="updateTheme" />
+          <ClientOnly>  
+            <theme-switcher :theme="theme" @themeChanged="updateTheme" />
+          </ClientOnly>
         </div>
         <div class="block lg:hidden">
           <button sm:v-touch:tap="toggle" @click="toggle" class="px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600">
@@ -110,8 +112,6 @@ query {
 import ThemeSwitcher from '../components/ThemeSwitcher'
 import ScrollToLink from '../components/ScrollToLink'
 import NavbarLink from '../components/NavBarLink'
-
-
 
 var current_year = new Date().getFullYear();
 const OFFSET = 5 // 60
