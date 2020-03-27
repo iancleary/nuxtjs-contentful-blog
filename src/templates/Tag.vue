@@ -21,7 +21,7 @@
       </div>
 
       <pagination-posts
-        v-if="$page.tag.belongsTo.pageInfo.totalPages > 1"
+        v-show="$page.tag.belongsTo.pageInfo.totalPages > 1"
         :base="`/tag/${$page.tag.title}`"
         :totalPages="$page.tag.belongsTo.pageInfo.totalPages"
         :currentPage="$page.tag.belongsTo.pageInfo.currentPage"
