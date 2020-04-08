@@ -17,7 +17,9 @@
     "*.(vue|ts)": "yarn lint:check"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
     "gridsome": "^0.6.4",
+    "tailwindcss": "^1.2.0",
     "vue-property-decorator": "^8.2.0"
   },
   "devDependencies": {
