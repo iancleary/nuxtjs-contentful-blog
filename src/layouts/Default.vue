@@ -1,14 +1,16 @@
 <template>
   <div
-    class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen pt-16 theme-dark"
+    class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen theme-dark"
   >
+    <header class="border-t-8 sm:border-t-8 border-green-700 py-8">
+    </header>
     <transition name="fade" appear>
       <main>
         <slot />
       </main>
     </transition>
     <footer class="bg-green-700 text-white">
-      <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
+      <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-6">
         <div class="mb-8 lg:mb-0">
           <div>Copyright 2019-{{ currentYear }}. All rights reserved.</div>
           <div>
@@ -29,7 +31,15 @@
             >Tailwind CSS</a>
           </div>
           <div>
-            Hosted by
+            Open Source on
+            <a
+              href="https://github.com/iancleary/iancleary.me/"
+              target="_blank"
+              rel="noopener"
+              class="text-white"
+            >GitHub</a>
+            and deployed
+            with
             <a
               href="https://netlify.com"
               target="_blank"
