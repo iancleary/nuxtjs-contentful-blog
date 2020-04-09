@@ -4,15 +4,6 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const tailwind = require('tailwindcss')
-const purgecss = require('@fullhuman/postcss-purgecss')
-
-const postcssPlugins = [
-  tailwind(),
-]
-
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
-
 module.exports = {
   siteName: 'Ian Cleary\'s Portfolio',
   siteDescription: 'My personal website powered by Gridsome powered by Tailwind CSS v1.0',
@@ -20,12 +11,6 @@ module.exports = {
   icon: 'src/assets/favicon.png',
   plugins: [
     { use: 'gridsome-plugin-typescript' },
+    { use: 'gridsome-plugin-tailwindcss'},
   ],
-  css: {
-    loaderOptions: {
-      postcss: {
-        plugins: postcssPlugins,
-      },
-    },
-  },
 }
