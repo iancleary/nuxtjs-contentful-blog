@@ -17,7 +17,6 @@
     "*.(vue|ts)": "yarn lint:check"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
     "gridsome": "^0.7.13",
     "tailwindcss": "^1.2.0",
     "vue-property-decorator": "^8.2.0"
@@ -32,6 +31,7 @@
     "eslint-plugin-promise": "^4.2.0",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.2.0",
+    "gridsome-plugin-tailwindcss": "^2.2.43",
     "gridsome-plugin-typescript": "0.4.0",
     "husky": "^2.7.0",
     "lint-staged": "^8.2.0",
