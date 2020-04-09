@@ -106,7 +106,7 @@ export default {
 
 <static-query>
   query {
-    metaData {
+    metadata {
       siteName
     }
   }
