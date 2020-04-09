@@ -2,48 +2,54 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a026dcc6-920b-4f08-b6ff-535e61f4190a/deploy-status)](https://app.netlify.com/sites/heuristic-mccarthy-2e808b/deploys)
 
-I built this website with Tailwind CSS, vue.js, Gridsome and Netlify.  Originally I started with plain HTML5, migrated to vue.js and tailwindcss with vue-router and vue-cli.  After some looking around, I've discovered Vuepress and eventually [Gridsome](https://gridsome.org/).  I recommend [Gridsome Starters](https://gridsome.org/starters/). I went with [Gridsome Portfolio Starter](https://gridsome.org/starters/gridsome-portfolio-starter/) by Andre Madarang due to the dark/light mode and [Tailwind CSS](https://tailwindcss.com/).
+I built this website with Tailwind CSS, vue.js, Gridsome and Netlify.  Originally I started with plain HTML5, migrated to vue.js and tailwindcss with vue-router and vue-cli.  After some looking around, I've discovered Vuepress and eventually [Gridsome](https://gridsome.org/).  I recommend [Gridsome Starters](https://gridsome.org/starters/). 
 
-Since then, I have made it my own.
+My inspiration originally drew from [Gridsome Portfolio Starter](https://gridsome.org/starters/gridsome-portfolio-starter/) by Andre Madarang due to the dark/light mode and [Tailwind CSS](https://tailwindcss.com/).
 
-## Project setup
+Since then, I have made it my own, converted to Typescript, and adding linting.
 
-```bash
-yarn install
-```
+# Typescript Starter for Gridsome
 
-### Compiles and hot-reloads for development
+I used starter template for Gridsome using Typescript: [xerebede/gridsome-starter-typescript](https://github.com/xerebede/gridsome-starter-typescript). It uses **eslint** and **typescript** for static code analisys. In order to integrate these tools with Visual Studio Code, you'll need to install **ESLint** and **Vetur** extensions for the editor.
 
-```bash
-gridsome develop
-```
+## 1. Install Gridsome CLI tool if you don't have
 
-## Attributions
+`npm install --global @gridsome/cli`
 
-### Useful Vue Packages
+## 2. Create a Gridsome project
 
-#### Mobile Touch Events
+1. `gridsome create gridsome-ts https://github.com/cleitonper/gridsome-starter-typescript.git` to install this typescript starter
+2. `cd gridsome-ts` to open folder
+3. `gridsome develop` to start local dev server at `http://localhost:8080`
+4. happy coding 🎉🙌
 
-- Added mobile touch events using [vue2-touch-events](https://github.com/jerrybendy/vue-touch-events), and recommend it for Gridsome sites.
+## 3. Static Code Analysis - Command Line
 
-##### Issues with Touch Events and Gridsome Build using vue2-hammer
+1. edit the `.eslintrc.json` file and add your favorites rules from [`eslint`](https://eslint.org/docs/rules/), [`typescript`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules) and [`vue`](https://vuejs.github.io/eslint-plugin-vue/rules/).
+2. run `yarn lint:check` to see static analysis result
+3. run `yarn lint:fix` to fix errors found by `eslint`
 
-I originally tried [vue2-hammer](https://github.com/bsdfzzzy/vue2-hammer), but had issues `yarn build`. `yarn develop` works fine as it uses an interactive window and `hammerjs` is fine.
+## 4. Static Code Analysis - Visual Studio Code
 
-- As of 2020-01-25, I've had `yarn build` issues with  [vue2-hammer](https://github.com/bsdfzzzy/vue2-hammer) and think it doesn't work for server side rendered content. As far as I know, Gridsome's static content generation during webpack's build process doesn't have a window and essentially could be server side rendered static content.
-- See <https://github.com/bsdfzzzy/vue2-hammer/issues/39> for `ReferenceError: window is not defined` error
-- See <https://github.com/hammerjs/hammer.js/issues/930> for attempts at patches
+As mentioned before, in order to lint your Typescript code in `*.vue` *Single File Components* with *vscode* you'll need to install [`ESLint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [`Vetur`](https://marketplace.visualstudio.com/items?itemName=octref.vetur) extensions for the editor.
 
-#### Scroll Events
+Use the links above to install the extensions, or follow the steps below:
 
-- Scroll events to hide/show navbar using [vue-scroll](https://github.com/wangpin34/vue-scroll)
+1. Open your vscode, type `CTRL + SHIFT + X`
+2. Search for **ESLint**
+3. Select and install the extension
+4. Do same thing for **Vetur** extension
 
-#### Navbar Links Scrolling to Sections
+## 5. Useful links
 
-- Navbar links scrolling to sections using [vue-scrollto](https://github.com/rigor789/vue-scrollto)
-
-----
-
+* [Gridsome docs](https://gridsome.org/docs/)
+* [Typescript docs](https://www.typescriptlang.org/docs/)
+* [ESLint docs](https://eslint.org/)
+* [ESLint rules](https://eslint.org/docs/rules/)
+* [Typescript rules](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules)
+* [Vue rules](https://vuejs.github.io/eslint-plugin-vue/rules/)
+* [ESLint extension for vscode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Vetur extension for vscode](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 
 
 ### See [Authors.md](AUTHORS.md)
