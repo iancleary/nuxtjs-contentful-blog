@@ -14,9 +14,8 @@ I used starter template for Gridsome using Typescript: [xerebede/gridsome-starte
 
 ## 1. Install Gridsome CLI tool if you don't have
 
-`npm install --global @gridsome/cli`
+`yarn global add @gridsome/cli`
 
-<<<<<<< HEAD
 ## 2. Create a Gridsome project
 
 1. `gridsome create gridsome-ts https://github.com/cleitonper/gridsome-starter-typescript.git` to install this typescript starter
@@ -53,6 +52,6 @@ Use the links above to install the extensions, or follow the steps below:
 * [Vetur extension for vscode](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 
 
-=======
->>>>>>> master
-### See [Authors.md](AUTHORS.md)
+## Attribution
+
+See [Authors.md](AUTHORS.md)
