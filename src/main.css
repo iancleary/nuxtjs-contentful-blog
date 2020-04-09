@@ -120,14 +120,12 @@ nav .active {
   height: 500vh;
 }
 
-.navbar {
-  height: 80px;
-  width: 100vw;
-  position: fixed;
-  transform: translate3d(0, 0, 0);
-  transition: 0.1s all ease-out;
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-.hidden-navbar {
-  box-shadow: none;
-  transform: translate3d(0, -100%, 0);
+
+main {
+  flex: 1; /* Or flex-grow: 1;*/
 }

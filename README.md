@@ -1,6 +1,6 @@
 # Personal website code built with no trackers, no cookies
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a026dcc6-920b-4f08-b6ff-535e61f4190a/deploy-status)](https://app.netlify.com/sites/heuristic-mccarthy-2e808b/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a026dcc6-920b-4f08-b6ff-535e61f4190a/deploy-status)](https://app.netlify.com/sites/iancleary-me/deploys)
 
 I built this website with Tailwind CSS, vue.js, Gridsome and Netlify.  Originally I started with plain HTML5, migrated to vue.js and tailwindcss with vue-router and vue-cli.  After some looking around, I've discovered Vuepress and eventually [Gridsome](https://gridsome.org/).  I recommend [Gridsome Starters](https://gridsome.org/starters/). 
 
@@ -16,6 +16,7 @@ I used starter template for Gridsome using Typescript: [xerebede/gridsome-starte
 
 `npm install --global @gridsome/cli`
 
+<<<<<<< HEAD
 ## 2. Create a Gridsome project
 
 1. `gridsome create gridsome-ts https://github.com/cleitonper/gridsome-starter-typescript.git` to install this typescript starter
@@ -52,4 +53,6 @@ Use the links above to install the extensions, or follow the steps below:
 * [Vetur extension for vscode](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 
 
+=======
+>>>>>>> master
 ### See [Authors.md](AUTHORS.md)
