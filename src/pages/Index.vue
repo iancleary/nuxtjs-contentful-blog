@@ -9,7 +9,6 @@
       <div class="mt-8 md:mt-0">
         <g-image
           src="~/assets/static/unDraw/developer.svg"
-          class="mx-auto sm:mx-0"
           alt="developer with laptop and git commit log visual"
           immediate="true"
         />

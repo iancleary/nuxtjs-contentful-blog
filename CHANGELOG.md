@@ -14,9 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added `rel="noopener"` to social links per web.dev scoring
 - Added alt text, in the form of svg title blocks, to social links
 
+### Changed
+
+- Moved static folder to `~/src/assets`
+
 ### Removed
 
 - Removed console loging from HelloService.sayHello("Gridsome") per web.dev scoring
+- Removed `class="mx-auto sm:mx-0"` from `unDraw/developer.svg` per web.dev scoring
 
 ## [v0.6.1]
 
