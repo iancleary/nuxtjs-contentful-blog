@@ -53,8 +53,8 @@ import { HelloService } from "../services";
 export default class HomePage extends Vue {
   public title = "Typescript Starter for Gridsome";
 
-  public mounted(): void {
-    HelloService.sayHello("Gridsome");
-  }
+  // public mounted(): void {
+  //   HelloService.sayHello("Gridsome");
+  // }
 }
 </script>

@@ -11,7 +11,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Converted to typescript starter:  [xerebede/gridsome-starter-typescript](https://github.com/xerebede/gridsome-starter-typescript)
+
+### Changed
+
 - Changed social links to have `rel="noopener"` per web.dev scoring
+
+### Removed
+
+- Removed console loging from HelloService.sayHello("Gridsome") per web.dev scoring
 
 ## [v0.6.1]
 
