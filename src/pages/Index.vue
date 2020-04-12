@@ -8,7 +8,7 @@
       </div>
       <div class="mt-8 md:mt-0">
         <g-image
-          src="../../static/unDraw/developer.svg"
+          src="~/assets/static/unDraw/developer.svg"
           class="mx-auto sm:mx-0"
           alt="developer with laptop and git commit log visual"
           immediate="true"
@@ -28,14 +28,14 @@
       <div class="flex flex-col sm:flex-row justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
           <g-image
-            src="../../static/unDraw/undraw_web_developer_p3e5.svg"
+            src="~/assets/static/unDraw/undraw_web_developer_p3e5.svg"
             alt="web developer mocking up user interface wireframe"
             immediate="true"
           />
         </div>
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
           <g-image
-            src="../../static/unDraw/undraw_light_the_fire_gt58.svg"
+            src="~/assets/static/unDraw/undraw_light_the_fire_gt58.svg"
             alt="woman next to illuminated lighthouse"
             immediate="true"
           />
