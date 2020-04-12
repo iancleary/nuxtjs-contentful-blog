@@ -133,7 +133,7 @@ let themes = ["light", "dark", "sepia"];
 export default {
   data() {
     return {
-      theme: "light",
+        theme: 'light',
     };
   },
   computed: {

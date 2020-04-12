@@ -11,6 +11,11 @@ module.exports = {
   icon: 'src/assets/favicon.png',
   plugins: [
     { use: 'gridsome-plugin-typescript' },
-    { use: 'gridsome-plugin-tailwindcss'},
+    { 
+      use: 'gridsome-plugin-tailwindcss',
+      options: {
+        shouldPurge: false,
+      },
+    },
   ],
 };
