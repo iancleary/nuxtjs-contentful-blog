@@ -27,14 +27,14 @@
       <div class="flex flex-col sm:flex-row justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
           <g-image
-            src="~/assets/static/unDraw/undraw_web_developer_p3e5.svg"
+            src="~/assets/static/unDraw/webDeveloper.svg"
             alt="web developer mocking up user interface wireframe"
             immediate="true"
           />
         </div>
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
           <g-image
-            src="~/assets/static/unDraw/undraw_light_the_fire_gt58.svg"
+            src="~/assets/static/unDraw/lightTheFire.svg"
             alt="woman next to illuminated lighthouse"
             immediate="true"
           />
