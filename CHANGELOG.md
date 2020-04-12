@@ -11,10 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Converted to typescript starter:  [xerebede/gridsome-starter-typescript](https://github.com/xerebede/gridsome-starter-typescript)
-
-### Changed
-
-- Changed social links to have `rel="noopener"` per web.dev scoring
+- Added `rel="noopener"` to social links per web.dev scoring
+- Added alt text, in the form of svg title blocks, to social links
 
 ### Removed
 
