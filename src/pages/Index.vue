@@ -4,11 +4,13 @@
       class="hero container-inner mx-auto flex flex-col sm:flex-row items-center justify-between py-16 px-16"
     >
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="sticky font-bold leading-tight mt-12">Ian Cleary</div>
+        <div class="sticky font-bold leading-tight mt-12">
+          Ian Cleary
+        </div>
       </div>
       <div class="mt-8 md:mt-0">
         <g-image
-          src="~/assets/static/unDraw/developer.svg"
+          src="~/assets/images/unDraw/developer.svg"
           alt="developer with laptop and git commit log visual"
           immediate="true"
         />
@@ -27,14 +29,14 @@
       <div class="flex flex-col sm:flex-row justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
           <g-image
-            src="~/assets/static/unDraw/webDeveloper.svg"
+            src="~/assets/images/unDraw/webDeveloper.svg"
             alt="web developer mocking up user interface wireframe"
             immediate="true"
           />
         </div>
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
           <g-image
-            src="~/assets/static/unDraw/lightTheFire.svg"
+            src="~/assets/images/unDraw/lightTheFire.svg"
             alt="woman next to illuminated lighthouse"
             immediate="true"
           />
@@ -46,7 +48,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { HelloService } from "../services";
+// import { HelloService } from "../services";
 
 @Component
 export default class HomePage extends Vue {
