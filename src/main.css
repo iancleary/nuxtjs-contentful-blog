@@ -4,7 +4,7 @@
 
 @tailwind utilities;
 
-.theme-light {
+.light {
   --bg-background-primary: white;
   --bg-background-secondary: #f7fafc;
   --bg-background-tertiary: #e2e8f0;
@@ -17,27 +17,27 @@
   --border-border-color-primary: white;
 }
 
-.theme-light .search-highlighted {
+.light .search-highlighted {
   background: #f0fff4;
 }
 
-.theme-light .search-hover:hover {
+.light .search-hover:hover {
   background: #f0fff4;
 }
 
-.theme-dark .markdown-body {
+.dark .markdown-body {
     color: #24292e;
 }
 
-.theme-dark .search-highlighted {
+.dark .search-highlighted {
   background: #2d3748;
 }
 
-.theme-dark .search-hover:hover {
+.dark .search-hover:hover {
   background: #2d3748;
 }
 
-.theme-dark {
+.dark {
   --bg-background-primary: #0D2438;
   --bg-background-secondary: #102C44;
   --bg-background-tertiary: #1E3951;
@@ -50,7 +50,7 @@
   --border-border-color-primary:  #1a202c;
 }
 
-.theme-dark .markdown-body {
+.dark .markdown-body {
     color: #cbd5e0;
 }
 

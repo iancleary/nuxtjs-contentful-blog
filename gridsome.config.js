@@ -13,4 +13,4 @@ module.exports = {
     { use: 'gridsome-plugin-typescript' },
     { use: 'gridsome-plugin-tailwindcss'},
   ],
-}
+};

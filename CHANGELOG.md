@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Converted to typescript starter:  [xerebede/gridsome-starter-typescript](https://github.com/xerebede/gridsome-starter-typescript)
 - Added `rel="noopener"` to social links per web.dev scoring
 - Added alt text, in the form of svg title blocks, to social links
+- Added theme-switcher from <gridsome.org>
 
 ### Changed
 
