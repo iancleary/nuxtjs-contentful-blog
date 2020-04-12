@@ -15,6 +15,7 @@
             <a
               href="https://github.com/iancleary"
               target="_blank"
+              rel="noopener"
               class="text-white hover:text-gray-400"
             >
               <svg width="20" height="19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -30,6 +31,7 @@
             <a
               href="https://twitter.com/icancclearynow"
               target="_blank"
+              rel="noopener"
               class="text-white hover:text-gray-400"
             >
               <svg width="20" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
