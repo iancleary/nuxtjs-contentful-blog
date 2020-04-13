@@ -1,7 +1,7 @@
 <template>
   <div
-    sepia
-    class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen theme-dark"
+    class="bg-background-primary font-sans text-copy-primary
+           content-wrapper leading-normal flex flex-col min-h-screen"
   >
     <Header />
     <transition
@@ -27,13 +27,5 @@ export default {
     Footer,
     Header,
   },
-  // props: ['footer', 'primaryBg'],
-  // computed: {
-  //   mainClass() {
-  //     let classes = [];
-  //     if(this.primaryBg) classes.push('main--bg-teritary');
-  //     return classes;
-  //   },
-  // },
 };
 </script>
