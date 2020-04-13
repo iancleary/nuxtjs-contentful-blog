@@ -52,4 +52,8 @@ jspm_packages/
 
 # IDE
 .idea
-.vscode
+## .vscode 
+### I want my .vscode/settings.json to be cross machine 
+###     "editor.codeActionsOnSave": {
+###        "source.fixAll.eslint": true
+###     }
