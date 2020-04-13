@@ -5,13 +5,14 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Ian Cleary\'s Portfolio',
-  siteDescription: 'My personal website powered by Gridsome powered by Tailwind CSS v1.0',
+  siteName: "🌎🚀🛰️",
+  siteDescription: 'My personal website powered by Gridsome',
+  titleTemplate: '%s - Ian Cleary',
   siteUrl: 'https://iancleary.me',
   icon: 'src/assets/favicon.png',
   plugins: [
     { use: 'gridsome-plugin-typescript' },
-    { 
+    {
       use: 'gridsome-plugin-tailwindcss',
       options: {
         shouldPurge: false,
