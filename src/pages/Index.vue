@@ -29,8 +29,8 @@
       <div class="flex flex-col sm:flex-row justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
           <g-image
-            src="~/assets/images/unDraw/webDeveloper.svg"
-            alt="web developer mocking up user interface wireframe"
+            src="~/assets/images/unDraw/code_review.svg"
+            alt="Code review of user interface wireframe"
             immediate="true"
           />
         </div>
