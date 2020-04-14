@@ -1,14 +1,14 @@
 <template>
   <div
-    class="bg-background-primary font-sans text-copy-primary
-           content-wrapper leading-normal flex flex-col min-h-screen"
+    class="font-sans text-copy-primary
+           content-wrapper flex flex-col min-h-screen bg-background-primary"
   >
     <Header />
     <transition
       name="fade"
       appear
     >
-      <main>
+      <main class="bg-background-primary">
         <slot />
       </main>
     </transition>

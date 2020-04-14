@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <div
-      class="hero container-inner mx-auto flex flex-col sm:flex-row items-center justify-between py-16 px-16"
+      class="container-inner mx-auto flex flex-col sm:flex-row items-center justify-between py-16 px-16"
     >
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <div class="sticky font-bold leading-tight mt-12">
+        <div class="font-bold leading-tight mt-12">
           Ian Cleary
         </div>
       </div>
@@ -19,7 +19,7 @@
     <!-- end hero -->
 
     <div class="container-inner mx-auto">
-      <p class="text-lg sm:text-xl text-red-600">
+      <p class="text-lg sm:text-xl">
         With the help of my coworkers,
         I am RF/Microwave Engineer working on electronics bound for outer space.
         With the help of the worldwide community,
