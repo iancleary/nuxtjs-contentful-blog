@@ -4,15 +4,25 @@
 
 @tailwind utilities;
 
+/* I believe you need to set defaults to allow data-theme to overwrite them */
 :root {
+  --bg-background-primary: #FFF;
+  --bg-background-secondary: #f3f5f4;
+  --bg-background-tertiary: #e2e8f0;
+
   --text-copy-primary: #2d3748;
   --text-copy-secondary: #4a5568;
+
+  --border-border-color-primary: white;
 };
 
 [data-theme="light"] {
-  --bg-background-primary: #fff;
+  --bg-background-primary: #FFF;
   --bg-background-secondary: #f3f5f4;
   --bg-background-tertiary: #e2e8f0;
+
+  --text-copy-primary: #2d3748;
+  --text-copy-secondary: #4a5568;
 
   --border-border-color-primary: white;
 }
@@ -37,7 +47,6 @@
   --text-copy-secondary: #e2e8f0;
 
   --border-border-color-primary:  #1a202c;
-
 }
 
 
@@ -46,17 +55,14 @@
 }
 
 a {
-  @apply text-green-700 font-bold;
+  @apply text-green-700;
+  @apply font-bold;
 }
 
 a:hover {
   @apply text-green-800;
 }
 
-nav .active {
-  font-weight: bold;
-  @apply border-black border-b;
-}
 
 .container-inner {
   padding-left: 1rem;

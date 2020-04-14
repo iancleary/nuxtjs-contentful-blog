@@ -1,6 +1,7 @@
 <template>
-  <header class="border-t-8 sm:border-t-8 border-green-700 py-4 sticky top-0 bg-background-primary">
-    <div class="container relative py-4 inset-x-0">
+  <header class="border-t-8 border-green-700 py-4 sticky top-0 bg-background-primary opacity-90"
+  >
+    <div class="container pt-2 pb-6 inset-x-0">
       <ul class="absolute right-0 flex items-center">
         <li class="mr-8">
           <ToggleTheme />
@@ -30,19 +31,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.toggle-theme {
-  background-color: transparent;
-  border: 0;
-  color: currentColor;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
-  }
-  &:focus {
-    outline: none;
-  }
-}
-</style>

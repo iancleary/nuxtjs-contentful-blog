@@ -13,7 +13,7 @@ import { ClientApiConstructor } from './types';
  */
 require('~/main.css');
 /**
- * import '~/assets/css/global.css'; 
+ * import '~/assets/css/global.css';
  */
 
 /**

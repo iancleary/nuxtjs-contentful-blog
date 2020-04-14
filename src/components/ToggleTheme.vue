@@ -128,12 +128,12 @@
 </template>
 
 <script>
-let themes = ["light", "dark", "sepia"];
+let themes = ["dark", "sepia", "light"];
 
 export default {
   data() {
     return {
-        theme: 'light',
+        theme: 'dark',
     };
   },
   computed: {
