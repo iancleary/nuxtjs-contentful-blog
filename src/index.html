@@ -16,10 +16,7 @@
           window.__onThemeChange(newTheme);
         }
 
-        var preferredTheme;
-        try {
-          preferredTheme = localStorage.getItem('theme');
-        } catch (err) { }
+        var preferredTheme = 'dark'; // I prefer Dark Themes
 
         window.__setPreferredTheme = function(newTheme) {
           setTheme(newTheme);
