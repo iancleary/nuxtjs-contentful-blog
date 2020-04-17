@@ -4,7 +4,11 @@
 
 @tailwind utilities;
 
-/* I believe you need to set defaults to allow data-theme to overwrite them */
+/* Source Material for Custom CSS */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+/* https://tailwindcss.com/docs/configuration/#app */
+
+/* Defaults to allow data-theme to overwrite them */
 :root {
   --bg-background-primary: #FFF;
   --bg-background-secondary: #f3f5f4;
@@ -16,17 +20,19 @@
   --border-border-color-primary: white;
 };
 
+/* Pass through values from root */
 [data-theme="light"] {
-  --bg-background-primary: #FFF;
-  --bg-background-secondary: #f3f5f4;
-  --bg-background-tertiary: #e2e8f0;
+  --bg-background-primary: var(--bg-background-primary);
+  --bg-background-secondary: var(--bg-background-secondary);
+  --bg-background-tertiary: var(--bg-background-secondary);
 
-  --text-copy-primary: #2d3748;
-  --text-copy-secondary: #4a5568;
+  --text-copy-primary: var(--text-copy-primary);
+  --text-copy-secondary: var(--text-copy-secondary);
 
-  --border-border-color-primary: white;
+  --border-border-color-primary: var(--border-border-color-primary);
 }
 
+/* Override values from root */
 [data-theme="dark"] {
   --bg-background-primary: #0D2438;
   --bg-background-secondary: #102C44;
@@ -38,6 +44,7 @@
   --border-border-color-primary:  #1a202c;
 }
 
+/* Override values from root */
 [data-theme="sepia"] {
   --bg-background-primary: #f1e7d0;
   --bg-background-secondary: #eae0c9;
