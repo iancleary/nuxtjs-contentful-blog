@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Moved static folder to `~/src/assets`
 - Uncommented `.vscode` fro `.gitignore` to have cross machine settings.json (eslint preferences on save)
 - Default to `'dark'` theme
+- Updated main.css to properly pass through variables to `light` theme
 
 ### Removed
 
