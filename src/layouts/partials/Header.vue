@@ -8,6 +8,9 @@
           <ToggleTheme />
         </li>
         <li class="mr-8">
+          <DevLogo />
+        </li>
+        <li class="mr-8">
           <GitHubLogo />
         </li>
         <li class="mr-8">
@@ -20,6 +23,7 @@
 
 <script lang="ts">
 
+import DevLogo from '@/components/DEVLogo.vue';
 import ToggleTheme from '@/components/ToggleTheme.vue';
 import TwitterLogo from '@/components/TwitterLogo.vue';
 import GitHubLogo from '@/components/GitHubLogo.vue';
@@ -27,6 +31,7 @@ import GitHubLogo from '@/components/GitHubLogo.vue';
 export default {
   components: {
       ToggleTheme,
+      DevLogo,
       GitHubLogo,
       TwitterLogo,
   },

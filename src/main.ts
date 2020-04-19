@@ -21,9 +21,9 @@ require('~/main.css');
  */
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome';
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter, faDev } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faGithub, faTwitter);
+library.add(faGithub, faTwitter, faDev);
 
 /**
  * Layout imports
