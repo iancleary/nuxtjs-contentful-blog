@@ -1,8 +1,10 @@
 <template>
   <Layout>
-    <Hero />
-    <Projects />
-    <BottomDots />
+    <div class="overflow-x-hidden">
+      <Hero />
+      <Projects />
+      <BottomDots />
+    </div>
   </Layout>
 </template>
 
