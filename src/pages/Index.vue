@@ -10,7 +10,7 @@
 
 import Hero from './partials/Hero.vue';
 import Projects from './partials/Projects.vue';
-import BottomDots from './partials/BottomDots.vue';
+import BottomDots from '@/components/BottomDots.vue';
 
 export default {
   components: {
