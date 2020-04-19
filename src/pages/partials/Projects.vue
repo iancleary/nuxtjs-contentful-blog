@@ -38,13 +38,13 @@
               rel="noopener noreferrer"
               title="Link to ansible.com"
             >Ansible</a>.
-            Follow my journey 
+            My work is released here 
             <a
               href="https://github.com/iancleary/ansible-desktop"
               target="_blank"
               rel="noopener noreferrer"
               title="Link to my ansible desktop GitHub repository"
-            >iancleary/ansible-desktop</a> 
+            >iancleary/ansible-desktop</a>.
           </div>
           <!-- <img src="https://img.shields.io/travis/com/iancleary/ansible-desktop/master.svg"></image> -->
         </li>
@@ -68,7 +68,7 @@
               target="_blank"
               rel="noopener noreferrer"
               title="Link to FastRF's documentation"
-            >Fastrf.iancleary.me</a> is a project combining interests in Radio Frequency (RF) Microwave Engineering,
+            >FastRF.iancleary.me</a> is a project combining interests in Radio Frequency (RF) Microwave Engineering,
             Python Development, Web Servers, and Databases.
           </div>
         </li>
@@ -76,7 +76,7 @@
         <li class="checkmark mb-6">
           <div>Personal Jupyter Notebook Image</div>
           <div class="text-lg text-gray-600">
-            I am familiar the Jupyter interactive computing environment. My
+            I am comfortable the Jupyter interactive computing environment. My
             <a
               href="https://github.com/iancleary/personal-notebook"
               target="_blank"
