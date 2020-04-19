@@ -9,18 +9,21 @@
       </h2>
       <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
       <ul class="text-lg sm:text-xl">
-        <!-- <li class="checkmark mb-6">
+        <li class="checkmark mb-6">
           <div>Continuous Integration / Continuous Deployment</div>
           <div class="text-lg text-gray-600">
             My Python and Docker projects have CI/CD pipelines using Travis-CI.
             <br>Checkout my
-            <g-link
-              to="/blog/an-introduction-to-ci-cd-with-travis-ci-and-python/"
+            <a
+              href="https://dev.to/iancleary/an-introduction-to-ci-cd-with-travis-ci-and-python-3025"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Link to my first blog post on Dev.to's website"
             >
               introduction to CI/CD with Travis CI and Python
-            </g-link>blog post!
+            </a>blog post!
           </div>
-        </li> -->
+        </li>
         <li class="checkmark mb-6">
           <div>Ubuntu Laptop and Desktop Setup</div>
           <div class="text-lg text-gray-600">
