@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Removed console loging from HelloService.sayHello("Gridsome") per web.dev scoring
 - Removed `class="mx-auto sm:mx-0"` from `unDraw/developer.svg` per web.dev scoring
+- Removed [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator) dependency
 
 ## [v0.6.1]
 
