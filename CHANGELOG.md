@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Fixed `overflow-x-hidded` on BottomDots component (dots were too wide on narrow width displays)
+
 ## [v0.7.0]
 
 ### Added
