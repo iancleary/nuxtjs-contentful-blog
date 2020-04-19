@@ -8,18 +8,6 @@
         Here are some of my projects:
       </h2>
       <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
-      <div
-        class="absolute right-0"
-        style="top: 50px; transform: translate(100%) rotate(180deg)"
-      >
-        <svg
-          width="170px"
-          height="170px"
-        >
-          <use xlink:href="#dots-triangle" />
-        </svg>
-      </div>
-
       <ul class="text-lg sm:text-xl">
         <!-- <li class="checkmark mb-6">
           <div>Continuous Integration / Continuous Deployment</div>
