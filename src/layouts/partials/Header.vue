@@ -1,5 +1,6 @@
 <template>
-  <header class="border-t-8 border-green-700 py-4 sticky top-0 bg-background-primary opacity-90"
+  <header
+    class="border-t-8 border-green-700 py-4 sticky top-0 bg-background-primary opacity-90"
   >
     <div class="container pt-2 pb-6 inset-x-0">
       <ul class="absolute right-0 flex items-center">
