@@ -24,7 +24,7 @@
 [data-theme="light"] {
   --bg-background-primary: var(--bg-background-primary);
   --bg-background-secondary: var(--bg-background-secondary);
-  --bg-background-tertiary: var(--bg-background-secondary);
+  --bg-background-tertiary: var(--bg-background-tertiary);
 
   --text-copy-primary: var(--text-copy-primary);
   --text-copy-secondary: var(--text-copy-secondary);

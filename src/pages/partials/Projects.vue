@@ -1,30 +1,13 @@
 <template>
   <div class="overflow-x-hidden">
-    <div class="projects container-inner mx-auto text-xl border-t border-gray-500 py-16 relative">
-      <h2
+    <div class="projects container-inner mx-auto text-xl py-16 sm:py-0 relative">
+      <span
         class="font-bold mb-6"
         id="projects"
-      >
-        Here are some of my projects:
-      </h2>
+      />
       <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
       <ul class="text-lg sm:text-xl">
-        <li class="checkmark mb-6">
-          <div>Continuous Integration / Continuous Deployment</div>
-          <div class="text-lg text-gray-600">
-            My Python and Docker projects have CI/CD pipelines using Travis-CI.
-            <br>Checkout my
-            <a
-              href="https://dev.to/iancleary/an-introduction-to-ci-cd-with-travis-ci-and-python-3025"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Link to my first blog post on Dev.to's website"
-            >
-              introduction to CI/CD with Travis CI and Python
-            </a>blog post!
-          </div>
-        </li>
-        <li class="checkmark mb-6">
+        <li class="my-10 mx-12 py-4 px-4 bg-background-secondary rounded-lg shadow-xl">
           <div>Ubuntu Laptop and Desktop Setup</div>
           <div class="text-lg text-gray-600">
             I practice the Infrastructure as Code philosophy on my desktop configuration, using
@@ -51,7 +34,7 @@
           </div>
           <!-- <img src="https://img.shields.io/travis/com/iancleary/ansible-desktop/master.svg"></image> -->
         </li>
-        <li class="checkmark mb-6">
+        <li class="my-10 mx-12 py-4 px-4 bg-background-secondary rounded-lg shadow-xl">
           <div>Python Package Quickstart</div>
           <div class="text-lg text-gray-600">
             Speed up your python package generation using my python package template
@@ -63,7 +46,7 @@
             >cookiecutter gh:iancleary/pypackage</a>.
           </div>
         </li>
-        <li class="checkmark mb-6">
+        <li class="my-10 mx-12 py-4 px-4 bg-background-secondary rounded-lg shadow-xl">
           <div>FastRF</div>
           <div class="text-lg text-gray-600">
             <a
@@ -76,7 +59,7 @@
           </div>
         </li>
 
-        <li class="checkmark mb-6">
+        <li class="my-10 mx-12 py-4 px-4 bg-background-secondary rounded-lg shadow-xl">
           <div>Personal Jupyter Notebook Image</div>
           <div class="text-lg text-gray-600">
             I am comfortable the Jupyter interactive computing environment. My

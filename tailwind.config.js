@@ -1,5 +1,9 @@
 module.exports = {
   theme: {
+    zIndex: {
+      '-10': '-10',
+      '10': '10',
+    },
     extend: {
       spacing: {
         '80': '20rem',
@@ -7,10 +11,10 @@ module.exports = {
       },
       borderWidth: {
         '14': '14px',
-      }
+      },
     },
     container: {
-      padding: '1rem'
+      padding: '1rem',
     },
     colors: {
       background: {
@@ -100,12 +104,12 @@ module.exports = {
       '80': '.8',
       '90': '.9',
       '100': '1',
-    }
+    },
   },
   variants: {
     // Some useful comment
   },
   plugins: [
     // Some useful comment
-  ]
-}
+  ],
+};
