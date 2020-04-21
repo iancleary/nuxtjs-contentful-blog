@@ -8,14 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Card CSS Classes that cascade Blog and Project Cards
+
 ### Changed
 
 - Refactored Index page to use shadows, rounding, and other Refactoring UI concepts
 - Moved "Ian Cleary" to left portion of header
-
-### Changed
-
-- Fixed `overflow-x-hidded` on Index and BottomDots component (dots were too wide on narrow width displays)
+- Fixed `overflow-x-hidden` on Index and BottomDots component (dots were too wide on narrow width displays)
 
 ## [v0.7.0]
 

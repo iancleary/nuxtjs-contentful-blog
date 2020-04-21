@@ -1,5 +1,5 @@
 <template>
-  <div class="container-inner mx-auto pb-4 overflow-x-hidden">
+  <div class="container-inner mx-auto pb-4">
     <svg
       width="725"
       height="166"
