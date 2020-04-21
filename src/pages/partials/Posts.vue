@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-x-hidden border-t-2 border-green-700 ">
+  <div class="border-t-2 border-green-700 ">
     <div class="container-inner mx-auto text-xl sm:py-0 relative">
       <span
         id="blog"
