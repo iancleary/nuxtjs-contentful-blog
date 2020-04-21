@@ -1,6 +1,6 @@
 <template>
-  <div class="overflow-x-hidden border-t-2 border-green-700 ">
-    <div class="container-inner mx-auto text-xl py-16 sm:py-0 relative">
+  <div class="border-t-2 border-green-700 ">
+    <div class="container-inner mx-auto text-xl sm:py-0 relative">
       <span
         id="blog"
       />
@@ -25,7 +25,7 @@
       
       <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
       <ul class="text-lg sm:text-xl">
-        <li class="my-10 mx-12 py-6 px-6 border-2 border-green-700 bg-background-tertiary rounded-lg shadow-xl shadow-inner">
+        <li class="blog-card">
           <div class="text-lg text-gray-600">
             Checkout my
             <a
