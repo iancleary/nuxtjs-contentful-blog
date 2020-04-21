@@ -2,12 +2,11 @@
   <div class="overflow-x-hidden">
     <div class="projects container-inner mx-auto text-xl py-16 sm:py-0 relative">
       <span
-        class="font-bold mb-6"
         id="projects"
       />
       <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
       <ul class="text-lg sm:text-xl">
-        <li class="my-10 mx-12 py-4 px-4 bg-background-secondary rounded-lg shadow-xl">
+        <li class="project-card">
           <div>Ubuntu Laptop and Desktop Setup</div>
           <div class="text-lg text-gray-600">
             I practice the Infrastructure as Code philosophy on my desktop configuration, using
@@ -34,7 +33,7 @@
           </div>
           <!-- <img src="https://img.shields.io/travis/com/iancleary/ansible-desktop/master.svg"></image> -->
         </li>
-        <li class="my-10 mx-12 py-4 px-4 bg-background-secondary rounded-lg shadow-xl">
+        <li class="project-card">
           <div>Python Package Quickstart</div>
           <div class="text-lg text-gray-600">
             Speed up your python package generation using my python package template
@@ -46,7 +45,7 @@
             >cookiecutter gh:iancleary/pypackage</a>.
           </div>
         </li>
-        <li class="my-10 mx-12 py-4 px-4 bg-background-secondary rounded-lg shadow-xl">
+        <li class="project-card">
           <div>FastRF</div>
           <div class="text-lg text-gray-600">
             <a
@@ -59,7 +58,7 @@
           </div>
         </li>
 
-        <li class="my-10 mx-12 py-4 px-4 bg-background-secondary rounded-lg shadow-xl">
+        <li class="project-card">
           <div>Personal Jupyter Notebook Image</div>
           <div class="text-lg text-gray-600">
             I am comfortable the Jupyter interactive computing environment. My
