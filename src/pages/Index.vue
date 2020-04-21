@@ -1,5 +1,7 @@
 <template>
   <Layout>
+    <!-- Overflow-x-hidden prevents horizontal scrolling when 
+      elements are larger than others within the app -->
     <div class="overflow-x-hidden">
       <Hero />
       <Projects />
