@@ -3,7 +3,7 @@
     <div
       class="container-inner mx-auto flex flex-col sm:flex-row items-center justify-between py-16 px-16"
     >
-      <div class="mx-auto mt-8 md:mt-0">
+      <div class="mx-auto lg:mt-8">
         <g-image
           src="~/assets/images/unDraw/developer.svg"
           alt="developer with laptop and git commit log visual"
@@ -13,7 +13,7 @@
     </div>
     <!-- end hero -->
     
-    <div class="mt-8 md:mt-0">
+    <div class="mb-4">
       <div class="container-inner mx-auto">
         <p class="text-lg sm:text-xl">
           With the help of my coworkers, 
@@ -24,7 +24,7 @@
           I am learning about web frameworks, open source development, and software engineering best practices.
         </p>
 
-        <div class="flex flex-col sm:flex-row justify-between items-center py-6">
+        <div class="flex flex-col sm:flex-row justify-between items-center py-6 lg:mt-4 sm:mt-2">
           <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
             <g-image
               src="~/assets/images/unDraw/connectedWorld.svg"

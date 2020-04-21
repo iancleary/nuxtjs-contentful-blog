@@ -1,5 +1,5 @@
 <template>
-  <div class="container-inner mx-auto text-xl py-16 sm:py-0 relative">
+  <div class="container-inner mx-auto text-xl pb-16 sm:py-0 relative">
     <span
       id="projects"
     />
