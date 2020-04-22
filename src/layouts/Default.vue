@@ -32,6 +32,7 @@ export default {
   components: {
     Footer,
     Header,
+    LazyHydrate,
   },
 };
 </script>

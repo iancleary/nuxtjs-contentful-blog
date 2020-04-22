@@ -33,6 +33,7 @@ import BottomDots from '@/components/BottomDots.vue';
 
 export default {
   components: {
+    LazyHydrate,
     Hero,
     Posts,
     Projects,
