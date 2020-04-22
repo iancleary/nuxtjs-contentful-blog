@@ -4,8 +4,18 @@
       id="projects"
     />
     <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
-    <ul class="text-lg sm:text-xl">
+    <ul class="text-lg sm:text-xl relative">
       <li class="project-card">
+        <a
+          class="travis-badge-inset"
+          href="https://travis-ci.com/iancleary/ansible-desktop"
+          target="_blank"
+        >
+          <img
+            src="https://travis-ci.com/iancleary/ansible-desktop.svg?branch=master"
+            alt="ansible-desktop repo Build Status"
+          >
+        </a>
         <div>Ubuntu Laptop and Desktop Setup</div>
         <div class="text-lg text-gray-600">
           I practice the Infrastructure as Code philosophy on my desktop configuration, using
@@ -30,9 +40,18 @@
             title="Link to my ansible desktop GitHub repository"
           >iancleary/ansible-desktop</a>.
         </div>
-        <!-- <img src="https://img.shields.io/travis/com/iancleary/ansible-desktop/master.svg"></image> -->
       </li>
       <li class="project-card">
+        <a
+          class="travis-badge-inset"
+          href="https://travis-ci.com/iancleary/pypackage"
+          target="_blank"
+        >
+          <img
+            src="https://travis-ci.com/iancleary/pypackage.svg?branch=master"
+            alt="pypackage repo Build Status"
+          >
+        </a>
         <div>Python Package Quickstart</div>
         <div class="text-lg text-gray-600">
           Speed up your python package generation using my python package template
@@ -45,6 +64,16 @@
         </div>
       </li>
       <li class="project-card">
+        <a
+          class="travis-badge-inset"
+          href="https://travis-ci.com/iancleary/fastrf"
+          target="_blank"
+        >
+          <img
+            src="https://travis-ci.com/iancleary/fastrf.svg?branch=master"
+            alt="fastrf repo Build Status"
+          >
+        </a>
         <div>FastRF</div>
         <div class="text-lg text-gray-600">
           <a
@@ -58,6 +87,16 @@
       </li>
 
       <li class="project-card">
+        <a
+          class="travis-badge-inset"
+          href="https://travis-ci.com/iancleary/personal-notebook"
+          target="_blank"
+        >
+          <img
+            src="https://travis-ci.com/iancleary/personal-notebook.svg?branch=master"
+            alt="personal-notebook repo Build Status"
+          >
+        </a>
         <div>Personal Jupyter Notebook Image</div>
         <div class="text-lg text-gray-600">
           I am comfortable the Jupyter interactive computing environment. My

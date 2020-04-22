@@ -116,6 +116,13 @@ a:hover {
   @apply bg-background-tertiary;
 }
 
+.travis-badge-inset {
+  @apply absolute;
+  @apply right-0;
+  @apply pr-6;
+  @apply pt-1;
+}
+
 .responsive-container {
   position: relative;
   overflow: hidden;
