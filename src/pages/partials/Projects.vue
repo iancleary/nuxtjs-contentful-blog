@@ -63,12 +63,16 @@
           I am comfortable the Jupyter interactive computing environment. My
           <a
             href="https://github.com/iancleary/personal-notebook"
+            rel="noopener noreferrer"
             target="_blank"
+            title="Link to Personal Jupyter Notebook GitHub Repo"
           >personal-notebook</a>
           is open source and on DockerHub, via
           <a
             href="https://hub.docker.com/r/iancleary/personal-notebook"
+            rel="noopener noreferrer"
             target="_blank"
+            title="Link to Personal Jupyter Notebook Docker Hub Page"
           >docker pull iancleary/personal-notebook</a>
           .
         </div>
