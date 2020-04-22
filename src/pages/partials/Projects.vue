@@ -16,7 +16,9 @@
             alt="ansible-desktop repo Build Status"
           >
         </a>
-        <div>Ubuntu Laptop and Desktop Setup</div>
+        <div class="break-normal w-3/4">
+          Ubuntu Laptop and Desktop Setup
+        </div>
         <div class="text-lg text-gray-600">
           I practice the Infrastructure as Code philosophy on my desktop configuration, using
           <a
@@ -52,7 +54,9 @@
             alt="pypackage repo Build Status"
           >
         </a>
-        <div>Python Package Quickstart</div>
+        <div class="break-normal w-3/4">
+          Python Package Quickstart
+        </div>
         <div class="text-lg text-gray-600">
           Speed up your python package generation using my python package template
           <a
@@ -74,7 +78,9 @@
             alt="fastrf repo Build Status"
           >
         </a>
-        <div>FastRF</div>
+        <div class="break-normal w-3/4">
+          FastRF
+        </div>
         <div class="text-lg text-gray-600">
           <a
             href="https://fastrf.iancleary.me/"
@@ -97,7 +103,9 @@
             alt="personal-notebook repo Build Status"
           >
         </a>
-        <div>Personal Jupyter Notebook Image</div>
+        <div class="break-normal w-3/4">
+          Personal Jupyter Notebook Image
+        </div>
         <div class="text-lg text-gray-600">
           I am comfortable the Jupyter interactive computing environment. My
           <a
