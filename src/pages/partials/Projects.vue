@@ -16,7 +16,7 @@
             alt="ansible-desktop repo Build Status"
           >
         </a>
-        <div class="break-normal w-3/4">
+        <div class="break-normal w-2/3">
           Ubuntu Laptop and Desktop Setup
         </div>
         <div class="text-lg text-gray-600">
@@ -54,7 +54,7 @@
             alt="pypackage repo Build Status"
           >
         </a>
-        <div class="break-normal w-3/4">
+        <div class="break-normal w-2/3">
           Python Package Quickstart
         </div>
         <div class="text-lg text-gray-600">
@@ -78,7 +78,7 @@
             alt="fastrf repo Build Status"
           >
         </a>
-        <div class="break-normal w-3/4">
+        <div class="break-normal w-2/3">
           FastRF
         </div>
         <div class="text-lg text-gray-600">
@@ -103,7 +103,7 @@
             alt="personal-notebook repo Build Status"
           >
         </a>
-        <div class="break-normal w-3/4">
+        <div class="break-normal w-2/3">
           Personal Jupyter Notebook Image
         </div>
         <div class="text-lg text-gray-600">
