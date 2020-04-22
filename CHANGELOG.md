@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refactored Index page to use shadows, rounding, and other Refactoring UI concepts
 - Moved "Ian Cleary" to left portion of header
 - Fixed `overflow-x-hidden` on Index and BottomDots component (dots were too wide on narrow width displays)
+- upgraded tailwindcss from 1.2.0 to 1.3.4
 
 ## [v0.7.0]
 
