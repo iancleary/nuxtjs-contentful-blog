@@ -3,17 +3,28 @@
     <!-- Overflow-x-hidden prevents horizontal scrolling when 
       elements are larger than others within the app -->
     <div class="overflow-x-hidden">
-      <Hero />
-      <Projects />
+      <LazyHydrate when-idle>
+        <Hero />
+      </LazyHydrate>
+      <LazyHydrate when-visible>
+        <Projects />
+      </LazyHydrate>
       <div class="bg-background-secondary">
-        <Posts />
-        <BottomDots />
+        <LazyHydrate when-visible>
+          <Posts />
+        </LazyHydrate>
+        <LazyHydrate when-visible>
+          <BottomDots />
+        </LazyHydrate>
       </div>
     </div>
   </Layout>
 </template>
 
 <script lang="ts">
+
+// @ts-ignore
+import LazyHydrate from 'vue-lazy-hydration';
 
 import Hero from './partials/Hero.vue';
 import Posts from './partials/Posts.vue';

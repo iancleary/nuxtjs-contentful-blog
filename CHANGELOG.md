@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Card CSS Classes that cascade Blog and Project Cards
+- Lazy Hydration via [vue-lazy-hydration](https://github.com/maoberlehner/vue-lazy-hydration)
+  - Header and Hero when-idle as they are shown first
+  - Projects, Posts, BottomDots, and Footer when-visible
 
 ### Changed
 

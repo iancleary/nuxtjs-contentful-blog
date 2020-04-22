@@ -21,7 +21,8 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "gridsome": "^0.7.13",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "vue-lazy-hydration": "^1.0.0-beta.12"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.11.0",
