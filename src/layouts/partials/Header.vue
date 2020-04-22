@@ -10,17 +10,17 @@
           </div>
         </li>
       </ul>
-      <ul class="absolute right-0 flex items-center pt-1">
-        <li class="mr-8">
+      <ul class="absolute right-0 flex space-x-8 pr-8 items-center pt-1">
+        <li>
           <ToggleTheme />
         </li>
-        <li class="mr-8">
+        <li>
           <DevLogo />
         </li>
-        <li class="mr-8">
+        <li>
           <GitHubLogo />
         </li>
-        <li class="mr-8">
+        <li>
           <TwitterLogo />
         </li>
       </ul>

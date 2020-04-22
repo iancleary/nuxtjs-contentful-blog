@@ -3,9 +3,8 @@
     class="font-sans text-copy-primary
            content-wrapper flex flex-col min-h-screen bg-background-primary"
   >
-    <LazyHydrate when-idle>
-      <Header />
-    </LazyHydrate>
+    <!-- LazyHydration interfers with "sticky" header -->
+    <Header />
     <transition
       name="fade"
       appear
@@ -33,6 +32,7 @@ export default {
   components: {
     Footer,
     Header,
+    LazyHydrate,
   },
 };
 </script>
