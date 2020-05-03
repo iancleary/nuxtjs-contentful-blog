@@ -12,11 +12,11 @@
       </div>
     </div>
     <!-- end hero -->
-    
+
     <div class="mb-4">
       <div class="container-inner mx-auto">
         <p class="text-lg sm:text-xl">
-          With the help of my coworkers, 
+          With the help of my coworkers,
           I am RF/Microwave Engineer working on electronics bound for outer space.
           <br>
           <br>

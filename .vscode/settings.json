@@ -3,6 +3,12 @@
         "source.fixAll.eslint": true
     },
     "cSpell.ignoreWords": [
-        "xerebede"
+        "xerebede",
+        "fortawesome",
+        "fontawesome",
+        "shiki",
+        "noopener",
+        "noreferrer",
+        "Palenight"
     ]
 }

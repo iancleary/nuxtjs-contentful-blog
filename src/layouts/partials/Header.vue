@@ -5,12 +5,26 @@
     <div class="container pt-2 pb-8 inset-x-0">
       <ul class="absolute left-0 flex items-center">
         <li class="ml-8">
-          <div class="text-xl font-bold text-left">
+          <g-link
+            to="/"
+            class="text-copy-primary font-bold text-left"
+          >
             Ian Cleary
-          </div>
+          </g-link>
         </li>
       </ul>
       <ul class="absolute right-0 flex space-x-8 pr-8 items-center pt-1">
+        <li class="mb-6 lg:mb-0">
+          <search-input />
+        </li>
+        <li>
+          <g-link
+            to="/docs"
+            class="text-copy-primary hover:text-gray-600"
+          >
+            Docs
+          </g-link>
+        </li>
         <li>
           <ToggleTheme />
         </li>
@@ -34,6 +48,7 @@ import DevLogo from '@/components/DEVLogo.vue';
 import ToggleTheme from '@/components/ToggleTheme.vue';
 import TwitterLogo from '@/components/TwitterLogo.vue';
 import GitHubLogo from '@/components/GitHubLogo.vue';
+import SearchInput from '@/components/SearchInput.vue';
 
 export default {
   components: {
@@ -41,6 +56,7 @@ export default {
       DevLogo,
       GitHubLogo,
       TwitterLogo,
+      SearchInput,
   },
 };
 </script>

@@ -33,12 +33,16 @@ import DefaultLayout from '~/layouts/Default.vue';
 /**
  * Client API contructor
  */
-const client: ClientApiConstructor = (Vue) => {
+const client: ClientApiConstructor = (Vue, VueFuse) => {
   Vue.component('Layout', DefaultLayout);
+
+  // FontAwesome
   Vue.component('font-awesome-icon', FontAwesomeIcon);
   Vue.component('font-awesome-layers', FontAwesomeLayers);
   Vue.component('font-awesome-layers-text', FontAwesomeLayersText);
-  // head.title = "My Awesome Gridsome Project";
+
+  // Vue-Fuse Search
+  Vue.component('vue-fuse', VueFuse);
 };
 
 export default client;

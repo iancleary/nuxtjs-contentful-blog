@@ -6,7 +6,7 @@
     "experimentalDecorators": true,
     "noImplicitReturns": true,
     "sourceMap": true,
-    "strict": true
+    "strict": true,
   },
   "paths": {
     "~/*": ["./src/*"],
