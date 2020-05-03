@@ -37,6 +37,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added theme-switcher from <gridsome.org>, with [css from vars.scss](https://github.com/gridsome/gridsome.org/blob/2d124ac9843dc39e782e91b6bcf54b21988835ee/src/assets/style/vars.scss)
 - Added `vue-fontawesome` icons to Header
 - Added `DEV` badge with Font Awesome, source: [DEV Badges](https://dev.to/p/badges)
+- 404 Page
 
 ### Changed
 
