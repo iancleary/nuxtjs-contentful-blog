@@ -23,6 +23,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed `overflow-x-hidden` on Index and BottomDots component (dots were too wide on narrow width displays)
 - upgraded tailwindcss from 1.2.0 to 1.3.4
 
+### Removed
+
+- removed `.devcontainer` folder (no plans to maintain)
+
 ## [v0.7.0]
 
 ### Added
@@ -43,7 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-- Removed console loging from HelloService.sayHello("Gridsome") per web.dev scoring
+- Removed console logging from HelloService.sayHello("Gridsome") per web.dev scoring
 - Removed `class="mx-auto sm:mx-0"` from `unDraw/developer.svg` per web.dev scoring
 - Removed [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator) dependency
 
@@ -53,11 +57,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added mobile touch events using [vue2-touch-events](https://github.com/jerrybendy/vue-touch-events) per PR [#34](https://github.com/iancleary/personal-website/pull/34)
 - Added alt-text and svg immediate loading per PR [#33](https://github.com/iancleary/personal-website/pull/33)
-- Added navbar automatic hidding on scroll down, showing on scroll up, and opaque responsive on mobile per PR [#30](https://github.com/iancleary/personal-website/pull/30)
+- Added navbar automatic hiding on scroll down, showing on scroll up, and opaque responsive on mobile per PR [#30](https://github.com/iancleary/personal-website/pull/30)
 
 ### Changed
 
-- changed URL for [wiki rebrand](https://github.com/iancleary/wiki/pull/4), from dev-notes
+- changed URL for [wiki re-brand](https://github.com/iancleary/wiki/pull/4), from dev-notes
 - refactored navbar to components and fixed margin
 - commented out scroll-to as it's a headache and not worth it
 - Fixed changelog links
