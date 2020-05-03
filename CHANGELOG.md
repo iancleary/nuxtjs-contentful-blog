@@ -23,6 +23,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed `overflow-x-hidden` on Index and BottomDots component (dots were too wide on narrow width displays)
 - upgraded tailwindcss from 1.2.0 to 1.3.4
 
+### Removed
+
+- removed `.devcontainer` folder (no plans to maintain)
+
 ## [v0.7.0]
 
 ### Added
