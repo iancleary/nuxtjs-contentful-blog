@@ -5,9 +5,12 @@
     <div class="container pt-2 pb-8 inset-x-0">
       <ul class="absolute left-0 flex items-center">
         <li class="ml-8">
-          <div class="text-xl font-bold text-left">
+          <g-link
+            to="/"
+            class="text-xl text-white font-bold text-left"
+          >
             Ian Cleary
-          </div>
+          </g-link>
         </li>
       </ul>
       <ul class="absolute right-0 flex space-x-8 pr-8 items-center pt-1">

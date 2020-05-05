@@ -11,7 +11,7 @@
             rel="noopener"
             class="text-white"
           >Gridsome</a>,
-          <a 
+          <a
             href="https://vuejs.org/"
             target="_blank"
             rel="noopener"
