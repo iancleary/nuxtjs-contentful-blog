@@ -7,7 +7,7 @@
         <li class="ml-8">
           <g-link
             to="/"
-            class="text-xl text-white font-bold text-left"
+            class="text-xl font-bold text-left"
           >
             Ian Cleary
           </g-link>
