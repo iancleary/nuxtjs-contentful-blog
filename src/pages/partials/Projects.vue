@@ -26,7 +26,7 @@
             target="_blank"
             rel="noopener noreferrer"
             title="Link to the Wikipedia article on Makefiles"
-          >Makefiles</a> 
+          >Makefiles</a>
           and
           <a
             href="https://www.ansible.com/"
@@ -34,7 +34,7 @@
             rel="noopener noreferrer"
             title="Link to ansible.com"
           >Ansible</a>.
-          My work is released here 
+          My work is released here
           <a
             href="https://github.com/iancleary/ansible-desktop"
             target="_blank"
