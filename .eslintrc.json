@@ -23,6 +23,9 @@
       "allowExpressions": true,
       "allowHigherOrderFunctions": true,
       "allowTypedFunctionExpressions": true
+    }],
+    "vue/attribute-hyphenation": ["error", "never", {
+      "ignore": []
     }]
   },
   "overrides": [
