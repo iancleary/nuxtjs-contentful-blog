@@ -13,7 +13,7 @@
     </a>
     <ul
       v-if="hasGitHubCI"
-      class="space-x-2 ci-badge-inset flex"
+      class="ci-badge-inset space-y-2 md:space-x-2 md:flex md:space-y-0"
     >
       <li
         v-for="gitHubWorkflow in gitHubWorkflows"
