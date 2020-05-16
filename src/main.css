@@ -96,8 +96,8 @@ a:hover {
 
 .card {
   @apply my-10;
-  @apply py-4;
-  @apply px-4;
+  @apply py-6;
+  @apply px-6;
   @apply rounded-lg;
   @apply shadow-xl;
   @apply bg-background-secondary;
@@ -114,13 +114,6 @@ a:hover {
   @apply border-green-700;
   @apply shadow-inner;
   @apply bg-background-tertiary;
-}
-
-.travis-badge-inset {
-  @apply absolute;
-  @apply right-0;
-  @apply pr-6;
-  @apply pt-1;
 }
 
 .responsive-container {
