@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.8.0]
+
 ### Added
 
 - Card CSS Classes that cascade Blog and Project Cards
@@ -23,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Moved "Ian Cleary" to left portion of header
 - Fixed `overflow-x-hidden` on Index and BottomDots component (dots were too wide on narrow width displays)
 - upgraded tailwindcss from 1.2.0 to 1.3.4
+- Refactored Projects to responsive component with props per [#81](https://github.com/iancleary/iancleary.me/pull/81)
 
 ### Removed
 
@@ -73,7 +76,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refactored to Gridsome Portfolio Starter per PR [#17](https://github.com/iancleary/personal-website/pull/17)
 - Conception of the Changelog!
 
-[Unreleased]: https://github.com/iancleary/personal-website/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/iancleary/personal-website/compare/v0.8.0...HEAD
+[v0.8.0]: https://github.com/iancleary/personal-website/releases/tag/v0.8.0
 [v0.7.0]: https://github.com/iancleary/personal-website/releases/tag/v0.7.0
 [v0.6.1]: https://github.com/iancleary/personal-website/releases/tag/v0.6.1
 [v0.6.0]: https://github.com/iancleary/personal-website/releases/tag/v0.6.0
