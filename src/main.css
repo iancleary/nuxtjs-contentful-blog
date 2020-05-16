@@ -116,7 +116,7 @@ a:hover {
   @apply bg-background-tertiary;
 }
 
-.travis-badge-inset {
+.ci-badge-inset {
   @apply absolute;
   @apply right-0;
   @apply pr-6;

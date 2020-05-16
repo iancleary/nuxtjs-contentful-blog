@@ -5,47 +5,15 @@
     />
     <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
     <ul class="text-lg sm:text-xl relative">
-      <li class="project-card">
+      <li>
+        <project-card
+          :repo-name="ansible-desktop"
+          :has-travis-ci="true"
+        />
+        />
+      </li><li class="project-card">
         <a
-          class="travis-badge-inset"
-          href="https://travis-ci.com/iancleary/ansible-desktop"
-          target="_blank"
-        >
-          <img
-            src="https://travis-ci.com/iancleary/ansible-desktop.svg?branch=master"
-            alt="ansible-desktop repo Build Status"
-          >
-        </a>
-        <div class="break-normal w-2/3">
-          Ubuntu Laptop and Desktop Setup
-        </div>
-        <div class="text-lg text-gray-600">
-          I practice the Infrastructure as Code philosophy on my desktop configuration, using
-          <a
-            href="https://en.wikipedia.org/wiki/Makefile"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Link to the Wikipedia article on Makefiles"
-          >Makefiles</a>
-          and
-          <a
-            href="https://www.ansible.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Link to ansible.com"
-          >Ansible</a>.
-          My work is released here
-          <a
-            href="https://github.com/iancleary/ansible-desktop"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Link to my ansible desktop GitHub repository"
-          >iancleary/ansible-desktop</a>.
-        </div>
-      </li>
-      <li class="project-card">
-        <a
-          class="travis-badge-inset"
+          class="ci-badge-inset"
           href="https://travis-ci.com/iancleary/pypackage"
           target="_blank"
         >
@@ -69,7 +37,7 @@
       </li>
       <li class="project-card">
         <a
-          class="travis-badge-inset"
+          class="ci-badge-inset"
           href="https://travis-ci.com/iancleary/fastrf"
           target="_blank"
         >
@@ -94,7 +62,7 @@
 
       <li class="project-card">
         <a
-          class="travis-badge-inset"
+          class="ci-badge-inset"
           href="https://travis-ci.com/iancleary/personal-notebook"
           target="_blank"
         >
@@ -131,8 +99,12 @@
 
 <script lang="ts">
 
-export default {
+import ProjectCard from '@/components/ProjectCard.vue';
 
+export default {
+  components: {
+      ProjectCard,
+  },
 };
 
 </script>
