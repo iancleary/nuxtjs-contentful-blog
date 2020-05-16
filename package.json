@@ -36,7 +36,7 @@
     "eslint-plugin-vue": "^5.2.0",
     "gridsome-plugin-tailwindcss": "^2.2.43",
     "gridsome-plugin-typescript": "0.4.0",
-    "husky": "^2.7.0",
+    "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
     "ts-loader": "^6.0.0",
     "typescript": "^3.5.0"
