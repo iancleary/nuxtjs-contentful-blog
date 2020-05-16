@@ -23,9 +23,6 @@
       "allowExpressions": true,
       "allowHigherOrderFunctions": true,
       "allowTypedFunctionExpressions": true
-    }],
-    "vue/attribute-hyphenation": ["error", "never", {
-      "ignore": []
     }]
   },
   "overrides": [
@@ -33,7 +30,10 @@
       "files": ["*.vue"],
       "rules": {
         "indent": "off",
-        "@typescript-eslint/indent": "off"
+        "@typescript-eslint/indent": "off",
+        "vue/attribute-hyphenation": ["error", "never", {
+          "ignore": ["when-visible", "when-idle"]
+        }]
       }
     }
   ]
