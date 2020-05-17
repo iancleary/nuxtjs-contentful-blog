@@ -95,10 +95,10 @@ export default {
         dockerfilesDescriptionHtml: `
           I am comfortable the Jupyter interactive computing environment. My
           <a
-            href="https://github.com/iancleary/dockerfiles/notebook"
+            href="https://github.com/iancleary/dockerfiles/tree/master/notebook"
             rel="noopener noreferrer"
             target="_blank"
-            title="Link to Personal Jupyter Notebook GitHub Repo"
+            title="Link to Jupyter Notebook GitHub Repo"
           >personal-notebook</a>
           is open source and on DockerHub, via
           <a
