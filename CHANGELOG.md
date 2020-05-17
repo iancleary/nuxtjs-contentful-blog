@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Changed notebook repo to [dockerfiles](https://github.com/iancleary/dockerfiles)
+
 ## [v0.8.0]
 
 ### Added

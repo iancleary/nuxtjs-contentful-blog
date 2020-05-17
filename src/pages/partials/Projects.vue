@@ -30,10 +30,11 @@
       </li>
       <li>
         <project-card
-          repoName="personal-notebook"
-          :hasTravisCI="true"
-          title="Dockerfiles for Jupyter Notebooks"
-          :descriptionHtml="personalNotebookDescriptionHtml"
+          repoName="dockerfiles"
+          :hasGitHubCI="true"
+          :gitHubWorkflows="dockerfilesGitHubWorkflows"
+          title="Dockerfiles"
+          :descriptionHtml="dockerfilesDescriptionHtml"
         />
       </li>
     </ul>
@@ -90,21 +91,22 @@ export default {
                 title="Link to my ansible desktop GitHub repository"
             >iancleary/ansible-desktop</a>.
             `,
-        personalNotebookDescriptionHtml: `
+        dockerfilesGitHubWorkflows: ["Publish"],
+        dockerfilesDescriptionHtml: `
           I am comfortable the Jupyter interactive computing environment. My
           <a
-            href="https://github.com/iancleary/personal-notebook"
+            href="https://github.com/iancleary/dockerfiles/notebook"
             rel="noopener noreferrer"
             target="_blank"
             title="Link to Personal Jupyter Notebook GitHub Repo"
           >personal-notebook</a>
           is open source and on DockerHub, via
           <a
-            href="https://hub.docker.com/r/iancleary/personal-notebook"
+            href="https://hub.docker.com/r/iancleary/notebook"
             rel="noopener noreferrer"
             target="_blank"
             title="Link to Personal Jupyter Notebook Docker Hub Page"
-          >docker pull iancleary/personal-notebook</a>
+          >docker pull iancleary/notebook</a>
           .`,
     };
 },
