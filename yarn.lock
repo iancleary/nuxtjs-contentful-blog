@@ -825,7 +825,7 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.9.tgz#d3af6d4e50f337327de90447fe35fa1e117a2fbe"
   integrity sha512-h/emhmZz+DfB2zOGLWawNwXq82UYhn9waTfUjLLmeaIqtnIyNt6kYlpQT/vzJjLZRDRvY2IEJAh1di5qKpKVpA==
 
-"@fullhuman/postcss-purgecss@^2.1.0", "@fullhuman/postcss-purgecss@^2.1.2":
+"@fullhuman/postcss-purgecss@^2.1.2":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-2.2.0.tgz#2b3699287163ff515f25ccdae5b96a244eebb41a"
   integrity sha512-q4zYAn8L9olA5uneaLhxkHRBoug9dnAqytbdX9R5dbzSORobhYr1yGR2JN3Q1UMd5RB0apm1NvJekHaymal/BQ==
@@ -4587,16 +4587,17 @@ graphql@^14.4.2:
   dependencies:
     iterall "^1.2.2"
 
-gridsome-plugin-tailwindcss@^2.2.43:
-  version "2.2.43"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-tailwindcss/-/gridsome-plugin-tailwindcss-2.2.43.tgz#ade5522b525dc7f2195035435f68677bdb54beb3"
-  integrity sha512-OaD+ezP0P5aFSk/fMUMGq2Lw4CyXd/B9Px5yPrvv8sl9fWrKCLxmRYG9pUT/UmkEWw0TTKqWFrMO4ljQkl2wrA==
+gridsome-plugin-tailwindcss@^2.2.48:
+  version "2.2.48"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-tailwindcss/-/gridsome-plugin-tailwindcss-2.2.48.tgz#26acf6e70e8a2a43c54b970b72aebedb57af59fa"
+  integrity sha512-nuplBAbYnftMK/xTsxsSaMmRfHprfC8qpXILydKt81GONYn1jrvrKj4iumNwehliy1IT/4mcIvQ3furXQ/MaIQ==
   dependencies:
-    "@fullhuman/postcss-purgecss" "^2.1.0"
+    "@fullhuman/postcss-purgecss" "^2.1.2"
+    postcss "^7.0.27"
     postcss-import "^12.0.1"
-    postcss-import-url "^5.0.0"
+    postcss-import-url "^5.1.0"
     postcss-preset-env "^6.7.0"
-    tailwindcss "^1.2.0"
+    tailwindcss ">=1.4"
 
 gridsome-plugin-typescript@0.4.0:
   version "0.4.0"
@@ -7392,7 +7393,7 @@ postcss-image-set-function@^3.0.1:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
 
-postcss-import-url@^5.0.0:
+postcss-import-url@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/postcss-import-url/-/postcss-import-url-5.1.0.tgz#09fc58105ba66faefd037d2c402a65b32cc79a6b"
   integrity sha512-Gnw5Cj7TIn2Y/3OjBPvRZnRAztE3DqJWGW5ZPOabrb/YcpU+dPAW8QbXNnoy/OhYNsJDsCEsIj+8dY8kwFJsyQ==
@@ -9297,7 +9298,7 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss@^1.2.0, tailwindcss@^1.4.6:
+tailwindcss@>=1.4, tailwindcss@^1.4.6:
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.4.6.tgz#17b37166ccda08d7e7f9ca995ea48ce1e0089700"
   integrity sha512-qV0qInUq1FWih39Bc5CWECdgObSzRrbjGD4ke4kAPSIq6WXrPhv0wwOcUWJgJ66ltT9j+XnSRYikG8WNRU/fTQ==
