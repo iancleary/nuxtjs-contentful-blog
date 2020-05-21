@@ -33,7 +33,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.0",
     "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^5.2.0",
+    "eslint-plugin-vue": "^6.2.2",
     "gridsome-plugin-tailwindcss": "^2.2.48",
     "gridsome-plugin-typescript": "0.4.0",
     "husky": "^4.2.5",
