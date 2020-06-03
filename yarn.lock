@@ -4631,10 +4631,10 @@ gridsome-plugin-typescript@0.4.0:
   resolved "https://registry.yarnpkg.com/gridsome-plugin-typescript/-/gridsome-plugin-typescript-0.4.0.tgz#d6037275bfc1a92844d704c3f67b685478d6351d"
   integrity sha512-2tq2vPT/aqKmbSjlLeakRaaXrifgTIHzuwaHqapMx1PnZmviy9jdqoqbn533b4RcWYDbZ8gQ9gixjmT+RY5Ilg==
 
-gridsome@^0.7.15:
-  version "0.7.15"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.15.tgz#ea08347ff26da49a846a95ff6e545d3fabbcd508"
-  integrity sha512-F/ZCdTTycBpq+XJEb1A1RYbkkJZc+4aRnusUhYEP9Ep8kSZuRpMfYlHXXbX0MAfDz/L/hs4v4+tqjRJDa7KgLQ==
+gridsome@^0.7.16:
+  version "0.7.16"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.16.tgz#04d15253a2ee1b4b5b1fc12146a0bd481987e0c2"
+  integrity sha512-VMx8/cfp1L3nwnBbjfZDsCWnWSL/N9rkh5RkQPdFR3KiwkDSfjJ+eSw6VO0vANNwe3NdVenYKVow4MYHewiv0g==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.0.0"
