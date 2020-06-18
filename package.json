@@ -37,7 +37,7 @@
     "gridsome-plugin-tailwindcss": "^2.2.48",
     "gridsome-plugin-typescript": "0.4.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.10",
+    "lint-staged": "^10.2.11",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.5"
   }
