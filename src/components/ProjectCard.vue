@@ -7,7 +7,7 @@
       target="_blank"
     >
       <img
-        :src="'https://travis-ci.com/'+ userName + '/' + repoName + '.svg?branch=master'"
+        :src="'https://travis-ci.com/'+ userName + '/' + repoName + '.svg?branch=main'"
         :alt="repoName +' repo CI Status'"
       >
     </a>
