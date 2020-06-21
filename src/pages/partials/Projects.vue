@@ -7,6 +7,14 @@
     <ul class="text-lg sm:text-xl relative">
       <li>
         <project-card
+          repoName="ansible-desktop"
+          :hasGitHubCI="true"
+          :gitHubWorkflows="onlyTestWorkflow"
+          title="Ubuntu Desktop Configuration"
+        />
+      </li>
+      <li>
+        <project-card
           repoName="pypackage"
           :hasGitHubCI="true"
           title="Python Package Quickstart"
@@ -23,16 +31,9 @@
       </li>
       <li>
         <project-card
-          repoName="ansible-desktop"
-          :hasTravisCI="true"
-          title="Ubuntu Desktop Configuration"
-        />
-      </li>
-      <li>
-        <project-card
           repoName="dockerfiles"
           :hasGitHubCI="true"
-          :gitHubWorkflows="dockerfilesGitHubWorkflows"
+          :gitHubWorkflows="onlyPublishWorkflow"
           title="Dockerfiles"
           :descriptionHtml="dockerfilesDescriptionHtml"
         />
@@ -52,6 +53,8 @@ export default {
   },
   data: function () {
     return {
+      onlyTestWorkflow: ["Test"],
+      onlyPublishWorkflow: ["Publish"],
       pypackageDescriptionHtml: `
             Speed up your python package generation using my python package template
             <a
