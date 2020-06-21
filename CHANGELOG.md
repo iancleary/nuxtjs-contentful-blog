@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Changed notebook repo to [dockerfiles](https://github.com/iancleary/dockerfiles)
+- Changed CI provider for ansible-desktop to GitHub Actions
 
 ## [v0.8.0]
 
