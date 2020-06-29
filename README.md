@@ -1,37 +1,48 @@
-# Personal website code built with no trackers, no cookies
+# Personal Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a026dcc6-920b-4f08-b6ff-535e61f4190a/deploy-status)](https://app.netlify.com/sites/iancleary-me/deploys)
+<p align="center">
+    <em> Powered by Gridsome, Vue.js & Tailwind CSS</em><br>
+    <em>Open Source on GitHub and deployed with Netlify</em>
+</p>
 
-[![Dependabot Enabled](https://flat.badgen.net/dependabot/iancleary/iancleary.me?icon=dependabot)](https://dependabot.com/)
+<p align="center">
 
-I built this website with Tailwind CSS, vue.js, Gridsome and Netlify.  Originally I started with plain HTML5, migrated to vue.js and tailwindcss with vue-router and vue-cli.  After some looking around, I've discovered Vuepress and eventually [Gridsome](https://gridsome.org/).  I recommend [Gridsome Starters](https://gridsome.org/starters/).
+<a href="https://app.netlify.com/sites/iancleary-me/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/a026dcc6-920b-4f08-b6ff-535e61f4190a/deploy-status" alt="Netlify Status">
+<a href="https://dependabot.com/" target="_blank">
+    <img src="https://flat.badgen.net/dependabot/iancleary/iancleary.me?icon=dependabot" alt="Dependabot Enabled">
+</a>
+
+</p>
+
+Originally I started with plain HTML5, migrated to vue.js and tailwindcss with vue-router and vue-cli.  After some looking around, I've discovered Vuepress and eventually [Gridsome](https://gridsome.org/).  I recommend [Gridsome Starters](https://gridsome.org/starters/).
 
 My inspiration originally drew from [Gridsome Portfolio Starter](https://gridsome.org/starters/gridsome-portfolio-starter/) by Andre Madarang due to the dark/light mode and [Tailwind CSS](https://tailwindcss.com/).
 
 Since then, I have made it my own, converted to Typescript, and adding linting.
 
-# Typescript Starter for Gridsome
+## Typescript Starter for Gridsome
 
 I used starter template for Gridsome using Typescript: [xerebede/gridsome-starter-typescript](https://github.com/xerebede/gridsome-starter-typescript). It uses **eslint** and **typescript** for static code analisys. In order to integrate these tools with Visual Studio Code, you'll need to install **ESLint** and **Vetur** extensions for the editor.
 
-## 1. Install Gridsome CLI tool if you don't have
+### 1. Install Gridsome CLI tool if you don't have
 
 `yarn global add @gridsome/cli`
 
-## 2. Create a Gridsome project
+### 2. Create a Gridsome project
 
 1. `gridsome create gridsome-ts https://github.com/cleitonper/gridsome-starter-typescript.git` to install this typescript starter
 2. `cd gridsome-ts` to open folder
 3. `gridsome develop` to start local dev server at `http://localhost:8080`
 4. happy coding 🎉🙌
 
-## 3. Static Code Analysis - Command Line
+### 3. Static Code Analysis - Command Line
 
 1. edit the `.eslintrc.json` file and add your favorites rules from [`eslint`](https://eslint.org/docs/rules/), [`typescript`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules) and [`vue`](https://vuejs.github.io/eslint-plugin-vue/rules/).
 2. run `yarn lint:check` to see static analysis result
 3. run `yarn lint:fix` to fix errors found by `eslint`
 
-## 4. Static Code Analysis - Visual Studio Code
+### 4. Static Code Analysis - Visual Studio Code
 
 As mentioned before, in order to lint your Typescript code in `*.vue` *Single File Components* with *vscode* you'll need to install [`ESLint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [`Vetur`](https://marketplace.visualstudio.com/items?itemName=octref.vetur) extensions for the editor.
 
@@ -42,7 +53,7 @@ Use the links above to install the extensions, or follow the steps below:
 3. Select and install the extension
 4. Do same thing for **Vetur** extension
 
-## 5. Useful links
+### 5. Useful links
 
 * [Gridsome docs](https://gridsome.org/docs/)
 * [Typescript docs](https://www.typescriptlang.org/docs/)
@@ -52,7 +63,6 @@ Use the links above to install the extensions, or follow the steps below:
 * [Vue rules](https://vuejs.github.io/eslint-plugin-vue/rules/)
 * [ESLint extension for vscode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [Vetur extension for vscode](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
-
 
 ## Attribution
 
