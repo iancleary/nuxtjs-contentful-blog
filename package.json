@@ -22,7 +22,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.10",
     "gridsome": "^0.7.19",
     "tailwindcss": "^1.5.1",
-    "vue-lazy-hydration": "^1.0.0-beta.12"
+    "vue-lazy-hydration": "^1.0.0-beta.14"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.11.0",
