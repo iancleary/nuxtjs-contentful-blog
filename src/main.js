@@ -1,12 +1,7 @@
 /**
- * This is the main.ts file. Import global CSS and scripts here.
+ * This is the main.js file. Import global CSS and scripts here.
  * Learn more: gridsome.org/docs/client-api
  */
-
-/**
- * Types imports
- */
-import { ClientApiConstructor } from './types';
 
 /**
  * Global css imports
@@ -33,7 +28,7 @@ import DefaultLayout from '~/layouts/Default.vue';
 /**
  * Client API contructor
  */
-const client: ClientApiConstructor = (Vue) => {
+const client = (Vue) => {
   Vue.component('Layout', DefaultLayout);
   Vue.component('font-awesome-icon', FontAwesomeIcon);
   Vue.component('font-awesome-layers', FontAwesomeLayers);
