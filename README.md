@@ -2,7 +2,7 @@
 
 <p align="center">
     <em> Powered by Gridsome, Vue.js & Tailwind CSS</em><br>
-    <em>Open Source on GitHub and deployed with Netlify</em>
+    <em> Deployed with Netlify</em>
 </p>
 
 <p align="center">
@@ -19,11 +19,7 @@ Originally I started with plain HTML5, migrated to vue.js and tailwindcss with v
 
 My inspiration originally drew from [Gridsome Portfolio Starter](https://gridsome.org/starters/gridsome-portfolio-starter/) by Andre Madarang due to the dark/light mode and [Tailwind CSS](https://tailwindcss.com/).
 
-Since then, I have made it my own, converted to Typescript, and adding linting.
-
-## Typescript Starter for Gridsome
-
-I used starter template for Gridsome using Typescript: [xerebede/gridsome-starter-typescript](https://github.com/xerebede/gridsome-starter-typescript). It uses **eslint** and **typescript** for static code analisys. In order to integrate these tools with Visual Studio Code, you'll need to install **ESLint** and **Vetur** extensions for the editor.
+Since then, I have made it my own, and adding linting.
 
 ### 1. Install Gridsome CLI tool if you don't have
 
@@ -38,13 +34,13 @@ I used starter template for Gridsome using Typescript: [xerebede/gridsome-starte
 
 ### 3. Static Code Analysis - Command Line
 
-1. edit the `.eslintrc.json` file and add your favorites rules from [`eslint`](https://eslint.org/docs/rules/), [`typescript`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules) and [`vue`](https://vuejs.github.io/eslint-plugin-vue/rules/).
+1. edit the `.eslintrc.json` file and add your favorites rules from [`eslint`](https://eslint.org/docs/rules/), and [`vue`](https://vuejs.github.io/eslint-plugin-vue/rules/).
 2. run `yarn lint:check` to see static analysis result
 3. run `yarn lint:fix` to fix errors found by `eslint`
 
 ### 4. Static Code Analysis - Visual Studio Code
 
-As mentioned before, in order to lint your Typescript code in `*.vue` *Single File Components* with *vscode* you'll need to install [`ESLint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [`Vetur`](https://marketplace.visualstudio.com/items?itemName=octref.vetur) extensions for the editor.
+As mentioned before, in order to lint your Javascript code in `*.vue` *Single File Components* with *vscode* you'll need to install [`ESLint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [`Vetur`](https://marketplace.visualstudio.com/items?itemName=octref.vetur) extensions for the editor.
 
 Use the links above to install the extensions, or follow the steps below:
 
@@ -56,10 +52,8 @@ Use the links above to install the extensions, or follow the steps below:
 ### 5. Useful links
 
 * [Gridsome docs](https://gridsome.org/docs/)
-* [Typescript docs](https://www.typescriptlang.org/docs/)
 * [ESLint docs](https://eslint.org/)
 * [ESLint rules](https://eslint.org/docs/rules/)
-* [Typescript rules](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules)
 * [Vue rules](https://vuejs.github.io/eslint-plugin-vue/rules/)
 * [ESLint extension for vscode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [Vetur extension for vscode](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
