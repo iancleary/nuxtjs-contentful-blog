@@ -28,13 +28,13 @@
           >Tailwind CSS</a>
         </div>
         <div>
-          Open Source on
+          Domain by
           <a
-            href="https://github.com/iancleary/iancleary.me/"
+            href="https://hover.com"
             target="_blank"
             rel="noopener"
             class="text-white"
-          >GitHub</a>
+          >Hover</a>
           and deployed
           with
           <a
@@ -42,7 +42,7 @@
             target="_blank"
             rel="noopener"
             class="text-white"
-          >Netlify</a>
+          >Netlify</a>.
         </div>
       </div>
     </div>
