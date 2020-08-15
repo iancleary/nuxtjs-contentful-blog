@@ -11,7 +11,6 @@ module.exports = {
   siteUrl: 'https://iancleary.me',
   icon: 'src/assets/favicon.png',
   plugins: [
-    { use: 'gridsome-plugin-typescript' },
     {
       use: 'gridsome-plugin-tailwindcss',
       options: {
