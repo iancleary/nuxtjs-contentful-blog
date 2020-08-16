@@ -23,7 +23,7 @@
   </div>
 </template>
 
-<script lang="js">
+<script>
 
 // import ArticleCard from '@/components/ArticleCard.vue';
 import ArticleList from '@/components/ArticleList.vue';

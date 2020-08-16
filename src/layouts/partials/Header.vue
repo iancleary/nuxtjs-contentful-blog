@@ -31,7 +31,7 @@
   </header>
 </template>
 
-<script lang="ts">
+<script>
 
 import DevLogo from '@/components/DEVLogo.vue';
 import ToggleTheme from '@/components/ToggleTheme.vue';

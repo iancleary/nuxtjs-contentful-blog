@@ -49,7 +49,7 @@
   </footer>
 </template>
 
-<script lang="js">
+<script>
 
 var currentYear = new Date().getFullYear();
 export default {
