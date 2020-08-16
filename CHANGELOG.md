@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Source Articles from dev.to API <https://docs.dev.to/api/#tag/articles>, with Vue documentation [example](https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html)
+
 ### Removed
 
 - Dropped typescript
