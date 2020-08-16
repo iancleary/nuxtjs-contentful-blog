@@ -19,7 +19,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 
 // @ts-ignore
 import LazyHydrate from 'vue-lazy-hydration';
