@@ -7,9 +7,6 @@
  * Global css imports
  */
 require('~/main.css');
-/**
- * import '~/assets/css/global.css';
- */
 
 /**
  * Font Awesome import
