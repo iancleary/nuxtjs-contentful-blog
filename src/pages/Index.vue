@@ -13,7 +13,7 @@
         <LazyHydrate when-visible>
           <PostImages />
         </LazyHydrate>
-        <LazyHydrate when-visible>
+        <LazyHydrate when-idle>
           <Posts />
         </LazyHydrate>
         <LazyHydrate when-visible>
