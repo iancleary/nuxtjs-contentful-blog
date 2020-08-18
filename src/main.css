@@ -56,6 +56,16 @@
   --border-border-color-primary:  #1a202c;
 }
 
+/* Non-blocking Font-Awesome icons */
+
+html.fa-events-icons-loading body {
+  display: none;
+}
+
+.fa {
+  display: inline-block;
+}
+/* End Font Awesome */
 
 .content-wrapper {
   transition: background-color .25s;
