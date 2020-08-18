@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Source Articles from dev.to API <https://docs.dev.to/api/#tag/articles>, with Vue documentation [example](https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html)
 - webpack config for '@' path alias
 - CSS for blocking Font-Awesome rendering before loaded, per [#137](https://github.com/iancleary/iancleary.me/issues/137)
+- Tailwindcss purge: [Controlling File Size](https://tailwindcss.com/docs/controlling-file-size)
 
 ### Removed
 
