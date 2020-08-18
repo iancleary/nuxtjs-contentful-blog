@@ -11,10 +11,12 @@ require('~/main.css');
 /**
  * Font Awesome import
  */
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { config, library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome';
 import { faGithub, faTwitter, faDev } from '@fortawesome/free-brands-svg-icons';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
+config.autoAddCss = false;
 library.add(faGithub, faTwitter, faDev);
 
 /**

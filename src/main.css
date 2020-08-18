@@ -58,8 +58,10 @@
 
 /* Non-blocking Font-Awesome icons */
 
-html.fa-events-icons-loading body {
-  display: none;
+html.fa-events-icons-loading header,
+html.fa-events-typefaces-lato-loading header,
+html.fa-events-typefaces-orbitron-loading header {
+  visibility: hidden;
 }
 
 .fa {
