@@ -23,12 +23,14 @@
   border: 0;
   color: currentColor;
   cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
-  }
-  &:focus {
-    outline: none;
-  }
 }
+
+.toggle-theme:hover {
+    opacity: 0.8;
+}
+
+.toggle-theme:focus {
+    outline: none;
+}
+
 </style>
