@@ -31,10 +31,10 @@
       </li>
     </ul>
     <!-- eslint-disable -->
-    <div class="break-normal w-2/3 pb-2">
+    <div class="break-normal text-gray-600 w-2/3 pb-2">
       {{ title }}
     </div>
-    <span class="text-lg text-gray-600" v-html="descriptionHtml" />
+    <span class="text-lg text-white" v-html="descriptionHtml" />
     <!-- eslint-enable -->
   </div>
 </template>
@@ -69,8 +69,7 @@ export default {
         },
         descriptionHtml: {
             type: String,
-            default: `<div class="text-lg text-gray-600">
-                        I practice the Infrastructure as Code philosophy on my desktop configuration, using
+            default: `I practice the Infrastructure as Code philosophy on my desktop configuration, using
                         <a
                             href="https://en.wikipedia.org/wiki/Makefile"
                             target="_blank"
@@ -90,8 +89,7 @@ export default {
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Link to my ansible desktop GitHub repository"
-                        >iancleary/ansible-desktop</a>.
-                        </div>`,
+                        >iancleary/ansible-desktop</a>.`,
         },
     },
 };
@@ -101,8 +99,8 @@ export default {
 
 <style>
 .ci-badge-inset {
-  /* @apply absolute; */
-  @apply justify-center;
+  @apply absolute;
+  @apply right-0;
   @apply pr-6;
   @apply pt-0;
 }
