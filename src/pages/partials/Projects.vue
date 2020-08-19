@@ -69,7 +69,7 @@ export default {
               target="_blank"
               rel="noopener noreferrer"
               title="Link to FastRF's documentation"
-            >FastRF.iancleary.me</a> is a project combining interests in Radio Frequency (RF) Microwave Engineering,
+            >FastRF</a> is a project combining interests in Radio Frequency (RF) Microwave Engineering,
             Python Development, Web Servers, and Databases.`,
         ansibleDesktopDescriptionHtml: `
             I practice the Infrastructure as Code philosophy on my desktop configuration, using
