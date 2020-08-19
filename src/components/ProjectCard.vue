@@ -1,7 +1,7 @@
 <template>
   <div class="project-card">
     <a
-      v-if="hasTravisCI"
+      v-if="showTravisCI"
       class="ci-badge-inset"
       :href="'https://travis-ci.com/'+ userName +'/'+ repoName"
       target="_blank"
@@ -12,8 +12,8 @@
       >
     </a>
     <ul
-      v-if="hasGitHubCI"
-      class="ci-badge-inset space-y-2 md:space-x-2 md:flex md:space-y-0"
+      v-if="showGitHubCI"
+      class="ci-badge-inset space-y-4 md:space-x-4 sm:flex md:space-y-0"
     >
       <li
         v-for="gitHubWorkflow in gitHubWorkflows"
@@ -43,11 +43,11 @@
 
 export default {
     props: {
-        hasTravisCI: {
+        showTravisCI: {
             type: Boolean,
             default: false,
         },
-        hasGitHubCI: {
+        showGitHubCI: {
             type: Boolean,
             default: false,
         },
@@ -101,8 +101,8 @@ export default {
 
 <style>
 .ci-badge-inset {
-  @apply absolute;
-  @apply right-0;
+  /* @apply absolute; */
+  @apply justify-center;
   @apply pr-6;
   @apply pt-0;
 }
