@@ -5,6 +5,7 @@
       class="ci-badge-inset"
       :href="'https://travis-ci.com/'+ userName +'/'+ repoName"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <img
         :src="'https://travis-ci.com/'+ userName + '/' + repoName + '.svg?branch=main'"
@@ -22,6 +23,7 @@
         <a
           :href="'https://github.com/'+ userName +'/'+ repoName +'/actions?query=workflow%3A' + gitHubWorkflow"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             :src="'https://github.com/'+ userName +'/'+ repoName +'/workflows/'+ gitHubWorkflow +'/badge.svg'"
