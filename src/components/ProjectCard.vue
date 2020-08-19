@@ -1,10 +1,11 @@
 <template>
   <div class="project-card">
     <a
-      v-if="hasTravisCI"
+      v-if="showTravisCI"
       class="ci-badge-inset"
       :href="'https://travis-ci.com/'+ userName +'/'+ repoName"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <img
         :src="'https://travis-ci.com/'+ userName + '/' + repoName + '.svg?branch=main'"
@@ -12,8 +13,8 @@
       >
     </a>
     <ul
-      v-if="hasGitHubCI"
-      class="ci-badge-inset space-y-2 md:space-x-2 md:flex md:space-y-0"
+      v-if="showGitHubCI"
+      class="ci-badge-inset space-y-4 md:space-x-4 sm:flex md:space-y-0"
     >
       <li
         v-for="gitHubWorkflow in gitHubWorkflows"
@@ -22,6 +23,7 @@
         <a
           :href="'https://github.com/'+ userName +'/'+ repoName +'/actions?query=workflow%3A' + gitHubWorkflow"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             :src="'https://github.com/'+ userName +'/'+ repoName +'/workflows/'+ gitHubWorkflow +'/badge.svg'"
@@ -31,10 +33,10 @@
       </li>
     </ul>
     <!-- eslint-disable -->
-    <div class="break-normal w-2/3 pb-2">
+    <div class="break-normal text-gray-600 w-2/3 pb-2">
       {{ title }}
     </div>
-    <span class="text-lg text-gray-600" v-html="descriptionHtml" />
+    <span class="text-lg text-white" v-html="descriptionHtml" />
     <!-- eslint-enable -->
   </div>
 </template>
@@ -43,11 +45,11 @@
 
 export default {
     props: {
-        hasTravisCI: {
+        showTravisCI: {
             type: Boolean,
             default: false,
         },
-        hasGitHubCI: {
+        showGitHubCI: {
             type: Boolean,
             default: false,
         },
@@ -69,8 +71,7 @@ export default {
         },
         descriptionHtml: {
             type: String,
-            default: `<div class="text-lg text-gray-600">
-                        I practice the Infrastructure as Code philosophy on my desktop configuration, using
+            default: `I practice the Infrastructure as Code philosophy on my desktop configuration, using
                         <a
                             href="https://en.wikipedia.org/wiki/Makefile"
                             target="_blank"
@@ -90,8 +91,7 @@ export default {
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Link to my ansible desktop GitHub repository"
-                        >iancleary/ansible-desktop</a>.
-                        </div>`,
+                        >iancleary/ansible-desktop</a>.`,
         },
     },
 };
