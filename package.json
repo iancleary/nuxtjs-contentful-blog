@@ -35,6 +35,6 @@
     "eslint-plugin-vue": "^6.2.2",
     "gridsome-plugin-tailwindcss": "^3.0.1",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.11"
+    "lint-staged": "^10.2.12"
   }
 }
