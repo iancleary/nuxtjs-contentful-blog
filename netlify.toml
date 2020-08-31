@@ -1,3 +1,5 @@
 [build]
   publish = "dist"
-  command = "gridsome build"
+  command = "npm run generate"
+[build.environment]
+  NODE_VERSION = "11"

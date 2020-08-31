@@ -1,14 +1,14 @@
 <template>
   <a
     role="button"
-    href="https://dev.to/iancleary"
+    href="https://twitter.com/icancclearynow"
     target="_blank"
     rel="noopener noreferrer"
     class="toggle-theme"
-    title="Link to iancleary's DEV Profile"
+    title="Link to my Twitter Profile"
   >
     <font-awesome-icon
-      :icon="['fab', 'dev']"
+      :icon="['fas', 'twitter']"
       size="lg"
     />
   </a>

@@ -21,7 +21,7 @@
 };
 
 /* Pass through values from root */
-[data-theme="light"] {
+.light-mode {
   --bg-background-primary: var(--bg-background-primary);
   --bg-background-secondary: var(--bg-background-secondary);
   --bg-background-tertiary: var(--bg-background-tertiary);
@@ -33,7 +33,7 @@
 }
 
 /* Override values from root */
-[data-theme="dark"] {
+.dark-mode {
   --bg-background-primary: #0D2438;
   --bg-background-secondary: #102C44;
   --bg-background-tertiary: #1E3951;
@@ -45,7 +45,7 @@
 }
 
 /* Override values from root */
-[data-theme="sepia"] {
+.sepia-mode {
   --bg-background-primary: #f1e7d0;
   --bg-background-secondary: #eae0c9;
   --bg-background-tertiary: #eadec2;

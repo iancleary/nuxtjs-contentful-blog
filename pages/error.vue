@@ -8,14 +8,14 @@
           <h2>
             Page Not Found,
           </h2>
-          <g-link
+          <NuxtLink
             to="/"
           >
             Go Home?
-          </g-link>
+          </NuxtLink>
         </div>
-        <g-image
-          src="@/assets/images/404.svg"
+        <img
+          src="~/assets/404.svg"
           alt="404 page not foud"
         />
       </div>

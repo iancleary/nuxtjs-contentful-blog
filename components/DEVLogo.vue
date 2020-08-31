@@ -1,14 +1,14 @@
 <template>
   <a
     role="button"
-    href="https://github.com/iancleary"
+    href="https://dev.to/iancleary"
     target="_blank"
     rel="noopener noreferrer"
     class="toggle-theme"
-    title="Link to my GitHub Profile"
+    title="Link to iancleary's DEV Profile"
   >
     <font-awesome-icon
-      :icon="['fab', 'github']"
+      :icon="['fas', 'dev']"
       size="lg"
     />
   </a>
