@@ -9,6 +9,7 @@
   >
     <fa
       :icon="['fab', 'github']"
+      size="lg"
     />
   </a>
 </template>

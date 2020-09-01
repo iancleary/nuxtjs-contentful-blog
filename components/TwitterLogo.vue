@@ -9,6 +9,7 @@
   >
     <fa
       :icon="['fab', 'twitter']"
+      size="lg"
     />
   </a>
 </template>
