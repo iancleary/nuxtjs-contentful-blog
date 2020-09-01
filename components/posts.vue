@@ -1,9 +1,6 @@
 <template>
   <main>
     <div class="container">
-      <h1 class="title">
-        Paw Waves
-      </h1>
       <section
         v-for="post in posts"
         :key="post.fields.slug"
@@ -42,9 +39,6 @@ export default {
    posts() {
      return this.$store.state.posts;
    },
- },
- head: {
-   title: "Paw Waves, Latest Posts",
  },
 };
 </script>

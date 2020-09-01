@@ -7,9 +7,8 @@
     class="toggle-theme"
     title="Link to iancleary's DEV Profile"
   >
-    <font-awesome-icon
-      :icon="['fas', 'dev']"
-      size="lg"
+    <fa
+      :icon="['fab', 'dev']"
     />
   </a>
 </template>

@@ -7,9 +7,8 @@
     class="toggle-theme"
     title="Link to my GitHub Profile"
   >
-    <font-awesome-icon
-      :icon="['fas', 'github']"
-      size="lg"
+    <fa
+      :icon="['fab', 'github']"
     />
   </a>
 </template>

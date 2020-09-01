@@ -57,13 +57,16 @@ export default {
     CONTENTFUL_ACCESSTOKEN: process.env.CONTENTFUL_ACCESSTOKEN,
     CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT,
   },
-  modules: ["@nuxtjs/markdownit"],
+  modules: [
+    "@nuxtjs/markdownit",
+  ],
   markdownit: {
     injected: true,
   },
   fontawesome: {
+    component: 'fa',
     icons: {
-      brands: ['faGithub'],
+      brands: ['faGithub', 'faTwitter', 'faDev'],
     },
   },
   generate: {

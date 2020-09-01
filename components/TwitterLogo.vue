@@ -7,9 +7,8 @@
     class="toggle-theme"
     title="Link to my Twitter Profile"
   >
-    <font-awesome-icon
-      :icon="['fas', 'twitter']"
-      size="lg"
+    <fa
+      :icon="['fab', 'twitter']"
     />
   </a>
 </template>
