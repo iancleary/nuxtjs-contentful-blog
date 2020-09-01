@@ -8,11 +8,11 @@
           src="~/assets/unDraw/developer.svg"
           alt="developer with laptop and git commit log visual"
           immediate="true"
-        />
+        >
       </div>
     </div>
     <!-- end hero -->
-    
+
     <div class="mb-4">
       <div class="container-inner mx-auto">
         <p class="text-lg sm:text-xl">
@@ -30,14 +30,14 @@
               src="~/assets/unDraw/connectedWorld.svg"
               alt="Connected world"
               immediate="true"
-            />
+            >
           </div>
           <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
             <img
               src="~/assets/unDraw/lightTheFire.svg"
               alt="woman next to illuminated lighthouse"
               immediate="true"
-            />
+            >
           </div>
         </div>
       </div>

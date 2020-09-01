@@ -1,7 +1,7 @@
 <template>
   <div
     class="font-sans text-copy-primary
-           content-wrapper flex flex-col min-h-screen dark-mode bg-background-primary"
+           content-wrapper flex flex-col min-h-screen bg-background-primary"
   >
     <!-- LazyHydration interfers with "sticky" header -->
     <Header />
@@ -9,8 +9,8 @@
       name="fade"
       appear
     >
-      <main class="dark-mode">
-        <slot />
+      <main>
+        <Nuxt />
       </main>
     </transition>
     <LazyHydrate when-visible>

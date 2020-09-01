@@ -2,9 +2,9 @@
   <!-- Overflow-x-hidden prevents horizontal scrolling when
       elements are larger than others within the app -->
   <div class="overflow-x-hidden">
-    <LazyHydrate when-idle>
-      <Hero />
-    </LazyHydrate>
+    <!-- <LazyHydrate when-idle> -->
+    <Hero />
+    <!-- </LazyHydrate> -->
     <LazyHydrate when-visible>
       <Projects />
     </LazyHydrate>
@@ -45,6 +45,9 @@ export default {
     Projects,
     BottomDots,
     posts,
+  },
+  head: {
+    title: 'Home page',
   },
 };
 

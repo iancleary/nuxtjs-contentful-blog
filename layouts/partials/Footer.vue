@@ -2,15 +2,14 @@
   <footer class="bg-green-700 text-white">
     <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-6">
       <div class="mb-8 lg:mb-0">
-        <div>Copyright 2019-{{ currentYear }}. All rights reserved.</div>
         <div>
-          Powered by
+          Created with
           <a
-            href="https://gridsome.org/docs"
+            href="gridsome"
             target="_blank"
             rel="noopener"
             class="text-white"
-          >Gridsome</a>,
+          >NuxtJS</a>,
           <a
             href="https://vuejs.org/"
             target="_blank"
@@ -44,6 +43,7 @@
             class="text-white"
           >Netlify</a>.
         </div>
+        <div>Copyright 2019-{{ currentYear }}. All rights reserved.</div>
       </div>
     </div>
   </footer>

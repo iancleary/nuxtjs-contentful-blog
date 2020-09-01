@@ -50,7 +50,7 @@ export default {
    ** Environment variables
    */
   buildModules: [
-    "@nuxtjs/tailwindcss", '@nuxtjs/fontawesome', '@nuxtjs/color-mode',
+    "@nuxtjs/tailwindcss", '@nuxtjs/fontawesome',
   ],
   env: {
     CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,

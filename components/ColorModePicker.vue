@@ -5,8 +5,8 @@
         v-for="color of colors"
         :key="color"
         @click="$colorMode.preference = color"
-        >
-        {{color}}
+      >
+        {{ color }}
       </li>
     </ul>
   </div>

@@ -30,7 +30,7 @@ export default {
  computed: {
    post() {
      let post = this.$store.state.posts.filter(
-       (el) => el.fields.slug === this.slug
+       (el) => el.fields.slug === this.slug,
      );
      return post[0];
    },

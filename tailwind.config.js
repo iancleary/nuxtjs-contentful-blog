@@ -1,8 +1,8 @@
 module.exports = {
   purge: [
-    './src/**/*.html',
-    './src/**/*.vue',
-    './src/**/*.jsx',
+    './**/*.html',
+    './**/*.vue',
+    './**/*.jsx',
   ],
   theme: {
     zIndex: {
@@ -23,20 +23,18 @@ module.exports = {
     },
     colors: {
       background: {
-        primary: 'var(--bg-background-primary)',
-        secondary: 'var(--bg-background-secondary)',
-        tertiary: 'var(--bg-background-tertiary)',
-
-        form: 'var(--bg-background-form)',
+        primary: '#0D2438',
+        secondary: '#102C44',
+        tertiary: '#1E3951',
       },
 
       copy: {
-        primary: 'var(--text-copy-primary)',
-        secondary: 'var(--text-copy-hover)',
+        primary: '#cbd5e0',
+        secondary: '#e2e8f0',
       },
 
       'border-color': {
-        primary: 'var(--border-border-color-primary)',
+        primary: '#1a202c',
       },
 
       transparent: 'transparent',

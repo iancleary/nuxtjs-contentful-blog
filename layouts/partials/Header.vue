@@ -15,10 +15,7 @@
             </NuxtLink>
           </li>
         </ul>
-        <ul class="absolute right-0 flex space-x-8 pr-8 items-center pt-1">
-          <li>
-            <ColorModePicker />
-          </li>
+        <!-- <ul class="absolute right-0 flex space-x-8 pr-8 items-center pt-1">
           <li>
             <DevLogo />
           </li>
@@ -28,7 +25,7 @@
           <li>
             <TwitterLogo />
           </li>
-        </ul>
+        </ul> -->
       </div>
     </header>
   </nav>
@@ -36,18 +33,16 @@
 
 <script>
 
-import DevLogo from '@/components/DEVLogo.vue';
-import ColorModePicker from '@/components/ColorModePicker.vue';
-import TwitterLogo from '@/components/TwitterLogo.vue';
-import GitHubLogo from '@/components/GitHubLogo.vue';
+// import DevLogo from '@/components/DEVLogo.vue';
+// import TwitterLogo from '@/components/TwitterLogo.vue';
+// import GitHubLogo from '@/components/GitHubLogo.vue';
 import BlackLivesMatter from '@/components/BlackLivesMatter.vue';
 
 export default {
   components: {
-      ColorModePicker,
-      DevLogo,
-      GitHubLogo,
-      TwitterLogo,
+      // DevLogo,
+      // GitHubLogo,
+      // TwitterLogo,
       BlackLivesMatter,
   },
 };

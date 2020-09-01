@@ -8,16 +8,16 @@
           <h2>
             Page Not Found,
           </h2>
-          <NuxtLink
+          <nuxt-link
             to="/"
           >
             Go Home?
-          </NuxtLink>
+          </nuxt-link>
         </div>
         <img
           src="~/assets/404.svg"
           alt="404 page not foud"
-        />
+        >
       </div>
     </LazyHydrate>
     <div class="bg-background-secondary border-t-2 border-green-700">
@@ -40,6 +40,8 @@ import Posts from './partials/Posts.vue';
 import BottomDots from '@/components/BottomDots.vue';
 
 export default {
+  props: ['error'],
+  layout: 'default', // you can set a custom layout for the error page
   components: {
     LazyHydrate,
     Posts,

@@ -1,13 +1,13 @@
 import client from "~/plugins/contentful";
 
 export const state = () => ({
-  posts: null
+  posts: null,
 });
 
 export const mutations = {
   updatePosts: (state, posts) => {
     state.posts = posts;
-  }
+  },
 };
 
 export const actions = {
@@ -15,11 +15,11 @@ export const actions = {
     try {
       if (!client) return;
       const response = await client.getEntries({
-        content_type: "blogPost"
+        content_type: "blogPost",
       });
       if (response.items.length > 0) commit("updatePosts", response.items);
     } catch (err) {
       console.error(err);
     }
-  }
+  },
 };

@@ -11,14 +11,14 @@
               src="~/assets/unDraw/shared_workspace_hwky.svg"
               alt="shared diverse workspace"
               immediate="true"
-            />
+            >
           </div>
           <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
             <img
               src="~/assets/unDraw/code_review.svg"
               alt="Code review of user interface wireframe"
               immediate="true"
-            />
+            >
           </div>
         </div>
       </div>

@@ -1,7 +1,12 @@
 <template>
   <section class="container">
     <p class="back">
-      <nuxt-link exact to="/">⟵ Back to Home</nuxt-link>
+      <nuxt-link
+        exact
+        to="/"
+      >
+        ⟵ Back to Home
+      </nuxt-link>
     </p>
     <h1>{{ post.fields.title }}</h1>
     <div
@@ -9,8 +14,8 @@
       :style="
         `background: url(https:${post.fields.heroImage.fields.file.url}) center center no-repeat`
       "
-    ></div>
-    <article v-html="$md.render(post.fields.body)"></article>
+    />
+    <article v-html="$md.render(post.fields.body)" />
   </section>
 </template>
 
@@ -18,22 +23,22 @@
 export default {
   data() {
     return {
-      slug: this.$route.params.slug
+      slug: this.$route.params.slug,
     };
   },
   computed: {
     post() {
       let post = this.$store.state.posts.filter(
-        el => el.fields.slug === this.slug
+        (el) => el.fields.slug === this.slug,
       );
       return post[0];
-    }
+    },
   },
   head() {
     return {
-      title: this.post.fields.title
+      title: this.post.fields.title,
     };
-  }
+  },
 };
 </script>
 

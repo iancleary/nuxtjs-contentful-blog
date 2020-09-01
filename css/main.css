@@ -4,12 +4,12 @@
 
 @tailwind utilities;
 
-/* Source Material for Custom CSS */
+/* Source Material for Custom CSS
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 /* https://tailwindcss.com/docs/configuration/#app */
 
 /* Defaults to allow data-theme to overwrite them */
-:root {
+/* :root {
   --bg-background-primary: #FFF;
   --bg-background-secondary: #f3f5f4;
   --bg-background-tertiary: #e2e8f0;
@@ -18,10 +18,10 @@
   --text-copy-secondary: #4a5568;
 
   --border-border-color-primary: white;
-};
+}; */
 
 /* Pass through values from root */
-.light-mode {
+/* .light-mode {
   --bg-background-primary: var(--bg-background-primary);
   --bg-background-secondary: var(--bg-background-secondary);
   --bg-background-tertiary: var(--bg-background-tertiary);
@@ -30,10 +30,10 @@
   --text-copy-secondary: var(--text-copy-secondary);
 
   --border-border-color-primary: var(--border-border-color-primary);
-}
+} */
 
 /* Override values from root */
-.dark-mode {
+/* .dark-mode {
   --bg-background-primary: #0D2438;
   --bg-background-secondary: #102C44;
   --bg-background-tertiary: #1E3951;
@@ -42,10 +42,10 @@
   --text-copy-secondary: #e2e8f0;
 
   --border-border-color-primary:  #1a202c;
-}
+} */
 
 /* Override values from root */
-.sepia-mode {
+/* .sepia-mode {
   --bg-background-primary: #f1e7d0;
   --bg-background-secondary: #eae0c9;
   --bg-background-tertiary: #eadec2;
@@ -54,7 +54,7 @@
   --text-copy-secondary: #e2e8f0;
 
   --border-border-color-primary:  #1a202c;
-}
+} */ */
 
 /* Non-blocking Font-Awesome icons */
 
