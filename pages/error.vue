@@ -40,7 +40,6 @@ import Posts from './partials/Posts.vue';
 import BottomDots from '@/components/BottomDots.vue';
 
 export default {
-  props: ['error'],
   layout: 'default', // you can set a custom layout for the error page
   components: {
     LazyHydrate,

@@ -2,7 +2,7 @@
   <nav class="sticky top-0 pb-8 z-10">
     <BlackLivesMatter />
     <header
-      class="bg-background-primary py-4 opacity-90""
+      class="bg-background-primary py-4 opacity-90"
     >
       <div class="container inset-x-0 pt-2 pb-8">
         <ul class="absolute left-0 flex items-center">
