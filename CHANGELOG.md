@@ -17,6 +17,10 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - CSS for blocking Font-Awesome rendering before loaded, per [#137](https://github.com/iancleary/iancleary.me/issues/137)
 - Tailwindcss purge: [Controlling File Size](https://tailwindcss.com/docs/controlling-file-size)
 
+### Changed
+
+- Changed to [CalVer Version Scheme](https://calver.org/) YYYY.MINOR.MICRO
+
 ### Removed
 
 - Dropped typescript
