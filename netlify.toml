@@ -1,3 +1,7 @@
 [build]
   publish = "dist"
-  command = "npm run generate"
+  command = "yarn build"
+
+[build.environment]
+  NODE_VERSION = "12.18"
+  YARN_VERSION = "1.22.5"
