@@ -8,6 +8,11 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Migrated Framework to NuxtJS.
+- Incorporating Contentful Community Plan
+
 ## [v2020.1.0]
 
 ### Added

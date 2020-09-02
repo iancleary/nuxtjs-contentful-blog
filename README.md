@@ -1,7 +1,7 @@
 # Personal Website
 
 <p align="center">
-    <em> Powered by Gridsome, Vue.js & Tailwind CSS</em><br>
+    <em> Powered by NuxtJS, Vue.js & Tailwind CSS</em><br>
     <em> Deployed with Netlify</em>
 </p>
 
@@ -15,34 +15,27 @@
 
 </p>
 
-Originally I started with plain HTML5, migrated to vue.js and tailwindcss with vue-router and vue-cli.  After some looking around, I've discovered Vuepress and eventually [Gridsome](https://gridsome.org/).  I recommend [Gridsome Starters](https://gridsome.org/starters/).
+I have converted my site to use Contentful and NuxtJS.
 
-My inspiration originally drew from [Gridsome Portfolio Starter](https://gridsome.org/starters/gridsome-portfolio-starter/) by Andre Madarang due to the dark/light mode and [Tailwind CSS](https://tailwindcss.com/).
+## Tutorials
 
-Since then, I have made it my own, and adding linting.
+The following tutorials were especially useful:
+
+* [Integrate Contentful with Nuxt.js](https://www.contentful.com/developers/docs/javascript/tutorials/integrate-contentful-with-vue-and-nuxt/) by Contentful
+* [Create a Blog with Contentful and Nuxt](https://www.netlify.com/blog/2020/04/20/create-a-blog-with-contentful-and-nuxt/?utm_source=github&utm_medium=contentful-sd&utm_campaign=devex) by Sarah Drasner (@sdras)
+* [How I Migrated to JAMStack: Next.JS, Vercel, and Contentful.](https://cole.codes/posts/how-i-migrated-to-jamstack-nextjs-vercel-contentful), by Cole Turner.
 
 ## Calendar Versioning
 
 This project adheres to [Calendar Versioning](https://calver.org/), YYYY.MINOR.MICRO.
 
-### 1. Install Gridsome CLI tool if you don't have
-
-`yarn global add @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create gridsome-ts https://github.com/cleitonper/gridsome-starter-typescript.git` to install this typescript starter
-2. `cd gridsome-ts` to open folder
-3. `gridsome develop` to start local dev server at `http://localhost:8080`
-4. happy coding 🎉🙌
-
-### 3. Static Code Analysis - Command Line
+## Static Code Analysis - Command Line
 
 1. edit the `.eslintrc.json` file and add your favorites rules from [`eslint`](https://eslint.org/docs/rules/), and [`vue`](https://vuejs.github.io/eslint-plugin-vue/rules/).
 2. run `yarn lint:check` to see static analysis result
 3. run `yarn lint:fix` to fix errors found by `eslint`
 
-### 4. Static Code Analysis - Visual Studio Code
+### Static Code Analysis - Visual Studio Code
 
 As mentioned before, in order to lint your Javascript code in `*.vue` *Single File Components* with *vscode* you'll need to install [`ESLint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [`Vetur`](https://marketplace.visualstudio.com/items?itemName=octref.vetur) extensions for the editor.
 
@@ -53,9 +46,9 @@ Use the links above to install the extensions, or follow the steps below:
 3. Select and install the extension
 4. Do same thing for **Vetur** extension
 
-### 5. Useful links
+### Useful links
 
-* [Gridsome docs](https://gridsome.org/docs/)
+* [NuxtJS docs](https://nuxtjs.org/guides/get-started/installation)
 * [ESLint docs](https://eslint.org/)
 * [ESLint rules](https://eslint.org/docs/rules/)
 * [Vue rules](https://vuejs.github.io/eslint-plugin-vue/rules/)

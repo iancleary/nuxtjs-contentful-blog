@@ -1,40 +1,40 @@
 {
-  "name": "iancleary.me",
+  "name": "Ians-blog",
+  "version": "1.0.0",
+  "description": "Personal Blog by Ian",
+  "author": "iancleary",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "lint:check": "eslint --ext .js,.vue ./src",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:check": "eslint --ext .js,.vue .",
     "lint:fix": "yarn lint:check --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.(vue|js)": "yarn lint:check"
-  },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/fontawesome-svg-core": "1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/vue-fontawesome": "^0.1.10",
-    "axios": "^0.20.0",
-    "gridsome": "^0.7.20",
-    "tailwindcss": "^1.7.5",
-    "vue-lazy-hydration": "^1.0.0-beta.14"
+    "@fortawesome/free-solid-svg-icons": "5.14.0",
+    "@fortawesome/vue-fontawesome": "0.1.10",
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "@nuxtjs/markdownit": "^1.2.9",
+    "@nuxtjs/tailwindcss": "3.0.2",
+    "contentful": "^7.14.2",
+    "dotenv": "^8.2.0",
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^8.0.2",
+    "vue-lazy-hydration": "1.0.0-beta.14"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.0",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "gridsome-plugin-tailwindcss": "^3.0.1",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.13"
+    "eslint": "7.7.0",
+    "eslint-config-node": "4.1.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "eslint-plugin-vue": "6.2.2"
   }
 }
