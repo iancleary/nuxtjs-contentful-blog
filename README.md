@@ -25,13 +25,17 @@ The following tutorials were especially useful:
 * [Create a Blog with Contentful and Nuxt](https://www.netlify.com/blog/2020/04/20/create-a-blog-with-contentful-and-nuxt/?utm_source=github&utm_medium=contentful-sd&utm_campaign=devex) by Sarah Drasner (@sdras)
 * [How I Migrated to JAMStack: Next.JS, Vercel, and Contentful.](https://cole.codes/posts/how-i-migrated-to-jamstack-nextjs-vercel-contentful), by Cole Turner.
 
+## Calendar Versioning
+
+This project adheres to [Calendar Versioning](https://calver.org/), YYYY.MINOR.MICRO.
+
 ## Static Code Analysis - Command Line
 
 1. edit the `.eslintrc.json` file and add your favorites rules from [`eslint`](https://eslint.org/docs/rules/), and [`vue`](https://vuejs.github.io/eslint-plugin-vue/rules/).
 2. run `yarn lint:check` to see static analysis result
 3. run `yarn lint:fix` to fix errors found by `eslint`
 
-### 4. Static Code Analysis - Visual Studio Code
+### Static Code Analysis - Visual Studio Code
 
 As mentioned before, in order to lint your Javascript code in `*.vue` *Single File Components* with *vscode* you'll need to install [`ESLint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [`Vetur`](https://marketplace.visualstudio.com/items?itemName=octref.vetur) extensions for the editor.
 
@@ -42,7 +46,7 @@ Use the links above to install the extensions, or follow the steps below:
 3. Select and install the extension
 4. Do same thing for **Vetur** extension
 
-### 5. Useful links
+### Useful links
 
 * [NuxtJS docs](https://nuxtjs.org/guides/get-started/installation)
 * [ESLint docs](https://eslint.org/)

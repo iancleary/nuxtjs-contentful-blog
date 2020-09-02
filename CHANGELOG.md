@@ -4,9 +4,16 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ## [Unreleased]
+
+### Changed
+
+- Migrated Framework to NuxtJS.
+- Incorporating Contentful Community Plan
+
+## [v2020.1.0]
 
 ### Added
 
@@ -14,6 +21,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - webpack config for '@' path alias
 - CSS for blocking Font-Awesome rendering before loaded, per [#137](https://github.com/iancleary/iancleary.me/issues/137)
 - Tailwindcss purge: [Controlling File Size](https://tailwindcss.com/docs/controlling-file-size)
+
+### Changed
+
+- Changed to [CalVer Version Scheme](https://calver.org/) YYYY.MINOR.MICRO
 
 ### Removed
 
@@ -83,9 +94,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added mobile touch events using [vue2-touch-events](https://github.com/jerrybendy/vue-touch-events) per PR [#34](https://github.com/iancleary/personal-website/pull/34)
-- Added alt-text and svg immediate loading per PR [#33](https://github.com/iancleary/personal-website/pull/33)
-- Added navbar automatic hiding on scroll down, showing on scroll up, and opaque responsive on mobile per PR [#30](https://github.com/iancleary/personal-website/pull/30)
+- Added mobile touch events using [vue2-touch-events](https://github.com/jerrybendy/vue-touch-events) per PR [#34](https://github.com/iancleary/iancleary.me/pull/34)
+- Added alt-text and svg immediate loading per PR [#33](https://github.com/iancleary/iancleary.me/pull/33)
+- Added navbar automatic hiding on scroll down, showing on scroll up, and opaque responsive on mobile per PR [#30](https://github.com/iancleary/iancleary.me/pull/30)
 
 ### Changed
 
@@ -96,12 +107,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [v0.6.0] - 2019-09-22
 
-- Refactored to Gridsome Portfolio Starter per PR [#17](https://github.com/iancleary/personal-website/pull/17)
+- Refactored to Gridsome Portfolio Starter per PR [#17](https://github.com/iancleary/iancleary.me/pull/17)
 - Conception of the Changelog!
 
-[Unreleased]: https://github.com/iancleary/personal-website/compare/v0.9.0...HEAD
-[v0.9.0]: https://github.com/iancleary/personal-website/releases/tag/v0.9.0
-[v0.8.0]: https://github.com/iancleary/personal-website/releases/tag/v0.8.0
-[v0.7.0]: https://github.com/iancleary/personal-website/releases/tag/v0.7.0
-[v0.6.1]: https://github.com/iancleary/personal-website/releases/tag/v0.6.1
-[v0.6.0]: https://github.com/iancleary/personal-website/releases/tag/v0.6.0
+[Unreleased]: https://github.com/iancleary/iancleary.me/compare/v2020.1.0...HEAD
+[v2020.1.0]: https://github.com/iancleary/iancleary.me/releases/tag/v2020.1.0
+[v0.9.0]: https://github.com/iancleary/iancleary.me/releases/tag/v0.9.0
+[v0.8.0]: https://github.com/iancleary/iancleary.me/releases/tag/v0.8.0
+[v0.7.0]: https://github.com/iancleary/iancleary.me/releases/tag/v0.7.0
+[v0.6.1]: https://github.com/iancleary/iancleary.me/releases/tag/v0.6.1
+[v0.6.0]: https://github.com/iancleary/iancleary.me/releases/tag/v0.6.0
