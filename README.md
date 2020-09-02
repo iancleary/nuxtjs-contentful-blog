@@ -21,6 +21,10 @@ My inspiration originally drew from [Gridsome Portfolio Starter](https://gridsom
 
 Since then, I have made it my own, and adding linting.
 
+## Calendar Versioning
+
+This project adheres to [Calendar Versioning](https://calver.org/), YYYY.MINOR.MICRO.
+
 ### 1. Install Gridsome CLI tool if you don't have
 
 `yarn global add @gridsome/cli`
