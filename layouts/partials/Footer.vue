@@ -5,7 +5,7 @@
         <div>
           Created with
           <a
-            href="gridsome"
+            href="https://nuxtjs.org"
             target="_blank"
             rel="noopener"
             class="text-white"
