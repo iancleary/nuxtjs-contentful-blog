@@ -42,7 +42,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style>
 .back {
   margin-top: 20px;
 }

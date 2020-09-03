@@ -15,10 +15,10 @@
       <!-- <LazyHydrate when-idle>
         <Posts />
       </LazyHydrate> -->
+      <posts />
       <LazyHydrate when-visible>
         <BottomDots />
       </LazyHydrate>
-      <!-- <posts /> -->
     </div>
   </div>
 </template>
@@ -33,7 +33,7 @@ import Hero from './partials/Hero.vue';
 import PostImages from './partials/PostImages.vue';
 import Projects from './partials/Projects.vue';
 import BottomDots from '@/components/BottomDots.vue';
-// import posts from '@/components/posts.vue';
+import posts from '@/components/posts.vue';
 
 export default {
   // layout: 'default',
@@ -44,7 +44,7 @@ export default {
     PostImages,
     Projects,
     BottomDots,
-    // posts,
+    posts,
   },
   head: {
     title: 'Home page',
