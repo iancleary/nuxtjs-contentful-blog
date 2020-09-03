@@ -4,6 +4,8 @@
 
 @tailwind utilities;
 
+@tailwind screens;
+
 /* Source Material for Custom CSS
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 /* https://tailwindcss.com/docs/configuration/#app */
