@@ -5,36 +5,25 @@
         v-for="post in posts"
         :key="post.fields.slug"
       >
-        <div
-          class="image"
-          :style="
-            `background: url(https:${post.fields.heroImage.fields.file.url}) center center no-repeat`
-          "
+        <PostCard
+          :title="post.fields.title"
+          :slug="post.fields.slug"
+          :description="post.fields.description"
+          :author="post.fields.author.fields.name"
+          :heroImageUrl="post.fields.heroImage.fields.file.url"
         />
-        <h2 class="title">
-          <nuxt-link :to="post.fields.slug">
-            {{ post.fields.title }}
-          </nuxt-link>
-        </h2>
-        <p class="author">
-          By {{ post.fields.author.fields.name }}
-        </p>
-        <p class="description">
-          {{ post.fields.description }}<br>
-          <nuxt-link
-            :to="post.fields.slug"
-            class="more"
-          >
-            Read more ⟶
-          </nuxt-link>
-        </p>
       </section>
     </div>
   </main>
 </template>
 
 <script>
+import PostCard from '@/components/PostCard/PostCard.vue';
+
 export default {
+  components: {
+    PostCard,
+  },
  computed: {
    posts() {
      return this.$store.state.posts;
