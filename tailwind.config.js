@@ -1,10 +1,19 @@
 module.exports = {
-  purge: [
-    './**/*.html',
-    './**/*.vue',
-    './**/*.jsx',
-  ],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
+  // purge: [
+  //   './**/*.html',
+  //   './**/*.vue',
+  //   './**/*.jsx',
+  // ],
   theme: {
+    linearGradientColors: { // defaults to {}
+      'red': '#f00',
+      'red-blue': ['#f00', '#00f'],
+      'red-green-blue': ['#f00', '#0f0', '#00f'],
+      'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
+    },
     zIndex: {
       '-10': '-10',
       '10': '10',
@@ -37,7 +46,7 @@ module.exports = {
         primary: '#1a202c',
       },
 
-      transparent: 'transparent',
+      // transparent: 'transparent',
 
       black: '#000',
       white: '#fff',
@@ -108,10 +117,7 @@ module.exports = {
       '100': '1',
     },
   },
-  variants: {
-    // Some useful comment
-  },
   plugins: [
-    // Some useful comment
+    require('@tailwindcss/ui'),
   ],
 };
