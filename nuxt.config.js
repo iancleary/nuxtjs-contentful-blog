@@ -60,6 +60,9 @@ export default {
   modules: [
     "@nuxtjs/markdownit",
   ],
+  tailwindcss: {
+    exposeConfig: true,
+  },
   markdownit: {
     injected: true,
   },
