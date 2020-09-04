@@ -8,10 +8,16 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- TailwindUI BlogSections per [#159](https://github.com/iancleary/portfolio/pull/159)
+
 ### Changed
 
 - Migrated Framework to NuxtJS.
 - Incorporating Contentful Community Plan
+- Use UTC js date methods in BlogSectionCard component
+- Sort BlogSectionCards to show most recent first
 
 ## [v2020.1.0]
 

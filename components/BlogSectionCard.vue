@@ -10,12 +10,12 @@
     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
       <div class="flex-1">
         <p class="text-sm leading-5 font-medium text-indigo-600">
-          <nuxt-link
+          <!-- <nuxt-link
             :to="slug"
             class="hover:underline"
           >
             Blog
-          </nuxt-link>
+          </nuxt-link> -->
         </p>
         <nuxt-link
           :to="slug"
@@ -58,6 +58,10 @@
               6 min read
             </span> -->
           </div>
+          <!-- <div class="flex text-sm leading-5 text-gray-500">
+            <time datetime="2020-03-16">
+              {{ publishDate }}
+            </time> -->
         </div>
       </div>
     </div>
@@ -90,7 +94,7 @@ export default {
         type: String,
     },
     publishDate: {
-      default: "2019-12-08T00:00+02:00",
+      default: "2019-12-08",
       type: String,
     },
   },
@@ -99,7 +103,7 @@ export default {
       var d = new Date(this.publishDate);
       var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
       var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-      return days[d.getDay()] +", " + months[d.getMonth()] + " " + d.getDay() +", " +d.getFullYear() ;
+      return days[d.getUTCDay()] +", " + months[d.getUTCMonth()] + " " + d.getUTCDate() +", " +d.getUTCFullYear() ;
     },
   },
 };

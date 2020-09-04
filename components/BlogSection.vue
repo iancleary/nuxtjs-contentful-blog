@@ -15,7 +15,7 @@
         </div>
         <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
           <section
-            v-for="post in posts"
+            v-for="post in sortedPosts"
             :key="post.fields.slug"
           >
             <BlogSectionCard
@@ -36,6 +36,12 @@
 <script>
 import BlogSectionCard from '@/components/BlogSectionCard.vue';
 
+function dateMostRecentSortFunction(postA, postB) {
+  var dateA = new Date(postA.fields.publishDate).getTime();
+  var dateB = new Date(postB.fields.publishDate).getTime();
+  return dateA < dateB ? 1 : -1;
+}
+
 export default {
   components: {
     BlogSectionCard,
@@ -43,6 +49,10 @@ export default {
  computed: {
    posts() {
      return this.$store.state.posts;
+   },
+   sortedPosts() {
+     var unSortedPosts = this.$store.state.posts;
+     return unSortedPosts.slice().sort(dateMostRecentSortFunction);
    },
  },
 };
