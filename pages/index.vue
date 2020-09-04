@@ -8,17 +8,17 @@
     <LazyHydrate when-visible>
       <Projects />
     </LazyHydrate>
-    <div class="bg-background-secondary">
-      <LazyHydrate when-visible>
-        <PostImages />
-      </LazyHydrate>
+    <LazyHydrate when-visible>
+      <PostImages />
+    </LazyHydrate>
+    <div class="bg-background-secondary border-t-2 border-green-700">
       <!-- <LazyHydrate when-idle>
         <Posts />
       </LazyHydrate> -->
+      <BlogSection />
       <LazyHydrate when-visible>
         <BottomDots />
       </LazyHydrate>
-      <!-- <posts /> -->
     </div>
   </div>
 </template>
@@ -33,7 +33,7 @@ import Hero from './partials/Hero.vue';
 import PostImages from './partials/PostImages.vue';
 import Projects from './partials/Projects.vue';
 import BottomDots from '@/components/BottomDots.vue';
-// import posts from '@/components/posts.vue';
+import BlogSection from '@/components/BlogSection.vue';
 
 export default {
   // layout: 'default',
@@ -44,7 +44,7 @@ export default {
     PostImages,
     Projects,
     BottomDots,
-    // posts,
+    BlogSection,
   },
   head: {
     title: 'Home page',
