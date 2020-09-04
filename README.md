@@ -10,7 +10,7 @@
 <a href="https://app.netlify.com/sites/iancleary-me/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/a026dcc6-920b-4f08-b6ff-535e61f4190a/deploy-status" alt="Netlify Status">
 <a href="https://dependabot.com/" target="_blank">
-    <img src="https://flat.badgen.net/dependabot/iancleary/iancleary.me?icon=dependabot" alt="Dependabot Enabled">
+    <img src="https://flat.badgen.net/dependabot/iancleary/portfolio?icon=dependabot" alt="Dependabot Enabled">
 </a>
 
 </p>
