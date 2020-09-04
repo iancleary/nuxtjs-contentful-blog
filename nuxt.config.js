@@ -36,6 +36,11 @@ export default {
    */
   plugins: ["~/plugins/contentful", "~/plugins/posts", '~/plugins/font-awesome'],
 
+  // https://github.com/FortAwesome/vue-fontawesome#purgecss
+  purgeCSS: {
+    whitelistPatterns: [/svg.*/, /fa.*/],
+  },
+
   // Build Modules before loading app
   buildModules: [
     "@nuxtjs/tailwindcss",
