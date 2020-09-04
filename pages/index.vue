@@ -47,7 +47,7 @@ export default {
     BlogSection,
   },
   head: {
-    title: 'Home page',
+    title: '📡🛰Ian Cleary 📡🛰',
   },
 };
 

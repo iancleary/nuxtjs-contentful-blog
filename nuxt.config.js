@@ -7,8 +7,6 @@ const client = contentful.createClient({
   accessToken: process.env.CONTENTFUL_ACCESSTOKEN,
 });
 
-var hljs = require('highlight.js'); // https://highlightjs.org/
-
 export default {
   mode: "universal",
   /*
