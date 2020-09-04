@@ -22,7 +22,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ###
 
-- Removed `@nuxtjs/fontawesome` dependency
+- Removed `@nuxtjs/fontawesome` dependency (replaced with <https://simpleicons.org>, <https://github.com/mainvest/vue-simple-icons>)
 
 ## [v2020.1.0]
 

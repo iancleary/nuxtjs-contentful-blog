@@ -34,12 +34,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/contentful", "~/plugins/posts", '~/plugins/font-awesome'],
-
-  // https://github.com/FortAwesome/vue-fontawesome#purgecss
-  purgeCSS: {
-    whitelistPatterns: [/svg.*/, /fa.*/],
-  },
+  plugins: ["~/plugins/contentful", "~/plugins/posts"],
 
   // Build Modules before loading app
   buildModules: [
@@ -62,7 +57,7 @@ export default {
     "~/css/main.css",
     { src: '~/node_modules/highlight.js/styles/night-owl.css', lang: 'css' },
     // I also like darcula
-    '@fortawesome/fontawesome-svg-core/styles.css',
+
   ],
   render: {
     bundleRenderer: {

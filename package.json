@@ -13,11 +13,6 @@
     "lint:fix": "yarn lint:check --fix"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "5.14.0",
-    "@fortawesome/vue-fontawesome": "2.0.0",
-    "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/tailwindcss": "3.0.2",
     "@tailwindcss/typography": "^0.2.0",
@@ -27,7 +22,8 @@
     "markdown-it-highlightjs": "^3.2.0",
     "nuxt": "^2.0.0",
     "tailwindcss": "^1.7.6",
-    "vue-lazy-hydration": "1.0.0-beta.14"
+    "vue-lazy-hydration": "1.0.0-beta.14",
+    "vue-simple-icons": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "7.8.1",
