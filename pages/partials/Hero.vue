@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="container-inner mx-auto flex flex-col items-center justify-center py-16 px-16"
+      class="container-inner text-copy-primary mx-auto flex flex-col items-center justify-center py-16 px-16"
     >
       <div class="lg:mt-8">
         <img
@@ -10,7 +10,7 @@
           immediate="true"
         >
       </div>
-      <div class="py-8 text-center text-5xl font-extrabold leading-none tracking-tight">
+      <div class="py-8 text-center text-5xl  font-extrabold leading-none tracking-tight">
         Ian Cleary
       </div>
       <div>

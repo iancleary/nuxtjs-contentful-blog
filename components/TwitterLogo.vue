@@ -7,14 +7,20 @@
     class="toggle-theme"
     title="Link to my Twitter Profile"
   >
-    <fa
-      :icon="['fab', 'twitter']"
-      size="lg"
-    />
+    <!-- https://tailwindcss.com/docs/fill#usage -->
+    <!-- eslint-disable-next-line -->
+    <twitter-icon class="fill-current text-white h-8 w-8"></twitter-icon>
   </a>
 </template>
 
 <script>
+import { TwitterIcon } from 'vue-simple-icons';
+
+export default {
+  components: {
+    TwitterIcon,
+  },
+};
 </script>
 
 <style>

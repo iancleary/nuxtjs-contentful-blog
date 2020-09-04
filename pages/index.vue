@@ -1,7 +1,7 @@
 <template>
   <!-- Overflow-x-hidden prevents horizontal scrolling when
       elements are larger than others within the app -->
-  <div class="overflow-x-hidden">
+  <div>
     <!-- <LazyHydrate when-idle> -->
     <Hero />
     <!-- </LazyHydrate> -->
@@ -27,12 +27,11 @@
 
 // @ts-ignore
 import LazyHydrate from 'vue-lazy-hydration';
+import BottomDots from '@/components/BottomDots.vue';
 
 import Hero from './partials/Hero.vue';
-// import Posts from './partials/Posts.vue';
 import PostImages from './partials/PostImages.vue';
 import Projects from './partials/Projects.vue';
-import BottomDots from '@/components/BottomDots.vue';
 import BlogSection from '@/components/BlogSection.vue';
 
 export default {
@@ -40,14 +39,13 @@ export default {
   components: {
     LazyHydrate,
     Hero,
-    // Posts,
     PostImages,
     Projects,
     BottomDots,
     BlogSection,
   },
   head: {
-    title: 'Home page',
+    title: '📡🛰Ian Cleary 📡🛰',
   },
 };
 

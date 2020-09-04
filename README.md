@@ -24,6 +24,7 @@ The following tutorials were especially useful:
 * [Integrate Contentful with Nuxt.js](https://www.contentful.com/developers/docs/javascript/tutorials/integrate-contentful-with-vue-and-nuxt/) by Contentful
 * [Create a Blog with Contentful and Nuxt](https://www.netlify.com/blog/2020/04/20/create-a-blog-with-contentful-and-nuxt/?utm_source=github&utm_medium=contentful-sd&utm_campaign=devex) by Sarah Drasner (@sdras)
 * [How I Migrated to JAMStack: Next.JS, Vercel, and Contentful.](https://cole.codes/posts/how-i-migrated-to-jamstack-nextjs-vercel-contentful), by Cole Turner.
+* [How to Use Markdown-It with Highlight.js in a Nuxt Project](https://www.samuelcoe.com/blog/18-02-25-nuxt-hightlight/)
 
 ## Calendar Versioning
 

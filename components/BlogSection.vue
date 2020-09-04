@@ -6,7 +6,7 @@
       </div>
       <div class="relative max-w-7xl mx-auto">
         <div class="text-center">
-          <h2 class="text-3xl leading-9 tracking-tight font-extrabold text-white-900 sm:text-4xl sm:leading-10">
+          <h2 class="text-3xl text-copy-primary leading-9 tracking-tight font-extrabold text-white-900 sm:text-4xl sm:leading-10">
             From my blog
           </h2>
           <p class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">

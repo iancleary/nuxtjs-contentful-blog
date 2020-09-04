@@ -4,17 +4,22 @@
     href="https://dev.to/iancleary"
     target="_blank"
     rel="noopener noreferrer"
-    class="toggle-theme"
     title="Link to iancleary's DEV Profile"
   >
-    <fa
-      :icon="['fab', 'dev']"
-      size="lg"
-    />
+    <!-- https://tailwindcss.com/docs/fill#usage -->
+    <!-- eslint-disable-next-line -->
+    <dev-to-icon size="1.5x" class="fill-current text-white h-8 w-8"></dev-to-icon>
   </a>
 </template>
 
 <script>
+import { DevToIcon } from 'vue-simple-icons';
+
+export default {
+  components: {
+    DevToIcon,
+  },
+};
 </script>
 
 <style>

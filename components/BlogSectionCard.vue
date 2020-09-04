@@ -9,14 +9,8 @@
     </div>
     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
       <div class="flex-1">
-        <p class="text-sm leading-5 font-medium text-indigo-600">
-          <!-- <nuxt-link
-            :to="slug"
-            class="hover:underline"
-          >
-            Blog
-          </nuxt-link> -->
-        </p>
+        <!-- <p class="text-sm leading-5 font-medium text-indigo-600">
+        </p> -->
         <nuxt-link
           :to="slug"
         >
@@ -30,22 +24,15 @@
       </div>
       <div class="mt-6 flex items-center">
         <div class="flex-shrink-0">
-          <a href="#">
-            <img
-              class="h-10 w-10 rounded-full"
-              src="@/assets/BlogCardHeadshot.png"
-              alt=""
-            >
-          </a>
+          <img
+            class="h-10 w-10 rounded-full"
+            src="@/assets/BlogCardHeadshot.png"
+            alt=""
+          >
         </div>
         <div class="ml-3">
           <p class="text-sm leading-5 font-medium text-gray-900">
-            <a
-              href="#"
-              class="hover:underline"
-            >
-              {{ author }}
-            </a>
+            {{ author }}
           </p>
           <div class="flex text-sm leading-5 text-gray-500">
             <time datetime="2020-03-16">
