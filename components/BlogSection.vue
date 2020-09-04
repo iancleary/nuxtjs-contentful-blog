@@ -13,20 +13,17 @@
             This is a place for me to write and explore ideas, tools, process, etc.
           </p>
         </div>
-        <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
-          <section
+        <div class="flex items-strech mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+          <BlogSectionCard
             v-for="post in sortedPosts"
             :key="post.fields.slug"
-          >
-            <BlogSectionCard
-              :title="post.fields.title"
-              :slug="post.fields.slug"
-              :description="post.fields.description"
-              :author="post.fields.author.fields.name"
-              :heroImageUrl="post.fields.heroImage.fields.file.url"
-              :publishDate="post.fields.publishDate"
-            />
-          </section>
+            :title="post.fields.title"
+            :slug="post.fields.slug"
+            :description="post.fields.description"
+            :author="post.fields.author.fields.name"
+            :heroImageUrl="post.fields.heroImage.fields.file.url"
+            :publishDate="post.fields.publishDate"
+          />
         </div>
       </div>
     </div>
