@@ -13,20 +13,17 @@
             This is a place for me to write and explore ideas, tools, process, etc.
           </p>
         </div>
-        <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
-          <section
-            v-for="post in posts"
+        <div class="flex items-strech mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+          <BlogSectionCard
+            v-for="post in sortedPosts"
             :key="post.fields.slug"
-          >
-            <BlogSectionCard
-              :title="post.fields.title"
-              :slug="post.fields.slug"
-              :description="post.fields.description"
-              :author="post.fields.author.fields.name"
-              :heroImageUrl="post.fields.heroImage.fields.file.url"
-              :publishDate="post.fields.publishDate"
-            />
-          </section>
+            :title="post.fields.title"
+            :slug="post.fields.slug"
+            :description="post.fields.description"
+            :author="post.fields.author.fields.name"
+            :heroImageUrl="post.fields.heroImage.fields.file.url"
+            :publishDate="post.fields.publishDate"
+          />
         </div>
       </div>
     </div>
@@ -36,6 +33,12 @@
 <script>
 import BlogSectionCard from '@/components/BlogSectionCard.vue';
 
+function dateMostRecentSortFunction(postA, postB) {
+  var dateA = new Date(postA.fields.publishDate).getTime();
+  var dateB = new Date(postB.fields.publishDate).getTime();
+  return dateA < dateB ? 1 : -1;
+}
+
 export default {
   components: {
     BlogSectionCard,
@@ -43,6 +46,10 @@ export default {
  computed: {
    posts() {
      return this.$store.state.posts;
+   },
+   sortedPosts() {
+     var unSortedPosts = this.$store.state.posts;
+     return unSortedPosts.slice().sort(dateMostRecentSortFunction);
    },
  },
 };
