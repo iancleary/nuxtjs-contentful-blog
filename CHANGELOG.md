@@ -11,6 +11,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 ### Added
 
 - TailwindUI BlogSections per [#159](https://github.com/iancleary/portfolio/pull/159)
+- [ESLint GitHub Action](https://github.com/marketplace/actions/eslint-action)
 
 ### Changed
 
