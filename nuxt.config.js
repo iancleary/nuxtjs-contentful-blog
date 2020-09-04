@@ -31,18 +31,15 @@ export default {
    ** Customize the progress-bar color
    */
   loading: { color: "#fff" },
+  /*
+   ** Plugins to load before mounting the App
+   */
+  plugins: ["~/plugins/contentful", "~/plugins/posts", '~/plugins/font-awesome'],
 
   // Build Modules before loading app
   buildModules: [
-    "@nuxtjs/tailwindcss", '@nuxtjs/fontawesome',
+    "@nuxtjs/tailwindcss",
   ],
-  fontawesome: {
-    component: 'fa',
-    icons: {
-      brands: ['faGithub', 'faTwitter', 'faDev'],
-    },
-  },
-
   // modules to load
   modules: [
     "@nuxtjs/markdownit",
@@ -60,6 +57,7 @@ export default {
     "~/css/main.css",
     { src: '~/node_modules/highlight.js/styles/night-owl.css', lang: 'css' },
     // I also like darcula
+    '@fortawesome/fontawesome-svg-core/styles.css',
   ],
   render: {
     bundleRenderer: {
@@ -76,10 +74,6 @@ export default {
     CONTENTFUL_ACCESSTOKEN: process.env.CONTENTFUL_ACCESSTOKEN,
     CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT,
   },
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: ["~/plugins/contentful", "~/plugins/posts"],
   generate: {
     routes() {
       return Promise.all([
