@@ -7,6 +7,8 @@ const client = contentful.createClient({
   accessToken: process.env.CONTENTFUL_ACCESSTOKEN,
 });
 
+var hljs = require('highlight.js'); // https://highlightjs.org/
+
 export default {
   mode: "universal",
   /*
@@ -31,10 +33,36 @@ export default {
    ** Customize the progress-bar color
    */
   loading: { color: "#fff" },
+
+  // Build Modules before loading app
+  buildModules: [
+    "@nuxtjs/tailwindcss", '@nuxtjs/fontawesome',
+  ],
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      brands: ['faGithub', 'faTwitter', 'faDev'],
+    },
+  },
+
+  // modules to load
+  modules: [
+    "@nuxtjs/markdownit",
+  ],
+  markdownit: {
+    injected: true,
+    use: [
+      'markdown-it-highlightjs',
+    ],
+  },
   /*
-   ** Global CSS
+   ** Global CSS and Highlight.js theme
    */
-  css: ["~/css/main.css"],
+  css: [
+    "~/css/main.css",
+    { src: '~/node_modules/highlight.js/styles/night-owl.css', lang: 'css' },
+    // I also like darcula
+  ],
   render: {
     bundleRenderer: {
       shouldPreload: (file, type) => {
@@ -43,35 +71,17 @@ export default {
     },
   },
   /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: ["~/plugins/contentful", "~/plugins/posts"],
-  /*
    ** Environment variables
    */
-  buildModules: [
-    "@nuxtjs/tailwindcss", '@nuxtjs/fontawesome',
-  ],
   env: {
     CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,
     CONTENTFUL_ACCESSTOKEN: process.env.CONTENTFUL_ACCESSTOKEN,
     CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT,
   },
-  modules: [
-    "@nuxtjs/markdownit",
-  ],
-  tailwindcss: {
-    exposeConfig: true,
-  },
-  markdownit: {
-    injected: true,
-  },
-  fontawesome: {
-    component: 'fa',
-    icons: {
-      brands: ['faGithub', 'faTwitter', 'faDev'],
-    },
-  },
+  /*
+   ** Plugins to load before mounting the App
+   */
+  plugins: ["~/plugins/contentful", "~/plugins/posts"],
   generate: {
     routes() {
       return Promise.all([

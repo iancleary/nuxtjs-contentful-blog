@@ -1,6 +1,6 @@
 <template>
   <div
-    class="font-sans text-copy-primary
+    class="overflow-x-hidden
            content-wrapper flex flex-col min-h-screen bg-background-primary"
   >
     <!-- LazyHydration interfers with "sticky" header -->

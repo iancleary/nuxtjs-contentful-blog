@@ -1,7 +1,7 @@
 <template>
   <!-- Overflow-x-hidden prevents horizontal scrolling when
       elements are larger than others within the app -->
-  <div class="overflow-x-hidden">
+  <div>
     <!-- <LazyHydrate when-idle> -->
     <Hero />
     <!-- </LazyHydrate> -->

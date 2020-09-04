@@ -2,11 +2,17 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
-  // purge: [
-  //   './**/*.html',
-  //   './**/*.vue',
-  //   './**/*.jsx',
-  // ],
+  purge: {
+    mode: 'all',
+    content: [
+      './**/*.html',
+      './**/*.vue',
+      './**/*.jsx',
+    ],
+    options: {
+      whitelist: ['h1', 'h2', 'h3', 'p', 'blockquote', 'strong', 'ul', 'li'  /* etc. */],
+    },
+  },
   theme: {
     linearGradientColors: { // defaults to {}
       'red': '#f00',
@@ -48,8 +54,8 @@ module.exports = {
 
       // transparent: 'transparent',
 
-      black: '#000',
-      white: '#fff',
+      black: '#000000',
+      white: '#ffffff',
 
       green: {
         100: '#f0fff4',
@@ -75,6 +81,15 @@ module.exports = {
         900: '#1a202c',
       },
     },
+    typography: (theme) => ({
+      default: {
+        css: {
+          color: theme('colors.white'),
+
+          // ...
+        },
+      },
+    }),
     fontFamily: {
       sans: [
         'Nunito Sans',
@@ -119,5 +134,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/ui'),
+    require('@tailwindcss/typography'),
   ],
 };

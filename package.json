@@ -20,9 +20,11 @@
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/tailwindcss": "3.0.2",
+    "@tailwindcss/typography": "^0.2.0",
     "@tailwindcss/ui": "^0.5.0",
     "contentful": "^7.14.2",
     "dotenv": "^8.2.0",
+    "markdown-it-highlightjs": "^3.2.0",
     "nuxt": "^2.0.0",
     "tailwindcss": "^1.7.6",
     "vue-lazy-hydration": "1.0.0-beta.14"
