@@ -18,8 +18,8 @@
           </nuxt-link>
         </p>
         <nuxt-link
-            :to="slug"
-          >
+          :to="slug"
+        >
           <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
             {{ title }}
           </h3>

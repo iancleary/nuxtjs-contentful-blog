@@ -15,7 +15,9 @@
         `background: url(https:${post.fields.heroImage.fields.file.url}) center center no-repeat`
       "
     />
+    <!-- eslint-disable -->
     <article v-html="$md.render(post.fields.body)" />
+    <!-- eslint-enable -->
   </section>
 </template>
 
