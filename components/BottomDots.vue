@@ -1,5 +1,5 @@
 <template>
-  <div class="container-inner mx-auto pb-4">
+  <div class="container mx-auto px-4 pb-4 justify-center bg-background-secondary">
     <svg
       width="725"
       height="166"
@@ -130,6 +130,3 @@ export default {
 };
 
 </script>
-
-
-

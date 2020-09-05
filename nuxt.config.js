@@ -12,6 +12,10 @@ export default {
   /*
    ** Headers of the page
    */
+  // server: {
+  //   host: '0.0.0.0',
+  //   port: 8000,
+  // },
   head: {
     title: process.env.npm_package_name || "",
     meta: [
