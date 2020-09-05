@@ -5,8 +5,7 @@
     >
       <div class="sm:mt-0 lg:mt-8 mx-auto">
         <img
-          class="mx-auto h-44 w-44 rounded-lg xl:w-9
-          0 xl:h-90"
+          class="mx-auto h-44 w-44 rounded-lg xl:w-90 xl:h-90"
           :src="person.fields.image.fields.file.url"
           alt="developer with laptop and git commit log visual"
           immediate="true"
