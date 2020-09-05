@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-background-primary pb-24 border-b-2 border-green-700">
     <div class="relative pt-16">
       <div class="relative px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-4xl mx-auto mb-6 p-6 bg-gray-100 rounded-lg shadow-lg">
@@ -29,21 +29,11 @@
         </div>
       </div>
     </div>
-    <LazyHydrate when-visible>
-      <BottomDots />
-    </LazyHydrate>
   </div>
 </template>
 
 <script>
-import LazyHydrate from 'vue-lazy-hydration';
-import BottomDots from '@/components/BottomDots.vue';
-
 export default {
-  components: {
-    LazyHydrate,
-    BottomDots,
-  },
   data() {
     return {
       slug: this.$route.params.slug,
