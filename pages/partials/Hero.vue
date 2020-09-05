@@ -5,20 +5,18 @@
     >
       <div class="sm:mt-0 lg:mt-8 mx-auto">
         <img
-          src="~/assets/unDraw/developer.svg"
+          class="mx-auto h-44 w-44 rounded-lg xl:w-90 xl:h-90"
+          :src="person.fields.image.fields.file.url"
           alt="developer with laptop and git commit log visual"
           immediate="true"
         >
       </div>
       <div class="text-center text-copy-primary  text-5xl  font-extrabold leading-none tracking-tight">
-        Ian Cleary
+        {{ person.fields.name }}
       </div>
       <div class="text-2xl space-y-4">
-        <!-- <div class="text-center">
-          👋
-        </div> -->
         <div class="bg-clip-text text-transparent bg-gradient-to-r from-red-900 to-pink-900 text-2xl">
-          I am a RF/Microwave Engineer who specializes in satellite systems, cross functional communication, and software engineering best practices.
+          {{ person.fields.shortBio }}
         </div>
       </div>
       <div class="mx-auto">
@@ -51,6 +49,9 @@
 
 <script>
 
+// :src="person.fields.image.fields.file.url"
+// src="@/assets/BlogCardHeadshot.png"
+
 // import NuxtJsIcon from '@/components/NuxtJsIcon.vue';
 import { ChevronsDownIcon } from 'vue-feather-icons';
 
@@ -59,6 +60,13 @@ export default {
     // NuxtJsIcon,
     ChevronsDownIcon,
   },
+  computed: {
+    person() {
+      var person = this.$store.state.persons[0];
+      // console.log(person);
+      return person;
+      },
+    },
 };
 
 </script>

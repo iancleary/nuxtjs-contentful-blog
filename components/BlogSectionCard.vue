@@ -26,7 +26,7 @@
         <div class="flex-shrink-0">
           <img
             class="h-10 w-10 rounded-full"
-            src="@/assets/BlogCardHeadshot.png"
+            :src="person.fields.image.fields.file.url"
             alt=""
           >
         </div>
@@ -103,6 +103,11 @@ export default {
       const stats = readingTime(this.body);
       return stats.text;
     },
-  },
+    person() {
+      var person = this.$store.state.persons[0];
+      // console.log(person);
+      return person;
+      },
+    },
 };
 </script>
