@@ -12,7 +12,7 @@
       id="projects"
     />
     <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
-    <ul class="text-lg sm:text-xl relative">
+    <ul class="text-lg sm:text-xl space-y-6 pt-6 relative">
       <li>
         <project-card
           repoName="ansible-desktop"
