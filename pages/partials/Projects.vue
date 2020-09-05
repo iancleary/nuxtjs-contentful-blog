@@ -1,10 +1,18 @@
 <template>
-  <div class="container-inner mx-auto text-xl pb-16 sm:py-0 relative">
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-3xl text-copy-primary leading-9 tracking-tight font-extrabold text-white-900 sm:text-4xl sm:leading-10">
+        Some of my projects
+      </h2>
+      <p class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">
+        This is a portfolio of options I am exploring, learning, and sharing here with you.
+      </p>
+    </div>
     <span
       id="projects"
     />
     <!-- Consider moving each of these sections into a more detailed blog post, and keep only the project name on homepage (link to blog post) -->
-    <ul class="text-lg sm:text-xl relative">
+    <ul class="text-lg sm:text-xl space-y-6 pt-6 relative">
       <li>
         <project-card
           repoName="ansible-desktop"

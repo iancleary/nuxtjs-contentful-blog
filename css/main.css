@@ -108,28 +108,6 @@ a:hover {
   }
 }
 
-.card {
-  @apply my-10;
-  @apply py-6;
-  @apply px-6;
-  @apply rounded-lg;
-  @apply shadow-xl;
-  @apply bg-background-secondary;
-}
-
-.project-card {
-  @apply card;
-  @apply bg-background-secondary;
-}
-
-.blog-card {
-  @apply card;
-  @apply border-2;
-  @apply border-green-700;
-  @apply shadow-inner;
-  @apply bg-background-tertiary;
-}
-
 .responsive-container {
   position: relative;
   overflow: hidden;

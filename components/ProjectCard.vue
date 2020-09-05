@@ -1,43 +1,47 @@
 <template>
-  <div class="project-card">
-    <a
-      v-if="showTravisCI"
-      class="ci-badge-inset"
-      :href="'https://travis-ci.com/'+ userName +'/'+ repoName"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img
-        :src="'https://travis-ci.com/'+ userName + '/' + repoName + '.svg?branch=main'"
-        :alt="repoName +' repo CI Status'"
+  <div class="bg-white overflow-hidden shadow rounded-lg">
+    <div class="border-b border-gray-200 px-4 py-5 sm:px-6">
+      <div class="break-normal font-semibold text-xl text-gray-900 w-2/3">
+        {{ title }}
+      </div>
+      <a
+        v-if="showTravisCI"
+        class="ci-badge-inset"
+        :href="'https://travis-ci.com/'+ userName +'/'+ repoName"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-    </a>
-    <ul
-      v-if="showGitHubCI"
-      class="ci-badge-inset space-y-4 md:space-x-4 sm:flex md:space-y-0"
-    >
-      <li
-        v-for="gitHubWorkflow in gitHubWorkflows"
-        :key="gitHubWorkflow"
-      >
-        <a
-          :href="'https://github.com/'+ userName +'/'+ repoName +'/actions?query=workflow%3A' + gitHubWorkflow"
-          target="_blank"
-          rel="noopener noreferrer"
+        <img
+          :src="'https://travis-ci.com/'+ userName + '/' + repoName + '.svg?branch=main'"
+          :alt="repoName +' repo CI Status'"
         >
-          <img
-            :src="'https://github.com/'+ userName +'/'+ repoName +'/workflows/'+ gitHubWorkflow +'/badge.svg'"
-            :alt="repoName +' repo '+ gitHubWorkflow +' Status'"
+      </a>
+      <ul
+        v-if="showGitHubCI"
+        class="ci-badge-inset space-y-4 md:space-x-4 sm:flex md:space-y-0"
+      >
+        <li
+          v-for="gitHubWorkflow in gitHubWorkflows"
+          :key="gitHubWorkflow"
+        >
+          <a
+            :href="'https://github.com/'+ userName +'/'+ repoName +'/actions?query=workflow%3A' + gitHubWorkflow"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-        </a>
-      </li>
-    </ul>
-    <!-- eslint-disable -->
-    <div class="break-normal text-gray-600 w-2/3 pb-2">
-      {{ title }}
+            <img
+              :src="'https://github.com/'+ userName +'/'+ repoName +'/workflows/'+ gitHubWorkflow +'/badge.svg'"
+              :alt="repoName +' repo '+ gitHubWorkflow +' Status'"
+            >
+          </a>
+        </li>
+      </ul>
+      <!-- eslint-disable -->
+      </div>
+    <div class="px-4 py-5 sm:p-6">
+      <span class="text-base text-lg leading-6 text-gray-500" v-html="descriptionHtml" />
+      <!-- eslint-enable -->
     </div>
-    <span class="text-lg text-white" v-html="descriptionHtml" />
-    <!-- eslint-enable -->
   </div>
 </template>
 

@@ -22,9 +22,6 @@
     </LazyHydrate>
     <div class="bg-background-secondary border-t-2 border-green-700">
       <LazyHydrate when-visible>
-        <Posts />
-      </LazyHydrate>
-      <LazyHydrate when-visible>
         <BottomDots />
       </LazyHydrate>
     </div>
@@ -35,15 +32,12 @@
 
 // @ts-ignore
 import LazyHydrate from 'vue-lazy-hydration';
-
-import Posts from './partials/Posts.vue';
 import BottomDots from '@/components/BottomDots.vue';
 
 export default {
   layout: 'default', // you can set a custom layout for the error page
   components: {
     LazyHydrate,
-    Posts,
     BottomDots,
   },
 };
