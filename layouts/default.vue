@@ -18,10 +18,16 @@
         </LazyHydrate>
       </main>
     </transition>
-   
     <LazyHydrate when-visible>
-      <div class="bg-background-secondary">
-        <BottomDots />
+      <div class="bg-background-secondary overflow-x-hidden">
+        <ul class="lg:right-0 flex items-center justify-center">
+          <li>
+            <BottomDots />
+          </li>
+          <li>
+            <BottomDots />
+          </li>
+        </ul>
       </div>
     </LazyHydrate>
     <LazyHydrate when-visible>
