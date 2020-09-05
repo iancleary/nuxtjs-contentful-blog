@@ -1,5 +1,5 @@
 <template>
-  <div class="project-card">
+  <div class="my-10 py-6 px-6 rounded-lg shadow-xl bg-white">
     <a
       v-if="showTravisCI"
       class="ci-badge-inset"
@@ -33,10 +33,10 @@
       </li>
     </ul>
     <!-- eslint-disable -->
-    <div class="break-normal text-gray-600 w-2/3 pb-2">
+    <div class="break-normal font-semibold text-xl text-gray-900 w-2/3 pb-2">
       {{ title }}
     </div>
-    <span class="text-lg text-white" v-html="descriptionHtml" />
+    <span class="text-base text-lg leading-6 text-gray-500" v-html="descriptionHtml" />
     <!-- eslint-enable -->
   </div>
 </template>
