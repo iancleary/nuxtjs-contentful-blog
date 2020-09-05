@@ -33,13 +33,7 @@
 </template>
 
 <script>
-import LazyHydrate from 'vue-lazy-hydration';
-
-
 export default {
-  components: {
-    LazyHydrate,
-  },
   data() {
     return {
       slug: this.$route.params.slug,
