@@ -38,7 +38,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/contentful", "~/plugins/posts"],
+  plugins: ["~/plugins/contentful", "~/plugins/posts","~/plugins/persons"],
 
   // Build Modules before loading app
   buildModules: [
