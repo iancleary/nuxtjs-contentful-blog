@@ -38,12 +38,13 @@
             <time datetime="2020-03-16">
               {{ formattedPublishDate }}
             </time>
-            <!-- <span class="mx-1">
+            <span class="mx-1">
               &middot;
             </span>
             <span>
-              6 min read
-            </span> -->
+              <!-- 6 min read -->
+              {{ readingTime }}
+            </span>
           </div>
           <!-- <div class="flex text-sm leading-5 text-gray-500">
             <time datetime="2020-03-16">
@@ -56,6 +57,8 @@
 </template>
 
 <script>
+const readingTime = require('reading-time');
+
 export default {
   props: {
     slug: {
@@ -84,6 +87,10 @@ export default {
       default: "2019-12-08",
       type: String,
     },
+    body: {
+      default: "Blog Article Content",
+      type: String,
+    },
   },
   computed: {
     formattedPublishDate() {
@@ -91,6 +98,10 @@ export default {
       var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
       var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
       return days[d.getUTCDay()] +", " + months[d.getUTCMonth()] + " " + d.getUTCDate() +", " +d.getUTCFullYear() ;
+    },
+    readingTime() {
+      const stats = readingTime(this.body);
+      return stats.text;
     },
   },
 };

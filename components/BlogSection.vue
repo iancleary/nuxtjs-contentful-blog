@@ -23,6 +23,7 @@
             :author="post.fields.author.fields.name"
             :heroImageUrl="post.fields.heroImage.fields.file.url"
             :publishDate="post.fields.publishDate"
+            :body="post.fields.body"
           />
         </div>
       </div>
