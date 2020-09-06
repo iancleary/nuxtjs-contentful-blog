@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="container-inner mx-auto flex flex-col h-screen space-y-8 justify-center px-16"
+      class="container-inner mx-auto flex flex-col sm:h-screen space-y-8 justify-center px-16"
     >
       <div class="sm:mt-0 lg:mt-8 mx-auto">
         <img
