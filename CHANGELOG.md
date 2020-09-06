@@ -22,6 +22,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - Use UTC js date methods in BlogSectionCard component per [#160](https://github.com/iancleary/portfolio/pull/160/commits/989a8df6981e43c09045f16562f316bda81e7648)
 - Sort BlogSectionCards to show most recent first per [#160](https://github.com/iancleary/portfolio/pull/160/commits/989a8df6981e43c09045f16562f316bda81e7648)
 - Repeated Bottom Dots across bottom to span display regardless of breakpoint
+- sm breakpoint on Hero.vue to have smoother scroll experience on phones
 
 ###
 
