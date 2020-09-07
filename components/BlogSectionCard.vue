@@ -12,7 +12,7 @@
         <!-- <p class="text-sm leading-5 font-medium text-indigo-600">
         </p> -->
         <nuxt-link
-          :to="slug"
+          :to="route"
         >
           <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
             {{ title }}
@@ -91,6 +91,10 @@ export default {
       default: "Blog Article Content",
       type: String,
     },
+    routePrefix: {
+      default: "/blog", // folder where _slug.vue is located (i.e. pages/blog/_slug.vue)
+      type: String,
+    },
   },
   computed: {
     formattedPublishDate() {
@@ -107,6 +111,10 @@ export default {
       var person = this.$store.state.persons[0];
       // console.log(person);
       return person;
+      },
+    route() {
+      const elements = [this.routePrefix, this.slug];
+      return elements.join("/");
       },
     },
 };

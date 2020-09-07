@@ -84,7 +84,9 @@ export default {
           content_type: "blogPost",
         }),
       ]).then(([blogEntries]) => {
-        return [...blogEntries.items.map((entry) => entry.fields.slug)];
+        var _routes = [...blogEntries.items.map((entry) => entry.fields.slug)];
+        console.log(_routes);
+        return _routes;
       });
     },
   },
