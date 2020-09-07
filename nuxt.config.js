@@ -84,7 +84,16 @@ export default {
           content_type: "blogPost",
         }),
       ]).then(([blogEntries]) => {
-        return [...blogEntries.items.map((entry) => entry.fields.slug)];
+        var _routes = [...blogEntries.items.map((entry) => entry.fields.slug)];
+
+        // Prefix routes with "/blog/"
+        var _prefixedRoutes = [];
+        for (let i = 0; i < _routes.length; i++){
+          var _prefixedRoute = ["/blog", _routes[i]].join("/");
+          _prefixedRoutes.push(_prefixedRoute);
+        }
+        return _prefixedRoutes;
+        // return _routes;
       });
     },
   },

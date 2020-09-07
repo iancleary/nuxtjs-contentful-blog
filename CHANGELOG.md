@@ -14,6 +14,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - [ESLint GitHub Action](https://github.com/marketplace/actions/eslint-action)
 - Medium like [reading-time](https://github.com/ngryman/reading-time) estimation per [#163](https://github.com/iancleary/portfolio/pull/163)
 - Person content in Vuex store per [#165](https://github.com/iancleary/portfolio/pull/165)
+- Blog landing page
 
 ### Changed
 
@@ -23,6 +24,8 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - Sort BlogSectionCards to show most recent first per [#160](https://github.com/iancleary/portfolio/pull/160/commits/989a8df6981e43c09045f16562f316bda81e7648)
 - Repeated Bottom Dots across bottom to span display regardless of breakpoint
 - sm breakpoint on Hero.vue to have smoother scroll experience on phones
+- Moved custom error page to layouts folder, per [NuxtJS layouts#error-page](https://nuxtjs.org/guides/directory-structure/layouts#error-page)
+- blog articles moved to /blog/_slug
 
 ###
 

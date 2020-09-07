@@ -38,7 +38,7 @@
 
 <script>
 
-// @ts-ignore
+
 import LazyHydrate from 'vue-lazy-hydration';
 import BlogSection from '@/components/BlogSection.vue';
 import BottomDots from '@/components/BottomDots.vue';

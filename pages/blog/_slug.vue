@@ -34,6 +34,9 @@
 
 <script>
 export default {
+  dir: {
+    blog: 'blog',
+  },
   data() {
     return {
       slug: this.$route.params.slug,

@@ -16,12 +16,12 @@
 
 <script>
 
-// @ts-ignore
+
 import LazyHydrate from 'vue-lazy-hydration';
 
-import Hero from './partials/Hero.vue';
-import PostImages from './partials/PostImages.vue';
-import Projects from './partials/Projects.vue';
+import Hero from '@/components/partials/Hero.vue';
+import PostImages from '@/components/partials/PostImages.vue';
+import Projects from '@/components/partials/Projects.vue';
 
 export default {
   layout: 'default',
