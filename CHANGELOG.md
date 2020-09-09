@@ -15,6 +15,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - Medium like [reading-time](https://github.com/ngryman/reading-time) estimation per [#163](https://github.com/iancleary/portfolio/pull/163)
 - Person content in Vuex store per [#165](https://github.com/iancleary/portfolio/pull/165)
 - Blog landing page
+- Favicons generated with <https://favicon.io/favicon-generator/>
 
 ### Changed
 

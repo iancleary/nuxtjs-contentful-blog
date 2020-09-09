@@ -32,7 +32,7 @@ export default {
     Projects,
   },
   head: {
-    title: '📡🛰Ian Cleary 📡🛰',
+    title: 'Ian Cleary 📡🛰',
   },
 };
 

@@ -7,7 +7,7 @@
 export default {
   layout: 'default',
   head: {
-    title: '📡🛰Ian Cleary 📡🛰',
+    title: 'Ian\'s Blog 📚',
   },
 };
 
