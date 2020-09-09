@@ -1,13 +1,17 @@
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
   },
   purge: {
     mode: 'all',
+    enabled: process.env.NODE_ENV === 'production',
     content: [
-      './**/*.html',
-      './**/*.vue',
-      './**/*.jsx',
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'nuxt.config.js',
     ],
     options: {
       whitelist: ['h1', 'h2', 'h3', 'p', 'blockquote', 'strong', 'ul', 'li'  /* etc. */],
