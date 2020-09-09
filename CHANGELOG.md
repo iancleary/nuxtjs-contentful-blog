@@ -17,6 +17,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - Blog landing page
 - Favicons generated with <https://favicon.io/favicon-generator/>
 - custom `app.html` to set body background color
+- plausible.io analytics
 
 ### Changed
 
