@@ -4,7 +4,7 @@
            content-wrapper flex flex-col min-h-screen overflow-hidden"
   >
     <!-- LazyHydration interfers with "sticky" header -->
-    <div class="bg-background-primary">
+    <div>
       <Header />
     </div>
     <transition

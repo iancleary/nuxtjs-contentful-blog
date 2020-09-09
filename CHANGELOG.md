@@ -16,6 +16,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - Person content in Vuex store per [#165](https://github.com/iancleary/portfolio/pull/165)
 - Blog landing page
 - Favicons generated with <https://favicon.io/favicon-generator/>
+- custom `app.html` to set body background color
 
 ### Changed
 
