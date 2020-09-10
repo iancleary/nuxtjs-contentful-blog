@@ -1,7 +1,7 @@
 <template>
   <a
     role="button"
-    href="https://twitter.com/icancclearynow"
+    href="https://twitter.com/ianacleary"
     target="_blank"
     rel="noopener noreferrer"
     class="toggle-theme"
