@@ -1,13 +1,13 @@
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
   },
   purge: {
-    mode: 'all',
     content: [
-      './**/*.html',
-      './**/*.vue',
-      './**/*.jsx',
+      './components/**/*.vue',
+      './layouts/**/*.vue',
+      './pages/**/*.vue',
     ],
     options: {
       whitelist: ['h1', 'h2', 'h3', 'p', 'blockquote', 'strong', 'ul', 'li'  /* etc. */],
