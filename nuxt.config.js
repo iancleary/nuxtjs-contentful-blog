@@ -8,7 +8,6 @@ const client = contentful.createClient({
 });
 
 export default {
-  mode: "universal",
   /*
    ** Headers of the page
    */
