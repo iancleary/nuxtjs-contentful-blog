@@ -29,7 +29,7 @@
     "vue-simple-icons": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "7.8.1",
+    "eslint": "7.9.0",
     "eslint-config-node": "4.1.0",
     "eslint-config-standard": "14.1.1",
     "eslint-plugin-import": "2.22.0",
