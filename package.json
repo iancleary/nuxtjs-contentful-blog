@@ -23,7 +23,7 @@
     "markdown-it-highlightjs": "^3.2.0",
     "nuxt": "^2.14.5",
     "reading-time": "^1.2.0",
-    "tailwindcss": "^1.8.9",
+    "tailwindcss": "^1.8.10",
     "vue-feather-icons": "^5.1.0",
     "vue-lazy-hydration": "1.0.0-beta.14",
     "vue-simple-icons": "^2.0.0"
