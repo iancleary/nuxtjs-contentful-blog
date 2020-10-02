@@ -8662,10 +8662,10 @@ vue-server-renderer@^2.6.12:
     serialize-javascript "^3.1.0"
     source-map "0.5.6"
 
-vue-simple-icons@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/vue-simple-icons/-/vue-simple-icons-2.0.0.tgz#c6cd7e49dd2536f00dcabb29e20fbaff3234fa56"
-  integrity sha512-424d+q0nOPPLg82jwF4Lo+C2YOaNUXm+G0MNF5zZeuKGgsB8s7S26WHBeUWF51unwcpR0u+GC3XDX90EqqlT7g==
+vue-simple-icons@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/vue-simple-icons/-/vue-simple-icons-3.10.0.tgz#6b4d3f5047cf50cf535c763c91dbe3fe3250f0ff"
+  integrity sha512-0kaa0nICnm1KOQGB+kRWaBZqLs17ajhyAWK0kqujXjw6EmJPC34FT06rua5d1s9aKfCRzeAWY4RlxQIejC1GXw==
   dependencies:
     babel-helper-vue-jsx-merge-props "^2.0.2"
 
