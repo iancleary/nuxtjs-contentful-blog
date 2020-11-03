@@ -49,11 +49,11 @@
             and deployed
             with
             <a
-              href="https://netlify.com"
+              href="https://vercel.com"
               target="_blank"
               rel="noopener"
               class="text-white"
-            >Netlify</a>.
+            >Vercel</a>.
           </div>
           <div>Copyright 2019-{{ currentYear }}. All rights reserved.</div>
         </div>
