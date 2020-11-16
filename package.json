@@ -20,7 +20,7 @@
     "@tailwindcss/ui": "^0.7.2",
     "contentful": "^7.14.12",
     "dotenv": "^8.2.0",
-    "markdown-it-highlightjs": "^3.3.0",
+    "markdown-it-highlightjs": "^3.3.1",
     "nuxt": "^2.14.7",
     "reading-time": "^1.2.0",
     "tailwindcss": "^1.9.6",
