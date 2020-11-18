@@ -10,7 +10,7 @@ module.exports = {
       './pages/**/*.vue',
     ],
     options: {
-      whitelist: ['h1', 'h2', 'h3', 'p', 'blockquote', 'strong', 'ul', 'li'  /* etc. */],
+      safelist: ['h1', 'h2', 'h3', 'p', 'blockquote', 'strong', 'ul', 'li'  /* etc. */],
     },
   },
   theme: {
