@@ -42,6 +42,11 @@ export default {
       slug: this.$route.params.slug,
     };
   },
+  head() {
+    return {
+      title: this.post.fields.title,
+    };
+  },
   computed: {
     post() {
       let post = this.$store.state.posts.filter(
@@ -49,11 +54,6 @@ export default {
       );
       return post[0];
     },
-  },
-  head() {
-    return {
-      title: this.post.fields.title,
-    };
   },
 };
 </script>

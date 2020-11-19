@@ -24,13 +24,13 @@ import PostImages from '@/components/partials/PostImages.vue';
 import Projects from '@/components/partials/Projects.vue';
 
 export default {
-  layout: 'default',
   components: {
     LazyHydrate,
     Hero,
     PostImages,
     Projects,
   },
+  layout: 'default',
   head: {
     title: 'Ian Cleary 📡🛰',
   },

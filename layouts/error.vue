@@ -32,10 +32,10 @@
 import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
-  layout: 'default',
   components: {
     LazyHydrate,
   },
+  layout: 'default',
   props: {
     error: {
       type: Object,
