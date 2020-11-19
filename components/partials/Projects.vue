@@ -17,26 +17,26 @@
         <project-card
           repoName="ansible-desktop"
           :showGitHubCI="false"
-          :gitHubWorkflows="onlyTestWorkflow"
+          :gitHubWorkflows="testAndLintWorkflows"
           title="Ubuntu Desktop Configuration"
         />
       </li>
-      <li>
+      <!-- <li>
         <project-card
           repoName="pypackage"
           :showGitHubCI="false"
           title="Python Package Quickstart"
           :descriptionHtml="pypackageDescriptionHtml"
         />
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <project-card
           repoName="fastrf"
           :showGitHubCI="false"
           title="RF Systems Design Server"
           :descriptionHtml="fastrfDescriptionHtml"
         />
-      </li>
+      </li> -->
       <li>
         <project-card
           repoName="dockerfiles"
@@ -63,6 +63,7 @@ export default {
     return {
       onlyTestWorkflow: ["Test"],
       onlyPublishWorkflow: ["Publish"],
+      testAndLintWorkflows: ["Test", "Lint"],
       pypackageDescriptionHtml: `
             Speed up your python package generation using my python package template
             <a

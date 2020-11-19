@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
+    <section class="py-4 sm:py-6 md:py-8 overflow-hidden md:py-20 lg:py-24">
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative">
           <div class="text-center text-copy-primary text-7xl font-extrabold leading-none tracking-tight">
@@ -33,15 +33,11 @@
           </blockquote>
         </div>
       </div>
-    </section>
-
-    <div
-      class="container-inner mx-auto flex flex-col space-y-8 justify-center px-16"
-    >
-      <div class="sm:mt-0 lg:mt-8">
-        <ul class="lg:right-0 flex-col space-x-8 items-center justify-center py-8">
-          <li>
-            <ul class="lg:right-0 flex space-x-4 sm:pr-4 items-center justify-center">
+      <!-- This example requires Tailwind CSS v2.0+ -->
+      <div class="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8 items-center">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <ul class="flex mt-4 space-x-4">
               <li>
                 <GitHubIcon /> 
               </li>
@@ -55,9 +51,9 @@
                 />
               </li>
             </ul>
-          </li>
-          <li>
-            <ul class="lg:right-0 flex space-x-4 sm:pr-4 items-center justify-center">
+          </div>
+          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <ul class="flex mt-4 space-x-4">
               <li>
                 <TwitterIcon /> 
               </li>
@@ -65,41 +61,40 @@
                 Twitter
               </li>
               <li>
-                <!-- <ExternalLinkIcon /> -->
                 <external-link-icon
                   size="1.5x"
                   class="custom-class"
                 />
               </li>
             </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="mx-auto">
-        <ChevronsDownIcon />
-      </div>
-    </div>
-    <!-- end hero -->
-    <div class="mb-4">
-      <div class="container-inner mx-auto">
-        <div class="flex flex-col sm:flex-row justify-between items-center py-6 lg:mt-4 sm:mt-2">
-          <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
-            <img
-              src="~/assets/unDraw/connectedWorld.svg"
-              alt="Connected world"
-              immediate="true"
-            >
           </div>
-          <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
-            <img
-              src="~/assets/unDraw/lightTheFire.svg"
-              alt="woman next to illuminated lighthouse"
-              immediate="true"
-            >
+        </div>
+        <!-- <div class="flex justify-center pt-8">
+          <ChevronsDownIcon />
+        </div> -->
+      </div>
+      <!-- end hero -->
+      <div class="mb-4">
+        <div class="container-inner mx-auto">
+          <div class="flex flex-col sm:flex-row justify-between items-center lg:mt-4 sm:mt-2">
+            <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
+              <img
+                src="~/assets/unDraw/connectedWorld.svg"
+                alt="Connected world"
+                immediate="true"
+              >
+            </div>
+            <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
+              <img
+                src="~/assets/unDraw/lightTheFire.svg"
+                alt="woman next to illuminated lighthouse"
+                immediate="true"
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -112,6 +107,7 @@
 import { ChevronsDownIcon, ExternalLinkIcon } from 'vue-feather-icons';
 import GitHubIcon from '@/components/GitHubIcon.vue';
 import TwitterIcon from '@/components/TwitterIcon.vue';
+import DevToIcon from '@/components/DevToIcon.vue';
 
 
 export default {
@@ -121,6 +117,7 @@ export default {
     ExternalLinkIcon,
     GitHubIcon,
     TwitterIcon,
+    DevToIcon,
   },
   computed: {
     person() {
