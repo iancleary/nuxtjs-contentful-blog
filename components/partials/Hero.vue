@@ -1,23 +1,79 @@
 <template>
   <div>
-    <div
-      class="container-inner mx-auto flex flex-col sm:h-screen space-y-8 justify-center px-16"
-    >
-      <div class="sm:mt-0 lg:mt-8 mx-auto">
-        <img
-          class="mx-auto h-44 w-44 rounded-lg xl:w-90 xl:h-90"
-          :src="person.fields.image.fields.file.url"
-          alt="developer with laptop and git commit log visual"
-          immediate="true"
-        >
-      </div>
-      <div class="text-center text-copy-primary  text-5xl  font-extrabold leading-none tracking-tight">
-        {{ person.fields.name }}
-      </div>
-      <div class="text-2xl space-y-4">
-        <div class="bg-clip-text text-transparent bg-gradient-to-r from-red-900 to-pink-900 text-2xl">
-          {{ person.fields.shortBio }}
+    <section class="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative">
+          <div class="text-center text-copy-primary text-7xl font-extrabold leading-none tracking-tight">
+            Hello, I'm {{ person.fields.name }}.
+          </div>
+          <blockquote class="mt-10">
+            <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium">
+              {{ person.fields.shortBio }}
+            </div>
+            <footer class="mt-8">
+              <div class="md:flex md:items-center md:justify-center">
+                <div class="md:flex-shrink-0">
+                  <img
+                    class="mx-auto h-10 w-10 rounded-full"
+                    :src="person.fields.image.fields.file.url"
+                    alt="personal photo or avatar"
+                    immediate="true"
+                  >
+                </div>
+                <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                  <!-- <div class="text-base font-medium">
+                    {{ person.fields.name }}
+                  </div> -->
+                  <div class="text-base font-medium text-gray-500">
+                    {{ person.fields.title }}, {{ person.fields.company }}
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
         </div>
+      </div>
+    </section>
+
+    <div
+      class="container-inner mx-auto flex flex-col space-y-8 justify-center px-16"
+    >
+      <div class="sm:mt-0 lg:mt-8">
+        <ul class="lg:right-0 flex-col space-x-8 items-center justify-center py-8">
+          <li>
+            <ul class="lg:right-0 flex space-x-4 sm:pr-4 items-center justify-center">
+              <li>
+                <GitHubIcon /> 
+              </li>
+              <li class="text-xl">
+                GitHub
+              </li>
+              <li>
+                <external-link-icon
+                  size="1.5x"
+                  class="custom-class"
+                />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="lg:right-0 flex space-x-4 sm:pr-4 items-center justify-center">
+              <li>
+                <TwitterIcon /> 
+              </li>
+              <li class="text-xl">
+                Twitter
+              </li>
+              <li>
+                <!-- <ExternalLinkIcon /> -->
+                <external-link-icon
+                  size="1.5x"
+                  class="custom-class"
+                />
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="mx-auto">
         <ChevronsDownIcon />
@@ -53,12 +109,18 @@
 // src="@/assets/BlogCardHeadshot.png"
 
 // import NuxtJsIcon from '@/components/NuxtJsIcon.vue';
-import { ChevronsDownIcon } from 'vue-feather-icons';
+import { ChevronsDownIcon, ExternalLinkIcon } from 'vue-feather-icons';
+import GitHubIcon from '@/components/GitHubIcon.vue';
+import TwitterIcon from '@/components/TwitterIcon.vue';
+
 
 export default {
   components: {
     // NuxtJsIcon,
     ChevronsDownIcon,
+    ExternalLinkIcon,
+    GitHubIcon,
+    TwitterIcon,
   },
   computed: {
     person() {
