@@ -11,6 +11,7 @@ export default {
   /*
    ** Headers of the page
    */
+  target: 'static',
   server: {
     port: 8080,
   },
