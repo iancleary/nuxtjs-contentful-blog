@@ -37,36 +37,52 @@
       <div class="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8 items-center">
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <ul class="flex mt-4 space-x-4">
-              <li>
-                <GitHubIcon /> 
-              </li>
-              <li class="text-xl">
-                GitHub
-              </li>
-              <li>
-                <external-link-icon
-                  size="1.5x"
-                  class="custom-class"
-                />
-              </li>
-            </ul>
+            <a
+              role="button"
+              href="https://github.com/iancleary"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Link to my GitHub Profile"
+            >
+              <ul class="flex mt-4 space-x-4">
+                <li>
+                  <GitHubIcon /> 
+                </li>
+                <li class="text-xl">
+                  GitHub
+                </li>
+                <li>
+                  <external-link-icon
+                    size="1.5x"
+                    class="custom-class"
+                  />
+                </li>
+              </ul>
+            </a>
           </div>
           <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <ul class="flex mt-4 space-x-4">
-              <li>
-                <TwitterIcon /> 
-              </li>
-              <li class="text-xl">
-                Twitter
-              </li>
-              <li>
-                <external-link-icon
-                  size="1.5x"
-                  class="custom-class"
-                />
-              </li>
-            </ul>
+            <a
+              role="button"
+              href="https://twitter.com/ianacleary"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Link to my Twitter Profile"
+            >
+              <ul class="flex mt-4 space-x-4">
+                <li>
+                  <TwitterIcon /> 
+                </li>
+                <li class="text-xl">
+                  Twitter
+                </li>
+                <li>
+                  <external-link-icon
+                    size="1.5x"
+                    class="custom-class"
+                  />
+                </li>
+              </ul>
+            </a>
           </div>
         </div>
         <!-- <div class="flex justify-center pt-8">
