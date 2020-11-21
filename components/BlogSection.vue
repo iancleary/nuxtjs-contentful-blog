@@ -13,7 +13,7 @@
             This is a place for me to write and explore ideas, tools, process, etc.
           </p>
         </div>
-        <div class="flex items-strech mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+        <div class="flex items-strech mt-12 grid gap-5 max-w-xlg mx-auto lg:grid-cols-2 lg:max-w-none">
           <BlogSectionCard
             v-for="post in sortedPosts"
             :key="post.fields.slug"
