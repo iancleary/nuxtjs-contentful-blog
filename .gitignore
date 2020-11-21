@@ -188,6 +188,15 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# Yarn 2.0+
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
 # dotenv environment variables file
 .env
 .env.test
