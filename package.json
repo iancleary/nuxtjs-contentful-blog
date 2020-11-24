@@ -23,7 +23,7 @@
     "dotenv": "^8.2.0",
     "markdown-it-highlightjs": "^3.3.1",
     "nuxt": "^2.14.7",
-    "postcss": "^8.1.8",
+    "postcss": "^8.1.10",
     "reading-time": "^1.2.1",
     "tailwindcss": "^2.0.1",
     "vue-feather-icons": "^5.1.0",
