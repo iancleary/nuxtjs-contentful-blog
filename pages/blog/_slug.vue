@@ -1,8 +1,8 @@
 <template>
   <div class="bg-background-primary pb-24 border-b-2 border-green-700">
     <div class="relative pt-16">
-      <div class="relative px-4 sm:px-6 lg:px-8">
-        <div class="text-lg max-w-4xl mx-auto mb-6 p-6 bg-gray-100 rounded-lg shadow-lg">
+      <div class="relative mx-auto">
+        <div class="text-lg max-w-xlg mx-8 mb-6 p-6 bg-gray-100 rounded-lg shadow-lg">
           <p class="text-center leading-6 text-gray-500 font-semibold tracking-wide uppercase">
             Introducing
           </p>

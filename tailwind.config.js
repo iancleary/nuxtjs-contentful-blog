@@ -38,14 +38,14 @@ module.exports = {
     },
     colors: {
       background: {
-        primary: '#0D2438',
-        secondary: '#102C44',
-        tertiary: '#1E3951',
+        primary: '#1F2933',
+        secondary: '#323F4B',
+        tertiary: '#3E4C59',
       },
 
       copy: {
-        primary: '#cbd5e0',
-        secondary: '#e2e8f0',
+        primary: '#9AA5B1',
+        secondary: '#7B8794',
       },
 
       'border-color': {
