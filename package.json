@@ -22,7 +22,7 @@
     "contentful": "^8.1.4",
     "dotenv": "^8.2.0",
     "markdown-it-highlightjs": "^3.4.0",
-    "nuxt": "^2.14.11",
+    "nuxt": "^2.14.12",
     "postcss": "^8.2.1",
     "reading-time": "^1.2.1",
     "tailwindcss": "^2.0.2",
