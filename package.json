@@ -14,7 +14,7 @@
     "lint:fix": "yarn lint:check --fix"
   },
   "dependencies": {
-    "@nuxtjs/markdownit": "^1.2.9",
+    "@nuxtjs/markdownit": "^2.0.0",
     "@nuxtjs/tailwindcss": "3.4.2",
     "@tailwindcss/typography": "^0.4.0",
     "@tailwindcss/ui": "^0.7.2",
