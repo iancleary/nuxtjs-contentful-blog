@@ -28,7 +28,7 @@
     "tailwindcss": "^2.0.2",
     "vue-feather-icons": "^5.1.0",
     "vue-lazy-hydration": "1.0.0-beta.14",
-    "vue-simple-icons": "^3.10.0"
+    "vue-simple-icons": "^4.7.0"
   },
   "devDependencies": {
     "eslint": "7.18.0",
