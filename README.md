@@ -1,4 +1,4 @@
-# Personal Website
+# ARCHIVED; Personal Website
 
 <p align="center">
     <em> Powered by NuxtJS, Vue.js & Tailwind CSS</em><br>
