@@ -4,28 +4,28 @@
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative">
           <div class="text-center text-copy-primary text-7xl font-extrabold leading-none tracking-tight">
-            Hello, I'm {{ person.fields.name }}.
+            Hello, I'm Ian Cleary.
           </div>
           <blockquote class="mt-10">
             <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium">
-              {{ person.fields.shortBio }}
+              RF Systems Design Engineer with a Masters in Electrical Engineering | finding the soul in the machine.
             </div>
             <footer class="mt-8">
               <div class="md:flex md:items-center md:justify-center">
                 <div class="md:flex-shrink-0">
-                  <img
+                  <!-- <img
                     class="mx-auto h-10 w-10 rounded-full"
                     :src="person.fields.image.fields.file.url"
                     alt="personal photo or avatar"
                     immediate="true"
-                  >
+                  > -->
                 </div>
                 <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                   <!-- <div class="text-base font-medium">
                     {{ person.fields.name }}
                   </div> -->
                   <div class="text-base font-medium text-gray-500">
-                    {{ person.fields.title }}, {{ person.fields.company }}
+                    System Design Engineer, Viasat, Inc.
                   </div>
                 </div>
               </div>
@@ -35,7 +35,7 @@
       </div>
       <!-- This example requires Tailwind CSS v2.0+ -->
       <div class="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8 items-center">
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
             <a
               role="button"
@@ -46,10 +46,34 @@
             >
               <ul class="flex mt-4 space-x-4">
                 <li>
-                  <GitHubIcon /> 
+                  <GitHubIcon />
                 </li>
                 <li class="text-xl">
                   GitHub
+                </li>
+                <li>
+                  <external-link-icon
+                    size="1.5x"
+                    class="custom-class"
+                  />
+                </li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <a
+              role="button"
+              href="https://blog.iancleary.me"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Link to my Blog Profile"
+            >
+              <ul class="flex mt-4 space-x-4">
+                <li>
+                  <GhostIcon />
+                </li>
+                <li class="text-xl">
+                  Blog
                 </li>
                 <li>
                   <external-link-icon
@@ -70,7 +94,7 @@
             >
               <ul class="flex mt-4 space-x-4">
                 <li>
-                  <TwitterIcon /> 
+                  <TwitterIcon />
                 </li>
                 <li class="text-xl">
                   Twitter
@@ -120,28 +144,23 @@
 // src="@/assets/BlogCardHeadshot.png"
 
 // import NuxtJsIcon from '@/components/NuxtJsIcon.vue';
-import { ChevronsDownIcon, ExternalLinkIcon } from 'vue-feather-icons';
+// import { ChevronsDownIcon, ExternalLinkIcon } from 'vue-feather-icons';
 import GitHubIcon from '@/components/GitHubIcon.vue';
+import GhostIcon from '@/components/GhostIcon.vue';
 import TwitterIcon from '@/components/TwitterIcon.vue';
-import DevToIcon from '@/components/DevToIcon.vue';
+// import DevToIcon from '@/components/DevToIcon.vue';
 
 
 export default {
   components: {
     // NuxtJsIcon,
-    ChevronsDownIcon,
-    ExternalLinkIcon,
+    // ChevronsDownIcon,
+    // ExternalLinkIcon,
     GitHubIcon,
+    GhostIcon,
     TwitterIcon,
-    DevToIcon,
+    // DevToIcon,
   },
-  computed: {
-    person() {
-      var person = this.$store.state.persons[0];
-      // console.log(person);
-      return person;
-      },
-    },
 };
 
 </script>

@@ -3,10 +3,10 @@
     <footer class="bg-green-700 text-white flex-col lg:flex-row lg:pb-8">
       <ul class="lg:right-0 flex space-x-8 sm:pr-8 items-center justify-center py-8">
         <li>
-          <DevToIcon />
+          <GitHubIcon />
         </li>
         <li>
-          <GitHubIcon />
+          <GhostIcon />
         </li>
         <li>
           <TwitterIcon />
@@ -64,14 +64,14 @@
 
 <script>
 
-import DevToIcon from '@/components/DevToIcon.vue';
+import GhostIcon from '@/components/GhostIcon.vue';
 import TwitterIcon from '@/components/TwitterIcon.vue';
 import GitHubIcon from '@/components/GitHubIcon.vue';
 
 var currentYear = new Date().getFullYear();
 export default {
   components: {
-      DevToIcon,
+      GhostIcon,
       GitHubIcon,
       TwitterIcon,
   },

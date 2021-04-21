@@ -13,8 +13,8 @@
     >
       <main class="bg-background-secondary">
         <Nuxt />
-        <LazyHydrate when-idle>
-          <BlogSection />
+        <LazyHydrate when-visible>
+          <PostImages />
         </LazyHydrate>
       </main>
     </transition>
@@ -40,7 +40,7 @@
 
 
 import LazyHydrate from 'vue-lazy-hydration';
-import BlogSection from '@/components/BlogSection.vue';
+import PostImages from '@/components/partials/PostImages.vue';
 import BottomDots from '@/components/BottomDots.vue';
 import Footer from './partials/Footer.vue';
 import Header from './partials/Header.vue';
@@ -52,7 +52,7 @@ export default {
     Header,
     LazyHydrate,
     BottomDots,
-    BlogSection,
+    PostImages
   },
 };
 </script>

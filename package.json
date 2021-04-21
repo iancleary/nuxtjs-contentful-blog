@@ -14,19 +14,18 @@
     "lint:fix": "yarn lint:check --fix"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "3.4.2",
     "@tailwindcss/typography": "^0.4.0",
     "@tailwindcss/ui": "^0.7.2",
-    "autoprefixer": "^10.2.4",
+    "autoprefixer": "^9",
     "dotenv": "^8.2.0",
-    "nuxt": "^2.15.1",
-    "postcss": "^8.2.6",
-    "tailwindcss": "^2.0.3",
+    "nuxt": "^2.15.4",
     "vue-feather-icons": "^5.1.0",
     "vue-lazy-hydration": "1.0.0-beta.14",
     "vue-simple-icons": "^4.7.0"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.0.3",
+    "@tailwindcss/postcss7-compat": "^2.1.0",
     "eslint": "7.20.0",
     "eslint-config-node": "4.1.0",
     "eslint-config-standard": "16.0.2",
@@ -34,6 +33,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.3.1",
     "eslint-plugin-standard": "5.0.0",
-    "eslint-plugin-vue": "7.6.0"
+    "eslint-plugin-vue": "7.6.0",
+    "tailwindcss": "^2.1.1"
   }
 }

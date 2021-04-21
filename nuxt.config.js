@@ -1,12 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-const contentful = require("contentful");
-const client = contentful.createClient({
-  space: process.env.CONTENTFUL_SPACE,
-  accessToken: process.env.CONTENTFUL_ACCESSTOKEN,
-});
-
 export default {
   /*
    ** Headers of the page
@@ -38,7 +32,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/contentful", "~/plugins/posts","~/plugins/persons"],
+  plugins: [],
 
   // Build Modules before loading app
   buildModules: [
@@ -46,21 +40,12 @@ export default {
   ],
   // modules to load
   modules: [
-    "@nuxtjs/markdownit",
   ],
-  markdownit: {
-    injected: true,
-    use: [
-      'markdown-it-highlightjs',
-    ],
-  },
   /*
    ** Global CSS and Highlight.js theme
    */
   css: [
     "~/css/main.css",
-    { src: '~/node_modules/highlight.js/styles/night-owl.css', lang: 'css' },
-    // I also like darcula
 
   ],
   render: {
@@ -74,28 +59,5 @@ export default {
    ** Environment variables
    */
   env: {
-    CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,
-    CONTENTFUL_ACCESSTOKEN: process.env.CONTENTFUL_ACCESSTOKEN,
-    CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT,
-  },
-  generate: {
-    routes() {
-      return Promise.all([
-        client.getEntries({
-          content_type: "blogPost",
-        }),
-      ]).then(([blogEntries]) => {
-        var _routes = [...blogEntries.items.map((entry) => entry.fields.slug)];
-
-        // Prefix routes with "/blog/"
-        var _prefixedRoutes = [];
-        for (let i = 0; i < _routes.length; i++){
-          var _prefixedRoute = ["/blog", _routes[i]].join("/");
-          _prefixedRoutes.push(_prefixedRoute);
-        }
-        return _prefixedRoutes;
-        // return _routes;
-      });
-    },
   },
 };

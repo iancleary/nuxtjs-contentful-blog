@@ -1,8 +1,5 @@
 <template>
   <div class="container-inner mx-auto text-xl sm:py-0 relative">
-    <span
-      id="blog"
-    />
     <div class="mt-8 md:mt-0">
       <div class="flex flex-col sm:flex-row justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
