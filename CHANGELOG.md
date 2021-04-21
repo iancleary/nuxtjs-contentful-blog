@@ -8,7 +8,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ## [Unreleased]
 
-## [2021.04.0]
+## [v2021.04.0]
 
 ### Added
 
@@ -134,7 +134,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - Conception of the Changelog!
 
 [Unreleased]: https://github.com/iancleary/iancleary.me/compare/v2021.04.0...HEAD
-[v2020.1.0]: https://github.com/iancleary/iancleary.me/releases/tag/v2021.04.0
+[v2021.04.0]: https://github.com/iancleary/iancleary.me/releases/tag/v2021.04.0
 [v2020.1.0]: https://github.com/iancleary/iancleary.me/releases/tag/v2020.1.0
 [v0.9.0]: https://github.com/iancleary/iancleary.me/releases/tag/v0.9.0
 [v0.8.0]: https://github.com/iancleary/iancleary.me/releases/tag/v0.8.0
