@@ -8,9 +8,12 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ## [Unreleased]
 
+
 ### Removed
 
 - contentful, markdownit, etc.
+
+
 ## [v2021.04.0]
 
 ### Added
@@ -135,6 +138,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 - Refactored to Gridsome Portfolio Starter per PR [#17](https://github.com/iancleary/website/pull/17)
 - Conception of the Changelog!
+
 
 [Unreleased]: https://github.com/iancleary/website/compare/v2021.04.0...HEAD
 [v2021.04.0]: https://github.com/iancleary/website/releases/tag/v2021.04.0
