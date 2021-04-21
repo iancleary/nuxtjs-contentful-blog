@@ -1,4 +1,4 @@
-# ARCHIVED; Personal Website
+# Personal Website
 
 <p align="center">
     <em> Powered by NuxtJS, Vue.js & Tailwind CSS</em><br>
@@ -13,8 +13,6 @@
 
 </p>
 
-I have converted my site to use Contentful and NuxtJS.
-
 ## Tutorials
 
 The following tutorials were especially useful:
@@ -26,7 +24,7 @@ The following tutorials were especially useful:
 
 ## Calendar Versioning
 
-This project adheres to [Calendar Versioning](https://calver.org/), YYYY.MINOR.MICRO.
+This project adheres to [Calendar Versioning](https://calver.org/), YYYY.0M.MICRO.
 
 ## Static Code Analysis - Command Line
 

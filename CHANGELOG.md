@@ -8,6 +8,11 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ## [Unreleased]
 
+### Removed
+
+- contentful, markdownit, etc.
+## [v2021.04.0]
+
 ### Added
 
 - TailwindUI BlogSections per [#159](https://github.com/iancleary/portfolio/pull/159)
@@ -40,7 +45,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 - Source Articles from dev.to API <https://docs.dev.to/api/#tag/articles>, with Vue documentation [example](https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html)
 - webpack config for '@' path alias
-- CSS for blocking Font-Awesome rendering before loaded, per [#137](https://github.com/iancleary/iancleary.me/issues/137)
+- CSS for blocking Font-Awesome rendering before loaded, per [#137](https://github.com/iancleary/website/issues/137)
 - Tailwindcss purge: [Controlling File Size](https://tailwindcss.com/docs/controlling-file-size)
 
 ### Changed
@@ -80,7 +85,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - Moved "Ian Cleary" to left portion of header
 - Fixed `overflow-x-hidden` on Index and BottomDots component (dots were too wide on narrow width displays)
 - upgraded tailwindcss from 1.2.0 to 1.3.4
-- Refactored Projects to responsive component with props per [#81](https://github.com/iancleary/iancleary.me/pull/81)
+- Refactored Projects to responsive component with props per [#81](https://github.com/iancleary/website/pull/81)
 
 ### Removed
 
@@ -115,9 +120,9 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ### Added
 
-- Added mobile touch events using [vue2-touch-events](https://github.com/jerrybendy/vue-touch-events) per PR [#34](https://github.com/iancleary/iancleary.me/pull/34)
-- Added alt-text and svg immediate loading per PR [#33](https://github.com/iancleary/iancleary.me/pull/33)
-- Added navbar automatic hiding on scroll down, showing on scroll up, and opaque responsive on mobile per PR [#30](https://github.com/iancleary/iancleary.me/pull/30)
+- Added mobile touch events using [vue2-touch-events](https://github.com/jerrybendy/vue-touch-events) per PR [#34](https://github.com/iancleary/website/pull/34)
+- Added alt-text and svg immediate loading per PR [#33](https://github.com/iancleary/website/pull/33)
+- Added navbar automatic hiding on scroll down, showing on scroll up, and opaque responsive on mobile per PR [#30](https://github.com/iancleary/website/pull/30)
 
 ### Changed
 
@@ -128,13 +133,14 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ## [v0.6.0] - 2019-09-22
 
-- Refactored to Gridsome Portfolio Starter per PR [#17](https://github.com/iancleary/iancleary.me/pull/17)
+- Refactored to Gridsome Portfolio Starter per PR [#17](https://github.com/iancleary/website/pull/17)
 - Conception of the Changelog!
 
-[Unreleased]: https://github.com/iancleary/iancleary.me/compare/v2020.1.0...HEAD
-[v2020.1.0]: https://github.com/iancleary/iancleary.me/releases/tag/v2020.1.0
-[v0.9.0]: https://github.com/iancleary/iancleary.me/releases/tag/v0.9.0
-[v0.8.0]: https://github.com/iancleary/iancleary.me/releases/tag/v0.8.0
-[v0.7.0]: https://github.com/iancleary/iancleary.me/releases/tag/v0.7.0
-[v0.6.1]: https://github.com/iancleary/iancleary.me/releases/tag/v0.6.1
-[v0.6.0]: https://github.com/iancleary/iancleary.me/releases/tag/v0.6.0
+[Unreleased]: https://github.com/iancleary/website/compare/v2021.04.0...HEAD
+[v2021.04.0]: https://github.com/iancleary/website/releases/tag/v2021.04.0
+[v2020.1.0]: https://github.com/iancleary/website/releases/tag/v2020.1.0
+[v0.9.0]: https://github.com/iancleary/website/releases/tag/v0.9.0
+[v0.8.0]: https://github.com/iancleary/website/releases/tag/v0.8.0
+[v0.7.0]: https://github.com/iancleary/website/releases/tag/v0.7.0
+[v0.6.1]: https://github.com/iancleary/website/releases/tag/v0.6.1
+[v0.6.0]: https://github.com/iancleary/website/releases/tag/v0.6.0
