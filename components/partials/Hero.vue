@@ -46,7 +46,7 @@
             >
               <ul class="flex mt-4 space-x-4">
                 <li>
-                  <GitHubIcon /> 
+                  <GitHubIcon />
                 </li>
                 <li class="text-xl">
                   GitHub
@@ -70,7 +70,7 @@
             >
               <ul class="flex mt-4 space-x-4">
                 <li>
-                  <TwitterIcon /> 
+                  <TwitterIcon />
                 </li>
                 <li class="text-xl">
                   Twitter
@@ -120,20 +120,20 @@
 // src="@/assets/BlogCardHeadshot.png"
 
 // import NuxtJsIcon from '@/components/NuxtJsIcon.vue';
-import { ChevronsDownIcon, ExternalLinkIcon } from 'vue-feather-icons';
+import ExternalLinkIcon from 'vue-feather-icons';
 import GitHubIcon from '@/components/GitHubIcon.vue';
 import TwitterIcon from '@/components/TwitterIcon.vue';
-import DevToIcon from '@/components/DevToIcon.vue';
+// import DevToIcon from '@/components/DevToIcon.vue';
 
 
 export default {
   components: {
     // NuxtJsIcon,
-    ChevronsDownIcon,
+    // ChevronsDownIcon,
     ExternalLinkIcon,
     GitHubIcon,
     TwitterIcon,
-    DevToIcon,
+    // DevToIcon,
   },
   computed: {
     person() {

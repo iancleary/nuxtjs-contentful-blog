@@ -9,7 +9,7 @@
     "local": "nuxt --hostname 0.0.0.0",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate --modern",
     "lint:check": "eslint --ext .js,.vue .",
     "lint:fix": "yarn lint:check --fix"
   },

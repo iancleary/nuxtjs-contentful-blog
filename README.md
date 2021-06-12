@@ -1,4 +1,4 @@
-# ARCHIVED; Personal Website
+# Personal Site
 
 <p align="center">
     <em> Powered by NuxtJS, Vue.js & Tailwind CSS</em><br>
@@ -13,7 +13,7 @@
 
 </p>
 
-I have converted my site to use Contentful and NuxtJS.
+I have converted my site to use Contentful and NuxtJS. I'm currently doing a design of experiments with NextJS and Storyblok.
 
 ## Tutorials
 
