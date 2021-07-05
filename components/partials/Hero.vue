@@ -120,7 +120,7 @@
 // src="@/assets/BlogCardHeadshot.png"
 
 // import NuxtJsIcon from '@/components/NuxtJsIcon.vue';
-import ExternalLinkIcon from 'vue-feather-icons';
+import { ExternalLinkIcon } from 'vue-feather-icons';
 import GitHubIcon from '@/components/GitHubIcon.vue';
 import TwitterIcon from '@/components/TwitterIcon.vue';
 // import DevToIcon from '@/components/DevToIcon.vue';
