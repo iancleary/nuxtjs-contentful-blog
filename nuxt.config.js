@@ -63,13 +63,13 @@ export default {
     // I also like darcula
 
   ],
-  render: {
-    bundleRenderer: {
-      shouldPreload: (file, type) => {
-        return ["script", "style", "font"].includes(type);
-      },
-    },
-  },
+  // render: {
+  //   bundleRenderer: {
+  //     shouldPreload: (file, type) => {
+  //       return ["script", "style", "font"].includes(type);
+  //     },
+  //   },
+  // },
   /*
    ** Environment variables
    */
