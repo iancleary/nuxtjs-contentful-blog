@@ -46,7 +46,44 @@ export default {
   ],
   // modules to load
   modules: [
+    "@nuxtjs/feed",
     "@nuxtjs/markdownit",
+  ],
+  feed: [
+    {
+      path: '/feed.xml',
+      async create(feed) {
+        feed.options = {
+          title: "Ian Cleary's Blog",
+          link: 'https://iancleary.dev/feed.xml',
+          description: "Ian's blog containing useful notes and procedures, with a focus on Windows, Ubuntu Server and Desktop, Docker, Javascript, and related technologies!",
+        };
+
+        const posts = await client.getEntries({
+              content_type: "blogPost"
+            });
+
+        posts.forEach((post) => {
+          const url = `https://iancleary.dev/posts/${post.fields.slug}`
+          feed.addItem({
+            title: post.fields.title,
+            id: url,
+            link: url,
+            description: post.fields.description,
+            published: new Date(post.fields.publishDate),
+            author: [
+              {
+                name: post.fields.author.fields.name,
+                email: post.fields.author.fields.email,
+              },
+            ],
+          });
+        });
+
+      },
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2',
+    },
   ],
   markdownit: {
     injected: true,
