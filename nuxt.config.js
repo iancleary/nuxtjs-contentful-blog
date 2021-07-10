@@ -66,7 +66,7 @@ export default {
         // console.log(posts.items); // Debug log to terminal
 
         posts.items.forEach((post) => {
-          const url = `https://iancleary.dev/posts/${post.fields.slug}`
+          const url = `https://iancleary.dev/posts/${post.fields.slug}`;
           feed.addItem({
             title: post.fields.title,
             id: url,
