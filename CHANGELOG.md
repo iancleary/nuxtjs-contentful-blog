@@ -8,6 +8,10 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- RSS, using `@nuxtjs/feed` and porting [Dawntraoz's article](https://www.dawntraoz.com/blog/adding-rss-feed-to-my-blog-made-with-nuxt-storyblok) to use Contentful.
+
 ## [v2021.04.0]
 
 ### Added

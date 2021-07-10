@@ -13,8 +13,6 @@
 
 </p>
 
-I have converted my site to use Contentful and NuxtJS. I'm currently doing a design of experiments with NextJS and Storyblok.
-
 ## Tutorials
 
 The following tutorials were especially useful:
