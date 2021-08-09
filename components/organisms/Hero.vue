@@ -121,8 +121,8 @@
 
 // import NuxtJsIcon from '@/components/NuxtJsIcon.vue';
 import { ExternalLinkIcon } from 'vue-feather-icons';
-import GitHubIcon from '@/components/GitHubIcon.vue';
-import TwitterIcon from '@/components/TwitterIcon.vue';
+import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
+import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
 // import DevToIcon from '@/components/DevToIcon.vue';
 
 

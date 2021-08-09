@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import BlogSectionCard from '@/components/BlogSectionCard.vue';
+import BlogSectionCard from '@/components/molecules/BlogSectionCard.vue';
 
 function dateMostRecentSortFunction(postA, postB) {
   var dateA = new Date(postA.fields.publishDate).getTime();

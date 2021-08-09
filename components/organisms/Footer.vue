@@ -64,9 +64,9 @@
 
 <script>
 
-import DevToIcon from '@/components/DevToIcon.vue';
-import TwitterIcon from '@/components/TwitterIcon.vue';
-import GitHubIcon from '@/components/GitHubIcon.vue';
+import DevToIcon from '@/components/molecules/DevToIcon.vue';
+import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
+import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
 
 var currentYear = new Date().getFullYear();
 export default {

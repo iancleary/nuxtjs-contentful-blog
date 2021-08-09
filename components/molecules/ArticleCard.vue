@@ -2,12 +2,10 @@
   <div class="blog-card">
     <!-- eslint-disable -->
     <div class="break-normal pb-2">
-      <a
+      <link
         :href="url"
-        target="_blank"
-        rel="noopener noreferrer"
         title="Link to my blog post on Dev.to's website"
-      >{{ title }}</a>
+        :text="title">
       <span class="text-sm text-gray-600"> {{ readablePublishDate }} </span>
     </div>
     <span class="text-lg text-gray-600" v-html="description" />
