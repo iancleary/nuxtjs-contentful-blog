@@ -123,7 +123,6 @@
 import { ExternalLinkIcon } from 'vue-feather-icons';
 import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
 import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
-// import DevToIcon from '@/components/DevToIcon.vue';
 
 
 export default {
@@ -133,7 +132,6 @@ export default {
     ExternalLinkIcon,
     GitHubIcon,
     TwitterIcon,
-    // DevToIcon,
   },
   computed: {
     person() {

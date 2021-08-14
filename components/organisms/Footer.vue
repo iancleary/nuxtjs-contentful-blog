@@ -3,9 +3,6 @@
     <footer class="bg-green-700 text-white flex-col lg:flex-row lg:pb-8">
       <ul class="lg:right-0 flex space-x-8 sm:pr-8 items-center justify-center py-8">
         <li>
-          <DevToIcon />
-        </li>
-        <li>
           <GitHubIcon />
         </li>
         <li>
