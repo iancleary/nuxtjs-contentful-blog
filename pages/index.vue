@@ -19,7 +19,7 @@
 
 import LazyHydrate from 'vue-lazy-hydration';
 
-import Hero from '@/components/organisms/Hero.vue';
+import Hero from '@/components/Hero.vue';
 import PostImages from '@/components/organisms/PostImages.vue';
 import Projects from '@/components/organisms/Projects.vue';
 

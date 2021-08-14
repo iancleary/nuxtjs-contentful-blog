@@ -1,6 +1,7 @@
 <template>
   <a
-    class="hover:text-blue-700 text-gray-500"
+    role="button"
+    :class="css"
     target="_blank"
     rel="noopener noreferrer"
     :href="link"
@@ -24,6 +25,11 @@ export default {
     alt: {
       type: String,
       required: true,
+    },
+    css: {
+      type: String,
+      default: "hover:text-blue-700 text-green-500",
+      required: false,
     },
   },
 };

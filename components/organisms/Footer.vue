@@ -13,44 +13,42 @@
         <div class="mb-8 lg:mb-0 left-0">
           <div>
             Created with
-            <a
-              href="https://nuxtjs.org"
-              target="_blank"
-              rel="noopener"
-              class="text-white"
-            >NuxtJS</a>,
-            <a
-              href="https://vuejs.org/"
-              target="_blank"
-              rel="noopener"
-              class="text-white"
-            >
-              Vue.js
-            </a>
+            <external-link
+              link="https://nuxtjs.org"
+              alt="Link to nuxtjs.org"
+              content="NuxtJS"
+              css="text-white"
+            />,
+            <external-link
+              link="https://vuejs.org/"
+              alt="Link to vuejs.org"
+              content="Vue.js"
+              css="text-white"
+            />
             &amp;
-            <a
-              href="https://tailwindcss.com/"
-              target="_blank"
-              rel="noopener"
-              class="text-white"
-            >Tailwind CSS</a>
+            <external-link
+              link="https://tailwindcss.com/"
+              content="Tailwind CSS"
+              alt="Link to tailwindcss.com"
+              css="text-white"
+            />
           </div>
           <div>
             Domain by
-            <a
-              href="https://hover.com"
-              target="_blank"
-              rel="noopener"
-              class="text-white"
-            >Hover</a>
+            <external-link
+              link="https://hover.com"
+              alt="Link to hover.com"
+              content="Hover"
+              css="text-white"
+            />
             and deployed
             with
-            <a
-              href="https://vercel.com"
-              target="_blank"
-              rel="noopener"
-              class="text-white"
-            >Vercel</a>.
+            <external-link
+              link="https://vercel.com"
+              alt="Link to vercel.com"
+              content="Vercel"
+              css="text-white"
+            />.
           </div>
           <div>Copyright 2019-{{ currentYear }}. All rights reserved.</div>
         </div>
@@ -61,12 +59,14 @@
 
 <script>
 
+import ExternalLink from '@/components/atoms/ExternalLink.vue';
 import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
 import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
 
 var currentYear = new Date().getFullYear();
 export default {
   components: {
+      ExternalLink,
       GitHubIcon,
       TwitterIcon,
   },
