@@ -35,7 +35,7 @@
       </div>
       <!-- This example requires Tailwind CSS v2.0+ -->
       <div class="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8 items-center">
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
             <a
               role="button"
@@ -44,12 +44,36 @@
               rel="noopener noreferrer"
               title="Link to my GitHub Profile"
             >
-              <ul class="flex mt-4 space-x-4">
+              <ul class="flex mt-4 space-x-4 ">
                 <li>
                   <GitHubIcon />
                 </li>
                 <li class="text-xl">
                   GitHub
+                </li>
+                <li>
+                  <external-link-icon
+                    size="1.5x"
+                    class="custom-class"
+                  />
+                </li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <a
+              role="button"
+              href="https://linkedin.com/in/ian-c-6566b22a"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Link to my LinkedIn Profile"
+            >
+              <ul class="flex mt-4 space-x-4">
+                <li>
+                  <linked-in-icon />
+                </li>
+                <li class="text-xl">
+                  LinkedIn
                 </li>
                 <li>
                   <external-link-icon
@@ -123,6 +147,7 @@
 import { ExternalLinkIcon } from 'vue-feather-icons';
 import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
 import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
+import LinkedInIcon from './molecules/LinkedInIcon.vue';
 // import LinkedInIcon from '@/components/molecules/LinkedInIcon.vue';
 
 
@@ -134,6 +159,7 @@ export default {
     GitHubIcon,
     // LinkedInIcon,
     TwitterIcon,
+    LinkedInIcon,
   },
   computed: {
     person() {

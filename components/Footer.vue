@@ -27,33 +27,38 @@
             <external-link
               link="https://vuejs.org/"
               alt="Link to vuejs.org"
-              content="Vue.js"
               css="text-white"
-            />
+            >
+              Vue.js
+            </external-link>
             &amp;
             <external-link
               link="https://tailwindcss.com/"
-              content="Tailwind CSS"
               alt="Link to tailwindcss.com"
               css="text-white"
-            />
+            >
+              Tailwind CSS
+            </external-link>
           </div>
           <div>
             Domain by
             <external-link
               link="https://hover.com"
               alt="Link to hover.com"
-              content="Hover"
               css="text-white"
-            />
+            >
+              Hover
+            </external-link>
             and deployed
             with
             <external-link
               link="https://vercel.com"
               alt="Link to vercel.com"
-              content="Vercel"
               css="text-white"
-            />.
+            >
+              Vercel
+            </external-link>
+            .
           </div>
           <div>Copyright 2019-{{ currentYear }}. All rights reserved.</div>
         </div>
