@@ -6,6 +6,9 @@
           <GitHubIcon />
         </li>
         <li>
+          <LinkedInIcon />
+        </li>
+        <li>
           <TwitterIcon />
         </li>
       </ul>
@@ -17,7 +20,9 @@
               link="https://nuxtjs.org"
               alt="Link to nuxtjs.org"
               css="text-white"
-            >NuxtJS</external-link>
+            >
+              NuxtJS
+            </external-link>
             ,
             <external-link
               link="https://vuejs.org/"
@@ -60,14 +65,16 @@
 <script>
 
 import ExternalLink from '@/components/atoms/ExternalLink.vue';
-import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
 import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
+import LinkedInIcon from '@/components/molecules/LinkedInIcon.vue';
+import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
 
 var currentYear = new Date().getFullYear();
 export default {
   components: {
       ExternalLink,
       GitHubIcon,
+      LinkedInIcon,
       TwitterIcon,
   },
   data() {
