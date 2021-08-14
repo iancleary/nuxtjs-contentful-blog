@@ -7,17 +7,13 @@
     :href="link"
     :alt="alt"
   >
-    {{ content }}
+    <slot />
   </a>
 </template>
 
 <script>
 export default {
   props: {
-    content: {
-      type: String,
-      required: true,
-    },
     link: {
       type: String,
       required: true,

@@ -40,10 +40,10 @@
 
 
 import LazyHydrate from 'vue-lazy-hydration';
-import BottomDots from '@/components/atoms/BottomDots.vue';
-import BlogSection from '@/components/organisms/BlogSection.vue';
-import Footer from '@/components/organisms/Footer.vue';
-import Header from '@/components/organisms/Header.vue';
+import BottomDots from '@/components/BottomDots.vue';
+import BlogSection from '@/components/BlogSection.vue';
+import Footer from '@/components/Footer.vue';
+import Header from '@/components/Header.vue';
 
 export default {
 

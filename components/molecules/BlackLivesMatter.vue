@@ -3,10 +3,11 @@
     <span class="text-white">#BlackLivesMatter</span>
     <span class="pl-2 text-green">
       <external-link
-        href="https://support.eji.org/give/153413/#!/donation/checkout"
-        title="Support the Equal Justice Initiative"
-        content="Support the Equal Justice Initiative"
-      />
+        link="https://support.eji.org/give/153413/#!/donation/checkout"
+        alt="Link to Support the Equal Justice Initiative on eji.org"
+      >
+        Support the Equal Justice Initiative
+      </external-link>
     </span>
   </div>
 </template>

@@ -16,9 +16,9 @@
             <external-link
               link="https://nuxtjs.org"
               alt="Link to nuxtjs.org"
-              content="NuxtJS"
               css="text-white"
-            />,
+            >NuxtJS</external-link>
+            ,
             <external-link
               link="https://vuejs.org/"
               alt="Link to vuejs.org"
