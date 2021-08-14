@@ -6,6 +6,9 @@
           <div class="text-center text-copy-primary text-7xl font-extrabold leading-none tracking-tight">
             Hello, I'm {{ person.fields.name }}.
           </div>
+          <div class="text-center text-copy-primary text-2xl font-italic leading-none tracking-tight">
+            ({{ person.fields.pronouns }})
+          </div>
           <blockquote class="mt-10">
             <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium">
               {{ person.fields.shortBio }}
