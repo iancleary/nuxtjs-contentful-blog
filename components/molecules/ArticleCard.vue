@@ -14,6 +14,9 @@
 </template>
 
 <script>
+
+// import Link from '@/components/atoms/Link.vue';
+
 export default {
   props: {
     title: {
