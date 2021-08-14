@@ -123,7 +123,7 @@
 import { ExternalLinkIcon } from 'vue-feather-icons';
 import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
 import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
-import LinkedInIcon from '@/components/molecules/LinkedInIcon.vue';
+// import LinkedInIcon from '@/components/molecules/LinkedInIcon.vue';
 
 
 export default {
@@ -132,7 +132,7 @@ export default {
     // ChevronsDownIcon,
     ExternalLinkIcon,
     GitHubIcon,
-    LinkedInIcon,
+    // LinkedInIcon,
     TwitterIcon,
   },
   computed: {
