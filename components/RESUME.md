@@ -17,3 +17,6 @@ Find LinkedIn icon from import online...what's the import called?
 Create a similar list item for the Footer?  Is that worth it
 
 ---
+
+Buy me a coffee Icon
+Hover on the bottom right of the screen?
