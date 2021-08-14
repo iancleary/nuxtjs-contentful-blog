@@ -1,42 +1,24 @@
 <template>
-  <a
-    role="button"
-    href="https://twitter.com/ianacleary"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="toggle-theme"
-    title="Link to my Twitter Profile"
-  >
-    <!-- https://tailwindcss.com/docs/fill#usage -->
-    <!-- eslint-disable-next-line -->
-    <twitter-icon class="fill-current text-white h-8 w-8"></twitter-icon>
-  </a>
+  <div>
+    <icon
+      href="https://twitter.com/icancclearynow"
+      title="Link to my Twitter Profile"
+    >
+      <!-- https://tailwindcss.com/docs/fill#usage -->
+      <!-- eslint-disable-next-line -->
+      <twitter-icon class="fill-current text-white h-8 w-8"></twitter-icon>
+    </icon>
+  </div>
 </template>
 
 <script>
 import { TwitterIcon } from 'vue-simple-icons';
+import Icon from '@/components/atoms/Icon.vue';
 
 export default {
   components: {
     TwitterIcon,
+    Icon,
   },
 };
 </script>
-
-<style>
-.toggle-theme {
-  background-color: transparent;
-  border: 0;
-  color: currentColor;
-  cursor: pointer;
-}
-
-.toggle-theme:hover {
-    opacity: 0.8;
-}
-
-.toggle-theme:focus {
-    outline: none;
-}
-
-</style>
