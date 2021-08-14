@@ -7,10 +7,6 @@
 
 <p align="center">
 
-<a href="https://dependabot.com/" target="_blank">
-    <img src="https://flat.badgen.net/dependabot/iancleary/website?icon=dependabot" alt="Dependabot Enabled">
-</a>
-
 </p>
 
 ## Tutorials
