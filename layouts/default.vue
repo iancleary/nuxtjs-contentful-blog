@@ -40,19 +40,19 @@
 
 
 import LazyHydrate from 'vue-lazy-hydration';
-import BlogSection from '@/components/BlogSection.vue';
 import BottomDots from '@/components/BottomDots.vue';
-import Footer from './partials/Footer.vue';
-import Header from './partials/Header.vue';
+import BlogSection from '@/components/BlogSection.vue';
+import Footer from '@/components/Footer.vue';
+import Header from '@/components/Header.vue';
 
 export default {
 
   components: {
+    BottomDots,
+    BlogSection,
     Footer,
     Header,
     LazyHydrate,
-    BottomDots,
-    BlogSection,
   },
 };
 </script>

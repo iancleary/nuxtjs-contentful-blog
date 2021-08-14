@@ -14,7 +14,7 @@
         <div class="flex-1">
           <!-- <p class="text-sm leading-5 font-medium text-indigo-600">
         </p> -->
-        
+
           <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
             {{ title }}
           </h3>

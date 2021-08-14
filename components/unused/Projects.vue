@@ -53,7 +53,7 @@
 
 <script>
 
-import ProjectCard from '@/components/ProjectCard.vue';
+import ProjectCard from '@/components/molecules/ProjectCard.vue';
 
 export default {
   components: {

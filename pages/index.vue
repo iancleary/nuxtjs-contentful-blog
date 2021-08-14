@@ -5,30 +5,30 @@
     <!-- <LazyHydrate when-idle> -->
     <Hero />
     <!-- </LazyHydrate> -->
-    <LazyHydrate when-visible>
+    <!-- <LazyHydrate when-visible>
       <Projects />
-    </LazyHydrate>
-    <LazyHydrate when-visible>
+    </LazyHydrate> -->
+    <!-- <LazyHydrate when-visible>
       <PostImages />
-    </LazyHydrate>
+    </LazyHydrate> -->
   </div>
 </template>
 
 <script>
 
 
-import LazyHydrate from 'vue-lazy-hydration';
+// import LazyHydrate from 'vue-lazy-hydration';
 
-import Hero from '@/components/partials/Hero.vue';
-import PostImages from '@/components/partials/PostImages.vue';
-import Projects from '@/components/partials/Projects.vue';
+import Hero from '@/components/Hero.vue';
+// import PostImages from '@/components/organisms/PostImages.vue';
+// import Projects from '@/components/organisms/Projects.vue';
 
 export default {
   components: {
-    LazyHydrate,
+    // LazyHydrate,
     Hero,
-    PostImages,
-    Projects,
+    // PostImages,
+    // Projects,
   },
   layout: 'default',
   head: {

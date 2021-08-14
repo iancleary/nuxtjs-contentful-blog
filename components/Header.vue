@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import BlackLivesMatter from '@/components/BlackLivesMatter.vue';
+import BlackLivesMatter from '@/components/molecules/BlackLivesMatter.vue';
 
 export default {
   components: {
