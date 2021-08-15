@@ -1,7 +1,7 @@
 <template>
   <div>
     <external-link
-      link="https://linkedin.com/in/ian-c-6566b22a"
+      :link="person.fields.linkedIn"
       alt="Link to my LinkedIn Profile"
     >
       <!-- https://tailwindcss.com/docs/fill#usage -->
@@ -20,5 +20,12 @@ export default {
     LinkedInIcon,
     ExternalLink,
   },
+  computed: {
+    person() {
+      var person = this.$store.state.persons[0];
+      // console.log(person);
+      return person;
+      },
+    },
 };
 </script>

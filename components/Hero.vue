@@ -40,12 +40,9 @@
       <div class="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8 items-center">
         <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <a
-              role="button"
-              href="https://github.com/iancleary"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Link to my GitHub Profile"
+            <external-link
+              :link="person.fields.github"
+              alt="Link to my GitHub Profile"
             >
               <ul class="flex mt-4 space-x-4 ">
                 <li>
@@ -61,15 +58,12 @@
                   />
                 </li>
               </ul>
-            </a>
+            </external-link>
           </div>
           <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <a
-              role="button"
-              href="https://linkedin.com/in/ian-c-6566b22a"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Link to my LinkedIn Profile"
+            <external-link
+              :link="person.fields.linkedIn"
+              alt="Link to my LinkedIn Profile"
             >
               <ul class="flex mt-4 space-x-4">
                 <li>
@@ -85,15 +79,12 @@
                   />
                 </li>
               </ul>
-            </a>
+            </external-link>
           </div>
           <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <a
-              role="button"
-              href="https://twitter.com/ianacleary"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Link to my Twitter Profile"
+            <external-link
+              :link="person.fields.twitter"
+              alt="Link to my Twitter Profile"
             >
               <ul class="flex mt-4 space-x-4">
                 <li>
@@ -109,7 +100,7 @@
                   />
                 </li>
               </ul>
-            </a>
+            </external-link>
           </div>
         </div>
         <!-- <div class="flex justify-center pt-8">
@@ -151,6 +142,7 @@ import { ExternalLinkIcon } from 'vue-feather-icons';
 import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
 import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
 import LinkedInIcon from './molecules/LinkedInIcon.vue';
+import ExternalLink from './atoms/ExternalLink.vue';
 // import LinkedInIcon from '@/components/molecules/LinkedInIcon.vue';
 
 
@@ -163,6 +155,7 @@ export default {
     // LinkedInIcon,
     TwitterIcon,
     LinkedInIcon,
+    ExternalLink,
   },
   computed: {
     person() {

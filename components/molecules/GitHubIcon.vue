@@ -1,7 +1,7 @@
 <template>
   <div>
     <external-link
-      link="https://github.com/iancleary"
+      :link="person.fields.github"
       alt="Link to my GitHub Profile"
     >
       <!-- https://tailwindcss.com/docs/fill#usage -->
@@ -20,5 +20,12 @@ export default {
     GitHubIcon,
     ExternalLink,
   },
+  computed: {
+    person() {
+      var person = this.$store.state.persons[0];
+      // console.log(person);
+      return person;
+      },
+    },
 };
 </script>
