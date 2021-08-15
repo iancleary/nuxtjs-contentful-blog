@@ -17,6 +17,7 @@ The following tutorials were especially useful:
 * [Create a Blog with Contentful and Nuxt](https://www.netlify.com/blog/2020/04/20/create-a-blog-with-contentful-and-nuxt/?utm_source=github&utm_medium=contentful-sd&utm_campaign=devex) by Sarah Drasner (@sdras)
 * [How I Migrated to JAMStack: Next.JS, Vercel, and Contentful.](https://cole.codes/posts/how-i-migrated-to-jamstack-nextjs-vercel-contentful), by Cole Turner.
 * [How to Use Markdown-It with Highlight.js in a Nuxt Project](https://www.samuelcoe.com/blog/18-02-25-nuxt-hightlight/)
+* [Adding RSS feed to my Nuxt & Storyblok blog](https://www.dawntraoz.com/blog/adding-rss-feed-to-my-blog-made-with-nuxt-storyblok)
 
 ## Calendar Versioning
 
