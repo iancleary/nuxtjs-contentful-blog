@@ -1,7 +1,7 @@
 <template>
   <div>
     <external-link
-      link="https://twitter.com/icancclearynow"
+      :link="person.fields.twitter"
       alt="Link to my Twitter Profile"
     >
       <!-- https://tailwindcss.com/docs/fill#usage -->
@@ -20,5 +20,12 @@ export default {
     TwitterIcon,
     ExternalLink,
   },
+  computed: {
+    person() {
+      var person = this.$store.state.persons[0];
+      // console.log(person);
+      return person;
+      },
+    },
 };
 </script>
