@@ -40,15 +40,20 @@ export default {
    */
   plugins: ["~/plugins/contentful", "~/plugins/posts","~/plugins/persons"],
 
-  // Build Modules before loading app
-  buildModules: [
-    "@nuxtjs/tailwindcss",
-  ],
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
   // modules to load
   modules: [
     "@nuxtjs/feed",
     "@nuxtjs/markdownit",
   ],
+
+  // Build Modules before loading app
+  buildModules: [
+    "@nuxtjs/tailwindcss",
+  ],
+
   feed: [
     {
       path: '/feed.xml',
