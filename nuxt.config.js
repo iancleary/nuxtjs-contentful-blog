@@ -60,7 +60,7 @@ export default {
       async create(feed) {
         feed.options = {
           title: "Ian Cleary's Blog",
-          link: 'https://iancleary.dev/feed.xml',
+          link: 'https://icancclearynow.com/feed.xml',
           description: "Ian's blog containing useful notes and procedures, with a focus on Windows, Ubuntu Server and Desktop, Docker, Javascript, and related technologies!",
         };
 
@@ -71,7 +71,7 @@ export default {
         // console.log(posts.items); // Debug log to terminal
 
         posts.items.forEach((post) => {
-          const url = "https://iancleary.dev/blog/" + post.fields.slug;
+          const url = "https://icancclearynow.com/blog/" + post.fields.slug;
           feed.addItem({
             title: post.fields.title,
             id: url,
