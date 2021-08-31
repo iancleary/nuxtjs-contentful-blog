@@ -1,9 +1,13 @@
 <template>
   <!-- Overflow-x-hidden prevents horizontal scrolling when
       elements are larger than others within the app -->
-  <div class="bg-background-primary border-b-2 border-green-700">
-    <!-- <LazyHydrate when-idle> -->
-    <Hero />
+  <div>
+    <div class="border-b-2 border-green-700">
+      <Hero />
+    </div>
+    <LazyHydrate when-idle>
+      <BlogSection />
+    </LazyHydrate>
     <!-- </LazyHydrate> -->
     <!-- <LazyHydrate when-visible>
       <Projects />
@@ -17,15 +21,17 @@
 <script>
 
 
-// import LazyHydrate from 'vue-lazy-hydration';
-
+import LazyHydrate from 'vue-lazy-hydration';
 import Hero from '@/components/Hero.vue';
+import BlogSection from '@/components/BlogSection.vue';
+
 // import PostImages from '@/components/organisms/PostImages.vue';
 // import Projects from '@/components/organisms/Projects.vue';
 
 export default {
   components: {
-    // LazyHydrate,
+    LazyHydrate,
+    BlogSection,
     Hero,
     // PostImages,
     // Projects,

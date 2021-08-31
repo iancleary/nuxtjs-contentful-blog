@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 pb-4 justify-center bg-background-secondary">
+  <div class="container mx-auto px-4 pb-4 justify-center">
     <svg
       width="725"
       height="166"
