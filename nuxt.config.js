@@ -40,22 +40,27 @@ export default {
    */
   plugins: ["~/plugins/contentful", "~/plugins/posts","~/plugins/persons"],
 
-  // Build Modules before loading app
-  buildModules: [
-    "@nuxtjs/tailwindcss",
-  ],
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
   // modules to load
   modules: [
     "@nuxtjs/feed",
     "@nuxtjs/markdownit",
   ],
+
+  // Build Modules before loading app
+  buildModules: [
+    "@nuxtjs/tailwindcss",
+  ],
+
   feed: [
     {
       path: '/feed.xml',
       async create(feed) {
         feed.options = {
           title: "Ian Cleary's Blog",
-          link: 'https://iancleary.dev/feed.xml',
+          link: 'https://icancclearynow.com/feed.xml',
           description: "Ian's blog containing useful notes and procedures, with a focus on Windows, Ubuntu Server and Desktop, Docker, Javascript, and related technologies!",
         };
 
@@ -66,7 +71,7 @@ export default {
         // console.log(posts.items); // Debug log to terminal
 
         posts.items.forEach((post) => {
-          const url = "https://iancleary.dev/blog/" + post.fields.slug;
+          const url = "https://icancclearynow.com/blog/" + post.fields.slug;
           feed.addItem({
             title: post.fields.title,
             id: url,
