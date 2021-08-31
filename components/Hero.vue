@@ -38,7 +38,7 @@
       </div>
       <!-- This example requires Tailwind CSS v2.0+ -->
       <div class="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8 items-center">
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="sm:space-y-4 items-center">
           <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
             <external-link
               :link="person.fields.github"
@@ -71,6 +71,27 @@
                 </li>
                 <li class="text-xl">
                   LinkedIn
+                </li>
+                <li>
+                  <external-link-icon
+                    size="1.5x"
+                    class="custom-class"
+                  />
+                </li>
+              </ul>
+            </external-link>
+          </div>
+          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <external-link
+              :link="person.fields.spotify"
+              alt="Link to my Spotify Profile"
+            >
+              <ul class="flex mt-4 space-x-4">
+                <li>
+                  <spotify-icon />
+                </li>
+                <li class="text-xl">
+                  Spotify
                 </li>
                 <li>
                   <external-link-icon
@@ -139,10 +160,11 @@
 
 // import NuxtJsIcon from '@/components/NuxtJsIcon.vue';
 import { ExternalLinkIcon } from 'vue-feather-icons';
-import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
-import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
-import LinkedInIcon from './molecules/LinkedInIcon.vue';
 import ExternalLink from './atoms/ExternalLink.vue';
+import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
+import LinkedInIcon from './molecules/LinkedInIcon.vue';
+import SpotifyIcon from '@/components/molecules/SpotifyIcon.vue';
+import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
 // import LinkedInIcon from '@/components/molecules/LinkedInIcon.vue';
 
 
@@ -151,11 +173,11 @@ export default {
     // NuxtJsIcon,
     // ChevronsDownIcon,
     ExternalLinkIcon,
-    GitHubIcon,
-    // LinkedInIcon,
-    TwitterIcon,
-    LinkedInIcon,
     ExternalLink,
+    GitHubIcon,
+    LinkedInIcon,
+    TwitterIcon,
+    SpotifyIcon,
   },
   computed: {
     person() {
