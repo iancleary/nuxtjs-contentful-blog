@@ -11,10 +11,24 @@ export const mutations = {
   updatePersons: (state, persons) => {
     state.persons = persons;
   },
+  updateProjects: (state, projects) => {
+    state.projects = projects;
+  },
 };
 
 
 export const actions = {
+  async getPersons({ commit }) {
+    try {
+      if (!client) return;
+      const response = await client.getEntries({
+        content_type: "person",
+      });
+      if (response.items.length > 0) commit("updatePersons", response.items);
+    } catch (err) {
+      console.error(err);
+    }
+  },
   async getPosts({ commit }) {
     try {
       if (!client) return;
@@ -26,13 +40,13 @@ export const actions = {
       console.error(err);
     }
   },
-  async getPersons({ commit }) {
+  async getProjects({ commit }) {
     try {
       if (!client) return;
       const response = await client.getEntries({
-        content_type: "person",
+        content_type: "project",
       });
-      if (response.items.length > 0) commit("updatePersons", response.items);
+      if (response.items.length > 0) commit("updateProjects", response.items);
     } catch (err) {
       console.error(err);
     }
