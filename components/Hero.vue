@@ -1,3 +1,4 @@
+/* eslint-disable vue/no-v-html */
 <template>
   <div>
     <section class="py-4 sm:py-6 md:py-8 overflow-hidden md:py-20 lg:py-24">
@@ -10,9 +11,10 @@
             ({{ person.fields.pronouns }})
           </div>
           <blockquote class="mt-10">
-            <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium">
-              {{ person.fields.shortBio }}
-            </div>
+            <div
+              class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium"
+              v-html="$md.render(person.fields.shortBio)"
+            />
             <footer class="mt-8">
               <div class="md:flex md:items-center md:justify-center">
                 <div class="md:flex-shrink-0">
