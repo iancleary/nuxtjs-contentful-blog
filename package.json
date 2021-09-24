@@ -25,6 +25,8 @@
     "glob-parent": "^5.1.2",
     "hosted-git-info": "^2.8.9",
     "lodash": "^4.17.21",
+    "markdown-it-attrs": "^4.0.0",
+    "markdown-it-div": "^1.1.0",
     "markdown-it-highlightjs": "^3.5.0",
     "nuxt": "^2.15.7",
     "postcss": "^8.3.5",

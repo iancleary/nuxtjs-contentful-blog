@@ -93,8 +93,13 @@ export default {
     },
   ],
   markdownit: {
-    injected: true,
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    html: true,
     use: [
+      'markdown-it-div',
+      'markdown-it-attrs',
       'markdown-it-highlightjs',
     ],
   },
