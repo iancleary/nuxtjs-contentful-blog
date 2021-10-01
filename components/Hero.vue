@@ -11,10 +11,12 @@
             ({{ person.fields.pronouns }})
           </div>
           <blockquote class="mt-10">
+            <!-- eslint-disable -->
             <div
               class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium"
               v-html="$md.render(person.fields.shortBio)"
             />
+            <!-- eslint-enable -->
             <footer class="mt-8">
               <div class="md:flex md:items-center md:justify-center">
                 <div class="md:flex-shrink-0">
