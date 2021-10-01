@@ -44,36 +44,16 @@
       <div class="max-w-l mx-auto pt-10 items-center">
         <ul class="flex justify-center space-x-16 items-center">
           <li>
-            <external-link
-              :link="person.fields.github"
-              alt="Link to my GitHub Profile"
-            >
-              <GitHubIcon />
-            </external-link>
+            <GitHubIcon />
           </li>
           <li>
-            <external-link
-              :link="person.fields.linkedIn"
-              alt="Link to my LinkedIn Profile"
-            >
-              <linked-in-icon />
-            </external-link>
+            <linked-in-icon />
           </li>
           <li>
-            <external-link
-              :link="person.fields.spotify"
-              alt="Link to my Spotify Profile"
-            >
-              <spotify-icon />
-            </external-link>
+            <spotify-icon />
           </li>
           <li>
-            <external-link
-              :link="person.fields.twitter"
-              alt="Link to my Twitter Profile"
-            >
-              <TwitterIcon />
-            </external-link>
+            <TwitterIcon />
           </li>
         </ul>
       </div>

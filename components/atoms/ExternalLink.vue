@@ -24,7 +24,7 @@ export default {
     },
     css: {
       type: String,
-      default: "hover:text-blue-700 text-green-500",
+      default: "hover:text-green-700 text-green-500",
       required: false,
     },
   },
