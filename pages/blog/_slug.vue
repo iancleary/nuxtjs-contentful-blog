@@ -49,7 +49,7 @@ export default {
   },
   head() {
     return {
-      title: this.$store.state.persons[0].fields.name + " - " + this.post.fields.title,
+      title: this.post.fields.author.fields.name + " - " + this.post.fields.title,
     };
   },
   computed: {
