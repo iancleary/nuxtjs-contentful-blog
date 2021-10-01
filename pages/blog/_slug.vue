@@ -15,14 +15,21 @@
           "
         />
         <!-- eslint-disable -->
-        <article class="prose prose-lg max-w-full text-gray-800" v-html="$md.render(post.fields.body)"/>
+        <article class="prose prose-lg max-w-full text-gray-800 pb-4" v-html="$md.render(post.fields.body)"/>
         <!-- eslint-enable -->
-        <p class="back justify-center">
+        <p class="border-t-2 py-4 border-green-700 flex justify-between">
           <nuxt-link
             exact
-            to="/"
+            to="/blog"
           >
-            ⟵ Back to Home
+            📚 Back to Blog
+          </nuxt-link>
+
+          <nuxt-link
+            exact
+            to="#"
+          >
+            Back to Top 🔝
           </nuxt-link>
         </p>
       </div>
