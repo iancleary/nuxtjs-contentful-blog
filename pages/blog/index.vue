@@ -29,7 +29,7 @@ export default {
   },
   layout: 'default',
   head: {
-    title: 'Ian\'s Blog 📚',
+    title: 'Ian Cleary\'s Blog 📚',
   },
 };
 

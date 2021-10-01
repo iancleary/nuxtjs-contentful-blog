@@ -42,7 +42,7 @@ export default {
   },
   head() {
     return {
-      title: this.post.fields.title,
+      title: "Ian Cleary - " + this.post.fields.title,
     };
   },
   computed: {
