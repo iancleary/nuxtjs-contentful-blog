@@ -12,6 +12,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 
 - RSS, using `@nuxtjs/feed` and porting [Dawntraoz's article](https://www.dawntraoz.com/blog/adding-rss-feed-to-my-blog-made-with-nuxt-storyblok) to use Contentful.
 - `html: true` markdown-it parameter to fix [#333](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/333)
+- `.env.example` file and description of env variables per [#345](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/345)
 
 ## [v2021.04.0]
 

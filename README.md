@@ -19,6 +19,28 @@ The following tutorials were especially useful:
 * [How to Use Markdown-It with Highlight.js in a Nuxt Project](https://www.samuelcoe.com/blog/18-02-25-nuxt-hightlight/)
 * [Adding RSS feed to my Nuxt & Storyblok blog](https://www.dawntraoz.com/blog/adding-rss-feed-to-my-blog-made-with-nuxt-storyblok)
 
+## Contentful Environment Variables
+
+
+Copy the example .env and adjust the values for your contentful space.
+
+`cp .env.example .env`
+
+The Space is in the URL and in the API Keys menu.
+The access token is in "Settings > Space Settings > API Keys".  Use the `Content Delivery API - access token`.
+
+```ini
+CONTENTFUL_SPACE=a234df8dflj3
+CONTENTFUL_ACCESSTOKEN=asdflkj139e0909812ijaodjfioiuiosifjoewij1UR
+CONTENTFUL_ENVIRONMENT=main
+```
+
+## Contentful Schema
+
+TBD
+
+Need to look at how to put this in version control.
+
 ## Calendar Versioning
 
 This project adheres to [Calendar Versioning](https://calver.org/), YYYY.MINOR.MICRO.
