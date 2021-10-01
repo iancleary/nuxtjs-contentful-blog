@@ -6,7 +6,7 @@
     >
       <!-- https://tailwindcss.com/docs/fill#usage -->
       <!-- eslint-disable-next-line -->
-      <git-hub-icon size="1.5x" class="fill-current text-white h-8 w-8" />
+      <git-hub-icon size="2.0x" class="fill-current text-white h-8 w-8" />
     </external-link>
   </div>
 </template>

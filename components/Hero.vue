@@ -1,20 +1,22 @@
 /* eslint-disable vue/no-v-html */
 <template>
   <div>
-    <section class="py-4 sm:py-6 md:py-8 overflow-hidden md:py-20 lg:py-24">
+    <section class="h-screen pt-4 sm:pt-6 md:pt-8 overflow-hidden md:pt-10 lg:pt-20">
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative">
-          <div class="text-center text-copy-primary text-7xl font-extrabold leading-none tracking-tight">
+          <div class="text-center text-copy-primary text-4xl md:text-7xl font-extrabold leading-none tracking-tight">
             Hello, I'm {{ person.fields.name }}.
           </div>
-          <div class="text-center text-copy-primary text-2xl font-italic leading-none tracking-tight">
+          <div class="text-center text-copy-primary text-l sm:text-2xl font-italic leading-none tracking-tight">
             ({{ person.fields.pronouns }})
           </div>
           <blockquote class="mt-10">
+            <!-- eslint-disable -->
             <div
-              class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium"
+              class="max-w-3xl mx-auto text-center text-l sm:text-2xl leading-9 font-medium"
               v-html="$md.render(person.fields.shortBio)"
             />
+            <!-- eslint-enable -->
             <footer class="mt-8">
               <div class="md:flex md:items-center md:justify-center">
                 <div class="md:flex-shrink-0">
@@ -39,119 +41,47 @@
         </div>
       </div>
       <!-- This example requires Tailwind CSS v2.0+ -->
-      <div class="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8 items-center">
-        <div class="sm:space-y-4 items-center">
-          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+      <div class="max-w-l mx-auto pt-10 items-center">
+        <ul class="flex justify-center space-x-16 items-center">
+          <li>
             <external-link
               :link="person.fields.github"
               alt="Link to my GitHub Profile"
             >
-              <ul class="flex mt-4 space-x-4 ">
-                <li>
-                  <GitHubIcon />
-                </li>
-                <li class="text-xl">
-                  GitHub
-                </li>
-                <li>
-                  <external-link-icon
-                    size="1.5x"
-                    class="custom-class"
-                  />
-                </li>
-              </ul>
+              <GitHubIcon />
             </external-link>
-          </div>
-          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+          </li>
+          <li>
             <external-link
               :link="person.fields.linkedIn"
               alt="Link to my LinkedIn Profile"
             >
-              <ul class="flex mt-4 space-x-4">
-                <li>
-                  <linked-in-icon />
-                </li>
-                <li class="text-xl">
-                  LinkedIn
-                </li>
-                <li>
-                  <external-link-icon
-                    size="1.5x"
-                    class="custom-class"
-                  />
-                </li>
-              </ul>
+              <linked-in-icon />
             </external-link>
-          </div>
-          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+          </li>
+          <li>
             <external-link
               :link="person.fields.spotify"
               alt="Link to my Spotify Profile"
             >
-              <ul class="flex mt-4 space-x-4">
-                <li>
-                  <spotify-icon />
-                </li>
-                <li class="text-xl">
-                  Spotify
-                </li>
-                <li>
-                  <external-link-icon
-                    size="1.5x"
-                    class="custom-class"
-                  />
-                </li>
-              </ul>
+              <spotify-icon />
             </external-link>
-          </div>
-          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+          </li>
+          <li>
             <external-link
               :link="person.fields.twitter"
               alt="Link to my Twitter Profile"
             >
-              <ul class="flex mt-4 space-x-4">
-                <li>
-                  <TwitterIcon />
-                </li>
-                <li class="text-xl">
-                  Twitter
-                </li>
-                <li>
-                  <external-link-icon
-                    size="1.5x"
-                    class="custom-class"
-                  />
-                </li>
-              </ul>
+              <TwitterIcon />
             </external-link>
-          </div>
-        </div>
-        <!-- <div class="flex justify-center pt-8">
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="flex justify-center pt-8">
           <ChevronsDownIcon />
         </div> -->
-      </div>
-      <!-- end hero -->
-      <div class="mb-4">
-        <div class="container-inner mx-auto">
-          <div class="flex flex-col sm:flex-row justify-between items-center lg:mt-4 sm:mt-2">
-            <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
-              <img
-                src="~/assets/unDraw/connectedWorld.svg"
-                alt="Connected world"
-                immediate="true"
-              >
-            </div>
-            <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
-              <img
-                src="~/assets/unDraw/lightTheFire.svg"
-                alt="woman next to illuminated lighthouse"
-                immediate="true"
-              >
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
+    <!-- end hero -->
   </div>
 </template>
 
@@ -161,7 +91,6 @@
 // src="@/assets/BlogCardHeadshot.png"
 
 // import NuxtJsIcon from '@/components/NuxtJsIcon.vue';
-import { ExternalLinkIcon } from 'vue-feather-icons';
 import ExternalLink from './atoms/ExternalLink.vue';
 import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
 import LinkedInIcon from './molecules/LinkedInIcon.vue';
@@ -174,7 +103,6 @@ export default {
   components: {
     // NuxtJsIcon,
     // ChevronsDownIcon,
-    ExternalLinkIcon,
     ExternalLink,
     GitHubIcon,
     LinkedInIcon,
