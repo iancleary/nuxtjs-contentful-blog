@@ -55,6 +55,9 @@
           <li>
             <TwitterIcon />
           </li>
+          <li>
+            <RssIcon />
+          </li>
         </ul>
       </div>
       <!-- <div class="flex justify-center pt-8">
@@ -70,24 +73,21 @@
 // :src="person.fields.image.fields.file.url"
 // src="@/assets/BlogCardHeadshot.png"
 
-// import NuxtJsIcon from '@/components/NuxtJsIcon.vue';
-import ExternalLink from './atoms/ExternalLink.vue';
 import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
 import LinkedInIcon from './molecules/LinkedInIcon.vue';
 import SpotifyIcon from '@/components/molecules/SpotifyIcon.vue';
 import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
-// import LinkedInIcon from '@/components/molecules/LinkedInIcon.vue';
+import RssIcon from '@/components/molecules/RssIcon.vue';
 
 
 export default {
   components: {
-    // NuxtJsIcon,
     // ChevronsDownIcon,
-    ExternalLink,
     GitHubIcon,
     LinkedInIcon,
     TwitterIcon,
     SpotifyIcon,
+    RssIcon,
   },
   computed: {
     person() {

@@ -14,14 +14,15 @@
               class="font-medium text-white"
               key="Home"
             >
-              Home
+              🏠 Home
             </a>
           </div>
-          <div class="ml-10 space-x-4">
+          <div class="flex ml-10 space-x-4 items-center">
             <a
               href="/blog"
               class="font-medium text-white"
-            >Blog</a>
+            >📚 Blog</a>
+            <RssIcon />
           </div>
         </div>
       </nav>
@@ -31,10 +32,12 @@
 
 <script>
 import BlackLivesMatter from '@/components/molecules/BlackLivesMatter.vue';
+import RssIcon from '@/components/molecules/RssIcon.vue';
 
 export default {
   components: {
       BlackLivesMatter,
+      RssIcon,
   },
 };
 </script>

@@ -14,6 +14,9 @@
         <li>
           <TwitterIcon />
         </li>
+        <li>
+          <RssIcon />
+        </li>
       </ul>
       <external-link
         :link="person.fields.buyMeACoffee"
@@ -89,6 +92,7 @@ import GitHubIcon from '@/components/molecules/GitHubIcon.vue';
 import LinkedInIcon from '@/components/molecules/LinkedInIcon.vue';
 import SpotifyIcon from '@/components/molecules/SpotifyIcon.vue';
 import TwitterIcon from '@/components/molecules/TwitterIcon.vue';
+import RssIcon from '@/components/molecules/RssIcon.vue';
 
 var currentYear = new Date().getFullYear();
 export default {
@@ -98,6 +102,7 @@ export default {
       LinkedInIcon,
       SpotifyIcon,
       TwitterIcon,
+      RssIcon,
   },
   data() {
     return {
