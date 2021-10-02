@@ -59,17 +59,16 @@ export default {
     {
       path: '/feed.xml',
       async create(feed) {
-        feed.options = {
-          title: "Ian Cleary's Blog",
-          link: 'https://icancclearynow.com/feed.xml',
-          description: "Ian's blog containing useful notes and procedures, with a focus on Windows, Ubuntu Server and Desktop, Docker, Javascript, and related technologies!",
+
+        const persons = await client.getEntries({
+          content_type: "person",
+        });
+
+        var getImageUrlFromAsset = function(asset) {
+          // https://www.contentful.com/developers/docs/concepts/images/
+          var imageURL = 'https:' + asset.fields.file.url;
+          return imageURL;
         };
-
-        const posts = await client.getEntries({
-              content_type: "blogPost",
-            });
-
-        // console.log(posts.items); // Debug log to terminal
 
         // Function to inspect keys of Contentful objects
         // var getKeys = function(obj) {
@@ -80,11 +79,19 @@ export default {
         //   return keys;
         // };
 
-        var getImageUrlFromAsset = function(asset) {
-          // https://www.contentful.com/developers/docs/concepts/images/
-          var imageURL = 'https:' + asset.fields.file.url;
-          return imageURL;
+        feed.options = {
+          title: "Ian Cleary's Blog",
+          link: 'https://icancclearynow.com/feed.xml',
+          description: "Ian's blog containing useful notes and procedures, with a focus on Windows, Ubuntu Server and Desktop, Docker, Javascript, and related technologies!",
+          // description: "Persons: " + getKeys(persons.items[0].fields.image),
+          image: getImageUrlFromAsset(persons.items[0].fields.image),
         };
+
+        const posts = await client.getEntries({
+              content_type: "blogPost",
+            });
+
+        // console.log(posts.items); // Debug log to terminal
 
         posts.items.forEach((post) => {
           const url = "https://icancclearynow.com/blog/" + post.fields.slug;
