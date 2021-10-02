@@ -43,7 +43,7 @@
             id="icon-row"
             class="mx-auto pt-10 items-center"
           >
-            <ul class="flex justify-center space-x-16 items-center">
+            <ul class="flex justify-center space-x-4 md:space-x-8 lg:space-x-16 ">
               <li>
                 <GitHubIcon />
               </li>
