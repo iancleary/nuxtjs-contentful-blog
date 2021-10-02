@@ -15,6 +15,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - `.env.example` file and description of env variables per [#345](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/345)
 - jsconfig.json to improve VS Code Intellisense per [Louis-Marie Michelin's Article](https://lmichelin.fr/vscode-intellisense-jsconfig-vue-js-nuxt-js-absolute-imports/)
 - RSS Icon per [#322](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/322)
+- RSS Feed Images per [#325](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/325)
 
 ### Changed
 
