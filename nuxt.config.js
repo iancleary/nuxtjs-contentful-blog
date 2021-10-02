@@ -54,6 +54,7 @@ export default {
     "@nuxtjs/tailwindcss",
   ],
 
+  // nuxtjs/feed uses config directly from https://github.com/jpmonette/feed
   feed: [
     {
       path: '/feed.xml',
@@ -70,13 +71,31 @@ export default {
 
         // console.log(posts.items); // Debug log to terminal
 
+        // Function to inspect keys of Contentful objects
+        // var getKeys = function(obj) {
+        //   var keys = [];
+        //   for(var key in obj){
+        //      keys.push(key);
+        //   }
+        //   return keys;
+        // };
+
+        var getImageUrlFromAsset = function(asset) {
+          // https://www.contentful.com/developers/docs/concepts/images/
+          var imageURL = 'https:' + asset.fields.file.url;
+          return imageURL;
+        };
+
         posts.items.forEach((post) => {
           const url = "https://icancclearynow.com/blog/" + post.fields.slug;
           feed.addItem({
             title: post.fields.title,
+            image: getImageUrlFromAsset(post.fields.heroImage),
             id: url,
             link: url,
-            description: post.fields.description,
+            // description: post.fields.description + " " + getKeys(post.fields.heroImage.fields.file) + post.fields.heroImage.fields.file.url + " " + + post.fields.heroImage.fields.file.details,
+            description: post.fields.heroImage.fields.file.url,
+            // description: post.fields.description,
             published: new Date(post.fields.publishDate),
             author: [
               {
