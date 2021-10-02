@@ -82,9 +82,16 @@ export default {
         feed.options = {
           title: "Ian Cleary's Blog",
           link: 'https://icancclearynow.com/feed.xml',
-          description: "Ian's blog containing useful notes and procedures, with a focus on Windows, Ubuntu Server and Desktop, Docker, Javascript, and related technologies!",
+          description: persons.items[0].fields.name + "'s blog containing useful notes and procedures, with a focus on Windows, Ubuntu Server and Desktop, Docker, Javascript, and related technologies!",
           // description: "Persons: " + getKeys(persons.items[0].fields.image),
           image: getImageUrlFromAsset(persons.items[0].fields.image),
+          favicon: "http://icancclearynow.com/favicon.ico",
+          copyright: "All rights reserved 2021-Present, " + persons.items[0].fields.name,
+          author: {
+            name: persons.items[0].fields.name,
+            email: persons.items[0].fields.email,
+            link: persons.items[0].fields.github,
+          },
         };
 
         const posts = await client.getEntries({
