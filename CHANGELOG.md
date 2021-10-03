@@ -21,6 +21,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 ### Changed
 
 - Use article's author's name for HTML head title per [#347](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/347)
+- Move animated trianges to header, add ChevronsDown vue-feather-icon to fix graphical glitch per [#355](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/355)
 
 ## [v2021.04.0]
 
