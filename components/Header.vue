@@ -24,6 +24,7 @@
               viewBox="0 0 120 120"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              class="invisible sm:visible"
             >
               <g id="triangles">
                 <g id="darkGroup">
@@ -49,7 +50,7 @@
             </svg>
             <a
               href="/blog"
-              class="font-medium text-white"
+              class="font-medium text-white pr-2"
             >📚 Blog</a>
             <RssIcon />
           </div>
