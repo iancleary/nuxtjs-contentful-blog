@@ -9,6 +9,7 @@
       </div> -->
       <div>
         {{ tags }}
+        {{ tags_store }}
       </div>
     </LazyHydrate>
   </div>
@@ -26,56 +27,10 @@ export default {
   },
   layout: 'default',
   computed: {
-    // posts() {
-    //     return this.$store.state.posts;
-    // },
     tags() {
-        var tags = [];
-        var posts = this.$store.state.posts;
-        for (let i = 0; i < posts.length; i++) {
-            for (let j = 0; j < posts.fields.tags.length; j++) {
-                tag = posts[i].fields.tags[j];
-                if (tags.include(tag)) {
-                    tags.push(tag);
-                };
-        };
-        return tags;
-
-    },
-    fields() {
-        var posts = this.$store.state.posts;
-
-        var getKeys = function(obj) {
-          var keys = [];
-          for(var key in obj){
-             keys.push(key);
-          }
-          return keys;
-        };
-
-        var _fields = [];
-        for (var post in posts) {
-            _fields.push(getKeys(post.fields));
-        }
-        return _fields;
+        return this.$store.state.tags;
     },
   },
-methods: {
-    // getKeys() = function(obj) {
-    // var keys = [];
-    // for(var key in obj){
-    //     keys.push(key);
-    // }
-    // return keys;
-    // };
-    getKeys (obj) {
-        var keys = [];
-        for(var key in obj) {
-            keys.push(key);
-        }
-        return keys;
-    },
-},
 };
 
 </script>

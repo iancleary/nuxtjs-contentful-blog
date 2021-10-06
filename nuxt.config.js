@@ -38,7 +38,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/contentful", "~/plugins/posts","~/plugins/persons"],
+  plugins: ["~/plugins/contentful", "~/plugins/posts",  "~/plugins/tags", "~/plugins/persons"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
