@@ -53,9 +53,6 @@ export const actions = {
 
         for (let i = 0; i < posts.length; i++) {
             // console.log(i);
-            // Define variable to check if undefined
-            // var posts_tags = posts[i].fields.tags;
-            // console.log(posts_tags);
 
             if (typeof(posts[i].fields.tags) != "undefined") {
               for (let j = 0; j < posts[i].fields.tags.length; j++) {
