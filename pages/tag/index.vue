@@ -9,7 +9,6 @@
       </div> -->
       <div>
         {{ tags }}
-        {{ tags_store }}
       </div>
     </LazyHydrate>
   </div>
