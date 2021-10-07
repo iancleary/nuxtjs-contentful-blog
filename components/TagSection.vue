@@ -21,6 +21,7 @@
             :heroImageUrl="post.fields.heroImage.fields.file.url"
             :publishDate="post.fields.publishDate"
             :body="post.fields.body"
+            :tags="post.fields.tags"
           />
         </div>
       </div>
