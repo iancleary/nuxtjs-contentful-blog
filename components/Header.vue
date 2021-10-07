@@ -18,7 +18,7 @@
             </a>
           </div>
           <div class="flex ml-10 space-x-2 items-center">
-            <svg
+            <!-- <svg
               width="80"
               height="80"
               viewBox="0 0 120 120"
@@ -47,13 +47,15 @@
                   />
                 </g>
               </g>
-            </svg>
+            </svg> -->
             <a
-              href="/blog"
+              v-for="item in secondary_navigation"
+              :key="item.name"
+              :href="item.link"
               class="font-medium text-white pr-2"
-            >📚 Blog</a>
-            <RssIcon />
+            >{{ item.name }}</a>
           </div>
+          <!-- <RssIcon /> -->
         </div>
       </nav>
     </header>
@@ -62,12 +64,35 @@
 
 <script>
 import BlackLivesMatter from '@/components/molecules/BlackLivesMatter.vue';
-import RssIcon from '@/components/molecules/RssIcon.vue';
+// import RssIcon from '@/components/molecules/RssIcon.vue';
 
 export default {
   components: {
       BlackLivesMatter,
-      RssIcon,
+      // RssIcon,
+  },
+  computed: {
+    secondary_navigation() {
+        var navigation_details = Array();
+        // var tags = this.$store.state.tags;
+        // for (let i = 0; i < tags.length; i++) {
+        //   navigation_details.push({
+        //     "name": "🏷️" + tags[i],
+        //     "link": "/tag/" + tags[i],
+        //     });
+        // }
+        navigation_details.push({
+          "name": "🏷️ Tags",
+          "link": "/tag",
+        });
+        navigation_details.push({
+          "name": "📝 Blog",
+          "link": "/blog",
+        });
+
+        // console.log(navigation_details);
+        return navigation_details;
+    },
   },
 };
 </script>

@@ -16,7 +16,10 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - jsconfig.json to improve VS Code Intellisense per [Louis-Marie Michelin's Article](https://lmichelin.fr/vscode-intellisense-jsconfig-vue-js-nuxt-js-absolute-imports/)
 - RSS Icon per [#322](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/322)
 - RSS Feed Images for each post per [#325](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/325)
-- RSS Feed Image for overall feed per [#352](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/352)
+- Add tag and tag/_slug routes per [#349](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/349)
+- Add tag to BlogSectionCard per [#350](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/350)
+- Add tag link to header per [#351](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/351)
+- Load tags via plugin per [#357](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/357)
 
 ### Changed
 
