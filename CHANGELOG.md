@@ -20,6 +20,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - Add tag to BlogSectionCard per [#350](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/350)
 - Add tag link to header per [#351](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/351)
 - Load tags via plugin per [#357](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/357)
+- Add prose css class to hero markdown v-html per [#360](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/360)
 
 ### Changed
 

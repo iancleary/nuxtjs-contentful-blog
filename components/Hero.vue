@@ -11,7 +11,7 @@
         <div class="mt-10">
           <!-- eslint-disable -->
             <div
-              class="max-w-3xl mx-auto text-center text-l sm:text-2xl leading-9 font-medium"
+              class="max-w-3xl mx-auto prose text-center text-l sm:text-2xl leading-9 font-medium"
               v-html="$md.render(person.fields.shortBio)"
             />
             <!-- eslint-enable -->
