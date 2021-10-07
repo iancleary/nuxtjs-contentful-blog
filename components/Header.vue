@@ -86,11 +86,11 @@ export default {
           "link": "/tag",
         });
         navigation_details.push({
-          "name": "📚 Blog",
+          "name": "📝 Blog",
           "link": "/blog",
         });
 
-        console.log(navigation_details);
+        // console.log(navigation_details);
         return navigation_details;
     },
   },

@@ -7,15 +7,12 @@
       <div class="relative max-w-7xl mx-auto">
         <div class="text-center">
           <h2 class="text-3xl text-copy-primary leading-9 tracking-tight font-extrabold text-white-900 sm:text-4xl sm:leading-10">
-            📚📔📝
+            Blog Posts tagged with {{ capitalizedTag }}
           </h2>
-          <p class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">
-            Most recent first.
-          </p>
         </div>
         <div class="flex items-strech mt-12 grid gap-5 max-w-xlg mx-auto lg:grid-cols-2 lg:max-w-none">
           <BlogSectionCard
-            v-for="post in sortedPosts"
+            v-for="post in sortedFilteredPosts"
             :key="post.fields.slug"
             :title="post.fields.title"
             :slug="post.fields.slug"
@@ -40,17 +37,36 @@ function dateMostRecentSortFunction(postA, postB) {
   return dateA < dateB ? 1 : -1;
 }
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 export default {
   components: {
     BlogSectionCard,
   },
- computed: {
-   posts() {
-     return this.$store.state.posts;
+  props: {
+    tag: {
+      type: String,
+      required: true,
+    },
+  },
+  computed: {
+   sortedFilteredPosts() {
+    var posts = this.$store.state.posts;
+
+    console.log(this.tag);
+    var filteredPosts = Array();
+    for (let i = 0; i < posts.length; i++) {
+      if (posts[i].fields.tags.includes(this.tag)) {
+        filteredPosts.push(posts[i]);
+      }
+    }
+
+     return filteredPosts.slice().sort(dateMostRecentSortFunction);
    },
-   sortedPosts() {
-     var unSortedPosts = this.$store.state.posts;
-     return unSortedPosts.slice().sort(dateMostRecentSortFunction);
+   capitalizedTag() {
+     return capitalizeFirstLetter(this.tag);
    },
  },
 };

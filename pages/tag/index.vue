@@ -35,6 +35,10 @@
 
 <script>
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 export default {
   layout: 'default',
   computed: {
@@ -43,7 +47,7 @@ export default {
         var tags = this.$store.state.tags;
         for (let i = 0; i < tags.length; i++) {
           tag_details.push({
-            "name": tags[i],
+            "name": capitalizeFirstLetter(tags[i]),
             // "initials": tags[i].substring(0,2),
             "link": "/tag/" + tags[i],
             // "members": "TBD",
