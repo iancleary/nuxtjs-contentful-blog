@@ -26,7 +26,7 @@
         </div>
       </nuxt-link>
     </div>
-    <div> 
+    <div>
       <ul class="space-x-4 px-4">
         <span
           v-for="tag in tags"
