@@ -50,7 +50,7 @@ export default {
             // "c": 'bg-pink-600',
             });
         }
-        console.log(tag_details);
+        // console.log(tag_details);
         return tag_details;
     },
   },
