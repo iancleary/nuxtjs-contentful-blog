@@ -53,6 +53,8 @@ module.exports = {
       black: '#000000',
       white: '#ffffff',
 
+      red: 'FF0000',
+
       green: {
         100: '#f0fff4',
         200: '#c6f6d5',
@@ -81,8 +83,12 @@ module.exports = {
       default: {
         css: {
           color: theme('colors.white'),
-
-          // ...
+          a: {
+            color: '#38a169',
+            '&:hover': {
+              color: '#276749',
+            },
+          },
         },
       },
     }),

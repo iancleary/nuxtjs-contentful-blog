@@ -76,14 +76,8 @@ html.fa-events-typefaces-orbitron-loading header {
 }
 
 a {
-  @apply text-green-700;
   @apply font-bold;
 }
-
-a:hover {
-  @apply text-green-800;
-}
-
 
 .container-inner {
   padding-left: 1rem;
