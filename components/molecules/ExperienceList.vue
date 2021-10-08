@@ -3,7 +3,7 @@
   <div>
     <ul
       role="list"
-      class="-mb-8"
+      class="-mb-8 px-4"
     >
       <li
         v-for="event in timeline"
@@ -17,7 +17,7 @@
           /> -->
           <div class="relative flex space-x-3">
             <div>
-              <span :class="[event.iconBackground, 'h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white']">
+              <span :class="[event.iconBackground, 'h-8 w-8 rounded-full flex items-center justify-center ring-6 ring-white']">
                 <component
                   :is="event.icon"
                   class="h-5 w-5 text-white"
@@ -30,7 +30,7 @@
                 <p class="text-sm text-gray-500">
                   {{ event.content }} <a
                     :href="event.href"
-                    class="font-medium text-gray-900"
+                    class="font-medium text-green-900"
                   >{{ event.target }}</a>
                 </p>
               </div>
