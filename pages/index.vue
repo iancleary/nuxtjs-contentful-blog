@@ -5,7 +5,9 @@
     <!-- <div class="border-b-2 border-green-700"> -->
     <Hero />
     <!-- </div> -->
-    <ExperienceList />
+    <div class="pb-8">
+      <ExperienceList />
+    </div>
     <div class="mb-4 mt-8">
       <div class="container-inner mx-auto">
         <div class="flex flex-col sm:flex-row justify-between items-center">
