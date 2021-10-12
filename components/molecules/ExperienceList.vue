@@ -3,7 +3,7 @@
   <div class="flex justify-center lg:w-auto lg:mx-16">
     <ul
       role="list"
-      class="-mb-8 px-4"
+      class="-mb-8 px-6 sm:px-4"
     >
       <li class="relative">
         <div
