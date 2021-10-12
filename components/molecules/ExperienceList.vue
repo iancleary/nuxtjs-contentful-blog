@@ -1,9 +1,9 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="flex justify-center lg:w-auto lg:mx-16">
+  <div class="flex justify-center mx-auto ">
     <ul
       role="list"
-      class="-mb-8 px-4 sm:px-6 lg:px-8"
+      class="-mb-8 mx-auto max-w-sm md:max-w-3xl lg:max-w-7xl px-4 sm:px-6 lg:px-8"
     >
       <li class="relative">
         <div
@@ -51,10 +51,12 @@
                 <p class="text-left text-md italic test-gray-500">
                   {{ event.position }}
                 </p>
-                <div class="flex items-start text-right text-sm whitespace-nowrap text-gray-500 space-x-1">
-                  <time :datetime="event.datetimeStart">{{ event.dateStart }}</time>
-                  <div>-</div>
-                  <time :datetime="event.datetimeEnd">{{ event.dateEnd }}</time>
+                <div class="flex items-start text-right text-sm items-center text-gray-500 space-x-1">
+                  <span class="flex items-center space-x-2 md:space-x-0">
+                    <time :datetime="event.datetimeStart">{{ event.dateStart }}</time>
+                    <div>-</div>
+                    <time :datetime="event.datetimeEnd">{{ event.dateEnd }}</time>
+                  </span>
                 </div>
               </div>
               <div class="text-sm text-gray-500 font-italic">
@@ -99,7 +101,7 @@ const timeline = [
       // 'Authored predictive models of system performance from module level test data',
       // 'Reallocated specs to improve schedule',
       ],
-    position: 'Digital Subsytem Lead – Satellite Payloads',
+    position: 'Digital Subsytem Lead, Satellite Payloads',
     organization: 'Viasat, Inc.',
     location: 'Tempe, AZ',
     dateStart: 'September 2020',
@@ -116,7 +118,7 @@ const timeline = [
       'Authored predictive models of system performance from module level test data',
       'Reallocated specs to improve schedule',
       ],
-    position: 'Systems Engineer – Satellite Payloads',
+    position: 'Satellite Systems Engineer',
     organization: 'Viasat, Inc.',
     location: 'Tempe, AZ',
     dateStart: 'September 2017',
@@ -150,7 +152,7 @@ const timeline = [
       'Iterated the design of a 3-stage 20 GHz Mitsubishi LNA Amplifier and Hairpin filter',
       'Implemented reference designators for wire bond to improve quality in the design, test, and manufacturing processes',
       ],
-    position: 'RF Engineer – Circuit Board Designer',
+    position: 'RF Engineer',
     organization: 'Viasat, Inc.',
     location: 'Tempe, AZ',
     dateStart: 'September 2015',
