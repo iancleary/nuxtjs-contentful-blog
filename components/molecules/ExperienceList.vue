@@ -82,6 +82,7 @@
 import CheckIcon from '@/components/atoms/CheckIcon.vue';
 import ThumbUpIcon from '@/components/atoms/ThumbUpIcon.vue';
 import UserIcon from '@/components/atoms/UserIcon.vue';
+import EducationCapIcon from '@/components/atoms/EducationCapIcon.vue';
 
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
@@ -93,6 +94,23 @@ today = yyyy + '-' + mm + '-' + dd;
 const timeline = [
   {
     id: 1,
+    content: [
+      // 'Co-developed the system test plan for our Viasat-3 Satellite Payloads',
+      // 'Authored predictive models of system performance from module level test data',
+      // 'Reallocated specs to improve schedule',
+      ],
+    position: 'Digital Subsytem Lead – Satellite Payloads',
+    organization: 'Viasat, Inc.',
+    location: 'Tempe, AZ',
+    dateStart: 'September 2020',
+    datetimeStart: '2017-09-20',
+    dateEnd: 'Present',
+    datetimeEnd: today,
+    icon: UserIcon,
+    iconBackground: 'bg-blue-400',
+  },
+  {
+    id: 2,
     content: [
       'Co-developed the system test plan for our Viasat-3 Satellite Payloads',
       'Authored predictive models of system performance from module level test data',
@@ -109,7 +127,24 @@ const timeline = [
     iconBackground: 'bg-blue-400',
   },
   {
-    id: 2,
+    id: 3,
+    content: [
+      'Courses: VLSI, Intro to Systems Engineering, Digital Communications, Wireless Communications,',
+      'Design of Experiments, Software Testing, Picosatellite Design, Electromagnetics, Power System Transients',
+      'Thesis: Spacecraft Integration and Test Strategies, with discussions of possible applications of software verification, validation and testing concepts from previous literature.',
+      ],
+    position: 'M.S.E Electrical Engineering',
+    organization: 'Arizona State University',
+    location: 'Tempe, AZ',
+    dateStart: 'November 2014',
+    datetimeStart: '2017-11-01',
+    dateEnd: 'November 2017',
+    datetimeEnd: '2017-11-08',
+    icon: EducationCapIcon,
+    iconBackground: 'bg-black',
+  },
+  {
+    id: 4,
     content: [
       'Designed wire bond interfaces for amplifiers and mixers in the 20-30 GHz range on a Rogers PCB Substrate',
       'Iterated the design of a 3-stage 20 GHz Mitsubishi LNA Amplifier and Hairpin filter',
@@ -126,7 +161,7 @@ const timeline = [
     iconBackground: 'bg-blue-400',
   },
   {
-    id: 3,
+    id: 5,
     content: [
       'Analyzed data and conducted tests diagnosing Ka band radar SiGe transceiver chip in the Jazz SBC18HA process',
       'Designed and simulated Ku band LO Poly-Phase Filter in a TriQuint GaAs process',
@@ -141,6 +176,23 @@ const timeline = [
     icon: UserIcon,
     iconBackground: 'bg-blue-400',
   },
+  {
+    id: 6,
+    content: [
+      'Courses: Analog Integrated Circuits, Microwave Circuits I, Monolithic Amplifier Circuits, Electromagnetics II, Digital Signal Processing,',
+      'Probabilistic Methods in Engineering, Analog Circuits, Semiconductor Device Physics, Intro to Logic Design,',
+      'Programming & Data Structures, Intro to Thermodynamics, Economic Decision Making, Financial Accounting',
+      ],
+    position: 'B.S.E Electrical Engineering',
+    organization: 'University of Michigan',
+    location: 'Ann Arbor, MI',
+    dateStart: 'September 2010',
+    datetimeStart: '2010-09-01',
+    dateEnd: 'May 2013',
+    datetimeEnd: '2013-05-08',
+    icon: EducationCapIcon,
+    iconBackground: 'bg-black',
+  },
 ];
 
 
@@ -150,6 +202,7 @@ export default {
       CheckIcon,
       ThumbUpIcon,
       UserIcon,
+      EducationCapIcon,
   },
   computed : {
       timeline() {
