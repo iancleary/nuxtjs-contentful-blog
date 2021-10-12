@@ -5,6 +5,9 @@
     <!-- <div class="border-b-2 border-green-700"> -->
     <Hero />
     <!-- </div> -->
+    <div class="pb-8">
+      <ExperienceList />
+    </div>
     <div class="mb-4 mt-8">
       <div class="container-inner mx-auto">
         <div class="flex flex-col sm:flex-row justify-between items-center">
@@ -44,6 +47,7 @@
 import LazyHydrate from 'vue-lazy-hydration';
 import Hero from '@/components/Hero.vue';
 import BlogSection from '@/components/BlogSection.vue';
+import ExperienceList from '@/components/molecules/ExperienceList.vue';
 
 // import PostImages from '@/components/organisms/PostImages.vue';
 // import Projects from '@/components/organisms/Projects.vue';
@@ -53,6 +57,7 @@ export default {
     LazyHydrate,
     BlogSection,
     Hero,
+    ExperienceList,
     // PostImages,
     // Projects,
   },

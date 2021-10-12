@@ -5,13 +5,26 @@
         <div class="h-1/3 sm:h-2/3" />
       </div>
       <div class="relative max-w-7xl mx-auto">
-        <div class="text-center">
+        <!-- <div class="text-center">
           <h2 class="text-3xl text-copy-primary leading-9 tracking-tight font-extrabold text-white-900 sm:text-4xl sm:leading-10">
             📚📔📝
           </h2>
           <p class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">
             Most recent first.
           </p>
+        </div> -->
+        <div class="relative">
+          <div
+            class="absolute inset-0 flex items-center"
+            aria-hidden="true"
+          >
+            <div class="w-full border-t border-gray-500" />
+          </div>
+          <div class="relative flex justify-start">
+            <span class="pb-8 text-lg font-bold text-gray-500">
+              Recent Blog Posts
+            </span>
+          </div>
         </div>
         <div class="flex items-strech mt-12 grid gap-5 max-w-xlg mx-auto lg:grid-cols-2 lg:max-w-none">
           <BlogSectionCard

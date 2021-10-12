@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="h-screen justify-center w-full pt-4 sm:pt-6 md:pt-8 overflow-hidden md:pt-10 lg:pt-20">
+    <section class="pb-24 sm:pb-48 md:pb-96 justify-center w-full pt-4 sm:pt-6 md:pt-8 overflow-hidden md:pt-10 lg:pt-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center text-copy-primary text-4xl md:text-7xl font-extrabold leading-none tracking-tight">
           Hello, I'm {{ person.fields.name }}.
