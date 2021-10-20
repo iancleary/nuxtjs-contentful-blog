@@ -2,8 +2,8 @@
   <!-- Overflow-x-hidden prevents horizontal scrolling when
       elements are larger than others within the app -->
   <div>
-    <!-- <div class="pt-8">
-      <div
+    <div class="pt-8">
+      <!-- <div
         class="pt-8 flex justify-center"
       >
         <a
@@ -13,8 +13,8 @@
           Download CV
         </a>
       </div> -->
-    <ExperienceList />
-  </div>
+      <ExperienceList />
+    </div>
     <!-- </LazyHydrate> -->
     <!-- <LazyHydrate when-visible>
       <Projects />
