@@ -82,6 +82,10 @@ export default {
         //     });
         // }
         navigation_details.push({
+          "name": "👨‍💻 Resume",
+          "link": "/resume",
+        });
+        navigation_details.push({
           "name": "🏷️ Tags",
           "link": "/tag",
         });

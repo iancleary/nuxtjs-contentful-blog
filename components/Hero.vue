@@ -62,6 +62,16 @@
             </ul>
           </div>
           <div
+            class="pt-8 flex justify-center"
+          >
+            <a
+              class="border-2 m-2 p-4 rounded-full font-bold text-copy-primary"
+              href="/resume"
+            >
+              View Resume
+            </a>
+          </div>
+          <div
             id="icon-row"
             class="mx-auto pt-4 md:pt-6 lg:pt-10 items-center"
           >
