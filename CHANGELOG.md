@@ -21,6 +21,7 @@ and this project adheres to [CalVer Version Scheme](https://calver.org/).
 - Add tag link to header per [#351](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/351)
 - Load tags via plugin per [#357](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/357)
 - Add prose css class to hero markdown v-html per [#360](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/360)
+- Add comments using [🔮 utterances](https://utteranc.es/) per [#366](https://github.com/icancclearynow/nuxtjs-contentful-blog/issues/366)
 
 ### Changed
 

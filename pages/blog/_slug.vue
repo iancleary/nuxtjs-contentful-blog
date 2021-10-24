@@ -17,7 +17,18 @@
         <!-- eslint-disable -->
         <article class="prose prose-lg max-w-full text-gray-800 pb-4" v-html="$md.render(post.fields.body)"/>
         <!-- eslint-enable -->
-        <p class="border-t-2 py-4 border-green-700 flex justify-between">
+        <div class="border-t-2 border-gray-700">
+          <script
+            src="https://utteranc.es/client.js"
+            repo="icancclearynow/nuxtjs-contentful-blog"
+            issue-term="pathname"
+            label="utterances"
+            theme="github-light"
+            crossorigin="anonymous"
+            async
+          />
+        </div>
+        <p class="py-4 flex justify-between">
           <nuxt-link
             exact
             to="/blog"
