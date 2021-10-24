@@ -22,6 +22,7 @@
             src="https://utteranc.es/client.js"
             repo="icancclearynow/nuxtjs-contentful-blog"
             issue-term="pathname"
+            label="utterances"
             theme="github-light"
             crossorigin="anonymous"
             async
