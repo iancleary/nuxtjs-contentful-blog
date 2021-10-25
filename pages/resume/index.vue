@@ -4,17 +4,16 @@
   <div>
     <div class="pt-8">
       <div
-        class="pt-8 flex justify-center"
+        class="pb-8 flex justify-center"
       >
-        <external-link
-          link="https://assets.ctfassets.net/b4dlpmwrdw4v/4f2HV8YDADVfEXrXYhcX5H/8087ede89c94932235650975f6159da7/IanClearyResume2021.pdf"
-          alt="Ian Cleary's Resume as a PDF"
-          css="border-2 border-gray-500 m-2 p-4 rounded-full font-bold text-copy-primary"
-        >
-          Download CV
-        </external-link>
+        <resume-link />
       </div>
-      <ExperienceList />
+      <experience-list />
+      <div
+        class="pt-12 flex justify-center"
+      >
+        <resume-link />
+      </div>
     </div>
     <!-- </LazyHydrate> -->
     <!-- <LazyHydrate when-visible>
@@ -32,6 +31,7 @@
 import LazyHydrate from 'vue-lazy-hydration';
 import ExperienceList from '@/components/molecules/ExperienceList.vue';
 import ExternalLink from '~/components/atoms/ExternalLink.vue';
+import ResumeLink from '~/components/molecules/ResumeLink.vue';
 
 // import PostImages from '@/components/organisms/PostImages.vue';
 // import Projects from '@/components/organisms/Projects.vue';
@@ -41,6 +41,7 @@ export default {
     LazyHydrate,
     ExperienceList,
     ExternalLink,
+    ResumeLink,
     // PostImages,
     // Projects,
   },
