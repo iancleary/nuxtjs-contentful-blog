@@ -1,6 +1,7 @@
-# Personal Site
+# ARCHIVED PERSONAL SITE
 
 <p align="center">
+  <b> ARCHIVED </b><br>
     <em> Powered by NuxtJS, Vue.js & Tailwind CSS</em><br>
     <em> Deployed with Vercel</em>
 </p>
